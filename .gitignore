@@ -1,0 +1,10 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+/.idea/.idea.UT-ADL.github.io.dir/.idea/indexLayout.xml
+/.idea/.idea.UT-ADL.github.io.dir/.idea/jsLibraryMappings.xml
+/.idea/.idea.UT-ADL.github.io.dir/.idea/projectSettingsUpdater.xml
+/.idea/.idea.UT-ADL.github.io.dir/.idea/vcs.xml
+/.idea/.idea.UT-ADL.github.io.dir/.idea/workspace.xml
