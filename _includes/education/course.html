@@ -1,6 +1,22 @@
-
+<div class="container-fluid">
 <div class="row">
-    <div class="col">
-        I am a course!
+    <div class="col-4">
+        <p>{{ include.type | upcase }}</p>
+    </div>
+    <div class="col-8">
+        <p>{{ include.weight }} EAP {{ include.code | upcase }} LECTURER: {{ include.lecturer | upcase }}</p>
     </div>
 </div>
+<div class="row">
+    <div class="col-4">
+        <p>{{ include.title }}</p>
+    </div>
+    <div class="col-6">
+        <p>{{ include.description }}</p>
+    </div>
+    <div class="col-2">
+        <button type="button">Register</button>
+    </div>
+</div>
+</div>
+<hr/>

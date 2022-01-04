@@ -1,0 +1,139 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
+    <link href="/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter&display=swap"
+          rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Autonomous Driving Lab</title>
+</head>
+<body>
+<div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Autonomous Driving Lab</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Discover ADL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">The Lab</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Education</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <main>
+            <div class="page-heading container-fluid d-inline-flex align-items-end">
+                <div class="page-heading-inner container-lg mb-5">
+                    <h1 class="page-title-header text-white">{{page.subtitle}}</h1>
+                    <p class="page-title-caption text-white mt-3"> Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                </div>
+            </div>
+            <div class="navbar-secondary container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-light container-xl">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link text-black-50 pe-md-3" href="/education/courses">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black-50 pe-md-3" href="/education/thesis-topics">Thesis topics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black-50 pe-md-3" href="/education/defended-theses">Defended theses</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="content container-lg">
+            {{content}}
+                 </div>
+        </main>
+        <footer class="row row-cols-10 py-5">
+            <div class="col-6">
+                <h5></h5>
+                <p>
+                    Narva mnt 18<br>
+                    51009 Tartu<br>
+                    Estonia
+                </p>
+                <p><a href="mailto:adl@ut.ee">adl@ut.ee</a></p>
+            </div>
+
+            <div class="col">
+                <h5>Discover ADL</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About us</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Projects</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Media</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5>The Lab</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Vehicle</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Simulation</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Parking lot</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Demo track</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5>Research</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Area 1</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Area 2</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Area 3</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Area 4</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5>Education</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Courses</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Defended theses</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Thesis topcis</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>
+
