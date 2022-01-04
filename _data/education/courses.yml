@@ -1,0 +1,27 @@
+- type: INTRODUCTORY COURSE
+  title: Introduction to Autonomous Driving
+  code: LTAT.06.011
+  weight: 6 EAP
+  lecturer: Naveed Muhannad
+  description: Introduces all the sub-problems that need to be solved to build an autonomous driving system.
+
+- type: INTRODUCTORY COURSE
+  title: Introduction to Data Science
+  code: LTAT.02.002
+  weight: 3 EAP
+  lecturer: Meelis Kull
+  description: ISensor data analysis is at the core of modern self-driving. This course gives a brief overview of the basic concepts, principles and practice of data science. The main goal is to learn to plan and carry out a simple practical data science project.
+
+- type: RELATED SUBTASKS
+  title: Machine Learning
+  code: MTAT.03.227
+  weight: 6 EAP
+  lecturer: Dmytro Fishman
+  description: Introduces the core concepts of machine learning and data science. Allows to do a project related to AD.
+
+- type: RELATED FIELDS
+  title: QGIS with Fundamental of GIS
+  code: LTOM.02.034
+  weight: 3 EAP
+  lecturer: Kiira Mõisja
+  description: Introduces the core concepts of machine learning and data science. Allows to do a project related to AD.

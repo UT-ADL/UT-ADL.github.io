@@ -1,0 +1,32 @@
+---
+layout: default
+subtitle: Education
+---
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>Courses</h1>
+            <p>One of our goals is to prepare future workforce for the up-and-coming autonomous driving industry in Estonia (and elsewhere) – this is a long process.
+                 Providing the students here at the Institute of Computer Science with a variety of courses that provide them with an opportunity to get familiar 
+                 with the basics of self-driving software, is a critical first step.
+                Here is an overview of the different courses taught at our institute. Be sure to check out the links that take you to the 
+                Study Information System, if you’re interested in the specifics!</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    {% for course in site.data.education.courses %}
+    <div class="row">
+        <div class="col">
+            <p>{{ course.title }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    <!--{% include education/course.html %}
+    {% include education/course.html %}
+    {% include education/course.html %}
+    {% include education/course.html %}
+    {% include education/course.html %}
+    {% include education/course.html %}
+    {% include education/course.html %}-->
+</div>
