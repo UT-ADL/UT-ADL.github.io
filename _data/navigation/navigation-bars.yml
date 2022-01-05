@@ -1,7 +1,18 @@
+- title: main
+  subfolderitems:
+  - page: Discover ADL
+    url: /about/
+  - page: The Lab
+    url: /lab/
+  - page: Research
+    url: /research/
+  - page: Education
+    url: /education/
+
 - title: education
   subfolderitems:
   - page: Courses
-    url: /education/courses
+    url: /education/
   - page: Defended theses
     url: /education/defended-theses
   - page: Thesis topics
