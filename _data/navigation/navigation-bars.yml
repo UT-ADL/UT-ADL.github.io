@@ -1,0 +1,20 @@
+- title: education
+  subfolderitems:
+  - page: Courses
+    url: /education/courses
+  - page: Defended theses
+    url: /education/defended-theses
+  - page: Thesis topics
+    url: /education/thesis-topics
+
+- title: discover
+  subfolderitems:
+  - page: About
+    url: /about/
+  - page: Projects
+    url: /about/projects
+  - page: Media
+    url: /about/media
+  - page: Meet our team
+    url: /about/meet-our-team
+

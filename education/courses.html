@@ -16,17 +16,13 @@ subtitle: Education
 </div>
 <div class="container-fluid">
     {% for course in site.data.education.courses %}
-    <div class="row">
-        <div class="col">
-            <p>{{ course.title }}</p>
-        </div>
-    </div>
+    {% include education/course.html 
+        type=course.type
+        title=course.title 
+        code=course.code
+        weight=course.weight
+        lecturer=course.lecturer
+        description=course.description
+    %}
     {% endfor %}
-    <!--{% include education/course.html %}
-    {% include education/course.html %}
-    {% include education/course.html %}
-    {% include education/course.html %}
-    {% include education/course.html %}
-    {% include education/course.html %}
-    {% include education/course.html %}-->
 </div>

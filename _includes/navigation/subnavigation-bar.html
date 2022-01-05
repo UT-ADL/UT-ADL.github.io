@@ -1,0 +1,30 @@
+<div class="navbar-secondary container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light container-xl">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                {% for navigation-bar in site.data.navigation.navigation-bars %}
+                {% if navigation-bar.title == include.navigation-bar-title %}
+                {% for navigation-bar-element in navigation-bar.subfolderitems %}
+                {% assign active-url = navigation-bar-element.url | append: ".html" %}
+                <!-- Debug -->
+                <!--<p>{{ active-url }} | {{navigation-bar-element.url }} | P:</p>
+                <p>{{ page.url }}</p>-->
+                {% if page.url == active-url or page.url == navigation-bar-element.url%}
+                <li class="nav-item">
+                    <!-- Just underline tag for now -->
+                    <u><a class="nav-link text-black-50 pe-md-3"
+                            href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a></u>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link text-black-50 pe-md-3"
+                        href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+</div>
