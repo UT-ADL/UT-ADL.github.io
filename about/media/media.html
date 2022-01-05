@@ -39,7 +39,7 @@ permalink: /about/media
             </div>
         </div>
     </div>
-    
+
     <div class="news">
         {% for news in news_en limit: 3 %}
         <div class="row my-4 news-card">
@@ -80,10 +80,10 @@ permalink: /about/media
         {% endfor %}
         <a class="button-primary" href="/about/media/en">All News in English</a>
     </div>
-    
+
     <div class="news">
         {% for news in news_ee limit: 3 %}
-        <div class="row my-4 news-card">
+        <div class="row my-4 news-card" id="news">
             <div class="col-md-3">
                 <div class="news-card-img">
                     {% if news.type == "video" %}
@@ -105,22 +105,18 @@ permalink: /about/media
                     <h6>
                         {{news.title}}
                     </h6>
-                    {% if news.type == "video" %}
-                    <p>
-                        <a class="link" href="{{news.url}}">Watch Now <i class="fas fa-play-circle"></i></a>
-                    </p>
-                    {% else %}
-                    <p>
-                        <a class="link" href="{{news.url}}">Read more</a>
-                    </p>
-                    {% endif %}
                 </div>
+                    {% if news.type == "video" %}
+                    <a class="link" href="{{news.url}}">Watch Now <i class="fas fa-play-circle"></i></a>
+                    {% else %}
+                    <a class="link" href="{{news.url}}">Read more</a>
+                    {% endif %}
             </div>
         </div>
         <hr/>
         {% endfor %}
         <a class="button-primary" href="/about/media/ee">All News in Estonian</a>
     </div>
-    
-    
+
+
 </div>
