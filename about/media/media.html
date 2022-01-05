@@ -1,0 +1,126 @@
+---
+layout: discover
+subtitle: Discover ADL
+permalink: /about/media
+---
+{% assign videos = site.data.media | where: "type", "video" %}
+{% assign news_en = site.data.media | where: "language", "en" %}
+{% assign news_ee = site.data.media | where: "language", "ee" %}
+<div class="container-fluid mb-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>
+                Media
+            </h2>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="row">
+                {% for video in videos %}
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img class="card-img-top w-100" alt=""
+                             src="https://i.ytimg.com/vi_webp/{{video.url | slice: -11, 11}}/mqdefault.webp"/>
+                        <div class="card-block px-3 mt-4">
+                            <span class="overlane-text">
+                                VIDEO
+                            </span>
+                            <h6 class="card-title">
+                                {{video.title}}
+                            </h6>
+                            <p>
+                                <a class="link" href="{{video.url}}">Watch Now <i class="fas fa-play-circle"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="news">
+        {% for news in news_en limit: 3 %}
+        <div class="row my-4 news-card">
+            <div class="col-md-3">
+                <div class="news-card-img">
+                    {% if news.type == "video" %}
+                    <img class="card-img-top w-100" alt=""
+                         src="https://i.ytimg.com/vi_webp/{{news.url | slice: -11, 11}}/mqdefault.webp"/>
+                    {% else %}
+                    <img class="img-fluid w-100" alt=""
+                         src="{{news.image}}"/>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="news-card-body mt-3">
+                    {% if news.type == "video" %}
+                    <span class="overlane-text">VIDEO • {{news.date}}</span>
+                    {% else %}
+                    <span class="overlane-text">ARTICLE • {{news.date}}</span>
+                    {% endif %}
+                    <h6>
+                        {{news.title}}
+                    </h6>
+                    {% if news.type == "video" %}
+                    <p>
+                        <a class="link" href="{{news.url}}">Watch Now <i class="fas fa-play-circle"></i></a>
+                    </p>
+                    {% else %}
+                    <p>
+                        <a class="link" href="{{news.url}}">Read more</a>
+                    </p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <hr/>
+        {% endfor %}
+        <a class="button-primary" href="/about/media/en">All News in English</a>
+    </div>
+    
+    <div class="news">
+        {% for news in news_ee limit: 3 %}
+        <div class="row my-4 news-card">
+            <div class="col-md-3">
+                <div class="news-card-img">
+                    {% if news.type == "video" %}
+                    <img class="card-img-top w-100" alt=""
+                         src="https://i.ytimg.com/vi_webp/{{news.url | slice: -11, 11}}/mqdefault.webp"/>
+                    {% else %}
+                    <img class="img-fluid w-100" alt=""
+                         src="{{news.image}}"/>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="news-card-body mt-3">
+                    {% if news.type == "video" %}
+                    <span class="overlane-text">VIDEO • {{news.date}}</span>
+                    {% else %}
+                    <span class="overlane-text">ARTICLE • {{news.date}}</span>
+                    {% endif %}
+                    <h6>
+                        {{news.title}}
+                    </h6>
+                    {% if news.type == "video" %}
+                    <p>
+                        <a class="link" href="{{news.url}}">Watch Now <i class="fas fa-play-circle"></i></a>
+                    </p>
+                    {% else %}
+                    <p>
+                        <a class="link" href="{{news.url}}">Read more</a>
+                    </p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <hr/>
+        {% endfor %}
+        <a class="button-primary" href="/about/media/ee">All News in Estonian</a>
+    </div>
+    
+    
+</div>

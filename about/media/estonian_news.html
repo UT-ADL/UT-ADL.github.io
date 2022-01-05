@@ -1,0 +1,52 @@
+---
+layout: discover
+subtitle: Discover ADL
+permalink: /about/media/ee
+---
+{% assign news_ee = site.data.media | where: "language", "ee" %}
+<div class="container-fluid mb-5">
+    <div class="news">
+        <span class="overlane-text">
+        ARTICLES IN ESTONIAN
+        </span>
+        {% for news in news_ee %}
+        <div class="row my-4 news-card">
+            <div class="col-md-3">
+                <div class="news-card-img">
+                    {% if news.type == "video" %}
+                    <img class="card-img-top w-100" alt=""
+                         src="https://i.ytimg.com/vi_webp/{{news.url | slice: -11, 11}}/mqdefault.webp"/>
+                    {% else %}
+                    <img class="img-fluid w-100" alt=""
+                         src="{{news.image}}"/>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="news-card-body mt-3">
+                    {% if news.type == "video" %}
+                    <span class="overlane-text">VIDEO • {{news.date}}</span>
+                    {% else %}
+                    <span class="overlane-text">ARTICLE • {{news.date}}</span>
+                    {% endif %}
+                    <h6>
+                        {{news.title}}
+                    </h6>
+                    {% if news.type == "video" %}
+                    <p>
+                        <a class="link" href="{{news.url}}">Watch Now <i class="fas fa-play-circle"></i></a>
+                    </p>
+                    {% else %}
+                    <p>
+                        <a class="link" href="{{news.url}}">Read more</a>
+                    </p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <hr/>
+        {% endfor %}
+    </div>
+</div>
+    
+    
