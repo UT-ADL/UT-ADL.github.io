@@ -2,3 +2,25 @@
 layout: education
 subtitle: Education
 ---
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-8">
+            <h1>Thesis Topics</h1>
+            <p class="pt-md-3">So you’re thinking of making the culmination of your studies about self-driving?</p>
+            <p>Good, because we need all the help we can get. See all the available thesis topics and don’t hesitate to
+                contact us, should your own idea of a self-driving topic not be listed!</p>
+        </div>
+    </div>
+</div>
+<div class="spacer-medium"></div>
+<div class="container-fluid">
+    {% for topic in site.data.education.thesis-topics %}
+    {% include education/thesis-topic.html 
+        title=topic.title 
+        description=topic.description
+        type=topic.type
+        availability=topic.availability
+        lead=topic.lead
+    %}
+    {% endfor %}
+</div>
