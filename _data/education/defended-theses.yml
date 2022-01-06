@@ -1,0 +1,19 @@
+- year: 2021
+  theses:
+    - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    - title: Sed sodales diam eu mollis facilisis
+    - title: Phasellus convallis ipsum vel lorem fermentum malesuada
+
+- year: 2020
+  theses:
+    - title: Vivamus non velit at massa commodo euismod et nec mauris
+    - title: Duis sagittis mi et posuere finibus
+    - title: Sed quis lectus aliquet, malesuada lectus ut, hendrerit quam
+    - title: Nunc ut felis vel ligula mattis vehicula
+
+- year: 2019
+  theses:
+    - title: Integer eu felis a enim posuere iaculis vitae ac tellus
+    - title: Fusce vitae massa sit amet dolor consequat vulputate
+    - title: Integer vel mi accumsan, imperdiet leo vitae, rhoncus enim
+

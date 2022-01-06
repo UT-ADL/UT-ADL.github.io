@@ -41,16 +41,30 @@ h3 {
     font-weight: 500;
     color: #5C5C5C;
     letter-spacing: 2px;
+    line-height: 16px;
 }
 
 .course-header h5 {
     font-size: 12px;
     font-weight: 500;
     color: #40916C;
+    line-height: 16px;
 }
 
-/*.course-body button a {
-    /* temporary styling, deleteme later? */
-/*color: #FFF;
-    text-decoration: none;
-}*/
+
+/* Education - education/defended-theses */
+.defended-theses-row p {
+    color: #191919;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 0;
+}
+
+.defended-theses-row h5 {
+    /*Same thing as course-header h5*/
+    font-size: 12px;
+    font-weight: 500;
+    color: #40916C;
+    line-height: 16px;
+}

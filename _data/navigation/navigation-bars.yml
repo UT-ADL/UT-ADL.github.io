@@ -13,10 +13,10 @@
   subfolderitems:
   - page: Courses
     url: /education/
-  - page: Defended theses
-    url: /education/defended-theses
   - page: Thesis topics
     url: /education/thesis-topics
+  - page: Defended theses
+    url: /education/defended-theses
 
 - title: discover
   subfolderitems:

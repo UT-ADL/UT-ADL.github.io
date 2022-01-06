@@ -2,3 +2,29 @@
 layout: education
 subtitle: Education
 ---
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-8">
+            <h1>Defended Theses</h1>
+            <p class="pt-md-3">Take a look at all the magnificent theses that our students have written about
+                self-driving. Surely this list contains the names of future leading specialists of the self-driving
+                academia and industry!</p>
+        </div>
+    </div>
+</div>
+<div class="spacer-medium"></div>
+<div class="container-fluid">
+    {% for year in site.data.education.defended-theses %}
+    <div class="row defended-theses-row">
+        <div class="col-12">
+            <h5 class="mb-2">{{ year.year }}<br /></h5>
+            {% for thesis in year.theses %}
+            <div class="row">
+                <p class="my-1">{{ thesis.title }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="spacer-medium"></div>
+    {% endfor %}
+</div>
