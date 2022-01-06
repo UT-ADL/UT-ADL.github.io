@@ -1,7 +1,7 @@
 - title: main
   subfolderitems:
   - page: Discover ADL
-    url: /about/
+    url: /discover/
   - page: The Lab
     url: /lab/
   - page: Research
@@ -21,11 +21,11 @@
 - title: discover
   subfolderitems:
   - page: About
-    url: /about/
+    url: /discover/
   - page: Projects
-    url: /about/projects
+    url: /discover/projects
   - page: Media
-    url: /about/media
+    url: /discover/media
   - page: Meet our team
-    url: /about/team
+    url: /discover/team
 

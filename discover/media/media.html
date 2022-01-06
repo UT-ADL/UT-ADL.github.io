@@ -1,7 +1,7 @@
 ---
 layout: discover
 subtitle: Discover ADL
-permalink: /about/media
+permalink: /discover/media
 ---
 {% assign videos = site.data.media | where: "type", "video" %}
 {% assign news_en = site.data.media | where: "language", "en" %}
@@ -21,7 +21,7 @@ permalink: /about/media
                 <div class="col-md-4">
                     <div class="card h-100">
                         <img class="card-img-top w-100" alt=""
-                             src="https://i.ytimg.com/vi_webp/{{video.url | slice: -11, 11}}/mqdefault.webp"/>
+                            src="https://i.ytimg.com/vi_webp/{{video.url | slice: -11, 11}}/mqdefault.webp" />
                         <div class="card-block px-3 mt-4">
                             <span class="overlane-text">
                                 VIDEO
@@ -47,10 +47,9 @@ permalink: /about/media
                 <div class="news-card-img">
                     {% if news.type == "video" %}
                     <img class="card-img-top w-100" alt=""
-                         src="https://i.ytimg.com/vi_webp/{{news.url | slice: -11, 11}}/mqdefault.webp"/>
+                        src="https://i.ytimg.com/vi_webp/{{news.url | slice: -11, 11}}/mqdefault.webp" />
                     {% else %}
-                    <img class="img-fluid w-100" alt=""
-                         src="{{news.image}}"/>
+                    <img class="img-fluid w-100" alt="" src="{{news.image}}" />
                     {% endif %}
                 </div>
             </div>
@@ -76,9 +75,9 @@ permalink: /about/media
                 </div>
             </div>
         </div>
-        <hr/>
+        <hr />
         {% endfor %}
-        <a class="button-primary" href="/about/media/en">All News in English</a>
+        <a class="button-primary" href="/discover/media/en">All News in English</a>
     </div>
 
     <div class="news">
@@ -88,10 +87,9 @@ permalink: /about/media
                 <div class="news-card-img">
                     {% if news.type == "video" %}
                     <img class="card-img-top w-100" alt=""
-                         src="https://i.ytimg.com/vi_webp/{{news.url | slice: -11, 11}}/mqdefault.webp"/>
+                        src="https://i.ytimg.com/vi_webp/{{news.url | slice: -11, 11}}/mqdefault.webp" />
                     {% else %}
-                    <img class="img-fluid w-100" alt=""
-                         src="{{news.image}}"/>
+                    <img class="img-fluid w-100" alt="" src="{{news.image}}" />
                     {% endif %}
                 </div>
             </div>
@@ -106,16 +104,16 @@ permalink: /about/media
                         {{news.title}}
                     </h6>
                 </div>
-                    {% if news.type == "video" %}
-                    <a class="link" href="{{news.url}}">Watch Now <i class="fas fa-play-circle"></i></a>
-                    {% else %}
-                    <a class="link" href="{{news.url}}">Read more</a>
-                    {% endif %}
+                {% if news.type == "video" %}
+                <a class="link" href="{{news.url}}">Watch Now <i class="fas fa-play-circle"></i></a>
+                {% else %}
+                <a class="link" href="{{news.url}}">Read more</a>
+                {% endif %}
             </div>
         </div>
-        <hr/>
+        <hr />
         {% endfor %}
-        <a class="button-primary" href="/about/media/ee">All News in Estonian</a>
+        <a class="button-primary" href="/discover/media/ee">All News in Estonian</a>
     </div>
 
 
