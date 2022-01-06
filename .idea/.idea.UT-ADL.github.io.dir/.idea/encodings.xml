@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise">
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/_layouts/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_research_posts/High_definition_maps.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_research_posts/autonomy_software.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_research_posts/autonomy_software.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_research_posts/behaviour_prediciton.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_research_posts/human_vehicle_interaction.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_research_posts/motion_planning.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_research_posts/perception_uncertainty.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_research_posts/security.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_research_posts/teleoperation.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_research_posts/validation_and_testing.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_site/research/research.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/about.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/about/media.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/about/media/english_news.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/about/media/estonian_news.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/about/projects.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lab/demo-track.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/page.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/research/research.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/research/research_posts/autonomy-software.md" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
