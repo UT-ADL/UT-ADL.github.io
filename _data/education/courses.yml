@@ -25,3 +25,10 @@
   weight: 3
   lecturer: Kiira Mõisja
   description: Introduces the core concepts of machine learning and data science. Allows to do a project related to AD.
+
+- type: Introductory course
+  title: Basics of web design
+  code: FOOBAR.01.420
+  weight: 9
+  lecturer: Kaspar Ranna
+  description: Introduces the core concepts of web design and javascript. Allows to do a project related to web design.
