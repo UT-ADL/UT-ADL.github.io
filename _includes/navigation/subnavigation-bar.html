@@ -12,12 +12,12 @@
                 {% assign active-url = navigation-bar-element.url | append: ".html" %}
                 {% if page.url == active-url or page.url == navigation-bar-element.url%}
                 <li class="nav-item py-2">
-                    <a class="active-subnavigation pe-md-3"
+                    <a class="active-subnavigation pe-md-4"
                         href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
                 </li>
                 {% else %}
                 <li class="nav-item py-2">
-                    <a class="subnavigation pt-3 pe-md-3"
+                    <a class="subnavigation pe-md-4"
                         href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
                 </li>
                 {% endif %}
