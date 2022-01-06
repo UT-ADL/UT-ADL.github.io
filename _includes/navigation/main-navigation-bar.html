@@ -17,12 +17,12 @@
                     {% for navigation-bar-element in navigation-bar.subfolderitems %}
                     <!-- Sets the navigation element as active if it is the current page -->
                     {% if page.url contains navigation-bar-element.url %}
-                    <li class="nav-item navigation-active my-1 mx-3 p-2">
+                    <li class="nav-item navigation-active mb-1 mx-3 p-2">
                         <a class="navigation p-0 m-0"
                             href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
                     </li>
                     {% else %}
-                    <li class="nav-item my-1 mx-3 p-2">
+                    <li class="nav-item mb-1 mx-3 p-2">
                         <a class="navigation p-0 m-0"
                             href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
                     </li>
