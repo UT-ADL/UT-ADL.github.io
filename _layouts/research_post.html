@@ -70,34 +70,69 @@
                                     {{content}}
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img alt="" src="{{page.imageurl1}}">
+                                </div>
+                                <div class="col-md-6">
+                                    <img alt="" src="{{page.imageurl2}}">
+                                </div>
+                                <div class="col-md-6">
+                                    <img alt="" src="{{page.imageurl3}}">
+                                </div>
+                                <div class="col-md-6">
+                                    <img alt="" src="{{page.imageurl4}}">
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-3 project-channels mt-2 px-5">
+                            <img src="{{page.lead_image}}" alt=""><br>
+                            <strong>{{page.research_lead}}</strong>
+                            <p>{{page.lead_description}}</p>
+                            <p><i class="fas fa-envelope"></i>{{page.lead_email}}</p>
                             <hr />
-                            <span class="overlane-text">PROJECT CHANNELS</span>
+                            <span class="overlane-text">GROUP CHANNELS</span>
                             <br>
+                            {% if page.webURL != null and page.webURL != "" %}
+                            <a href="{{page.webURL}}"><i class="fas fa-globe"></i></a>
+                            {% endif %}
                             {% if page.twitter != null and page.twitter != "" %}
-                            <a href="{{page.twitter}}">
-                                <i class="fab fa-twitter"></i>
-                            </a>
+                            <a href="{{page.twitter}}"><i class="fab fa-twitter"></i></a>
                             {% endif %}
                             {% if page.facebook != null and page.facebook != "" %}
-                            <a href="{{page.facebook}}">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
+                            <a href="{{page.facebook}}"><i class="fab fa-facebook-square"></i></a>
                             {% endif %}
                             {% if page.instagram != null and page.instagram != "" %}
-                            <a href="{{page.instagram}}">
-                                <i class="fab fa-instagram-square"></i>
-                            </a>
+                            <a href="{{page.instagram}}"><i class="fab fa-instagram-square"></i></a>
                             {% endif %}
-                            {% if page.webURL != null and page.webURL != "" %}
-                            <a href="{{page.webURL}}">
-                                <i class="fas fa-globe"></i>
-                            </a>
-                            {% endif %}
+
                         </div>
                     </div>
                 </div>
+                {% if page.research_paper_title != null and page.research_paper_title != "" %}
+                <div class="row mt-3">
+                    <div class="col-md-8">
+                        <span class="overlane-text ">
+                            RESEARCH PAPERS
+                        </span>
+                        <h6 class="mt-3">
+                            {{page.research_paper_title}}
+                        </h6>
+                    </div>
+                </div>
+                {% endif %}
+                {% if page.open_position != null and page.open_position != "" %}
+                <div class="row mt-3">
+                    <div class="col-md-8">
+                        <span class="overlane-text ">
+                            OPEN POSITION
+                        </span>
+                        <p class="mt-3">
+                            {{page.open_position}}
+                        </p>
+                    </div>
+                </div>
+                {% endif %}
             </div>
         </main>
         <footer class="row row-cols-10 py-5">

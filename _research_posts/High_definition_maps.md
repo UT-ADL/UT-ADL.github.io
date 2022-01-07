@@ -5,8 +5,14 @@ title: High-definition maps
 research_lead: Edgar Sepp
 lead_image: "#"
 lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group
-lead_e-mail: edgar.sepp@ut.ee
+lead_email: edgar.sepp@ut.ee
 
+image_url1:
+image_url2:
+image_url3:
+image_url4:
+
+open_position: We are always looking for enthusiastic young people to join our team. Please write us an email to see what positions are open.
 
 twitter: https://twitter.com
 instagram: https://twitter.com
