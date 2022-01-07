@@ -31,23 +31,21 @@
 
 - title: research
   subfolderitems:
-  - page: Research
-    url: /research/
-  - page: High definition maps
-    url: /research_posts/high_definition_maps/
   - page: Autonomy software
     url: /research_posts/autonomy_software
-  - page: Behaviour prediciton
-    url: /research_posts/behaviour_prediciton
   - page: Human vehicle interaction
     url: /research_posts/human_vehicle_interaction
-  - page: Motion planning
-    url: /research_posts/motion_planning
   - page: Perception uncertainty
     url: /research_posts/perception_uncertainty
-  - page: Security
-    url: /research_posts/security
-  - page: Teleoperation
-    url: /research_posts/teleoperation
   - page: Validation and testing
     url: /research_posts/validation_and_testing
+  - page: Behaviour prediciton
+    url: /research_posts/behaviour_prediciton
+  - page: Security
+    url: /research_posts/security
+  - page: High definition maps
+    url: /research_posts/high_definition_maps/
+  - page: Motion planning
+    url: /research_posts/motion_planning
+  - page: Teleoperation
+    url: /research_posts/teleoperation
