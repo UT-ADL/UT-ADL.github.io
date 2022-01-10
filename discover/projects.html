@@ -5,7 +5,7 @@ permalink: /discover/projects
 ---
 
 <div class="container-fluid">
-    <div class="page-subtitle w-75 py-5 mb-5">
+    <div class="page-subtitle w-75 pt-3 mb-3">
         <h2>Projects</h2>
         <span class="text-md-start">
             We cannot possibly imagine delivering the self-driving future by ourselves. To get there, we have to combine
@@ -15,18 +15,17 @@ permalink: /discover/projects
     </div>
 </div>
 <div class="container-lg">
-    <div class="row">
+    <div class="row py-4">
         <div class="col-md-12">
             <div class="row">
                 {% for post in site.posts %}
                 <div class="col-md-3 project-card my-2 mx-2">
+                    <a class="card-anchor" href="{{post.url}}"></a>
                     <span class="overlane-text">PROJECT</span>
                     <br>
                     <h5 class="mb-3">
                         {{post.title}}</h5>
-                    <p>
-                        <a class="btn" href="{{post.url}}">Learn More</a>
-                    </p>
+                    <p><a class="link" href="{{post.url}}">Learn more</a></p>
                 </div>
                 {% endfor %}
             </div>

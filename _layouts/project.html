@@ -77,25 +77,18 @@
                                 <span class="overlane-text">PROJECT CHANNELS</span>
                                 <br>
                                 {% if page.twitter != null and page.twitter != "" %}
-                                <a href="{{page.twitter}}">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
+                                <a href="{{page.twitter}}"><i class="fab fa-twitter"></i></a>
                                 {% endif %}
                                 {% if page.facebook != null and page.facebook != "" %}
-                                <a href="{{page.facebook}}">
-                                    <i class="fab fa-facebook-square"></i>
-                                </a>
+                                <a href="{{page.facebook}}"><i class="fab fa-facebook-square"></i></a>
                                 {% endif %}
                                 {% if page.instagram != null and page.instagram != "" %}
-                                <a href="{{page.instagram}}">
-                                    <i class="fab fa-instagram-square"></i>
-                                </a>
+                                <a href="{{page.instagram}}"><i class="fab fa-instagram-square"></i></a>
                                 {% endif %}
                                 {% if page.webURL != null and page.webURL != "" %}
-                                <a href="{{page.webURL}}">
-                                    <i class="fas fa-globe"></i>
-                                </a>
+                                <a href="{{page.webURL}}"><i class="fas fa-globe"></i></a>
                                 {% endif %}
+                                <hr />
                             </div>
                         </div>
                     </div>
@@ -110,12 +103,13 @@
                             <div class="row">
                                 {% for post in site.posts %}
                                 <div class="col-md-3 project-card my-2 mx-2">
+                                    <a class="card-anchor" href="{{post.url}}"></a>
                                     <span class="overlane-text">PROJECT</span>
                                     <br>
                                     <h5 class="mb-3">
                                         {{post.title}}</h5>
                                     <p>
-                                        <a class="btn" href="{{post.url}}">Learn More</a>
+                                        <a class="link" href="{{post.url}}">Learn More</a>
                                     </p>
                                 </div>
                                 {% endfor %}

@@ -20,16 +20,17 @@ permalink: /discover/media
                 {% for video in videos %}
                 <div class="col-md-4">
                     <div class="card h-100">
+                        <a class="card-anchor" href="{{video.url}}"></a>
                         <img class="card-img-top w-100" alt=""
                             src="https://i.ytimg.com/vi_webp/{{video.url | slice: -11, 11}}/mqdefault.webp" />
                         <div class="card-block px-3 mt-4">
-                            <span class="overlane-text">
+                            <span class="overlane-text mt-5">
                                 VIDEO
                             </span>
                             <h6 class="card-title">
                                 {{video.title}}
                             </h6>
-                            <p>
+                            <p class="pt-3">
                                 <a class="link" href="{{video.url}}">Watch Now <i class="fas fa-play-circle"></i></a>
                             </p>
                         </div>

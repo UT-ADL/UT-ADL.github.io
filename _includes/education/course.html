@@ -15,7 +15,7 @@
         {% assign weight = weight | minus: 3 %}
         {% endfor %}
         <!-- Weight text -->
-        <p class="course-header-icon-gap">{{ include.weight }} EAP</p>
+        <p class="course-header-icon-gap">{{ include.weight }} ECTS</p>
 
         <!-- Code -->
         <img src="/images/education/courses/icon-course-code.png" alt="Gray computer icon" />
@@ -35,8 +35,8 @@
     <div class="col-5">
         <p><b>Content and relation to ADL activities:</b><br />{{ include.description }}</p>
     </div>
-    <div class="col-2 offset-1 d-inline-flex align-items-start justify-content-center">
-        <a href="https://google.com"></a><button type="button">Register</button></a>
+    <div class="col-2 offset-1">
+        <a class="button-primary" href="{{include.url}}">Register</a>
     </div>
 </div>
 <hr />
