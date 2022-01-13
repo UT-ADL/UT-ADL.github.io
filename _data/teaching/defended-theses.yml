@@ -1,34 +1,97 @@
 - title: Traffic Light Detection by Fusing Object Detection and Map Info
   supervisor: Tambet Matiisen, Meelis Kull
+  research_area: Autonomy software
   author: Tetiana Shtym
-  field: PhD
+  field: Msc
   year: 2021
-  link: 
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72435&year=2021
 
-- title: A Survey on Motion Prediction of Pedestrians and Vehicles for Autonomous Driving
-  supervisor: Name Surname
-  author: Name Surname
-  field: PhD
+- title: Automatic Road Boundaries Extraction for High Definition maps
+  supervisor: Naveed Muhammad, Dmytro Fishman
+  research_area: High-definition maps
+  author: Dmytro Zabolotnii
+  field: Msc
   year: 2021
-  link: 
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72241&year=2021
 
 - title: Creating High-Definition Vector Maps for Autonomous Driving
-  supervisor: Name Surname
-  author: Name Surname
-  field: PhD
+  supervisor: Tambet Matiisen
+  research_area: High-definition maps
+  author: Edgar Sepp
+  field: Msc
   year: 2021
-  link: 
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71505&year=2021
 
 - title: Detection of Changes in Maps Using LiDAR Point Clouds
-  supervisor: Name Surname, Name Surname
-  author: Name Surname
-  field: PhD
-  year: 2021
-  link: 
+  supervisor: Dmytro Fishman
+  research_area: High-definition maps
+  author: Vladyslav Fediukov
+  field: Msc
+  year: 2020
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=69463&year=2020
 
 - title: Change Detection in HD-Maps Using Camera Images for Autonomous Driving
-  supervisor: Name Surname
-  author: Name Surname
-  field: PhD
+  supervisor: Dmytro Fishman, Naveed Muhammad
+  research_area: High-definition maps
+  author: Navid Bamdad Roshan
+  field: Msc
   year: 2021
-  link: 
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72213&year=2021
+  
+- title: Using LiDAR as Camera for End-to-End Driving
+  supervisor: Tambet Matiisen
+  research_area: Learned driving
+  author: Jan Aare van Gent
+  field: Msc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72431&year=2021
+  
+- title: Estimating the distribution of risks of a self-driving car's object detection model with a Poisson process
+  supervisor: Meelis Kull
+  research_area: Perception uncertainty
+  author: Getter Põru
+  field: Msc
+  year: 2020
+  link: https://dspace.ut.ee/bitstream/handle/10062/68254/poru_getter_msc_2020.pdf
+  
+- title: External human-vehicle interaction - a study in the context of an autonomous ride-hailing service
+  supervisor: Karl Kruusamäe, Alexander Udo Nolte, Andres Kuusik
+  research_area: Human-vehicle interaction
+  author: Kristina Meister
+  field: Msc
+  year: 2021
+  link: https://dspace.ut.ee/bitstream/handle/10062/72350/meister_kristina.pdf
+  
+- title: Communicating and interpreting machine intent
+  supervisor: Karl Kruusamäe
+  research_area: Human-vehicle interaction
+  author: Maarika Oidekivi
+  field: Msc
+  year: 2020
+  link: https://www.ims.ut.ee/www-public2/at/2020/msc/atprog-courses-magistrit55-loti.05.036-maarika-oidekivi-text-20200603.pdf
+
+- title: Design and Evaluation of a User Interface to Increase Trust in Autonomous Vehicles
+  supervisor: Alexander Nolte
+  research_area: Human-vehicle interaction
+  author: Timo Soiunen
+  field: Msc
+  year: 2020
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=70046&year=2020
+  
+- title: "Security Risk Management in Autonomous Driving Vehicles: Architecture Perspective"
+  supervisor: Raimundas Matulevičius, Abasi-Amefon O. Affia
+  research_area: Human-vehicle interaction
+  author: Rando Tõnisson
+  field: Msc
+  year: 2020
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=70098&year=2020
+  
+- title: Securing Passenger's Data in Autonomous Vehicles
+  supervisor: Raimundas Matulevičius, Mari Seeba
+  research_area: Human-vehicle interaction
+  author: Mariia Bakhtina
+  field: Msc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72371&year=2021
+  
+  

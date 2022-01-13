@@ -1,26 +1,15 @@
 ---
 layout: research_post
 title: Autonomy Software
-
+research_area: Autonomy software
 research_lead: Tambet Matiisen
 lead_image: "/images/team/"
 lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group
 lead_email: tambet.matiisen@ut.ee
-
-research_paper_title: Traffic Light Detection by Fusing Object Detection and Map Info
-
-
 
 twitter: https://twitter.com
 instagram: https://twitter.com
 webURL: https://youtube.com
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sapien sapien. Curabitur in metus urna.
-In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et,
-pharetra in dolor. Sed iaculis posuere diam ut cursus. Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo
-imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui. Proin massa magna, vulputate nec bibendum nec, posuere nec lacus.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sapien sapien. Curabitur in metus urna.
-In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et,
-pharetra in dolor. Sed iaculis posuere diam ut cursus. Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo
-imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui. Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. 
+Evaluation of open-source software for autonomous driving.
