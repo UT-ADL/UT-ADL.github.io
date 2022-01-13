@@ -1,7 +1,7 @@
 ---
-layout: education
-subtitle: Education
-permalink: /education/
+layout: teaching
+subtitle: Teaching
+permalink: /teaching/
 ---
 <div class="container-fluid">
     <div class="row">
@@ -21,7 +21,7 @@ permalink: /education/
 </div>
 <div class="spacer-medium"></div>
 <div class="container-fluid">
-    {% for course in site.data.education.courses %}
+    {% for course in site.data.teaching.courses %}
     {% include education/course.html 
         type=course.type
         title=course.title 

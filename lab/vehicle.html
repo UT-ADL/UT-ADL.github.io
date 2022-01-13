@@ -1,8 +1,25 @@
 ---
-layout: discover
+layout: lab
 subtitle: The Lab
 permalink: /lab/
 ---
+
+<script>
+    $(document).ready(function () {
+        $('.image-hotspot').hover(function () {
+            $('#cards .component-card').hide();
+            var target = '#' + $(this).data('target');
+            $(target).show();
+        });
+    });
+    $(document).ready(function () {
+        $('.image-hotspot').click(function () {
+            $('#cards .component-card').hide();
+            var target = '#' + $(this).data('target');
+            $(target).show();
+        });
+    });
+</script>
 <div class="container-fluid">
     <!-- Padding, margins (nb! Row in the middle of specs) -->
     <!-- Font -->
@@ -10,7 +27,7 @@ permalink: /lab/
     <!-- Missing features from figma (align car, border around spec details) -->
 
     <!-- Vehicle header -->
-    <div class="row">
+    <div class="row w-75 mt-5">
         <div class="col">
             <h1>The Vehicle</h1>
             <p>The most obvious piece of hardware that we utilize is our Lexus RX450h.
@@ -24,184 +41,472 @@ permalink: /lab/
     <!-- Interactable vehicle -->
     <div class="row">
         <div class="col">
-            <img src="../images/deleteme-vehicle-car-image-temp.png" alt="temporary image of car">
+            <div class="car-wrapper" style="position: relative">
+                <a class="image-hotspot" id="lidar-hs2" data-target="lidar"></a>
+                <a class="image-hotspot" id="lidar-hs1" data-target="lidar"></a>
+                <a class="image-hotspot" id="gnss-hs" data-target="gnss"></a>
+                <a class="image-hotspot" id="camera-hs" data-target="camera"></a>
+                <a class="image-hotspot" id="radar-hs" data-target="radar"></a>
+                <a class="image-hotspot" id="computer-hs" data-target="computer"></a>
+                <img src="/images/ADL_Car.png" alt="">
+            </div>
         </div>
     </div>
+    <hr/>
 
     <!-- Highlighted circle description -->
-    <div class="row">
-        <div class="col">
-            <h4>Lidar</h4>
-            <p>Lidar sensors measure the distance to objects at incredible speeds and with high precision.
-                They work much like radar, using light rather than radio waves — the lidar signal is reflected off
-                objects and the light that returns is then measured.</p>
+    <div id="cards" class="w-100">
+        <div class="component-card" id="lidar">
+            <div class="row">
+                <div class="col-md-3">
+                    <img alt="" src="/images/components/Lidar.png"/>
+                </div>
+                <div class="component-card-text col-md-9">
+                    <h3>
+                        Lidar
+                    </h3>
+                    <p>
+                        Lidar sensors measure the distance to objects at incredible speeds and with high precision.
+                        They work much like radar, using light rather than radio waves — the lidar signal is reflected
+                        off
+                        objects and the light that returns is then measured.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="component-card" id="camera" style="display: none">
+            <div class="row">
+                <div class="col-md-3">
+                    <img alt="" src="/images/components/Camera.png"/>
+                </div>
+                <div class="component-card-text col-md-9">
+                    <h3>
+                        Camera
+                    </h3>
+                    <p>
+                        The two cameras keep an eye on traffic lights
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="component-card" id="radar" style="display: none">
+            <div class="row">
+                <div class="col-md-3">
+                    <img alt="" src="/images/components/Radar.png"/>
+                </div>
+                <div class="component-card-text col-md-9">
+                    <h3>
+                        Radar
+                    </h3>
+                    <p>
+                        The radar helps detect vehicles out in front and estimate their relative speed.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="component-card" id="gnss" style="display: none">
+            <div class="row">
+                <div class="col-md-3">
+                    <img alt="" src="/images/components/GNSS.png"/>
+                </div>
+                <div class="component-card-text col-md-9">
+                    <h3>
+                        GNSS Device
+                    </h3>
+                    <p>
+                        The GNSS device (with a little help from the satellites) determines the coordinates of the car.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="component-card" id="computer" style="display: none">
+            <div class="row">
+                <div class="col-md-3">
+                    <img alt="" src="/images/components/Computer.png"/>
+                </div>
+                <div class="component-card-text col-md-9">
+                    <h3>
+                        Computer
+                    </h3>
+                    <p>
+                        The computer and drive-by-wire system connect all the hardware and let them communicate to each
+                        other.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Specifications header -->
-    <div class="row">
+    <div class="row w-75 my-5">
         <div class="col">
-            <p>For some of the more tech-savvy people amongst you, here is a list of all the major pieces of hardware
-                and sensors that we use:</p>
+            <h6>For some of the more tech-savvy people amongst you, here is a list of all the major pieces of hardware
+                and sensors that we use:</h6>
         </div>
     </div>
 
     <!-- Individual specifications -->
-    <div class="row">
-        <div class="col">
-            <h3>Ouster OS1-128 lidar</h3>
-        </div>
-        <div class="col">
-            <p>Vertical resolution: 128 channels
-                <br>Range: 120 meters
-                <br>Vertical FOV: 45°
-                <br>Vertical angular resolution: 0.35°
-                <br>Precision: ±0.7-5 cm</p>
-        </div>
-        <div class="col">
-            <a href="https://google.com">Manufacturer's specs</a>
-        </div>
-    </div>
-    <hr />
-    <div class="row">
-        <div class="col">
-            <h3>Velodyne VLP-32C lidar</h3>
-        </div>
-        <div class="col">
-            <p>Vertical resolutions: 32 channels
-                <br>Range: 200 meters
-                <br>Vertical FOV: 40°
-                <br>Vertical angular resolution: 0.33°
-                <br>Precision: ±3 cm</p>
-        </div>
-        <div class="col">
-            <a href="https://google.com">Manufacturer's specs</a>
-        </div>
-    </div>
-    <hr />
-    <div class="row">
-        <div class="col">
-            <h3>2 x Allied Vision Mako G-319C cameras</h3>
-        </div>
-        <div class="col">
-            <p>Sensor: Sony IMX265 (CMOS, color)
-                <br>Sensor size: type 1/1.8
-                <br>Interface: IEEE 802.3 1000BASE-T, IEEE 802.3af (PoE)
-            </p>
-        </div>
-        <div class="col">
-            <a href="https://google.com">Manufacturer's specs</a>
-        </div>
-    </div>
-    <hr />
-    <div class="row">
-        <div class="col">
-            <h3>NovAtel PwrPak7D-E2 GNSS device with RTK correction</h3>
-        </div>
-        <div class="col">
-            <p>Signal tracking: GPS, GLONASS, BeiDou, Galileo, SBAS, QZSS, NavIC, L-band (up to 5 channels)
-                <br>Connectivity: serial, USB, CAN, Ethernet
-                <br>Localization accuracy: ±5-10 cm</p>
-        </div>
-        <div class="col">
-            <a href="https://google.com">Manufacturer's specs</a>
-        </div>
-    </div>
-    <hr />
-    <div class="row">
-        <div class="col">
-            <h3>Aptiv’s multimode ESR 2.5 radar</h3>
-        </div>
-        <div class="col">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <p>Long-range
-                            <br>Range: 174 m
-                            <br>FOV: ±10°
-                            <br>Update rate: 50 ms
-                            <br>Range rate: -100-25 m/s</p>
-                    </div>
-                    <div class="col">
-                        <p>Mid-range
-                            <br>Range: 60 m
-                            <br>FOV: ±45°
-                            <br>Update rate: 50 ms
-                            <br>Range rate: -100-25 m/s</p>
-                    </div>
-                </div>
+    <div class="component-specs">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    Ouster OS1-128 lidar
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li class="list-item">
+                        Vertical resolution: 128 channels
+                    </li>
+                    <li class="list-item">
+                        Horizontal resolution: 512, 1024, or 2048
+                    </li>
+                    <li class="list-item">
+                        Horizontal FOV: 360°
+                    </li>
+                    <li class="list-item">
+                        Horizontal angular resolution: min 0.17°
+                    </li>
+                    <li class="list-item">
+                        Vertical angular resolution: 0.35°
+                    </li>
+                    <li class="list-item">
+                        Range: 120 meters
+                    </li>
+                    <li class="list-item">
+                        Precision: ±0.7-5 cm
+                    </li>
+                    <li class="list-item">
+                        Frame rate: 10 or 20 Hz
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <a href="https://ouster.com/products/scanning-lidar/os1-sensor/">Manufacturer's specs</a>
             </div>
         </div>
-        <div class="col">
-            <a href="https://google.com">Manufacturer's specs</a>
+    </div>
+    <hr/>
+    <div class="component-specs">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    Velodyne VLP-32C lidar
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li class="list-item">
+                        Vertical resolution: 32 channels
+                    </li>
+                    <li class="list-item">
+                        Horizontal resolution: 900-3600
+                    </li>
+                    <li class="list-item">
+                        Horizontal FOV: 360°
+                    </li>
+                    <li class="list-item">
+                        Vertical FOV: 40°
+                    </li>
+                    <li class="list-item">
+                        Horizontal angular resolution: 0.1°-0.4°
+                    </li>
+                    <li class="list-item">
+                        Vertical angular resolution: min 0.33°
+                    </li>
+                    <li class="list-item">
+                        Range: 200 meters
+                    </li>
+                    <li class="list-item">
+                        Precision: ±3 cm
+                    </li>
+                    <li class="list-item">
+                        Frame rate: 5 Hz to 20 Hz
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <a href="https://velodynelidar.com/products/ultra-puck/">Manufacturer's specs</a>
+            </div>
         </div>
     </div>
-    <hr />
-    <div class="row">
-        <div class="col">
-            <h3>4 x Sekonix cameras</h3>
-        </div>
-        <div class="col">
-            <p>X
-                <br>X</p>
-        </div>
-        <div class="col">
-            <a href="https://google.com">Manufacturer's specs</a>
-        </div>
-    </div>
-    <hr />
-    <div class="row">
-        <div class="col">
-            <h3>comma two devkit</h3>
-        </div>
-        <div class="col">
-            <p>Cameras: front and back
-                <br>Driver monitoring: infrared LEDs for night-driving
-                <br>Connectivity: LTE, Wi-Fi, GPS, OBD-C</p>
-        </div>
-        <div class="col">
-            <a href="https://google.com">Manufacturer's specs</a>
+    <hr/>
+    <div class="component-specs">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    2x Allied Vision Mako
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li class="list-item">
+                        Resolution: 2064 × 1544
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <a href="https://autonomoustuff.com/products/allied-vision-mako-g-319c">Manufacturer's specs</a>
+            </div>
         </div>
     </div>
-    <hr />
-    <div class="row">
-        <div class="col">
-            <h3>PACMod by-wire kit</h3>
-        </div>
-        <div class="col">
-            <p>X
-                <br>X</p>
-        </div>
-        <div class="col">
-            <a href="https://google.com">Manufacturer's specs</a>
-        </div>
-    </div>
-    <hr />
-    <div class="row">
-        <div class="col">
-            <h3>NVIDIA DRIVE AGX Xavier computer</h3>
-        </div>
-        <div class="col">
-            <p>X
-                <br>X</p>
-        </div>
-        <div class="col">
-            <a href="https://google.com">Manufacturer's specs</a>
-        </div>
-    </div>
-    <hr />
-    <div class="row">
-        <div class="col">
-            <h3>AStuff Spectra computer</h3>
-        </div>
-        <div class="col">
-            <p>X
-                <br>X
-                <br>GPU: NVIDIA RTX2080Ti</p>
-        </div>
-        <div class="col">
-            <a href="https://google.com">Manufacturer's specs</a>
+    <hr/>
+    <div class="component-specs">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    G-319C cameras
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li class="list-item">
+                        Max frame rate: 37.6 fps
+                    </li>
+                    <li class="list-item">
+                        Left camera FOV: 25.3°
+                    </li>
+                    <li class="list-item">
+                        Right camera FOV: 32.8°
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <a href="#">Manufacturer's specs</a>
+            </div>
         </div>
     </div>
-    <hr />
+    <hr/>
+    <div class="component-specs">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    NovAtel PwrPak7D-E2 GNSS device
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li class="list-item">
+                        Signal tracking: GPS, GLONASS, BeiDou, Galileo
+                    </li>
+                    <li class="list-item">
+                        Accuracy: 1 cm + 1 ppm (in practice 5-10 cm)
+                    </li>
+                    <li class="list-item">
+                        INS rate: max 200 Hz
+                    </li>
+                    <li class="list-item">
+                        RTK service: <a
+                            href="https://geoportaal.maaamet.ee/eng/Spatial-Data/Geodetic-Data/Geodetic-Networks/Estonian-Permanent-GNSS-Reference-Station-Network-p671.html">ESTPOS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <a href="https://novatel.com/products/gnss-inertial-navigation-systems/combined-systems/pwrpak7d-e2">Manufacturer's
+                    specs</a>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="component-specs">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    Aptiv’s multimode ESR 2.5 radar
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <h6>Long-range</h6>
+                <ul class="list">
+                    <li class="list-item">
+                        Range: 174 m
+                    </li>
+                    <li class="list-item">
+                        FOV: ±10°
+                    </li>
+                    <li class="list-item">
+                        Update rate: 50 ms
+                    </li>
+                    <li class="list-item">
+                        Range rate: -100-25 m/s
+                    </li>
+                </ul>
+                <h6>Mid-range</h6>
+                <ul class="list">
+                    <li class="list-item">
+                        Range: 60 m
+                    </li>
+                    <li class="list-item">
+                        FOV: ±45°
+                    </li>
+                    <li class="list-item">
+                        Update rate: 50 ms
+                    </li>
+                    <li class="list-item">
+                        Range rate: -100-25 m/s
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <a href="https://autonomoustuff.com/products/aptiv-esr-2-5-24v">Manufacturer's specs</a>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="component-specs">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    4x Sekonix cameras (3x SF3324, 1x SF3325)
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li class="list-item">
+                        Resolution: 1928 x 1208
+                    </li>
+                    <li class="list-item">
+                        Max frame rate: 27 Hz
+                    </li>
+                    <li class="list-item">
+                        SF3324 FOV: 120°
+                    </li>
+                    <li class="list-item">
+                        SF3325 FOV: 60°
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <a href="http://sekolab.com/products/camera/">Manufacturer's specs</a>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="component-specs">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    Comma two devkit (dashcam)
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li class="list-item">
+                        Cameras: front and back
+                    </li>
+                    <li class="list-item">
+                        Driver monitoring: infrared
+                    </li>
+                    <li class="list-item">
+                        LEDs for night-driving
+                    </li>
+                    <li class="list-item">
+                        Connectivity: LTE, Wi-Fi, GPS, OBD-C for CAN bus
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <a href="https://comma.ai/shop/products/two">Manufacturer's specs</a>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="component-specs">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    PACMod by-wire kit
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li class="list-item">
+                        Software control of steering, throttle and brake
+                    </li>
+                    <li class="list-item">
+                        Controllable over CAN bus
+                    </li>
+                    <li class="list-item">
+                        ROS drivers available
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <a href="https://autonomoustuff.com/products/pacmod">Manufacturer's specs</a>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="component-specs">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    NVIDIA DRIVE AGX Xavier computer
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li class="list-item">
+                        Two Xavier Systems-on-a-Chip
+                    </li>
+                    <li class="list-item">
+                        Deep Learning Accelerators
+                    </li>
+                    <li class="list-item">
+                        Built-in efficient video encoders and decoders
+                    </li>
+                    <li class="list-item">
+                        16x GMSL camera ports (4 in use for Sekonix cameras)
+                    </li>
+                    <li class="list-item">
+                        2 Ethernet ports
+                    </li>
+                    <li class="list-item">
+                        6 CAN buses
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <a href="https://developer.nvidia.com/drive/drive-agx">Manufacturer's specs</a>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="component-specs">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    AStuff Spectra computer
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li class="list-item">
+                        CPU: Intel Xeon
+                    </li>
+                    <li class="list-item">
+                        Memory: 32GB
+                    </li>
+                    <li class="list-item">
+                        Storage: 1TB SSD
+                    </li>
+                    <li class="list-item">
+                        GPU: NVIDIA RTX2080Ti
+                    </li>
+                    <li class="list-item">
+                        Networking: 6 Gigabit
+                    </li>
+                    <li class="list-item">
+                        Ethernet ports
+                    </li>
+                    <li class="list-item">
+                        OS: Ubuntu 18.04
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <a href="https://autonomoustuff.com/products/astuff-spectra">Manufacturer's specs</a>
+            </div>
+        </div>
+    </div>
 </div>

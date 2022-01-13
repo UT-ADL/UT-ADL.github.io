@@ -33,6 +33,12 @@ collections:
   research_posts:
     output: true
     permalink: /:collection/:path/
+    
+webrick:
+  headers:
+    Referrer-Policy: no-referrer
+    X-Frame-Options: ""
+    X-XSS-Protection: 1
 # Build settings
 plugins:
   - jekyll-feed

@@ -6,17 +6,17 @@
     url: /lab/
   - page: Research
     url: /research/
-  - page: Education
-    url: /education/
+  - page: Teaching
+    url: /teaching/
 
-- title: education
+- title: teaching
   subfolderitems:
   - page: Courses
-    url: /education/
+    url: /teaching/
   - page: Thesis topics
-    url: /education/thesis-topics
+    url: /teaching/thesis-topics
   - page: Defended theses
-    url: /education/defended-theses
+    url: /teaching/defended-theses
 
 - title: discover
   subfolderitems:
@@ -28,6 +28,17 @@
     url: /discover/media
   - page: Meet our team
     url: /discover/team
+    
+- title: lab
+  subfolderitems:
+    - page: Vehicle
+      url: /lab/
+    - page: Simulation
+      url: /lab/simulation
+    - page: Parking lot
+      url: /lab/parking
+    - page: Demo track
+      url: /lab/demotrack
 
 - title: research
   subfolderitems:
