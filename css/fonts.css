@@ -75,18 +75,32 @@ h3 {
 
 
 /* Education - education/defended-theses */
-.defended-theses-row p {
+.defended-thesis-row p {
+    display: inline;
+    color: #5C5C5C;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.defended-thesis-row span {
+    display: inline;
+    color: #5C5C5C;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.defended-thesis-row h5 {
     color: #191919;
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     padding-bottom: 0;
-}
-
-.defended-theses-row h5 {
-    /*Same thing as course-header h5*/
-    font-size: 12px;
-    font-weight: 500;
-    color: #40916C;
-    line-height: 16px;
 }

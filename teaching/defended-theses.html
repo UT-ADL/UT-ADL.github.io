@@ -2,10 +2,58 @@
 layout: teaching
 subtitle: Teaching
 ---
-<div class="container-fluid mt-5">
+{% assign defended-theses = site.data.teaching.defended-theses %}
+<script>
+    var currentlySelectedField = "all";
+
+    function filterByField(field) {
+        //Button styling
+        const previouslySelectedButton = document.getElementById(currentlySelectedField);
+        previouslySelectedButton.classList.remove("filter-button-selected");
+        const deselect_filter_button_x = document.getElementById("deselect-filter-button-x");
+        if (deselect_filter_button_x !== null) {
+            deselect_filter_button_x.remove();
+        } else {
+            console.log("Its null broskis");
+        }
+
+        if (currentlySelectedField === field) {
+            document.getElementById("all").classList.add("filter-button-selected");
+            currentlySelectedField = "all";
+        } else {
+            document.getElementById("all").classList.remove("filter-button-selected");
+            const nowSelectedButton = document.getElementById(field);
+            nowSelectedButton.classList.add("filter-button-selected");
+            currentlySelectedField = field;
+            if (field !== "all") {
+                nowSelectedButton.innerHTML = nowSelectedButton.innerHTML +
+                    "<span id='deselect-filter-button-x'></span>";
+            }
+        }
+
+
+
+        //Actually displays the neccessary rows
+        const thesis_rows = document.getElementsByClassName("defended-thesis-row");
+        for (var i = 0; i < thesis_rows.length; i++) {
+            if (currentlySelectedField !== "all") {
+                thesis_rows[i].style.display = "none";
+            } else {
+                thesis_rows[i].style.display = "block";
+            }
+        }
+        if (currentlySelectedField !== "all") {
+            const thesis_rows_field = document.getElementsByClassName(currentlySelectedField)
+            for (var i = 0; i < thesis_rows_field.length; i++) {
+                thesis_rows_field[i].style.display = "block";
+            }
+        }
+    }
+</script>
+<div class="container-fluid">
     <div class="row">
         <div class="col-8">
-            <h2>Defended Theses</h2>
+            <h1>Defended Theses</h1>
             <p class="pt-md-3">Take a look at all the magnificent theses that our students have written about
                 self-driving. Surely this list contains the names of future leading specialists of the self-driving
                 academia and industry!</p>
@@ -14,7 +62,32 @@ subtitle: Teaching
 </div>
 <div class="spacer-medium"></div>
 <div class="container-fluid">
-    {% for year in site.data.teaching.defended-theses %}
+    <div class="row mb-3">
+        <div class="col-8">
+            <div id="all" class="filter-button filter-button-selected">
+                <button type="button" onclick="filterByField('all')">All Theses</button>
+            </div>
+            <div id="bsc" class="filter-button">
+                <button type="button" onclick="filterByField('bsc')">BSc</button>
+            </div>
+            <div id="msc" class="filter-button">
+                <button type="button" onclick="filterByField('msc')">MSc</button>
+            </div>
+            <div id="phd" class="filter-button">
+                <button type="button" onclick="filterByField('phd')">PhD</button>
+            </div>
+        </div>
+    </div>
+    {% for thesis in site.data.teaching.defended-theses %}
+    {% include teaching/defended-thesis.html
+          title=thesis.title
+          author=thesis.author
+          field=thesis.field
+          supervisor=thesis.supervisor
+          year=thesis.year
+    %}
+    {% endfor %}
+    <!---
     <div class="row defended-theses-row">
         <div class="col-12">
             <h5 class="mb-2">{{ year.year }}<br /></h5>
@@ -26,5 +99,5 @@ subtitle: Teaching
         </div>
     </div>
     <div class="spacer-medium"></div>
-    {% endfor %}
+    --->
 </div>
