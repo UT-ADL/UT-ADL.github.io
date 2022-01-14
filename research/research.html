@@ -14,10 +14,9 @@ permalink: /research/
     </div>
 </div>
 <div class="row mb-5">
-    {% assign posts_sorted = site.research_posts | sort:"title" %}
+    {% assign posts_sorted = site.research_areas | sort:"title" %}
     {% for post in posts_sorted %}
     <div class="col-md-3 me-3 my-2 research-card">
-        <a class="card-anchor" href="{{post.url}}"></a>
         <div class="research-card-body">
             <h5>
                 {{post.title}}
@@ -26,6 +25,7 @@ permalink: /research/
             <br>
             <a class="btn p-0" href="{{post.url}}">Learn more</a>
         </div>
+        <a class="card-anchor" href="{{post.url}}"></a>
     </div>
     {% endfor %}
 </div>

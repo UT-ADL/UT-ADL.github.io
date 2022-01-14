@@ -1,4 +1,4 @@
-﻿---
+---
 layout: project
 title: Research and Development of Self-Driving Vehicle Technology Field
 twitter: https://twitter.com

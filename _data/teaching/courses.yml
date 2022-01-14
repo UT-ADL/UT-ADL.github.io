@@ -3,7 +3,7 @@
   code: LTAT.06.011
   weight: 6
   lecturer: Naveed Muhammad
-  url: https://ois2.ut.ee/#/courses/LTAT.06.011/details
+  link: https://ois2.ut.ee/#/courses/LTAT.06.011/details
   description: Introduces all the sub-problems that need to be solved to build an autonomous driving system.
   
 - type: Introductory course
@@ -11,7 +11,7 @@
   code: LTAT.02.002
   weight: 3
   lecturer: Meelis Kull
-  url: https://ois2.ut.ee/#/courses/LTAT.02.002/details
+  link: https://ois2.ut.ee/#/courses/LTAT.02.002/details
   description: ISensor data analysis is at the core of modern self-driving. This course gives a brief overview of the basic concepts, principles and practice of data science. The main goal is to learn to plan and carry out a simple practical data science project.
 
 - type: Related subtasks
@@ -19,7 +19,7 @@
   code: MTAT.03.227
   weight: 6
   lecturer: Dmytro Fishman
-  url: https://ois2.ut.ee/#/courses/MTAT.03.227/details
+  link: https://ois2.ut.ee/#/courses/MTAT.03.227/details
   description: Introduces the core concepts of machine learning and data science. Allows to do a project related to AD.
 
 - type: Related subtasks
@@ -27,7 +27,7 @@
   code: LTAT.02.001
   weight: 6
   lecturer: Raul Vicente
-  url: https://ois2.ut.ee/#/courses/LTAT.02.001/details
+  link: https://ois2.ut.ee/#/courses/LTAT.02.001/details
   description: Introduces ML algorithms called neural networks (NNs). NNs are mainly used in the perception module of modular stacks for autonomous driving, but also in other modules. In end-to-end driving approaches, the entire driving stack is one big neural network. Also, there is a possibility to do a project that is related to autonomous driving.
 
 - type: Related subtasks
@@ -35,7 +35,7 @@
   code: LOTI.05.084
   weight: 3
   lecturer: Arun Singh
-  url: https://ois2.ut.ee/#/courses/LOTI.05.084/details
+  link: https://ois2.ut.ee/#/courses/LOTI.05.084/details
   description: Basics on optimization, especially in light of trajectory optimization, model predictive control from the point of view of robotics motion planning and control.
 
 - type: Related subtasks
@@ -43,7 +43,7 @@
   code: LOTI.05.083
   weight: 3
   lecturer: Arun Singh
-  url: https://ois2.ut.ee/#/courses/LOTI.05.083/details
+  link: https://ois2.ut.ee/#/courses/LOTI.05.083/details
   description: Basics of robot motion planning, control, and state estimation.Tasks like navigating mobile robots through obstacle filled environments.
 
 - type: Related subtasks
@@ -51,7 +51,7 @@
   code: LOTI.05.088
   weight: 6
   lecturer: Janno Jõgeva
-  url: https://ois2.ut.ee/#/courses/LOTI.05.088/details
+  link: https://ois2.ut.ee/#/courses/LOTI.05.088/details
   description: Introduces mapping (SLAM) and computer vision related topics, alongside hands-on robotics.
   
 - type: Related subtasks
@@ -59,7 +59,7 @@
   code: LTAT.06.012
   weight: 6
   lecturer: Naveed Muhammad
-  url: https://ois2.ut.ee/#/courses/LTAT.06.012/details
+  link: https://ois2.ut.ee/#/courses/LTAT.06.012/details
   description: Allows you to spend a considerable amount of time on a topic of your choice related to AD.
   
 - type: Related subtasks
@@ -67,7 +67,7 @@
   code: LTAT.00.009
   weight: 3
   lecturer: Sven Laur
-  url: https://ois2.ut.ee/#/courses/LTAT.00.009/details
+  link: https://ois2.ut.ee/#/courses/LTAT.00.009/details
   description: There is a possibility to do a project related to AD.
   
 - type: Related subtasks
@@ -75,7 +75,7 @@
   code: LOTI.05.057
   weight: 6
   lecturer: Karl Kruusamäe
-  url: https://ois2.ut.ee/#/courses/LOTI.05.057/details
+  link: https://ois2.ut.ee/#/courses/LOTI.05.057/details
   description: Introduces using the Robot Operating System (ROS) that is also used on the ADL’s self-driving Lexus.
   
 - type: Related fields
@@ -83,7 +83,7 @@
   code: LTOM.02.034
   weight: 3
   lecturer: Kiira Mõisja
-  url: https://ois2.ut.ee/#/courses/LTOM.02.034/version/71a87908-581e-c06a-0ed9-4f974ae71b1b/details
+  link: https://ois2.ut.ee/#/courses/LTOM.02.034/version/71a87908-581e-c06a-0ed9-4f974ae71b1b/details
   description: Introduces the core concepts of machine learning and data science. Allows to do a project related to AD.
 
 - type: Related fields
@@ -91,7 +91,7 @@
   code: LTOM.02.040
   weight: 6
   lecturer: Valentina Sagris
-  url: https://ois2.ut.ee/#/courses/LTOM.02.040/details
+  link: https://ois2.ut.ee/#/courses/LTOM.02.040/details
   description: Introduces how spatial data can be represented and treated. Spatial data in the form of maps is crucial for modular approaches in self-driving.
 
 - type: Related fields
@@ -99,5 +99,5 @@
   code: MTAT.08.040
   weight: 6
   lecturer: Amnir Hadachi
-  url: https://ois2.ut.ee/#/courses/MTAT.08.040/details
+  link: https://ois2.ut.ee/#/courses/MTAT.08.040/details
   description: Topics related to autonomous transportation, such as intelligent traffic management and intelligent infrastructure.

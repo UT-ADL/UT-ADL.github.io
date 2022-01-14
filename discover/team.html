@@ -11,20 +11,19 @@ permalink: /discover/team
     </div>
 </div>
 <div class="container-fluid">
-    <!-- Deal with the team tab image fitting later. Also add team member data. -->
-    {% assign counter = 0 %}
-    {% for member in site.data.discover.team %}
-    <!-- <p>Counter: {{ counter }}</p> -->
-    {% if counter == 0 %}
+
     <div class="row">
-        {% endif %}
-        <div class="col-4 team-member-column">
-            <img src="/images/team/{{ member.image }}" alt="Image of {{ member.name }}" />
+        {% for member in site.data.discover.team %}
+        <div class="col-3 mb-5">
+            <div class="team-member-column">
+                <img src="{{ member.image }}" alt="Image of {{ member.name }}" class="pb-3"/>
+                <strong class="pt-3">{{member.name}}</strong>
+                <p>{{member.position}}</p>
+                <br>
+                <p>{{member.email}}</p>
+            </div>
         </div>
-        {% if counter == 2 %}
+        {% endfor %}
     </div>
-    {% endif %}
-    {% assign counter = counter | plus: 1 %}
-    {% assign counter = counter | modulo: 3 %}
-    {% endfor %}
+
 </div>

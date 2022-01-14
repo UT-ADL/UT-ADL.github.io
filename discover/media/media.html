@@ -20,7 +20,7 @@ permalink: /discover/media
                 {% for video in videos %}
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <a class="card-anchor" href="{{video.url}}"></a>
+                        <a class="card-anchor" href="{{video.url}}" target="_blank"></a>
                         <img class="card-img-top w-100" alt=""
                             src="https://i.ytimg.com/vi_webp/{{video.url | slice: -11, 11}}/mqdefault.webp" />
                         <div class="card-block px-3 mt-4">
@@ -31,7 +31,7 @@ permalink: /discover/media
                                 {{video.title}}
                             </h6>
                             <p class="pt-3">
-                                <a class="link" href="{{video.url}}">Watch Now <i class="fas fa-play-circle"></i></a>
+                                <a class="link" href="{{video.url}}" target="_blank">Watch Now <i class="fas fa-play-circle"></i></a>
                             </p>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ permalink: /discover/media
     <div class="news">
         {% for news in news_en limit: 3 %}
         <div class="row my-4 news-card">
-            <a class="card-anchor" href="{{news.url}}"></a>
+            <a class="card-anchor" href="{{news.url}}" target="_blank"></a>
             <div class="col-md-3">
                 <div class="news-card-img">
                     {% if news.type == "video" %}
@@ -67,11 +67,11 @@ permalink: /discover/media
                     </h6>
                     {% if news.type == "video" %}
                     <p>
-                        <a class="link" href="{{news.url}}">Watch Now <i class="fas fa-play-circle"></i></a>
+                        <a class="link" href="{{news.url}}" target="_blank">Watch Now <i class="fas fa-play-circle"></i></a>
                     </p>
                     {% else %}
                     <p>
-                        <a class="link" href="{{news.url}}">Read more</a>
+                        <a class="link" href="{{news.url}}" target="_blank">Read more</a>
                     </p>
                     {% endif %}
                 </div>
@@ -85,7 +85,7 @@ permalink: /discover/media
     <div class="news">
         {% for news in news_ee limit: 3 %}
         <div class="row my-4 news-card" id="news">
-            <a class="card-anchor" href="{{news.url}}"></a>
+            <a class="card-anchor" href="{{news.url}}" target="_blank"></a>
             <div class="col-md-3">
                 <div class="news-card-img">
                     {% if news.type == "video" %}
@@ -108,9 +108,9 @@ permalink: /discover/media
                     </h6>
                 </div>
                 {% if news.type == "video" %}
-                <a class="link" href="{{news.url}}">Watch Now <i class="fas fa-play-circle"></i></a>
+                <a class="link" href="{{news.url}}" target="_blank">Watch Now <i class="fas fa-play-circle"></i></a>
                 {% else %}
-                <a class="link" href="{{news.url}}">Read more</a>
+                <a class="link" href="{{news.url}} " target="_blank">Read more</a>
                 {% endif %}
             </div>
         </div>

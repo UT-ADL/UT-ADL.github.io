@@ -127,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                {% assign posts_sorted = site.research_posts | sort:"title" %}
+                {% assign posts_sorted = site.research_areas | sort:"title" %}
 
                 <div class="row mb-5">
                     {% for post in posts_sorted | offset: 2 | limit: 3 %}

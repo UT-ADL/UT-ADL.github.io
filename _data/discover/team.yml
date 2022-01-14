@@ -2,40 +2,40 @@
   position: Tech Lead of Autonomous Driving Lab
   email: name.surname@ut.ee
   phone: '+372555555555'
-  image: team-member-photo-0.png
+  image: /images/team/Team-Member-Photo-1.png
+
+- name: Edgar Sepp
+  position: Position in the ADL
+  email: edgar.sepp@ut.ee
+  phone: '+372555555555'
+  image: /images/team/Team-Member-Photo-0.png
+
+- name: Naveed Muhammad
+  position: Position in the ADL
+  email: naveed.muhammad@ut.ee
+  phone: '+372555555555'
+  image: /images/team/Team-Member-Photo-4.png
+
+- name: Meelis Kull
+  position: Position in the ADL
+  email: meelis.kull@ut.ee
+  phone: '+372555555555'
+  image: /images/team/Team-Member-Photo-3.png
 
 - name: Name Surname
   position: Position in the ADL
   email: name.surname@ut.ee
   phone: '+372555555555'
-  image: team-member-photo-1.png
+  image: /images/team/Team-Member-Photo-2.png
 
 - name: Name Surname
   position: Position in the ADL
   email: name.surname@ut.ee
   phone: '+372555555555'
-  image: team-member-photo-2.png
+  image: /images/team/Team-Member-Photo-5.png
 
 - name: Name Surname
   position: Position in the ADL
   email: name.surname@ut.ee
   phone: '+372555555555'
-  image: team-member-photo-3.png
-
-- name: Name Surname
-  position: Position in the ADL
-  email: name.surname@ut.ee
-  phone: '+372555555555'
-  image: team-member-photo-4.png
-
-- name: Name Surname
-  position: Position in the ADL
-  email: name.surname@ut.ee
-  phone: '+372555555555'
-  image: team-member-photo-5.png
-
-- name: Name Surname
-  position: Position in the ADL
-  email: name.surname@ut.ee
-  phone: '+372555555555'
-  image: team-member-photo-6.png
+  image: /images/team/Team-Member-Photo-6.png
