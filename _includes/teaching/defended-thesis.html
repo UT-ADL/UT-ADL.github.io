@@ -1,0 +1,34 @@
+<div class="{{ include.field | downcase }} row defended-thesis-row">
+    <div class="col-8">
+        <div class="row mb-2">
+            <h5>{{ include.title }}</h5>
+        </div>
+        <div class="row">
+            <div class="col">
+
+                <p class>
+                    {{ include.author }},
+                    {{ include.field }}
+                </p>
+
+                <span>•</span>
+
+                <p>
+                    Supervisor: {{ include.supervisor }}
+                </p>
+
+                <span>•</span>
+
+                <p>
+                    {{ include.year }}
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-8">
+            <hr />
+        </div>
+    </div>
+</div>
