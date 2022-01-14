@@ -3,15 +3,21 @@
   type: Research Field
   availability: Available topics
   lead: Tambet Matiisen
+  lead_email: mail@mail.com
+  file: "#"
 
 - title: Human-Vehicle Interaction
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed sodales diam eu mollis facilisis
   type: Research Field
   availability: Available topics
   lead: Name Surname
+  lead_email: mail@mail.com
+  file: "#"
 
 - title: ADL Topic 3
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus. 
   type: Research Field
   availability: Available topics
   lead: Name Surname
+  lead_email: mail@mail.com
+  file: "#"
