@@ -1,10 +1,10 @@
 ---
-layout: research_post
+layout: research_post 
 title: Teleoperation
 
-research_lead: Karl Kruusamäe
+research_lead: Karl Kruusamäe 
 lead_image: "#"
-lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group
+lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group 
 lead_email: karl.kruusamae@ut.ee
 
 twitter: https://twitter.com
@@ -12,11 +12,14 @@ instagram: https://twitter.com
 webURL: https://youtube.com
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sapien sapien. Curabitur in metus urna.
-In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et,
-pharetra in dolor. Sed iaculis posuere diam ut cursus. Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo
-imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui. Proin massa magna, vulputate nec bibendum nec, posuere nec lacus.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sapien sapien. Curabitur in metus urna.
-In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et,
-pharetra in dolor. Sed iaculis posuere diam ut cursus. Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo
-imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui. Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. 
+In the domain of human-machine interaction, the use of teleoperation can serve one or multiple purposes such as
+compensating a system’s technical limitations with human oversight or multiplying human skills with the assistance of
+superhuman machines.
+
+For instance, an autonomous vehicle (AV) is always expected to correctly estimate whether it is safe to drive under the
+current circumstances. When the autonomous driving mode cannot be enabled, a reliable teleoperation (in the form of
+remote control) could serve as an alternative to getting the vehicle to its target location or closest maintenance area.
+
+Teleoperation, however, poses a multitude of challenges, both technological and human-factors-related. In order to
+ensure safe movement of a remote vehicle, the operator needs reliable overview of the vehicle’s surroundings (i.e. high
+situational awareness) and responsive controls (e.g. low latency communication).

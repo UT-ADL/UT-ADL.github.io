@@ -32,9 +32,9 @@
         <div class="page-heading container-fluid d-inline-flex align-items-end">
             <div class="page-heading-inner container-lg mb-5">
                 <h1 class="page-title-header text-white">{{page.subtitle}}</h1>
-                <p class="page-title-caption text-white mt-3"> Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <p class="page-title-caption text-white mt-3 w-75"> Making cars drive by themselves means that we absolutely
+                    must play with all the impressive equipment at our disposal. Take a look at what we’re working
+                    with!</p>
             </div>
         </div>
 
@@ -95,8 +95,37 @@
         </div>
     </footer>
 </div>
-
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <iframe height="400px" class="embed-responsive-item" src="" id="video" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="/js/bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+        var $videoSrc;
+        $('.embed-anchor').click(function () {
+            $videoSrc = $(this).data("src");
+            $('#modal').modal('show');
+        });
+        $('.close').click(function () {
+            $('#modal').modal('hide');
+        });
+        $('#modal').on('shown.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc);
+        })
+        $('#modal').on('hide.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc);
+        })
+    });
+</script>
 </body>
 
 </html>

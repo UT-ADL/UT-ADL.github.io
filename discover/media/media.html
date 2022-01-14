@@ -6,7 +6,7 @@ permalink: /discover/media
 {% assign videos = site.data.media | where: "type", "video" %}
 {% assign news_en = site.data.media | where: "language", "en" %}
 {% assign news_ee = site.data.media | where: "language", "ee" %}
-<div class="container-fluid mb-5">
+<div class="container-fluid mb-5 mt-5">
     <div class="row">
         <div class="col-md-12">
             <h2>
@@ -44,6 +44,7 @@ permalink: /discover/media
     <div class="news">
         {% for news in news_en limit: 3 %}
         <div class="row my-4 news-card">
+            <a class="card-anchor" href="{{news.url}}"></a>
             <div class="col-md-3">
                 <div class="news-card-img">
                     {% if news.type == "video" %}
@@ -84,6 +85,7 @@ permalink: /discover/media
     <div class="news">
         {% for news in news_ee limit: 3 %}
         <div class="row my-4 news-card" id="news">
+            <a class="card-anchor" href="{{news.url}}"></a>
             <div class="col-md-3">
                 <div class="news-card-img">
                     {% if news.type == "video" %}

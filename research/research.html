@@ -4,30 +4,25 @@ subtitle: Research
 permalink: /research/
 ---
 
-<div class="row mt-4">
+<div class="row mt-5">
     <div class="col-md-12 w-75 mb-4">
         <h2 class="mb-3">
-            Research
+            Research Areas
         </h2>
-        <p>
-            Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien.
-            Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit.
-            Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi
-                commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat
-                lectus,
-                id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus.
-        </p>
+        <p>Making cars drive by themselves is a big task. A huge task. To help you (and us) better understand what is
+            needed to make it happen, we have divided our work into focus areas.</p>
     </div>
 </div>
 <div class="row mb-5">
     {% assign posts_sorted = site.research_posts | sort:"title" %}
-    {% for post in posts_sorted  %}
+    {% for post in posts_sorted %}
     <div class="col-md-3 me-3 my-2 research-card">
         <a class="card-anchor" href="{{post.url}}"></a>
         <div class="research-card-body">
             <h5>
                 {{post.title}}
             </h5>
+
             <br>
             <a class="btn p-0" href="{{post.url}}">Learn more</a>
         </div>

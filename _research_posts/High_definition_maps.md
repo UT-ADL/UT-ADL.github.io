@@ -1,10 +1,10 @@
 ---
-layout: research_post
+layout: research_post 
 title: High-definition maps
 
-research_lead: Edgar Sepp
+research_lead: Edgar Sepp 
 lead_image: "#"
-lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group
+lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group 
 lead_email: edgar.sepp@ut.ee
 
 twitter: https://twitter.com
@@ -12,11 +12,21 @@ instagram: https://twitter.com
 webURL: https://youtube.com
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sapien sapien. Curabitur in metus urna.
-In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et,
-pharetra in dolor. Sed iaculis posuere diam ut cursus. Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo
-imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui. Proin massa magna, vulputate nec bibendum nec, posuere nec lacus.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sapien sapien. Curabitur in metus urna.
-In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et,
-pharetra in dolor. Sed iaculis posuere diam ut cursus. Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo
-imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui. Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. 
+Maps enabling autonomous driving are usually called high-definition maps (HD maps). These maps are specialized
+lane-level maps with very high locational accuracy. Possible benefits from HD maps could be:
+
+* global planning (routing)
+  *local planning (associate lanes with traffic lights and signs)
+  *semantic knowledge that can be used for behavior planning and prediction estimates
+  *use in the localization task. A very good way of summarizing the benefits of the HD map is to treat it as an
+  additional sensor that extends the viewing horizon for the car.
+
+It is interesting to note that approaches claiming they do not use HD maps, still solve local planning tasks on the map
+the output from the perception stack (sensors) is translated into a top-down view around the car and the local planning
+is done on top of that top-down raster image. Essentially this image can be treated as a raster map that is generated in
+real-time.
+
+Collecting data for HD maps and keeping them up to date is costly, therefore machine learning and automation is used in
+order to make these processes scalable for large areas. We employ deep learning to generate HD maps from different data
+sources: orthophotos, lidar point clouds, dashcam footage, etc. We also aim for a unified representation of the map data
+that could be later converted into any standardized HD map format, e.g. OpenDRIVE, Lanelet2, Autoware CSV.
