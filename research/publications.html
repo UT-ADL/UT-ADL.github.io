@@ -66,13 +66,13 @@ subtitle: Research
                 <button type="button" onclick="filterByField('all')">All Publications</button>
             </div>
             <div id="bsc" class="filter-button">
-                <button type="button" onclick="filterByField('bsc')">2021</button>
+                <button type="button" onclick="filterByField('2021')">2021</button>
             </div>
             <div id="msc" class="filter-button">
-                <button type="button" onclick="filterByField('msc')">2020</button>
+                <button type="button" onclick="filterByField('2020')">2020</button>
             </div>
             <div id="phd" class="filter-button">
-                <button type="button" onclick="filterByField('phd')">2019</button>
+                <button type="button" onclick="filterByField('2019')">2019</button>
             </div>
         </div>
     </div>
@@ -83,6 +83,9 @@ subtitle: Research
     conference=paper.conference
     year=paper.year
     link=paper.link
+    github=paper.github
+    video=paper.video
+    file=paper.file
     %}
     {% endfor %}
 </div>

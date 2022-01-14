@@ -79,11 +79,12 @@ subtitle: Teaching
     </div>
     {% for thesis in site.data.teaching.defended-theses %}
     {% include teaching/defended-thesis.html
-          title=thesis.title
-          author=thesis.author
-          field=thesis.field
-          supervisor=thesis.supervisor
-          year=thesis.year
+        title=thesis.title
+        author=thesis.author
+        field=thesis.field
+        link=thesis.link
+        supervisor=thesis.supervisor
+        year=thesis.year
     %}
     {% endfor %}
 </div>

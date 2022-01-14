@@ -4,6 +4,9 @@
   authors: Mahir Gulzar, Yar Muhammad, Naveed Muhammad
   year: 2021
   link: https://ieeexplore.ieee.org/abstract/document/9559998/authors#authors
+  github: "#"
+  video: "#"
+  file: "#"
 
 - title: "Multi-Modal Model Predictive Control through Batch Non-Holonomic Trajectory Optimization: Application to Highway Driving"
   conference: IEEE
@@ -39,6 +42,7 @@
   authors: Mithun Babu, Raghu Ram Theerthala, Arun Kumar Singh, B.P. Baladhurgesh, Bharath Gopalakrishnan, K. Madhava Krishna, Shanti Medasani
   year: 2019
   link: https://ieeexplore.ieee.org/document/8814940
+
   
 - title: "A Survey of End-to-End Driving: Architectures and Training Methods"
   conference: IEEE

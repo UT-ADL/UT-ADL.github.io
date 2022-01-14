@@ -64,16 +64,16 @@
                             <span class="overlane-text">GROUP CHANNELS</span>
                             <br>
                             {% if page.webURL != null and page.webURL != "" %}
-                            <a href="{{page.webURL}}"><i class="fas fa-globe"></i></a>
+                            <a href="{{page.webURL}}" target="_blank"><i class="fas fa-globe"></i></a>
                             {% endif %}
                             {% if page.twitter != null and page.twitter != "" %}
-                            <a href="{{page.twitter}}"><i class="fab fa-twitter"></i></a>
+                            <a href="{{page.twitter}}" target="_blank"><i class="fab fa-twitter"></i></a>
                             {% endif %}
                             {% if page.facebook != null and page.facebook != "" %}
-                            <a href="{{page.facebook}}"><i class="fab fa-facebook-square"></i></a>
+                            <a href="{{page.facebook}}" target="_blank"><i class="fab fa-facebook-square"></i></a>
                             {% endif %}
                             {% if page.instagram != null and page.instagram != "" %}
-                            <a href="{{page.instagram}}"><i class="fab fa-instagram-square"></i></a>
+                            <a href="{{page.instagram}}" target="_blank"><i class="fab fa-instagram-square"></i></a>
                             {% endif %}
 
                         </div>
@@ -87,7 +87,7 @@
                                 RESEARCH PAPERS
                             </span>
                             {% for paper in research_papers %}
-                            <br><a class="mt-3" href="{{paper.link}}"><br>
+                            <br><a class="mt-3"  target="_blank" href="{{paper.link}}"><br>
                             {{paper.title}}</a>
                             {% endfor %}
                         </div>
@@ -100,7 +100,7 @@
                                 THESES
                             </span>
                             {% for thesis in theses %}
-                            <br><a class="mt-3" href="{{thesis.link}}"><br>
+                            <br><a class="mt-3" target="_blank" href="{{thesis.link}}"><br>
                             {{thesis.title}}</a>
                             {% endfor %}
                         </div>
@@ -132,7 +132,6 @@
                 <div class="row mb-5">
                     {% for post in posts_sorted | offset: 2 | limit: 3 %}
                     <div class="col-md-3 me-3 my-2 research-card">
-                        <a class="card-anchor" href="{{post.url}}"></a>
                         <div class="research-card-body">
                             <h5>
                                 {{post.title}}
@@ -141,6 +140,7 @@
                             <br>
                             <a class="btn p-0" href="{{post.url}}">Learn more</a>
                         </div>
+                        <a class="card-anchor" href="{{post.url}}"></a>
                     </div>
                     {% endfor %}
                     <div class="g-0">
