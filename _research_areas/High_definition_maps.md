@@ -15,10 +15,10 @@ webURL: https://youtube.com
 Maps enabling autonomous driving are usually called high-definition maps (HD maps). These maps are specialized
 lane-level maps with very high locational accuracy. Possible benefits from HD maps could be:
 
-* global planning (routing)
-  *local planning (associate lanes with traffic lights and signs)
-  *semantic knowledge that can be used for behavior planning and prediction estimates
-  *use in the localization task. A very good way of summarizing the benefits of the HD map is to treat it as an
+- global planning (routing)
+- local planning (associate lanes with traffic lights and signs)
+* semantic knowledge that can be used for behavior planning and prediction estimates
+* use in the localization task. A very good way of summarizing the benefits of the HD map is to treat it as an
   additional sensor that extends the viewing horizon for the car.
 
 It is interesting to note that approaches claiming they do not use HD maps, still solve local planning tasks on the map
