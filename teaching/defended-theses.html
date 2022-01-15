@@ -13,8 +13,7 @@ subtitle: Teaching
         const deselect_filter_button_x = document.getElementById("deselect-filter-button-x");
         if (deselect_filter_button_x !== null) {
             deselect_filter_button_x.remove();
-        } else {
-        }
+        } else {}
 
         if (currentlySelectedField === field) {
             document.getElementById("all").classList.add("filter-button-selected");
@@ -26,8 +25,8 @@ subtitle: Teaching
             currentlySelectedField = field;
             if (field !== "all") {
                 nowSelectedButton.innerHTML = nowSelectedButton.innerHTML +
-                    "<span id='deselect-filter-button-x'></span>";
-            }
+                    "<span id='deselect-filter-button-x'> ✖</span>";
+            } //
         }
 
 
@@ -75,9 +74,17 @@ subtitle: Teaching
             <div id="phd" class="filter-button">
                 <button type="button" onclick="filterByField('phd')">PhD</button>
             </div>
+            <!--<button id="all" class="filter-button filter-button-selected" type="button"
+                onclick="filterByField('all')">All
+                Theses</button>
+            <button id="bsc" class="filter-button" type="button" onclick="filterByField('bsc')">BSc</button>
+            <button id="msc" class="filter-button" type="button" onclick="filterByField('msc')">MSc</button>
+            <button id="phd" class="filter-button" type="button" onclick="filterByField('phd')">PhD</button>
+            -->
         </div>
     </div>
-    {% for thesis in site.data.teaching.defended-theses %}
+    {% assign theses = site.data.teaching.defended-theses | sort: 'year' | reverse %}
+    {% for thesis in theses %}
     {% include teaching/defended-thesis.html
         title=thesis.title
         author=thesis.author

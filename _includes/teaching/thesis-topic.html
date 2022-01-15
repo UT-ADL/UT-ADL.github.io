@@ -10,16 +10,20 @@
             {{ include.availability | upcase }}
         </p>
 
-        <!-- Group lead -->
-        <a href="mailto:{{include.lead_email}}">
+        <!-- Group lead(s) -->
+        {% for lead in include.leads %}
+        <a href="mailto:{{lead.email}}">
             <i class="fas fa-envelope" style="display: unset; margin: 0; color: #5C5C5C"></i>
-            <p class="course-header-icon-gap">{{ include.lead | upcase }}</p>
+            <p class="course-header-icon-gap">{{ lead.name | upcase }}</p>
         </a>
+        {% endfor %}
 
+        {% if include.file != null and include.file != "#" %}
         <a href="{{include.file}}" download><i class="fas fa-file"
                 style="display: unset; margin: 0; color: #5C5C5C"></i>
             <p class="course-header-icon-gap">FILE</p>
         </a>
+        {% endif %}
     </div>
 </div>
 

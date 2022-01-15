@@ -1,4 +1,4 @@
-<div class="{{ include.field | downcase }} row defended-thesis-row">
+<div class="{{ include.year | downcase }} row defended-thesis-row">
     <div class="col-8">
         <div class="row mb-2">
             <h5>{{ include.title }}</h5>
@@ -21,13 +21,13 @@
                 <p>
                     {{ include.year }}
                 </p>
-                
+
                 <span>•</span>
                 {% assign link = include.link | strip_newlines %}
                 {% if link != "" %}
                 <a href="{{include.link}}" target="_blank"><i class="fas fa-globe"></i></a>
                 {% endif %}
-                
+
                 {% assign github = include.github | strip_newlines %}
                 {% if github != "" %}
                 <a href="{{include.github}}" target="_blank"><i class="fab fa-github"></i></a>

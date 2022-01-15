@@ -2,8 +2,6 @@
 layout: research
 subtitle: Research
 ---
-{% assign defended-theses = site.data.teaching.defended-theses %}
-
 <script>
     var currentlySelectedField = "all";
 
@@ -14,8 +12,7 @@ subtitle: Research
         const deselect_filter_button_x = document.getElementById("deselect-filter-button-x");
         if (deselect_filter_button_x !== null) {
             deselect_filter_button_x.remove();
-        } else {
-        }
+        } else {}
 
         if (currentlySelectedField === field) {
             document.getElementById("all").classList.add("filter-button-selected");
@@ -27,8 +24,8 @@ subtitle: Research
             currentlySelectedField = field;
             if (field !== "all") {
                 nowSelectedButton.innerHTML = nowSelectedButton.innerHTML +
-                    "<span id='deselect-filter-button-x'></span>";
-            }
+                    "<span id='deselect-filter-button-x'> ✖</span>";
+            } //
         }
 
 
@@ -54,7 +51,8 @@ subtitle: Research
     <div class="row">
         <div class="col-8">
             <h2>Publications</h2>
-            <p class="pt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod massa sapien, vel tempor lacus posuere id. Nam finibus, orci eu congue laoreet, ante nunc rhoncus lectus.</p>
+            <p class="pt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod massa sapien, vel
+                tempor lacus posuere id. Nam finibus, orci eu congue laoreet, ante nunc rhoncus lectus.</p>
         </div>
     </div>
 </div>
@@ -65,18 +63,19 @@ subtitle: Research
             <div id="all" class="filter-button filter-button-selected">
                 <button type="button" onclick="filterByField('all')">All Publications</button>
             </div>
-            <div id="bsc" class="filter-button">
+            <div id="2021" class="filter-button">
                 <button type="button" onclick="filterByField('2021')">2021</button>
             </div>
-            <div id="msc" class="filter-button">
+            <div id="2020" class="filter-button">
                 <button type="button" onclick="filterByField('2020')">2020</button>
             </div>
-            <div id="phd" class="filter-button">
+            <div id="2019" class="filter-button">
                 <button type="button" onclick="filterByField('2019')">2019</button>
             </div>
         </div>
     </div>
-    {% for paper in site.data.research-papers %}
+    {% assign papers = site.data.research-papers | sort: 'year' | reverse %}
+    {% for paper in papers %}
     {% include /research-papers.html
     title=paper.title
     authors=paper.authors
