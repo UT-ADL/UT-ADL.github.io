@@ -1,18 +1,18 @@
 - title: main
   subfolderitems:
   - page: Discover ADL
-    url: /discover/
+    url: /discover/about
   - page: The Lab
-    url: /lab/
+    url: /lab/vehicle
   - page: Research
-    url: /research/
+    url: /research/research_areas
   - page: Teaching
-    url: /teaching/
+    url: /teaching/courses
 
 - title: teaching
   subfolderitems:
   - page: Courses
-    url: /teaching/
+    url: /teaching/courses
   - page: Thesis topics
     url: /teaching/thesis-topics
   - page: Defended theses
@@ -21,7 +21,7 @@
 - title: discover
   subfolderitems:
   - page: About
-    url: /discover/
+    url: /discover/about
   - page: Projects
     url: /discover/projects
   - page: Media
@@ -32,7 +32,7 @@
 - title: lab
   subfolderitems:
     - page: Vehicle
-      url: /lab/
+      url: /lab/vehicle
     - page: Simulation
       url: /lab/simulation
     - page: Parking lot
@@ -43,6 +43,6 @@
 - title: research
   subfolderitems:
   - page: Research Areas
-    url: /research
+    url: /research/research_areas
   - page: Publications
     url: /research/publications

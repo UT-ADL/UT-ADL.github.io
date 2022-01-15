@@ -14,12 +14,13 @@
                 <!-- Debug -->
                 <!--<p>A:{{active-url}}</p>
                 <p>P:{{page.url}}</p>-->
-                {% if page.url == active-url or page.url == navigation-bar-element.url or page.url == active-url-permalink %}
+                {% if page.url contains active-url-permalink or page.url == active-url or page.url == navigation-bar-element.url or page.url == active-url-permalink %}
                 <a class="active-subnavigation m-2 py-1 pw-1 pe-3"
                     href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
                 {% else %}
                 <a class="subnavigation m-2 py-1 pw-1 pe-3"
                     href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+                <!--<p>{{}} | {{page.url}}</p>-->
                 {% endif %}
                 {% endfor %}
                 {% endif %}

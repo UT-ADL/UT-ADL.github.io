@@ -16,195 +16,147 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin></script>
     <title>Autonomous Driving Lab</title>
 </head>
 
 <body>
-<div>
-    {% assign title_capitalize = page.title | capitalize %}
-    {% assign theses = site.data.teaching.defended-theses | where: "research_area", title_capitalize %}
-    {% assign research_papers = site.data.research-papers | where: "research_area", title_capitalize %}
-    <!-- Main navigation bar -->
-    {% include navigation/main-navigation-bar.html %}
     <div>
-        <main>
-            <div class="page-heading container-fluid d-inline-flex align-items-end">
-                <div class="page-heading-inner container-lg mb-5">
-                    <h1 class="page-title-header text-white">Research</h1>
-                    <p class="page-title-caption text-white mt-3 w-75"> Making cars drive by themselves is a big
-                        task. A
-                        huge task. To help you (and us) better understand what is needed to make it happen, we have
-                        divided our work into focus areas.</p>
+        {% assign title_capitalize = page.title | capitalize %}
+        {% assign theses = site.data.teaching.defended-theses | where: "research_area", title_capitalize %}
+        {% assign research_papers = site.data.research-papers | where: "research_area", title_capitalize %}
+        <!-- Main navigation bar -->
+        {% include navigation/main-navigation-bar.html %}
+        <div>
+            <main>
+                <div class="page-heading container-fluid d-inline-flex align-items-end">
+                    <div class="page-heading-inner container-lg mb-5">
+                        <h1 class="page-title-header text-white">Research</h1>
+                        <p class="page-title-caption text-white mt-3 w-75"> Making cars drive by themselves is a big
+                            task. A
+                            huge task. To help you (and us) better understand what is needed to make it happen, we have
+                            divided our work into focus areas.</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Sub-navigation bar-->
-            {% include navigation/subnavigation-bar.html navigation-bar-title="research" %}
+                <!-- Sub-navigation bar-->
+                {% include navigation/subnavigation-bar.html navigation-bar-title="research" %}
 
-            <div class="content container-lg pt-5 g-0">
-                <div class="container-fluid ">
-                    <h2 class="w-50 5">
-                        {{page.title}}
-                    </h2>
-                    <div class="row g-0">
-                        <div class="col-md-9 mt-3 pe-5 g-0">
-                            <div class="row">
-                                {{content}}
+                <div class="content container-lg pt-5 g-0">
+                    <div class="container-fluid ">
+                        <h2 class="w-50 5">
+                            {{page.title}}
+                        </h2>
+                        <div class="row g-0">
+                            <div class="col-md-9 mt-3 pe-5 g-0">
+                                <div class="row">
+                                    {{content}}
+                                </div>
+                            </div>
+                            <div class="col-md-3 project-channels mt-2 px-5">
+                                <img src="{{page.lead_image}}" alt=""><br>
+                                <strong>{{page.research_lead}}</strong>
+                                <p>{{page.lead_description}}</p>
+                                <p><i class="fas fa-envelope"></i>{{page.lead_email}}</p>
+                                <hr />
+                                <span class="overlane-text">GROUP CHANNELS</span>
+                                <br>
+                                {% if page.webURL != null and page.webURL != "" %}
+                                <a href="{{page.webURL}}" target="_blank"><i class="fas fa-globe"></i></a>
+                                {% endif %}
+                                {% if page.twitter != null and page.twitter != "" %}
+                                <a href="{{page.twitter}}" target="_blank"><i class="fab fa-twitter"></i></a>
+                                {% endif %}
+                                {% if page.facebook != null and page.facebook != "" %}
+                                <a href="{{page.facebook}}" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                                {% endif %}
+                                {% if page.instagram != null and page.instagram != "" %}
+                                <a href="{{page.instagram}}" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                                {% endif %}
+
                             </div>
                         </div>
-                        <div class="col-md-3 project-channels mt-2 px-5">
-                            <img src="{{page.lead_image}}" alt=""><br>
-                            <strong>{{page.research_lead}}</strong>
-                            <p>{{page.lead_description}}</p>
-                            <p><i class="fas fa-envelope"></i>{{page.lead_email}}</p>
-                            <hr/>
-                            <span class="overlane-text">GROUP CHANNELS</span>
-                            <br>
-                            {% if page.webURL != null and page.webURL != "" %}
-                            <a href="{{page.webURL}}" target="_blank"><i class="fas fa-globe"></i></a>
-                            {% endif %}
-                            {% if page.twitter != null and page.twitter != "" %}
-                            <a href="{{page.twitter}}" target="_blank"><i class="fab fa-twitter"></i></a>
-                            {% endif %}
-                            {% if page.facebook != null and page.facebook != "" %}
-                            <a href="{{page.facebook}}" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                            {% endif %}
-                            {% if page.instagram != null and page.instagram != "" %}
-                            <a href="{{page.instagram}}" target="_blank"><i class="fab fa-instagram-square"></i></a>
-                            {% endif %}
+                    </div>
+                    <div class="research-details">
+                        {% if research_papers != empty %}
+                        <div class="row mt-3">
+                            <div class="col-md-8">
+                                <span class="overlane-text ">
+                                    RESEARCH PAPERS
+                                </span>
+                                {% for paper in research_papers %}
+                                <br><a class="mt-3" target="_blank" href="{{paper.link}}"><br>
+                                    {{paper.title}}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if theses != empty %}
+                        <div class="row mt-3">
+                            <div class="col-md-8">
+                                <span class="overlane-text ">
+                                    THESES
+                                </span>
+                                {% for thesis in theses %}
+                                <br><a class="mt-3" target="_blank" href="{{thesis.link}}"><br>
+                                    {{thesis.title}}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+                        <div class="row mt-3">
+                            <div class="col-md-8">
+                                <span class="overlane-text ">
+                                    OPEN POSITION
+                                </span>
+                                <p class="mt-3">
+                                    We are always looking for enthusiastic young people to join our team. Please write
+                                    us an
+                                    email to see what positions are open.
+                                </p>
+                            </div>
+                        </div>
 
+                        <div class="row mt-5 pt-5 mb-2">
+                            <div class="col">
+                                <span class="overlane-text">DISCOVER MORE</span>
+                                <br>
+                                <h4>Explore other research areas</h4>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="research-details">
-                    {% if research_papers != empty %}
-                    <div class="row mt-3">
-                        <div class="col-md-8">
-                            <span class="overlane-text ">
-                                RESEARCH PAPERS
-                            </span>
-                            {% for paper in research_papers %}
-                            <br><a class="mt-3"  target="_blank" href="{{paper.link}}"><br>
-                            {{paper.title}}</a>
-                            {% endfor %}
+                    {% assign posts_sorted = site.research_areas | sort:"title" %}
+
+                    <div class="row mb-5">
+                        {% for post in posts_sorted | offset: 2 | limit: 3 %}
+                        <div class="col-md-3 me-3 my-2 research-card">
+                            <div class="research-card-body">
+                                <h5>
+                                    {{post.title}}
+                                </h5>
+
+                                <br>
+                                <a class="btn p-0" href="{{post.url}}">Learn more</a>
+                            </div>
+                            <a class="card-anchor" href="{{post.url}}"></a>
                         </div>
-                    </div>
-                    {% endif %}
-                    {% if theses != empty %}
-                    <div class="row mt-3">
-                        <div class="col-md-8">
-                            <span class="overlane-text ">
-                                THESES
-                            </span>
-                            {% for thesis in theses %}
-                            <br><a class="mt-3" target="_blank" href="{{thesis.link}}"><br>
-                            {{thesis.title}}</a>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    {% endif %}
-                    <div class="row mt-3">
-                        <div class="col-md-8">
-                            <span class="overlane-text ">
-                                OPEN POSITION
-                            </span>
-                            <p class="mt-3">
-                                We are always looking for enthusiastic young people to join our team. Please write us an
-                                email to see what positions are open.
-                            </p>
+                        {% endfor %}
+                        <div class="g-0">
+                            <a class="button-primary" href="/research">All Research Areas</a>
                         </div>
                     </div>
 
-                    <div class="row mt-5 pt-5 mb-2">
-                        <div class="col">
-                            <span class="overlane-text">DISCOVER MORE</span>
-                            <br>
-                            <h4>Explore other research areas</h4>
-
-                        </div>
-                    </div>
-                </div>
-                {% assign posts_sorted = site.research_areas | sort:"title" %}
-
-                <div class="row mb-5">
-                    {% for post in posts_sorted | offset: 2 | limit: 3 %}
-                    <div class="col-md-3 me-3 my-2 research-card">
-                        <div class="research-card-body">
-                            <h5>
-                                {{post.title}}
-                            </h5>
-
-                            <br>
-                            <a class="btn p-0" href="{{post.url}}">Learn more</a>
-                        </div>
-                        <a class="card-anchor" href="{{post.url}}"></a>
-                    </div>
-                    {% endfor %}
-                    <div class="g-0">
-                        <a class="button-primary" href="/research">All Research Areas</a>
-                    </div>
                 </div>
 
-            </div>
-
-        </main>
-        <footer class="row row-cols-10 py-5 g-0">
-            <div class="col-6">
-                <h5></h5>
-                <p>
-                    Narva mnt 18<br>
-                    51009 Tartu<br>
-                    Estonia
-                </p>
-                <p><a href="mailto:adl@ut.ee">adl@ut.ee</a></p>
-            </div>
-
-            <div class="col">
-                <h5>Discover ADL</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About us</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Projects</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Media</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact us</a></li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h5>The Lab</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Vehicle</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Simulation</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Parking lot</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Demo track</a></li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h5>Research</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Area 1</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Area 2</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Area 3</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Area 4</a></li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h5>Education</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Courses</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Defended theses</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Thesis topcis</a></li>
-                </ul>
-            </div>
-        </footer>
+            </main>
+            {% include footer.html %}
+        </div>
     </div>
-</div>
 
-<script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.js"></script>
 </body>
 
 </html>

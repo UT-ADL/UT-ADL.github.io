@@ -58,7 +58,8 @@ h3 {
 */
 
 /* Education - education/courses */
-.course-header {
+.course-header,
+.thesis-header {
     font-size: 12px;
     font-weight: 500;
     color: #5C5C5C;
@@ -66,7 +67,8 @@ h3 {
     line-height: 16px;
 }
 
-.course-header h5 {
+.course-header h5,
+.thesis-header h5 {
     font-size: 12px;
     font-weight: 500;
     color: #40916C;

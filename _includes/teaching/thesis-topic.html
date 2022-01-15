@@ -5,14 +5,21 @@
     </div>
     <div class="col-8 d-flex align-items-center">
         <!-- Availability -->
-        <img src="/images/education/courses/icon-thesis-topic-availability.png" alt="Availability pencil icon" />
-        <p class="course-header-icon-gap">{{ include.availability | upcase }}</p>
+        <p class="course-header-icon-gap">
+            <i class="fas fa-pen" style="display: unset; margin: 0; color: #5C5C5C"></i>
+            {{ include.availability | upcase }}
+        </p>
 
         <!-- Group lead -->
-        <img src="/images/education/courses/icon-thesis-topic-group-lead.png" alt="Group lead message icon" />
-        <a href="mailto:{{include.lead_email}}"><p class="course-header-icon-gap">{{ include.lead | upcase }}</p></a>
-        
-        <a href="{{include.file}}" download><i class="fas fa-file" style="display: unset; margin: 0; color: #5C5C5C"></i><p class="course-header-icon-gap">FILE</p></a>
+        <a href="mailto:{{include.lead_email}}">
+            <i class="fas fa-envelope" style="display: unset; margin: 0; color: #5C5C5C"></i>
+            <p class="course-header-icon-gap">{{ include.lead | upcase }}</p>
+        </a>
+
+        <a href="{{include.file}}" download><i class="fas fa-file"
+                style="display: unset; margin: 0; color: #5C5C5C"></i>
+            <p class="course-header-icon-gap">FILE</p>
+        </a>
     </div>
 </div>
 

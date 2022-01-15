@@ -32,7 +32,8 @@
             <div class="page-heading container-fluid d-inline-flex align-items-end">
                 <div class="page-heading-inner container-xl mb-5">
                     <h1 class="page-title-header text-white">{{page.subtitle}}</h1>
-                    <p class="page-title-caption text-white mt-3 w-75"> We are the Autonomous Driving Lab - see what it is that we do.<br>
+                    <p class="page-title-caption text-white mt-3 w-75"> We are the Autonomous Driving Lab - see what it
+                        is that we do.<br>
                         Spoiler: we make cars drive. By themselves.</p>
                 </div>
             </div>
@@ -43,56 +44,7 @@
                 {{content}}
             </div>
         </main>
-        <footer class="row row-cols-10 py-5 g-0">
-            <div class="col-6">
-                <h5></h5>
-                <p>
-                    Narva mnt 18<br>
-                    51009 Tartu<br>
-                    Estonia
-                </p>
-                <p><a href="mailto:adl@ut.ee">adl@ut.ee</a></p>
-            </div>
-
-            <div class="col">
-                <h5>Discover ADL</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About us</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Projects</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Media</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact us</a></li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h5>The Lab</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Vehicle</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Simulation</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Parking lot</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Demo track</a></li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h5>Research</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Area 1</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Area 2</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Area 3</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Area 4</a></li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h5>Education</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Courses</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Defended theses</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Thesis topcis</a></li>
-                </ul>
-            </div>
-        </footer>
+        {% include footer.html %}
     </div>
 
     <script src="/js/bootstrap.js"></script>

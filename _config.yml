@@ -32,7 +32,7 @@ encoding: utf-8
 collections:
   research_areas:
     output: true
-    permalink: /:collection/:path/
+    permalink: /research/:collection/:path/
   projects:
     output: true
     permalink: /:collection/:path/
