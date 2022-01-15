@@ -36,9 +36,9 @@
     - page: Simulation
       url: /lab/simulation
     - page: Parking lot
-      url: /lab/parking
+      url: /lab/parking-lot
     - page: Demo track
-      url: /lab/demotrack
+      url: /lab/demo-track
 
 - title: research
   subfolderitems:
