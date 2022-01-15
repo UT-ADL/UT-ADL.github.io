@@ -21,52 +21,13 @@
 </head>
 
 <body>
-    <div>
-
-        <!-- Main navigation bar -->
-
-
-        <!--<header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Autonomous Driving Lab</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Discover ADL</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">The Lab</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Research</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Education</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>-->
-        <div>
-            <main>
-                <div class="container-fluid g-0">
-                    <div class="landing_nav">
-                        {% include navigation/main-navigation-bar.html %}
-                    </div>
-                    {{content}}
-                </div>
-            </main>
-            {% include footer.html %}
+    <main>
+        <div class="landing_nav">
+            {% include navigation/main-navigation-bar.html %}
         </div>
-    </div>
-
+        {{content}}
+    </main>
+    {% include footer.html %}
     <script src="/js/bootstrap.js"></script>
 </body>
 
