@@ -1,14 +1,14 @@
 ﻿- type: video
   url: "https://youtu.be/Uq5KH6PRMmY"
   language: en
-  date: 20/03/2021
+  date: 30/11/2020
   title: Autonomous Driving Lab September Street Demo
   
 - type: article
   url: "https://researchinestonia.eu/2021/05/03/ut-and-bolt-expand-collaboration-to-develop-it-solutions-for-self-driving-vehicles/"
   image: "https://researchinestonia.eu/rwp/wp-content/uploads/fly-images/6919/self-driving-car-demo_13_MathisBogens-scaled-1-1170x770-c.jpg"
   language: en
-  date: 20/03/2021
+  date: 3/05/2021
   title: University of Tartu and Bolt expand collaboration to develop IT solutions for self-driving vehicles
 
 - type: article
@@ -19,15 +19,15 @@
   title: University of Tartu’s self-driving car has reached city traffic
 
 - type: video
-  url: "https://youtu.be/narMXyL5mPY"
+  url: "https://youtu.be/oxqmYSn-erk"
   language: en
-  date: 20/03/2021
+  date: 4/03/2020
   title: University of Tartu Autonomous Driving Lab Test Car Reveal
   
 - type: video
-  url: "https://youtu.be/oxqmYSn-erk"
+  url: "https://youtu.be/narMXyL5mPY"
   language: en
-  date: 20/03/2021
+  date: 10/09/2020
   title: The World’s First Self-Driving Car to Drive on the Official WRC Rally Stage
 
 - type: article

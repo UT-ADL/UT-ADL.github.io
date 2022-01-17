@@ -1,17 +1,9 @@
 ---
 layout: project
-title: Research and Development of Self-Driving Vehicle Technology Field
-twitter: https://twitter.com
+title: Applied Research on Development of Autonomous Driving Lab for Level 4 Autonomy
 category: projects
-instagram: https://twitter.com
-webURL: https://youtube.com
+webURL: https://www.etis.ee/Portal/Projects/Display/56dd942f-308e-43b8-9938-05a98e960798?lang=ENG
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod massa sapien, vel tempor lacus posuere id. Nam finibus, orci eu congue laoreet, ante nunc rhoncus lectus, a tempor nisi nibh et diam. Duis risus metus, bibendum vel convallis ut, euismod at purus. Duis et massa tincidunt, rhoncus eros sit amet, consequat lacus.
-The goals of the project:
+This is what started it all. Bolt and the University of Tartu joined forces to start working on self-driving and, as a result, ADL was formed. The objective was to conduct applied research on autonomous cars: to evaluate the current state-of-the-art in autonomous driving technologies in a Level 2.5 vehicle and do research on technical alternatives that would eventually pave the way for Level 4 autonomous driving. It was decided that all research would follow a hands-on (i.e. experimental) approach, as much as possible.
 
-• Technology: evaluate the current state of autonomous driving and mobility technology for readiness of productization.
-
-• Research: do world-class research in autonomous driving and mobility technology.
-
-• Education: prepare future workforce for the up-and-coming autonomous driving industry in Estonia.

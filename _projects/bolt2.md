@@ -1,17 +1,15 @@
 ---
 layout: project
 title: Research and Development of Self-Driving Vehicle Technology Field
-twitter: https://twitter.com
 category: projects
-instagram: https://twitter.com
-webURL: https://youtube.com
+webURL: https://www.etis.ee/Portal/Projects/Display/0c9656d8-ee9d-4d89-a5ae-66f8379ff0e9?lang=ENG
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod massa sapien, vel tempor lacus posuere id. Nam finibus, orci eu congue laoreet, ante nunc rhoncus lectus, a tempor nisi nibh et diam. Duis risus metus, bibendum vel convallis ut, euismod at purus. Duis et massa tincidunt, rhoncus eros sit amet, consequat lacus.
-The goals of the project:
+This is a continuation of the project which established ADL. Since this project has a longer timeframe, particular goals were defined. The goals of the project are - in essence - the overarching goals of ADL. They are as follows:
 
-• Technology: evaluate the current state of autonomous driving and mobility technology for readiness of productization.
+* **Technology:** evaluate the current state of autonomous driving and mobility technology for readiness of productization.
 
-• Research: do world-class research in autonomous driving and mobility technology.
+* **Research:** do world-class research in autonomous driving and mobility technology.
 
-• Education: prepare future workforce for the up-and-coming autonomous driving industry in Estonia.
+* **Education:** prepare future workforce for the up-and-coming autonomous driving industry in Estonia.
+

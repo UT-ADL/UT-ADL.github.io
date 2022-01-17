@@ -1,41 +1,35 @@
 - name: Tambet Matiisen
   position: Tech Lead of Autonomous Driving Lab
-  email: name.surname@ut.ee
-  phone: '+372555555555'
-  image: /images/team/Team-Member-Photo-1.png
+  email: tambet.matiisen@ut.ee
+  image: /images/team/tambet.png
 
-- name: Edgar Sepp
-  position: Position in the ADL
-  email: edgar.sepp@ut.ee
-  phone: '+372555555555'
-  image: /images/team/Team-Member-Photo-0.png
+- name: Georg Vann
+  position: Industry Cooperation Coordinator
+  email: georg.vann@ut.ee
+  image: /images/team/georg.png
 
 - name: Naveed Muhammad
-  position: Position in the ADL
+  position: Associate Professor of Autonomous Driving
   email: naveed.muhammad@ut.ee
-  phone: '+372555555555'
-  image: /images/team/Team-Member-Photo-4.png
+  image: /images/team/naveed.png
 
 - name: Meelis Kull
-  position: Position in the ADL
+  position: Associate Professor in Machine Learning
   email: meelis.kull@ut.ee
-  phone: '+372555555555'
-  image: /images/team/Team-Member-Photo-3.png
+  image: /images/team/meelis.png
 
-- name: Name Surname
-  position: Position in the ADL
-  email: name.surname@ut.ee
-  phone: '+372555555555'
-  image: /images/team/Team-Member-Photo-2.png
+- name: Edgar Sepp
+  position: Mapping Lead of Autonomous Driving Lab
+  email: edgar.sepp@ut.ee
+  image: /images/team/edgar.png
 
-- name: Name Surname
-  position: Position in the ADL
-  email: name.surname@ut.ee
-  phone: '+372555555555'
-  image: /images/team/Team-Member-Photo-5.png
+- name: Mahir Gulzar
+  position: PhD Student in Motion Prediction
+  email: mahir.gulzar@ut.ee
+  image: /images/team/mahir.png
 
-- name: Name Surname
-  position: Position in the ADL
-  email: name.surname@ut.ee
-  phone: '+372555555555'
-  image: /images/team/Team-Member-Photo-6.png
+- name: Romet Aidla
+  position: Master Student in End-to-End Driving
+  email: romet.aidla@ut.ee
+  image: /images/team/romet.png
+
