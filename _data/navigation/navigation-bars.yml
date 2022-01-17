@@ -9,15 +9,6 @@
   - page: Teaching
     url: /teaching/courses
 
-- title: teaching
-  subfolderitems:
-  - page: Courses
-    url: /teaching/courses
-  - page: Thesis topics
-    url: /teaching/thesis-topics
-  - page: Defended theses
-    url: /teaching/defended-theses
-
 - title: discover
   subfolderitems:
   - page: About
@@ -46,3 +37,12 @@
     url: /research/research-areas
   - page: Publications
     url: /research/publications
+
+- title: teaching
+  subfolderitems:
+  - page: Courses
+    url: /teaching/courses
+  - page: Thesis topics
+    url: /teaching/thesis-topics
+  - page: Defended theses
+    url: /teaching/defended-theses
