@@ -5,7 +5,7 @@
   - page: The Lab
     url: /lab/vehicle
   - page: Research
-    url: /research/research_areas
+    url: /research/research-areas
   - page: Teaching
     url: /teaching/courses
 
@@ -43,6 +43,6 @@
 - title: research
   subfolderitems:
   - page: Research Areas
-    url: /research/research_areas
+    url: /research/research-areas
   - page: Publications
     url: /research/publications

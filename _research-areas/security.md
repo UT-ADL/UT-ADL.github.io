@@ -1,12 +1,11 @@
 ---
-layout: research_post
-title: Behavior prediction
+layout: research-post
+title: Security
 
-research_lead: Naveed Muhammad
+research_lead: Raimundas Matulevicius
 lead_image: "#"
 lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group
-lead_email: naveed.muhammad@ut.ee
-
+lead_email: raimundas.matulevicius@ut.ee
 
 twitter: https://twitter.com
 instagram: https://twitter.com

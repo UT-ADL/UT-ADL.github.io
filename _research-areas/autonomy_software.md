@@ -1,5 +1,5 @@
 ---
-layout: research_post
+layout: research-post
 title: Autonomy Software
 research_area: Autonomy software
 research_lead: Tambet Matiisen

@@ -30,7 +30,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 encoding: utf-8
 collections:
-  research_areas:
+  research-areas:
     output: true
     permalink: /research/:collection/:path/
   projects:

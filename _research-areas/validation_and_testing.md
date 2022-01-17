@@ -1,11 +1,11 @@
 ---
-layout: research_post
-title: Security
+layout: research-post
+title: Validation & testing
 
-research_lead: Raimundas Matulevicius
+research_lead: Tambet Matiisen
 lead_image: "#"
 lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group
-lead_email: raimundas.matulevicius@ut.ee
+lead_email: tambet.matiisen@ut.ee
 
 twitter: https://twitter.com
 instagram: https://twitter.com

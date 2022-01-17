@@ -1,5 +1,5 @@
 ---
-layout: research_post 
+layout: research-post
 title: Teleoperation
 
 research_lead: Karl Kruusamäe 

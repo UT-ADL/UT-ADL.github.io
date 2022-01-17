@@ -1,11 +1,11 @@
 ---
-layout: research_post
-title: Motion planning
+layout: research-post
+title: Perception uncertainty
 
-research_lead: Arun Kumar Singh
+research_lead: Meelis Kull
 lead_image: "#"
 lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group
-lead_email: arun.singh@ut.ee
+lead_email: meelis.kull@ut.ee
 
 twitter: https://twitter.com
 instagram: https://twitter.com

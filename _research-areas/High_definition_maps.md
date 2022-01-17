@@ -1,5 +1,5 @@
 ---
-layout: research_post 
+layout: research-post
 title: High-definition maps
 
 research_lead: Edgar Sepp 

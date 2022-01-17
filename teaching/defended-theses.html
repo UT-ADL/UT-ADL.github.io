@@ -75,13 +75,6 @@ subtitle: Teaching
             <div id="phd" class="filter-button" style="cursor: pointer;" onclick="filterByField('phd')">
                 <button type="button">PhD</button>
             </div>
-            <!--<button id="all" class="filter-button filter-button-selected" type="button"
-                onclick="filterByField('all')">All
-                Theses</button>
-            <button id="bsc" class="filter-button" type="button" onclick="filterByField('bsc')">BSc</button>
-            <button id="msc" class="filter-button" type="button" onclick="filterByField('msc')">MSc</button>
-            <button id="phd" class="filter-button" type="button" onclick="filterByField('phd')">PhD</button>
-            -->
         </div>
     </div>
     {% assign theses = site.data.teaching.defended-theses | sort: 'year' | reverse %}

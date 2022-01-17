@@ -1,11 +1,12 @@
 ---
-layout: research_post
-title: Validation & testing
+layout: research-post
+title: Behavior prediction
 
-research_lead: Tambet Matiisen
+research_lead: Naveed Muhammad
 lead_image: "#"
 lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group
-lead_email: tambet.matiisen@ut.ee
+lead_email: naveed.muhammad@ut.ee
+
 
 twitter: https://twitter.com
 instagram: https://twitter.com

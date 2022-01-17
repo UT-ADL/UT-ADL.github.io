@@ -25,8 +25,8 @@
 <body>
     <div>
         {% assign title_capitalize = page.title | capitalize %}
-        {% assign theses = site.data.teaching.defended-theses | where: "research_area", title_capitalize %}
-        {% assign research_papers = site.data.research-papers | where: "research_area", title_capitalize %}
+        {% assign theses = site.data.teaching.defended-theses | where: "research-area", title_capitalize %}
+        {% assign research_papers = site.data.research-papers | where: "research-area", title_capitalize %}
         <!-- Main navigation bar -->
         {% include navigation/main-navigation-bar.html %}
         <div>
@@ -128,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    {% assign posts_sorted = site.research_areas | sort:"title" %}
+                    {% assign posts_sorted = site.research-areas | sort:"title" %}
 
                     <div class="row mb-5">
                         {% for post in posts_sorted | offset: 2 | limit: 3 %}
