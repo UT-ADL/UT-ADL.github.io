@@ -3,13 +3,11 @@ layout: research-post
 title: Validation & testing
 
 research_lead: Tambet Matiisen
-lead_image: "#"
-lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group
+lead_image: "/images/team/tambet.png"
+lead_description: Tech Lead of the Autonomous Driving Lab
 lead_email: tambet.matiisen@ut.ee
 
-twitter: https://twitter.com
-instagram: https://twitter.com
-webURL: https://youtube.com
+twitter: https://twitter.com/tambetm
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sapien sapien. Curabitur in metus urna.

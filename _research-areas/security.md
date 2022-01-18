@@ -4,12 +4,8 @@ title: Security
 
 research_lead: Raimundas Matulevicius
 lead_image: "#"
-lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group
+lead_description: Professor of Information Security
 lead_email: raimundas.matulevicius@ut.ee
-
-twitter: https://twitter.com
-instagram: https://twitter.com
-webURL: https://youtube.com
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sapien sapien. Curabitur in metus urna.

@@ -4,12 +4,8 @@ title: Teleoperation
 
 research_lead: Karl Kruusamäe 
 lead_image: "#"
-lead_description: Tech Lead of the Autonomous Driving Lab and xxx of the Autonomous Software research group 
+lead_description: Associate Professor of Robotics Engineering
 lead_email: karl.kruusamae@ut.ee
-
-twitter: https://twitter.com
-instagram: https://twitter.com
-webURL: https://youtube.com
 ---
 
 In the domain of human-machine interaction, the use of teleoperation can serve one or multiple purposes such as
