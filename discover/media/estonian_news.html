@@ -100,46 +100,4 @@ permalink: /discover/media/ee
             < </a> <a id="btn_next" class="page-link d-inline-flex" href="javascript:nextPage()"> >
         </a>
     </div>
-    <div class="continue-reading">
-        <span class="overlane-text">CONTINUE READING</span>
-        <h3>Articles in English</h3>
-        <div class="row mt-3">
-            <div class="col-md-12">
-                <div class="row">
-                    {% for media in news_en limit:3 %}
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            {% if media.type == "video" %}
-                            <img class="card-img-top w-100" alt=""
-                                src="https://i.ytimg.com/vi_webp/{{media.url | slice: -11, 11}}/mqdefault.webp" />
-                            {% else %}
-                            <img class="card-img-top w-100" alt="" src="{{media.image}}" />
-                            {% endif %}
-                            <div class="card-block px-3 mt-4">
-                                {% if media.type == "video" %}
-                                <span class="overlane-text">VIDEO</span>
-                                {% else %}
-                                <span class="overlane-text">ARTICLE</span>
-                                {% endif %}
-                                <h6 class="card-title">
-                                    {{media.title}}
-                                </h6>
-                                {% if media.type == "video" %}
-                                <p>
-                                    <a class="link" href="{{media.url}}">Watch Now <i
-                                            class="fas fa-play-circle"></i></a>
-                                </p>
-                                {% else %}
-                                <p>
-                                    <a class="link" href="{{media.url}}">Read more</a>
-                                </p>
-                                {% endif %}
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
 </div>

@@ -74,37 +74,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-content-container">
-                    <div class="container-fluid my-5">
-                        <div class="row">
-                            <div class="col-8">
-                                <span>DISCOVER MORE</span>
-                                <h3>Explore Other ADL Projects</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <!-- This used to be site.posts, its broken now though? -->
-                            {% for post in site.projects %}
-                            <div class="col-md-4 mb-4">
-                                <a class="card-anchor" href="{{post.url}}">
-                                    <div class="container-fluid card-body">
-                                        <span class="overlane-text">PROJECT</span>
-                                        <div class="d-flex flex-column">
-                                            <h5 class="mb-3">
-                                                {{post.title}}</h5>
-                                            <p>
-                                                Learn More
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
             </main>
             {% include footer.html %}
         </div>
