@@ -41,7 +41,7 @@
 
             {% include navigation/subnavigation-bar.html navigation-bar-title="lab" %}
 
-            <div class="content main-content-container g-0">
+            <div class="content main-content-container">
                 {{content}}
             </div>
         </main>
@@ -55,7 +55,8 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <iframe height="500px" width="80%" class="embed-responsive-item" src="" id="video" allowfullscreen></iframe>
+                    <iframe height="500px" width="80%" class="embed-responsive-item" src="" id="video"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -72,7 +73,7 @@
                 $('#modal').modal('hide');
             });
             $('#modal').on('shown.bs.modal', function (e) {
-                $("#video").attr('src', $videoSrc+"?autoplay=1");
+                $("#video").attr('src', $videoSrc + "?autoplay=1");
             })
             $('#modal').on('hide.bs.modal', function (e) {
                 $("#video").attr('src', $videoSrc);

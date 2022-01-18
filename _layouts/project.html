@@ -27,7 +27,7 @@
 
         {% include navigation/main-navigation-bar.html %}
 
-        <div>
+        <div class="project-page">
             <main>
                 <div class="page-heading container-fluid d-inline-flex align-items-end">
                     <div class="page-heading-inner main-content-container mb-5">
@@ -74,27 +74,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-lg my-5">
-                    <span>DISCOVER MORE</span>
-                    <h3>Explore Other ADL Projects</h3>
-                </div>
-                <div class="container-lg">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="row">
-                                {% for post in site.posts %}
-                                <div class="col-md-3 project-card my-2 mx-2">
-                                    <a class="card-anchor" href="{{post.url}}"></a>
-                                    <span class="overlane-text">PROJECT</span>
-                                    <br>
-                                    <h5 class="mb-3">
-                                        {{post.title}}</h5>
-                                    <p>
-                                        <a class="link" href="{{post.url}}">Learn More</a>
-                                    </p>
-                                </div>
-                                {% endfor %}
+                <div class="main-content-container">
+                    <div class="container-fluid my-5">
+                        <div class="row">
+                            <div class="col-8">
+                                <span>DISCOVER MORE</span>
+                                <h3>Explore Other ADL Projects</h3>
                             </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!-- This used to be site.posts, its broken now though? -->
+                            {% for post in site.projects %}
+                            <div class="col-md-4 mb-4">
+                                <a class="card-anchor" href="{{post.url}}">
+                                    <div class="container-fluid card-body">
+                                        <span class="overlane-text">PROJECT</span>
+                                        <div class="d-flex flex-column">
+                                            <h5 class="mb-3">
+                                                {{post.title}}</h5>
+                                            <p>
+                                                Learn More
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

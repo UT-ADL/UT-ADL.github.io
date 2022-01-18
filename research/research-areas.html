@@ -2,29 +2,32 @@
 layout: research
 subtitle: Research
 ---
-
-<div class="row mt-5">
-    <div class="col-md-12 w-75 mb-4">
-        <h2 class="mb-3">
-            Research Areas
-        </h2>
-        <p>Making cars drive by themselves is a big task. A huge task. To help you (and us) better understand what is
-            needed to make it happen, we have divided our work into focus areas.</p>
-    </div>
-</div>
-<div class="row mb-5">
-    {% assign posts_sorted = site.research-areas | sort:"title" %}
-    {% for post in posts_sorted %}
-    <div class="col-md-3 me-3 my-2 research-card">
-        <div class="research-card-body">
-            <h5>
-                {{post.title}}
-            </h5>
-
-            <br>
-            <a class="btn p-0" href="{{post.url}}">Learn more</a>
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-md-12 w-75 mb-4">
+            <h2 class="mb-3">
+                Research Areas
+            </h2>
+            <p>Making cars drive by themselves is a big task. A huge task. To help you (and us) better understand what
+                is
+                needed to make it happen, we have divided our work into focus areas.</p>
         </div>
-        <a class="card-anchor" href="{{post.url}}"></a>
     </div>
-    {% endfor %}
+    <div class="row mb-5">
+        {% assign posts_sorted = site.research-areas | sort:"title" %}
+        {% for post in posts_sorted %}
+        <div class="col-md-4 mb-4">
+            <a class="research-card-anchor" href="{{post.url}}">
+                <div class="container-fluid research-card">
+                    <div class="research-card-body d-flex flex-column">
+                        <h5>
+                            {{post.title}}
+                        </h5>
+                        <p class="btn p-0">Learn more</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
 </div>
