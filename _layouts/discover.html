@@ -2,25 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="/css/main.css" type="text/css">
-    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter&display=swap"
-        rel="stylesheet">
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/c3a5593886.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Autonomous Driving Lab</title>
+{% include head.html %}
 </head>
 
 <body>
@@ -46,8 +28,7 @@
         </main>
         {% include footer.html %}
     </div>
-
-    <script src="/js/bootstrap.js"></script>
+    {% include foot.html %}
 </body>
 
 </html>

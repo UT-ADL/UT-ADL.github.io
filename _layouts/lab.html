@@ -2,27 +2,8 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="/css/main.css" type="text/css">
-    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter&display=swap"
-        rel="stylesheet">
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/c3a5593886.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Autonomous Driving Lab</title>
+{% include head.html %}
 </head>
-
 <body>
     <div>
 
@@ -47,39 +28,7 @@
         </main>
         {% include footer.html %}
     </div>
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body mb-0 p-0">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <iframe height="500px" width="80%" class="embed-responsive-item" src="" id="video"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="/js/bootstrap.js"></script>
-    <script>
-        $(document).ready(function () {
-            var $videoSrc;
-            $('.embed-anchor').click(function () {
-                $videoSrc = $(this).data("src");
-                $('#modal').modal('show');
-            });
-            $('.close').click(function () {
-                $('#modal').modal('hide');
-            });
-            $('#modal').on('shown.bs.modal', function (e) {
-                $("#video").attr('src', $videoSrc + "?autoplay=1");
-            })
-            $('#modal').on('hide.bs.modal', function (e) {
-                $("#video").attr('src', $videoSrc);
-            })
-        });
-    </script>
+    {% include foot.html %}
 </body>
 
 </html>

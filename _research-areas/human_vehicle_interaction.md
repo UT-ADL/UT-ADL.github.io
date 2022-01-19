@@ -16,4 +16,4 @@ As AVs are fused into our everyday traffic, it is crucial that, in addition to c
 
 When envisioning a future with, say, robotaxis, one has to solve challenges associated with both external and internal HVI. External HVI is required not only for unambiguous interaction with other road users. It starts with a rider ordering a car, identifying the correct vehicle around the pick-up site and safely negotiating the pick-up procedure. Once inside the vehicle, the riders are used to relying on interactions with human drivers to customize their service experience. In a robotaxi, the iHVI design is expected to not only ensure the same quality ride experience but to allow for higher customizability in terms of e.g., comfort, route selection, driving style, and drop-off locations.
 
-![Vehicle gives way to pedestrian](/images/research/hvi.png){:width="100%"}
+![Vehicle gives way to pedestrian](/images/research/hvi.png){:class="img-fluid"}

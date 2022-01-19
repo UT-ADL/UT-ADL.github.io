@@ -1,32 +1,267 @@
-- title: Autonomy Software
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales diam eu mollis facilisis. Phasellus convallis ipsum vel lorem fermentum malesuada.
-  type: Research Field
-  availability: Available topics
+- title: Vehicle motion prediction at a roundabout
+  description: As human drivers we instinctively predict the motion of other road agents, be it manually driven vehicles, pedestrians and cyclists etc. This however is not a trivial task for an autonomous vehicle. In this project you will investigate and then integrate a vehicle motion prediction technique on a real autonomous vehicle. For this you will be working on an existing open source software stack like https://www.autoware.org/ and integrate an existing baseline pattern-based motion prediction model for vehicles that can be used by the motion planners. Autoware uses a third-party motion planner i.e. OpenPlanner. For testing you will be focusing on a roundabout scenario. You can choose any other autonomy stack and planner to work with but this should be agreed first. 
+  type: Behavior prediction
+  availability: Master
+  leads:
+    - name: Mahir Gulzar
+      email: mahir.gulzar@ut.ee
+    - name: Naveed Muhammad
+      email: naveed.muhammad@ut.ee
+  file: "https://docs.google.com/document/d/1bews3qdlzrb1i8Ced1GpoPBupJI4rr89SpoHGgIx62o/edit?usp=sharing"
+
+- title: Pedestrian motion prediction at crosswalks
+  description: As human drivers, we instinctively predict the motion of other road agents, be it manually driven vehicles, pedestrians and cyclists, etc. This, however, is not a trivial task for an autonomous vehicle. In this project, you will investigate and then implement an existing motion-prediction technique to predict pedestrians’ movement at urban crosswalks crossing scenarios. You can use any current non-trivial baseline solution and test it using an open-source Autonomous Driving simulator compliant with the Autoware platform, based on Robotic Operating System (ROS). Successful implementation of the working algorithm in the simulator environment can lead to further integration and testing using an actual vehicle with autonomous driving capabilities and a full sensor suite.
+  type: Behavior prediction
+  availability: Bahelor or Master
+  leads:
+    - name: Dmytro Zabolotnii
+      email: dmytro.zabolotnii@ut.ee
+    - name: Naveed Muhammad
+      email: naveed.muhammad@ut.ee
+  file: "https://docs.google.com/document/d/1bews3qdlzrb1i8Ced1GpoPBupJI4rr89SpoHGgIx62o/edit?usp=sharing"
+
+- title: Anomaly detection in pedestrian motion along the streets and at crosswalks
+  description: As human drivers we instinctively predict the motion of other road agents, be it manually driven vehicles, pedestrians and cyclists etc. This includes detecting/recognising any anomalous behaviour in other agents, for example a pedestrian who is about to jump on the road without being at a crosswalk, or a pedestrian who is standing by a crosswalk but doesn’t intend to cross the road. Such a detection of anomalous behaviour is not a trivial task for an autonomous vehicle. In this project you will investigate and implement such anomalous behaviour techniques for autonomous driving applications. You can use any current non-trivial baseline solution and test it using an open-source Autonomous Driving simulator compliant with the Autoware platform, based on Robotic Operating System (ROS). Successful implementation of the working algorithm in the simulator environment can lead to further integration and testing using an actual vehicle with autonomous driving capabilities and a full sensor suite. 
+  type: Behavior prediction
+  availability: Master or Bachelor
+  leads:
+    - name: Naveed Muhammad
+      email: naveed.muhammad@ut.ee
+    - name: Dmytro Zabolotnii
+      email: dmytro.zabolotnii@ut.ee
+  file: "https://docs.google.com/document/d/1bews3qdlzrb1i8Ced1GpoPBupJI4rr89SpoHGgIx62o/edit?usp=sharing"
+
+- title: Review and comparison of non-supervised machine learning solutions and/or non-machine learning solutions for the task of pedestrian motion prediction
+  description: As human drivers, we instinctively predict the motion of other road agents, be it manually driven vehicles, pedestrians and cyclists, etc. This, however, is not a trivial task for an autonomous vehicle. There was a surge of state-of-art supervised machine learning solutions using advanced neural network architectures in recent years. The proposed solutions show promising results in the offline dynamic objects prediction competitions (i.e., Nuscenes Prediction https://www.nuscenes.org/prediction), however, they create implicit dependency on having an extensive and diverse training dataset and often ignore practical realities of running the proposed solution on a potentially real autonomous driving vehicle. You will investigate and create a list of selected non-supervised or non-machine learning solutions with similar evaluation metrics. Later, you will be able to re-implement (or use an open-source implementation) and compare them experimentally with the supervised learning state-of-art solutions, using Autonomous Driving simulator compliant with the Autoware platform or the actual vehicle with autonomous driving capabilities. A practical result will be the survey article on the state of the research in the area with experimental results obtained under real-life conditions.
+  type: Behavior prediction
+  availability: Master
+  leads:
+    - name: Dmytro Zabolotnii
+      email: dmytro.zabolotnii@ut.ee
+    - name: Naveed Muhammad
+      email: naveed.muhammad@ut.ee
+  file: "https://docs.google.com/document/d/1bews3qdlzrb1i8Ced1GpoPBupJI4rr89SpoHGgIx62o/edit?usp=sharing"
+
+- title: Review and comparison of vision and lidar based methods for map-based localization
+  description: Autonomous vehicles of today rely on GNSS (global navigation satellite system) such as GPS for localization. For true level-5 autonomy, it is desirable that the vehicle is able to localise itself even in the absence of GNSS. In this project you will thoroughly review and compare map-based localization techniques that employ vision and lidar as sensing modalities. You will compare the techniques in terms of, but not limited to, map and features used, accuracy, geographical scale for validation, tolerance to weather conditions, and overall pros and cons of each modality, etc.
+  type: Behavior prediction
+  availability: Master or Bachelor
+  leads:
+    - name: Debasis Kumar
+      email: debasis.kumar@ut.ee
+    - name: Naveed Muhammad
+      email: naveed.muhammad@ut.ee
+  file: "https://docs.google.com/document/d/1bews3qdlzrb1i8Ced1GpoPBupJI4rr89SpoHGgIx62o/edit?usp=sharing"
+
+- title: Flow sensing for applications in autonomous driving
+  description: In highway driving, overtaking long vehicles is a common situation. The usual sensing modalities that are available to autonomous vehicles i.e. vision, radar and lidar are not very suitable for estimating the length of a leading vehicle. Wind flow might be a complementary sensing modality which might be able to aid vehicle length estimation. In this project, you will work on extraction of features from wind data, and estimation of vehicle length using those features. You will begin with CFD (computational fluid dynamic) simulations to investigate the techniques (the thesis involves learning the simulation tools as well as some concepts of mechanical engineering). For the work done in this field last year you can refer to the Bachelor thesis of Roman Matvejev available at the following link https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71873&year=2021
+  type: Behavior prediction
+  availability: Master or Bachelor
+  leads:
+    - name: Naveed Muhammad
+      email: naveed.muhammad@ut.ee
+  file: "https://docs.google.com/document/d/1bews3qdlzrb1i8Ced1GpoPBupJI4rr89SpoHGgIx62o/edit?usp=sharing"
+
+- title: Use Dashcam video to map the road area and markings
+  description: There are different approaches to autonomous driving, but most of them require maps to understand the surroundings and do the planning. Mapping with a specialized mapping car is expensive and might not be available. The aim of this project is to use car dashcams for mapping as they are pretty widespread and accessible devices. They can be used to gather the images and extract the road features for maps. There are several options like Nvidia neural networks (free space, lane markings) or segmentation to detect and map driveable area and lane markings. Detected features can then be projected from camera frame to map frame using either flat ground assumption or an elevation model.
+  type: High-definition maps
+  availability: Master
+  leads:
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Map traffic lights using camera images or lidar point cloud
+  description: Traffic lights are an essential feature for self-driving cars. Detecting traffic lights from camera images is not that big of a challenge. The more significant challenge is to know which traffic light is associated with which lane. One simple way to solve this is to store the links between traffic lights and lanes on the map. So when a self-driving car detects a traffic light, it can retrieve the lane associations from the map and act according to the relevant traffic lights. To be able to do this the traffic light exact positions need to be mapped and this is what this project is about. Different data (camera images, lidar point cloud, car odometry, GNSS localization) and methods (detect traffic lights using Yolo, 3D point cloud processing, 3D image reconstruction, triangulation) could be used.
+  type: High-definition maps
+  availability: Master
+  leads:
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Create orthophoto mosaic from drone images
+  description: Estonian Land Board has very good orthophotos covering all of Estonia. These orthophotos could be used to draw high-definition maps for autonomous vehicles. Of course, they have to meet specific requirements for locational accuracy. However, what about areas that do not have freely available orthophoto coverage. One possible solution is to create such orthophoto mosaics from drone imagery. This project involves conducting a drone survey and processing the imagery into an orthophoto mosaic that could be used for map drawing. Additional analysis for the orthophoto quality (locational accuracy) and feasibility study (covered area, optimal ground sample distances, processing times, survey times) must be conducted, along with automating the workflows as much as possible.
+  type: High-definition maps
+  availability: Master or Bachelor
+  leads:
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Generate high-definition vector map for Apollo
+  description: There are several open-source software stacks available in autonomous driving and often they need different map formats. Autonomous Driving Lab is interested in testing and validating different approaches to autonomous driving, and hence we need to be able to generate maps in different formats. The purpose of this project is to generate maps in OpenDrive format required for Apollo software. The input to the generator are map layers in our custom GIS database.
+  type: High-definition maps
+  availability: Bachelor
+  leads:
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Generate lanes from car trajectories
+  description: Autonomous driving needs high-definition (HD) vector maps to understand its surroundings better and to do local planning tasks. These HD vector maps can be very complicated with numerous different feature layers. One of the most fundamental layers needed is the network of lanes, which can be created from the collected car trajectories. This project aims to generate lanes from car trajectories and add velocity limits from available map data (like OpenStreetMap). Additionally, reference velocity needs to be acquired from the recorded trajectories for all of the lanes. Reference velocity is the velocity we would like to drive in specific locations because driving with the speed limit might be too dangerous (sharp turns and poor visibility). To get the reference speed from trajectories, all outliers must be eliminated (low speeds because of other traffic or stopping before traffic lights), and different user types must be considered.
+  type: High-definition maps
+  availability: Master
+  leads:
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Predict HD vector map from different data sources
+  description: High-definition (HD) vector maps are needed for autonomous cars to navigate better and understand their surroundings to perform local planning tasks. Creating such HD vector maps can be very labor-intensive when done manually. Therefore different ways to make this process easier are of great interest. This topic emphasizes existing data and tries to find ways to predict HD vector map features from that data. Existing data could be orthophotos and aerial point clouds from the Estonian Land Board, OpenStreetMap data, Estonian topographic database, car trajectories. The selection of data and what features of the HD vector map will be predicted needs to be agreed upon.
+  type: High-definition maps
+  availability: Master
+  leads:
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Generate trajectory that traverses all roads and all turns
+  description: Data collection for mapping can be quite time-consuming. This project aims to tackle the problem by generating the optimal trajectories for mapping the areas. Generated trajectory must pass all the needed turns and lanes with minimal overlap. If needed, other optimization criteria could be added (minimum time spent on mapping, minimum distance). OpenStreetMap can be used as source data for planning the route.
+  type: High-definition maps
+  availability: Bachelor
   leads:
     - name: Tambet Matiisen
-      email: mail@mail.com
-  file: "#"
+      email: tambet.matiisen@ut.ee
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
 
-- title: Human-Vehicle Interaction
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed sodales diam eu mollis facilisis
-  type: Research Field
-  availability: Available topics
+- title: Fallback to lane following in case of GNSS failure
+  description: Using Global Navigation Satellite Systems (GNSS) is one of the primary sources used for localization (positioning). Knowing your precise current position is essential in map-based trajectory following. Sometimes GNSS localization can be not accurate enough or just fail. Such events cannot be allowed in fully autonomous driving, so there must be some fallback to rely on in such cases. The purpose of this project is to develop a fallback method to mitigate GNSS failures. One simple option is to continue with lane following until the GNSS regains its accuracy or stop safely when GNSS localization is lost completely. The goal of this project is to develop a method for fusing map-based and lane-following trajectories.
+  type: Localization
+  availability: Master
   leads:
-    - name: Name Surname
-      email: mail@mail.com
-    - name: Name Surname
-      email: mail@mail.com
-    - name: Name Surname
-      email: mail@mail.com
-  file: "/teaching/thesis-topics/topicfile.pdf"
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
 
-- title: ADL Topic 3
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus. 
-  type: Research Field
-  availability: Available topics
+- title: Better positioning by using raw GNSS data and post-processing
+  description: The positioning accuracy of an average mobile phone is 2-5 meters. To use mobile phones as dashcams for mapping, better location accuracy is desirable. This can be achieved by recording GNSS raw data and postprocessing it later together with additional info about the atmosphere conditions at that moment and precise satellite locations. This can be done with newer Android phones. The goal of this project is to investigate these methods, taking hints from Google Smartphone Decimeter Challenge and comma.ai laika and rednose projects.
+  type: Localization
+  availability: Master or Bachelor
   leads:
-    - name: Name Surname
-      email: mail@mail.com
-    - name: Name Surname
-      email: mail@mail.com
-  file: "https://google.com"
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Get a selected autonomous driving software stack to work with actual car
+  description: Several open-source software stacks for autonomous driving are available. Autonomous Driving Lab (ADL) is interested in testing different software stacks to learn about their positive and negative sides. Testing this software means that it should also be tested with the existing research platform (Lexus RX450h) in ADL. This project is about selecting one of the following software stacks and get it working in real life with a real car - Apollo (https://apollo.auto), Autoware.Auto (https://www.autoware.org/autoware-auto) or Tier IV Architecture Proposal (https://github.com/tier4/AutowareArchitectureProposal.proj/).
+  type: Autonomy software
+  availability: Master
+  leads:
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Mahir Gulzar
+      email: mahir.gulzar@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Create dashboard display for the autonomous car
+  description: During operation of an autonomous vehicle the operator needs to observe if the software is behaving correctly. This could be represented as a dashboard that shows some key characteristics - whether an obstacle was detected ahead, what is it’s distance and speed, whether traffic light was detected, what color it was showing, what is the behaviour state of the vehicle, etc. The goal of this project is to implement this dashboard. The easiest option would be to implement it as part of the Rviz user interface, possibly adding some custom extensions.
+  type: Autonomy software
+  availability: Bachelor
+  leads:
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Intent display for an autonomous car
+  description: Driving in traffic is constant interaction between all the participants. When a pedestrian wants to cross the unregulated crosswalk, and the car is approaching, he is looking for signs if the driver has noticed him and reacts accordingly (slowing down, eye contact, hand sign). This project is about designing and implementing an indicator for an autonomous vehicle that can display the intent or state of the autonomous car to make it more understandable for other human drivers or pedestrians. In the simplest case it can be just an indicator that the car is in autonomy mode, in a more complicated case the car can let the pedestrian know - I have noticed you, I’m waiting after you, go ahead.
+  type: Human-vehicle interaction
+  availability: Master or Bachelor
+  leads:
+    - name: Karl Kruusamäe
+      email: karl.kruusamae@ut.ee
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Simulation engine for road following
+  description: In end-to-end driving a machine learning model, typically a neural network, is trained to predict the human driving commands directly from camera images. Evaluating the driving ability of such models is challenging - it is well known that how well the predictions match the human actions is not a very good estimate of actual driving ability, because the small prediction errors tend to accumulate over time during real driving. The solution is to create a simulation from real camera images that alters the camera images in such a way as if the car would have driven a bit right or left. This simulation can be used both for evaluating the driving ability before real-world driving, and also for augmenting the training data.
+  type: Learned driving
+  availability: Master
+  leads:
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Ardi Tampuu
+      email: ardi.tampuu@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Future prediction
+  description: When driving autonomously, it is essential to predict what is going to happen next. This can be used as auxiliary training signal for end-to-end driving models - neural networks that predict human driving commands directly from camera input. It is common to use multi-task learning with end-to-end driving by having the network to predict besides driving commands also segmentation of the image, depth map or optical flow. Predicting the next camera image seems like a good auxiliary task, because it forces the network to represent the future. The goal of this project is to train a video prediction network and potentially integrate it with an end-to-end driving model.
+  type: Learned driving
+  availability: Master
+  leads:
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Ardi Tampuu
+      email: ardi.tampuu@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Learning to weight the data
+  description: When training an end-to-end driving network to imitate human driving commands from camera images, it is a common problem that most of the data consists of driving straight. This makes the neural network biased towards driving straight and reluctant to make turns. The solution is data balancing - reducing the amount of straight driving and increasing the proportion of curves. Often this is done manually or using some hand-coded heuristics. The problem becomes more complicated when the vocabulary of driving situations increases - should we reduce or increase the amount of traffic light situations? One possible solution is to let the neural network figure out by itself which data is the most useful. The goal of this project is to implement a novel neural network training schema, where the weights for data samples are learned as part of the training process. In essence this means having a separate learning rate for each training sample.
+  type: Learned driving
+  availability: Master
+  leads:
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Ardi Tampuu
+      email: ardi.tampuu@ut.ee
+  file: "https://comserv.cs.ut.ee/home/files/ADL+Thesis+topics+2021_2022+.pdf?study=ATILoputoodePakkumised&reference=CE516A2F46F9DE31086571340C40ABA3AB0E02F9"
+
+- title: Driving speed as a hidden factor behind distribution shift
+  description: When we drive at different speeds, the inputs and outputs may differ. In the simplest AI-driving solutions we collect data at fixed driving speed X and train the neural network to imitate human steering on the collected data, based on camera image (steer=f(image)). We then test if this steering predictor actually can drive at speeds X, 2X and 0.5X. We hypothesize that the input data and the labels collected at speed X might not allow the model to drive at 0.5X nor 2X. In the real-life, with the ADL Lexus we collect data at 60km/h+ but sometimes test the models at 30km/h for safety. Does using slower speed actually hurt a model’s ability to drive? We can test the effect of speed difference on the toy cars, plot and analyze it thoroughly. There are existing metrics for detecting if inputs are “out-of-distribution” for a network. Once the effect is proven on toy car data, to make this publishable, we can proceed to demonstrate the same on the real car.
+  type: Learned driving
+  availability: Master
+  leads:
+    - name: Ardi Tampuu
+      email: ardi.tampuu@ut.ee
+  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=73328&year=2021"
+
+- title: Effect of delays/lag and fighting it in self-driving neural networks
+  description: For camera-based self-driving neural network models, we collect a dataset of image and driving command pairs. This dataset connects a camera image with how the human driver steered the car at that moment. We then train a network that would take as input the camera feed and would output the driving command (predicting what would a human do here?). However, the networks take time to compute their answers and the command reaches the wheels with a delay. Also, the motors turning the wheels have intrinsic delays. This means that even if the model can perfectly predict what a human would do in the situation, the answer is found too late and the car will not stay on track. In this project you evaluate the amount of delay, T milliseconds, the network computations infer. This project will be mainly done with toy cars. Once we prove the concept that predicting future commands is useful, a model can be trained also on real data for the Lexus. Performance on the Lexus will be evaluated qualitatively (does it feel safer, smoother?). This may be publishable work.
+  type: Learned driving
+  availability: Master
+  leads:
+    - name: Ardi Tampuu
+      email: ardi.tampuu@ut.ee
+  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=73323&year=2021"
+
+- title: Testing Nividia Drive for small cars in toy town
+  description: Nvidia has released a set of trained neural networks related to self-driving cars. These can be used as-is on whatever data you feed to them. These include models that detect objects (cars, signs, pedestrians), traffic lights, free area (drivable area), edges of the road etc. In this thesis, the student collects data in a toy town with a toy car (DonkeyCar) and applies these networks built for real-life data on the toy town data. Gautam has applied them to online datasets and can support setting up the pipeline. We measure qualitatively and wherever possible quantitatively the performance of these networks on toy town data. Any alterations to the toy town that are needed are possible in the spring semester (e.g. adding lanes/road edges by tape). If these out-of-the-box solutions work for the toy data, they may be used in the future for making the toy cars avoid objects and stay on the road. NB! This project is mainly for managing data, developing a pipeline to apply existing networks, computing and summarizing performance, selecting performance metrics. You do not train new neural networks here, just apply them.
+  type: Learned driving
+  availability: Bachelor
+  leads:
+    - name: Ardi Tampuu
+      email: ardi.tampuu@ut.ee
+  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=73315&year=2021"
+
+- title: Making RoverC cars operational and making them follow the walls
+  description: In this thesis the student will learn to use the RoverC platform and extract the camera feed from it, send it over wifi to a higher compute machine, make the vehicle follow the walls in a toy town. All needed alterations of the town (e.g. black tape on the walls to better localize the car) are allowed. The setup of the car will be supervised by Ulrich Norbisrath. Developing the driving model will be supervised by Ardi Tampuu and advised by Naveed Muhammed, experts on self-driving.
+  type: Learned driving
+  availability: Bachelor
+  leads:
+    - name: Ardi Tampuu
+      email: ardi.tampuu@ut.ee
+    - name: Ulrich Norbisrath
+      email: ulrich.norbisrath@ut.ee
+  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=73319&year=2021"
+

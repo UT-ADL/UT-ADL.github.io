@@ -9,10 +9,10 @@
 - type: Introductory course
   title: Introduction to Data Science
   code: LTAT.02.002
-  weight: 3
+  weight: 6
   lecturer: Meelis Kull
   link: https://ois2.ut.ee/#/courses/LTAT.02.002/details
-  description: ISensor data analysis is at the core of modern self-driving. This course gives a brief overview of the basic concepts, principles and practice of data science. The main goal is to learn to plan and carry out a simple practical data science project.
+  description: Sensor data analysis is at the core of modern self-driving. This course gives a brief overview of the basic concepts, principles and practice of data science. The main goal is to learn to plan and carry out a simple practical data science project.
 
 - type: Related subtasks
   title: Machine Learning
@@ -44,12 +44,12 @@
   weight: 3
   lecturer: Arun Singh
   link: https://ois2.ut.ee/#/courses/LOTI.05.083/details
-  description: Basics of robot motion planning, control, and state estimation.Tasks like navigating mobile robots through obstacle filled environments.
+  description: Basics of robot motion planning, control, and state estimation. Tasks like navigating mobile robots through obstacle filled environments.
 
 - type: Related subtasks
   title: Robotics II
   code: LOTI.05.088
-  weight: 6
+  weight: 12
   lecturer: Janno Jõgeva
   link: https://ois2.ut.ee/#/courses/LOTI.05.088/details
   description: Introduces mapping (SLAM) and computer vision related topics, alongside hands-on robotics.
@@ -65,7 +65,7 @@
 - type: Related subtasks
   title: Data Science Project
   code: LTAT.00.009
-  weight: 3
+  weight: 6
   lecturer: Sven Laur
   link: https://ois2.ut.ee/#/courses/LTAT.00.009/details
   description: There is a possibility to do a project related to AD.
@@ -84,7 +84,7 @@
   weight: 3
   lecturer: Kiira Mõisja
   link: https://ois2.ut.ee/#/courses/LTOM.02.034/version/71a87908-581e-c06a-0ed9-4f974ae71b1b/details
-  description: Introduces the core concepts of machine learning and data science. Allows to do a project related to AD.
+  description: Introduces basics of geoinformatics via QGIS freeware. Amongst other things, QGIS is also relevant for creating maps used by self-driving cars.
 
 - type: Related fields
   title: Spatial Databases
