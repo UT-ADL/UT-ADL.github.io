@@ -1,5 +1,5 @@
 ---
-layout: research-post
+layout: research-area
 title: Behavior prediction
 research_area: Behavior prediction
 research_lead: Naveed Muhammad
@@ -14,6 +14,6 @@ We are investigating methods for behaviour modeling and motion prediction of roa
 
 We are also investigating many other aspects of autonomous driving including GNSS-free localization for true level-5 autonomy, and novel perception modalities in autonomous driving such as air flow etc.
 
-![Roundabout](/images/behavior_prediction/roundabout.png){:width="45%"}
-![Vehicles and bicycles](/images/behavior_prediction/vehicles_and_bicycles.png){:width="54%"}
+![Roundabout](/images/research/roundabout.png){:width="45%"}
+![Vehicles and bicycles](/images/research/vehicles_and_bicycles.png){:width="54%"}
 

@@ -11,7 +11,7 @@
 
 - title: discover
   subfolderitems:
-  - page: About
+  - page: About us
     url: /discover/about
   - page: Projects
     url: /discover/projects
@@ -33,7 +33,7 @@
 
 - title: research
   subfolderitems:
-  - page: Research Areas
+  - page: Research areas
     url: /research/research-areas
   - page: Publications
     url: /research/publications

@@ -11,7 +11,7 @@
                 </div>
 
                 <!-- This needs to happen, using just | where would return a string instead of an object. -->
-                {% for navigation-bar in site.data.navigation.navigation-bars %}
+                {% for navigation-bar in site.data.navigation-bars %}
                 {% if navigation-bar.title == "main" %}
                 {% assign main-navigation-bars = navigation-bar %}
                 {% break %}
@@ -30,7 +30,7 @@
                 {% endif %}
                 {% endfor %}
 
-                {% for navigation-bar in site.data.navigation.navigation-bars %}
+                {% for navigation-bar in site.data.navigation-bars %}
                 {% if navigation-bar.title == footer-navigation-column%}
                 <div class="col">
                     <h5 class="mb-3">{{ footer-navigation-column-title }}</h5>

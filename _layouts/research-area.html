@@ -25,7 +25,7 @@
 <body>
     <div>
         {% assign title_capitalize = page.title | capitalize %}
-        {% assign theses = site.data.teaching.defended-theses | where: "research_area", title_capitalize %}
+        {% assign theses = site.data.defended-theses | where: "research_area", title_capitalize %}
         {% assign research_papers = site.data.research-papers | where: "research_area", title_capitalize %}
         <!-- Main navigation bar -->
         {% include navigation/main-navigation-bar.html %}

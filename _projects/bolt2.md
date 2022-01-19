@@ -13,3 +13,5 @@ This is a continuation of the project which established ADL. Since this project 
 
 * **Education:** prepare future workforce for the up-and-coming autonomous driving industry in Estonia.
 
+![Bolt car in front of Delta](/images/projects/bolt2.jpg){:width="100%"}
+
