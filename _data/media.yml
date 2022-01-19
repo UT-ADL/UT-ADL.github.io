@@ -1,5 +1,6 @@
 ﻿- type: video
-  url: "https://youtu.be/Uq5KH6PRMmY"
+  url: "https://www.youtube.com/embed/Uq5KH6PRMmY"
+  image: "https://img.youtube.com/vi/Uq5KH6PRMmY/maxresdefault.jpg"
   language: en
   date: 30/11/2020
   title: Autonomous Driving Lab September Street Demo
@@ -19,17 +20,19 @@
   title: University of Tartu’s self-driving car has reached city traffic
 
 - type: video
-  url: "https://youtu.be/oxqmYSn-erk"
-  language: en
-  date: 4/03/2020
-  title: University of Tartu Autonomous Driving Lab Test Car Reveal
-  
-- type: video
-  url: "https://youtu.be/narMXyL5mPY"
+  url: "https://www.youtube.com/embed/narMXyL5mPY"
+  image: "https://img.youtube.com/vi/narMXyL5mPY/mqdefault.jpg"
   language: en
   date: 10/09/2020
   title: The World’s First Self-Driving Car to Drive on the Official WRC Rally Stage
 
+- type: video
+  url: "https://www.youtube.com/embed/oxqmYSn-erk"
+  image: "https://img.youtube.com/vi/oxqmYSn-erk/mqdefault.jpg"
+  language: en
+  date: 4/03/2020
+  title: University of Tartu Autonomous Driving Lab Test Car Reveal
+  
 - type: article
   url: "https://etv.err.ee/1608370293/teadusest"
   image: "https://s.err.ee/photo/crop/2021/10/04/1170810h7321t48.jpg"

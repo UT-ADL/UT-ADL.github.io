@@ -1,42 +1,35 @@
 <header>
-    <nav class="container-fluid navbar navbar-expand navbar-dark bg-dark">
-        <div class="main-content-container">
-            <div class="row">
-                <div class="col-3 d-flex align-items-center">
-                    <a class="navbar-brand" href="/">Autonomous Driving Lab</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="col-9">
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <!-- Gets all the data for navigation -->
-                            {% for navigation-bar in site.data.navigation-bars %}
-                            <!-- Selects the correct one via title, included as a parameter -->
-                            {% if navigation-bar.title == "main" %}
-                            <!-- Loops through all the navigation elements and populates the navbar with them -->
-                            {% for navigation-bar-element in navigation-bar.subfolderitems %}
-                            <!-- Sets the navigation element as active if it is the current page -->
-                            {% if page.url contains navigation-bar-element.url %}
-                            <li class="nav-item navigation-active mb-1 mx-3 p-2">
-                                <a class="navigation p-0 m-0"
-                                    href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
-                            </li>
-                            {% else %}
-                            <li class="nav-item mb-1 mx-3 p-2">
-                                <a class="navigation p-0 m-0"
-                                    href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
-                            </li>
-                            {% endif %}
-                            {% endfor %}
-                            {% endif %}
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
+    <nav class="container-fluid navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">Autonomous Driving Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- Gets all the data for navigation -->
+                    {% for navigation-bar in site.data.navigation-bars %}
+                    <!-- Selects the correct one via title, included as a parameter -->
+                    {% if navigation-bar.title == "main" %}
+                    <!-- Loops through all the navigation elements and populates the navbar with them -->
+                    {% for navigation-bar-element in navigation-bar.subfolderitems %}
+                    <!-- Sets the navigation element as active if it is the current page -->
+                    {% if page.url contains navigation-bar-element.url %}
+                    <li class="nav-item navigation-active mb-1 mx-3 p-2">
+                        <a class="navigation p-0 m-0"
+                           href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item mb-1 mx-3 p-2">
+                        <a class="navigation p-0 m-0"
+                           href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </nav>

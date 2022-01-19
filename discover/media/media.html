@@ -19,21 +19,23 @@ permalink: /discover/media
                 {% for video in videos %}
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <a class="card-anchor" href="{{video.url}}" target="_blank"></a>
-                        <img class="card-img-top w-100" alt=""
-                            src="https://i.ytimg.com/vi_webp/{{video.url | slice: -11, 11}}/mqdefault.webp" />
-                        <div class="card-block px-3 mt-4">
+                        <a class="embed-anchor"  data-toggle="modal" data-target="#myModal"
+                           data-src="{{video.url}}"></a>
+                            <img class="card-img-top w-100" alt=""
+                                 src="{{video.image}}">
+                            <div class="card-block px-3 mt-4">
                             <span class="overlane-text mt-5">
                                 VIDEO
                             </span>
-                            <h6 class="card-title">
-                                {{video.title}}
-                            </h6>
-                            <p class="pt-3">
-                                <a class="link" href="{{video.url}}" target="_blank">Watch Now <i
-                                        class="fas fa-play-circle"></i></a>
-                            </p>
-                        </div>
+                                <h6 class="card-title">
+                                    {{video.title}}
+                                </h6>
+                                <p class="pt-3">
+                                    <a class="link" href="{{video.url}}" target="_blank">Watch Now <i
+                                            class="fas fa-play-circle"></i></a>
+                                </p>
+                            </div>
+                        
                     </div>
                 </div>
                 {% endfor %}
@@ -44,14 +46,19 @@ permalink: /discover/media
     <div class="news">
         {% for news in news_en limit: 3 %}
         <div class="row my-4 news-card">
-            <a class="card-anchor" href="{{news.url}}" target="_blank"></a>
+            {% if news.type == "video" %}
+            <a class="embed-anchor"  data-toggle="modal" data-target="#myModal"
+               data-src="{{news.url}}"></a>
+            {% else %}
+            <a class="card-anchor-absolute" href="{{news.url}}" target="_blank"></a>
+            {% endif %}
             <div class="col-md-3">
                 <div class="news-card-img">
                     {% if news.type == "video" %}
                     <img class="card-img-top w-100" alt=""
-                        src="https://i.ytimg.com/vi_webp/{{news.url | slice: -11, 11}}/mqdefault.webp" />
+                         src="{{news.image}}"/>
                     {% else %}
-                    <img class="img-fluid w-100" alt="" src="{{news.image}}" />
+                    <img class="img-fluid w-100" alt="" src="{{news.image}}"/>
                     {% endif %}
                 </div>
             </div>
@@ -67,7 +74,8 @@ permalink: /discover/media
                     </h6>
                     {% if news.type == "video" %}
                     <p>
-                        <a class="link" href="{{news.url}}" target="_blank">Watch Now <i
+                        <a class="embed-link" data-toggle="modal" data-target="#myModal"
+                           data-src="{{news.url}}">Watch Now <i
                                 class="fas fa-play-circle"></i></a>
                     </p>
                     {% else %}
@@ -78,7 +86,7 @@ permalink: /discover/media
                 </div>
             </div>
         </div>
-        <hr />
+        <hr/>
         {% endfor %}
         <a class="button-primary" href="/discover/media/en">All News in English</a>
     </div>
@@ -86,14 +94,19 @@ permalink: /discover/media
     <div class="news">
         {% for news in news_ee limit: 3 %}
         <div class="row my-4 news-card" id="news">
-            <a class="card-anchor" href="{{news.url}}" target="_blank"></a>
+            {% if news.type == "video" %}
+            <a class="embed-anchor"  data-toggle="modal" data-target="#myModal"
+               data-src="{{news.url}}"></a>
+            {% else %}
+            <a class="card-anchor-absolute" href="{{news.url}}" target="_blank"></a>
+            {% endif %}
             <div class="col-md-3">
                 <div class="news-card-img">
                     {% if news.type == "video" %}
                     <img class="card-img-top w-100" alt=""
-                        src="https://i.ytimg.com/vi_webp/{{news.url | slice: -11, 11}}/mqdefault.webp" />
+                         src="{{news.image}}"/>
                     {% else %}
-                    <img class="img-fluid w-100" alt="" src="{{news.image}}" />
+                    <img class="img-fluid w-100" alt="" src="{{news.image}}"/>
                     {% endif %}
                 </div>
             </div>
@@ -107,15 +120,18 @@ permalink: /discover/media
                     <h6>
                         {{news.title}}
                     </h6>
-                </div>
+                
                 {% if news.type == "video" %}
-                <a class="link" href="{{news.url}}" target="_blank">Watch Now <i class="fas fa-play-circle"></i></a>
+                <a class="embed-link" data-toggle="modal" data-target="#myModal"
+                   data-src="{{news.url}}">Watch Now <i
+                        class="fas fa-play-circle"></i></a>
                 {% else %}
                 <a class="link" href="{{news.url}} " target="_blank">Read more</a>
                 {% endif %}
             </div>
+            </div>
         </div>
-        <hr />
+        <hr/>
         {% endfor %}
         <a class="button-primary" href="/discover/media/ee">All News in Estonian</a>
     </div>
