@@ -11,7 +11,7 @@
         {% assign theses = site.data.defended-theses | where: "research_area", title_capitalize %}
         {% assign research_papers = site.data.research-papers | where: "research_area", title_capitalize %}
         <!-- Main navigation bar -->
-        {% include navigation/main-navigation-bar.html %}
+        {% include main-navigation-bar.html %}
         <div>
 
             <main>
@@ -27,7 +27,7 @@
                 </div>
 
                 <!-- Sub-navigation bar-->
-                {% include navigation/subnavigation-bar.html navigation-bar-title="research" %}
+                {% include subnavigation-bar.html navigation-bar-title="research" %}
                 <div class="container-fluid">
                     <div class="content main-content-container pt-5 g-0">
                         <div class="container-fluid ">

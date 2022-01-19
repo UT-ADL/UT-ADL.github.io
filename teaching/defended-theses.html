@@ -80,7 +80,7 @@ subtitle: Teaching
     </div>
     {% assign theses = site.data.defended-theses | sort: 'year' | reverse %}
     {% for thesis in theses %}
-    {% include teaching/defended-thesis.html
+    {% include defended-thesis.html
         title=thesis.title
         author=thesis.author
         field=thesis.field
