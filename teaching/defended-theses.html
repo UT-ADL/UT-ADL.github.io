@@ -2,7 +2,7 @@
 layout: teaching
 subtitle: Teaching
 ---
-{% assign defended-theses = site.data.teaching.defended-theses %}
+{% assign defended-theses = site.data.defended-theses %}
 <script>
     var currentlySelectedField = "all";
 
@@ -77,7 +77,7 @@ subtitle: Teaching
             </div>
         </div>
     </div>
-    {% assign theses = site.data.teaching.defended-theses | sort: 'year' | reverse %}
+    {% assign theses = site.data.defended-theses | sort: 'year' | reverse %}
     {% for thesis in theses %}
     {% include teaching/defended-thesis.html
         title=thesis.title

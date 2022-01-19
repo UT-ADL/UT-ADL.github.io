@@ -14,7 +14,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <!-- Gets all the data for navigation -->
-                            {% for navigation-bar in site.data.navigation.navigation-bars %}
+                            {% for navigation-bar in site.data.navigation-bars %}
                             <!-- Selects the correct one via title, included as a parameter -->
                             {% if navigation-bar.title == "main" %}
                             <!-- Loops through all the navigation elements and populates the navbar with them -->
