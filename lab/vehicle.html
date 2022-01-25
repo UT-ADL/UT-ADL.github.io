@@ -45,13 +45,13 @@ subtitle: The Lab
     <div class="row mt-3">
         <div class="col">
             <div class="car-wrapper" style="position: relative">
-                <a class="image-hotspot" id="lidar-hs2" data-target="lidar"></a>
-                <a class="image-hotspot" id="lidar-hs1" data-target="lidar"></a>
-                <a class="image-hotspot" id="gnss-hs" data-target="gnss"></a>
-                <a class="image-hotspot" id="camera-hs" data-target="camera"></a>
-                <a class="image-hotspot" id="radar-hs" data-target="radar"></a>
-                <a class="image-hotspot" id="computer-hs" data-target="computer"></a>
-                <img src="/images/lab/ADL_Car.png" alt="">
+                <button class="image-hotspot" id="lidar-hs2" data-target="lidar2">•</button>
+                <button class="image-hotspot" id="lidar-hs1" data-target="lidar1">•</button>
+                <button class="image-hotspot" id="gnss-hs" data-target="gnss">•</button>
+                <button class="image-hotspot" id="camera-hs" data-target="camera">•</button>
+                <button class="image-hotspot" id="radar-hs" data-target="radar">•</button>
+                <button class="image-hotspot" id="computer-hs" data-target="computer">•</button>
+                <img src="/images/lab/ADL-Car.jpg" alt="">
             </div>
         </div>
     </div>
@@ -59,12 +59,29 @@ subtitle: The Lab
 
     <!-- Highlighted circle description -->
     <div id="cards" class="w-100">
-        <div class="component-card" id="lidar">
+        <div class="component-card" id="lidar1">
             <div class="row">
-                <div class="col-sm-3">
-                    <img alt="" src="/images/components/Lidar.png" />
+                <div class="col-lg-3">
+                    <img alt="" src="/images/components/Lidar1.jpg" />
                 </div>
-                <div class="component-card-text col-sm-9">
+                <div class="component-card-text col-lg-9">
+                    <h3>
+                        Lidar
+                    </h3>
+                    <p>
+                        Lidar sensors measure the distance to objects at incredible speeds and with high precision.
+                        They work much like radar, using light rather than radio waves — the lidar signal is reflected
+                        off objects and the light that returns is then measured.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="component-card" id="lidar2" style="display:none">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img alt="" src="/images/components/Lidar2.jpg" />
+                </div>
+                <div class="component-card-text col-lg-9">
                     <h3>
                         Lidar
                     </h3>
@@ -78,10 +95,10 @@ subtitle: The Lab
         </div>
         <div class="component-card" id="camera" style="display: none">
             <div class="row">
-                <div class="col-md-3">
-                    <img alt="" src="/images/components/Camera.png" />
+                <div class="col-lg-3">
+                    <img alt="" src="/images/components/Camera.jpg" />
                 </div>
-                <div class="component-card-text col-md-9">
+                <div class="component-card-text col-lg-9">
                     <h3>
                         Camera
                     </h3>
@@ -93,10 +110,10 @@ subtitle: The Lab
         </div>
         <div class="component-card" id="radar" style="display: none">
             <div class="row">
-                <div class="col-md-3">
-                    <img alt="" src="/images/components/Radar.png" />
+                <div class="col-lg-3">
+                    <img alt="" src="/images/components/Radar.jpg" />
                 </div>
-                <div class="component-card-text col-md-9">
+                <div class="component-card-text col-lg-9">
                     <h3>
                         Radar
                     </h3>
@@ -108,10 +125,10 @@ subtitle: The Lab
         </div>
         <div class="component-card" id="gnss" style="display: none">
             <div class="row">
-                <div class="col-md-3">
-                    <img alt="" src="/images/components/GNSS.png" />
+                <div class="col-lg-3">
+                    <img alt="" src="/images/components/GNSS.jpg" />
                 </div>
-                <div class="component-card-text col-md-9">
+                <div class="component-card-text col-lg-9">
                     <h3>
                         GNSS Device
                     </h3>
@@ -123,10 +140,10 @@ subtitle: The Lab
         </div>
         <div class="component-card" id="computer" style="display: none">
             <div class="row">
-                <div class="col-md-3">
-                    <img alt="" src="/images/components/Computer.png" />
+                <div class="col-lg-3">
+                    <img alt="" src="/images/components/Computer.jpg" />
                 </div>
-                <div class="component-card-text col-md-9">
+                <div class="component-card-text col-lg-9">
                     <h3>
                         Computer
                     </h3>
