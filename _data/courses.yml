@@ -1,6 +1,7 @@
 - type: Introductory course
   title: Introduction to Autonomous Driving
   code: LTAT.06.011
+  spicyness: 2
   weight: 6
   lecturer: Naveed Muhammad
   link: https://ois2.ut.ee/#/courses/LTAT.06.011/details
@@ -9,6 +10,7 @@
 - type: Introductory course
   title: Introduction to Data Science
   code: LTAT.02.002
+  spicyness: 2
   weight: 6
   lecturer: Meelis Kull
   link: https://ois2.ut.ee/#/courses/LTAT.02.002/details
@@ -17,6 +19,7 @@
 - type: Related subtasks
   title: Machine Learning
   code: MTAT.03.227
+  spicyness: 2
   weight: 6
   lecturer: Dmytro Fishman
   link: https://ois2.ut.ee/#/courses/MTAT.03.227/details
@@ -25,6 +28,7 @@
 - type: Related subtasks
   title: Neural Networks
   code: LTAT.02.001
+  spicyness: 2
   weight: 6
   lecturer: Raul Vicente
   link: https://ois2.ut.ee/#/courses/LTAT.02.001/details
@@ -33,6 +37,7 @@
 - type: Related subtasks
   title: Optimization for Robot Control
   code: LOTI.05.084
+  spicyness: 1
   weight: 3
   lecturer: Arun Singh
   link: https://ois2.ut.ee/#/courses/LOTI.05.084/details
@@ -41,6 +46,7 @@
 - type: Related subtasks
   title: Motion Planning and State Estimation in Robotics
   code: LOTI.05.083
+  spicyness: 1
   weight: 3
   lecturer: Arun Singh
   link: https://ois2.ut.ee/#/courses/LOTI.05.083/details
@@ -49,6 +55,7 @@
 - type: Related subtasks
   title: Robotics II
   code: LOTI.05.088
+  spicyness: 3
   weight: 12
   lecturer: Janno Jõgeva
   link: https://ois2.ut.ee/#/courses/LOTI.05.088/details
@@ -57,6 +64,7 @@
 - type: Related subtasks
   title: Autonomous Vehicles Project
   code: LTAT.06.012
+  spicyness: 2
   weight: 6
   lecturer: Naveed Muhammad
   link: https://ois2.ut.ee/#/courses/LTAT.06.012/details
@@ -65,6 +73,7 @@
 - type: Related subtasks
   title: Data Science Project
   code: LTAT.00.009
+  spicyness: 3
   weight: 6
   lecturer: Sven Laur
   link: https://ois2.ut.ee/#/courses/LTAT.00.009/details
@@ -73,6 +82,7 @@
 - type: Related subtasks
   title: Robotics Technology
   code: LOTI.05.057
+  spicyness: 1
   weight: 6
   lecturer: Karl Kruusamäe
   link: https://ois2.ut.ee/#/courses/LOTI.05.057/details
@@ -81,6 +91,7 @@
 - type: Related fields
   title: QGIS with Fundamental of GIS
   code: LTOM.02.034
+  spicyness: 1
   weight: 3
   lecturer: Kiira Mõisja
   link: https://ois2.ut.ee/#/courses/LTOM.02.034/version/71a87908-581e-c06a-0ed9-4f974ae71b1b/details
@@ -89,6 +100,7 @@
 - type: Related fields
   title: Spatial Databases
   code: LTOM.02.040
+  spicyness: 2
   weight: 6
   lecturer: Valentina Sagris
   link: https://ois2.ut.ee/#/courses/LTOM.02.040/details
@@ -97,6 +109,7 @@
 - type: Related fields
   title: Intelligent Transportation Systems
   code: MTAT.08.040
+  spicyness: 2
   weight: 6
   lecturer: Amnir Hadachi
   link: https://ois2.ut.ee/#/courses/MTAT.08.040/details

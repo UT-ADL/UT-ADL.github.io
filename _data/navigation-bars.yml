@@ -2,12 +2,16 @@
   subfolderitems:
   - page: Discover ADL
     url: /discover/about
+    prefix: discover
   - page: The Lab
     url: /lab/vehicle
+    prefix: lab
   - page: Research
     url: /research/research-areas
+    prefix: research
   - page: Teaching
     url: /teaching/courses
+    prefix: teaching
 
 - title: discover
   subfolderitems:

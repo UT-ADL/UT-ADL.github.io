@@ -3,6 +3,51 @@ layout: teaching
 title: Thesis topics
 subtitle: Teaching
 ---
+<script>
+    var currentlySelectedField = "all";
+
+    function filterByField(field) {
+        //Button styling
+        const previouslySelectedButton = document.getElementById(currentlySelectedField);
+        previouslySelectedButton.classList.remove("filter-button-selected");
+        const deselect_filter_button_x = document.getElementById("deselect-filter-button-x");
+        if (deselect_filter_button_x !== null) {
+            deselect_filter_button_x.remove();
+        } else {}
+
+        if (currentlySelectedField === field) {
+            document.getElementById("all").classList.add("filter-button-selected");
+            currentlySelectedField = "all";
+        } else {
+            document.getElementById("all").classList.remove("filter-button-selected");
+            const nowSelectedButton = document.getElementById(field);
+            nowSelectedButton.classList.add("filter-button-selected");
+            currentlySelectedField = field;
+            if (field !== "all") {
+                nowSelectedButton.innerHTML = nowSelectedButton.innerHTML +
+                    "<span id='deselect-filter-button-x'> ✖</span>";
+            } //
+        }
+
+
+
+        //Actually displays the neccessary rows
+        const thesis_rows = document.getElementsByClassName("thesis-topic-row");
+        for (var i = 0; i < thesis_rows.length; i++) {
+            if (currentlySelectedField !== "all") {
+                thesis_rows[i].style.display = "none";
+            } else {
+                thesis_rows[i].style.display = "block";
+            }
+        }
+        if (currentlySelectedField !== "all") {
+            const thesis_rows_field = document.getElementsByClassName(currentlySelectedField)
+            for (var i = 0; i < thesis_rows_field.length; i++) {
+                thesis_rows_field[i].style.display = "block";
+            }
+        }
+    }
+</script>
 <div class="container-fluid mt-5">
     <div class="row">
         <div class="col-8">
@@ -15,6 +60,23 @@ subtitle: Teaching
 </div>
 <div class="spacer-medium"></div>
 <div class="container-fluid">
+    <div class="row mb-5">
+        <div class="col-8">
+            <div id="all" class="filter-button filter-button-selected" style="cursor: pointer;"
+                onclick="filterByField('all')">
+                <button type="button">All Theses</button>
+            </div>
+            <div id="bsc" class="filter-button" style="cursor: pointer;" onclick="filterByField('bsc')">
+                <button type="button">BSc</button>
+            </div>
+            <div id="msc" class="filter-button" style="cursor: pointer;" onclick="filterByField('msc')">
+                <button type="button">MSc</button>
+            </div>
+            <div id="phd" class="filter-button" style="cursor: pointer;" onclick="filterByField('phd')">
+                <button type="button">PhD</button>
+            </div>
+        </div>
+    </div>
     {% for topic in site.data.thesis-topics %}
     {% include thesis-topic.html 
         title=topic.title 
