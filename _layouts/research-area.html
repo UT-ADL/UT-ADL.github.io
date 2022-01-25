@@ -46,6 +46,7 @@
                                     <p>{{page.lead_description}}</p>
                                     <p><i class="fas fa-envelope"></i><a href="mailto:{{page.lead_email}}">{{page.lead_email}}</a></p>
                                     <hr />
+                                    {% if page.webURL != null and page.twitter != null and page.facebook != null and page.instagram != null %}
                                     <span class="overlane-text">GROUP CHANNELS</span>
                                     <br>
                                     {% if page.webURL != null and page.webURL != "" %}
@@ -61,6 +62,7 @@
                                     {% if page.instagram != null and page.instagram != "" %}
                                     <a href="{{page.instagram}}" target="_blank"><i
                                             class="fab fa-instagram-square"></i></a>
+                                    {% endif %}
                                     {% endif %}
 
                                 </div>

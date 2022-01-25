@@ -5,37 +5,30 @@ subtitle: Discover ADL
 permalink: /discover/media
 ---
 {% assign videos = site.data.media | where: "type", "video" %}
-{% assign news_en = site.data.media | where: "language", "en" %}
-{% assign news_ee = site.data.media | where: "language", "ee" %}
+{% assign articles = site.data.media | where: "type", "article" %}
 <div class="container-fluid mb-5 mt-5">
     <div class="row">
         <div class="col-md-12">
-            <h2>{{page.title}}</h2>
+            <h2>ADL in media</h2>
         </div>
     </div>
     <div class="row mt-3">
+        <span class="overlane-text mb-3">VIDEO</span>
         <div class="col-md-12">
             <div class="row">
                 {% for video in videos %}
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <a class="embed-anchor"  data-toggle="modal" data-target="#myModal"
+                <div class="col-xl-4 mt-3">
+                    <div class="embedded_video">
+                        <div class="embed-overlay"></div>
+                        <div class="embed-body">
+                            <i class="far fa-play-circle"></i>
+
+                            <span class="embed-text">{{video.title}}</span>
+
+                        </div>
+                        <a class="embed-anchor" data-toggle="modal" data-target="#myModal"
                            data-src="{{video.url}}"></a>
-                            <img class="card-img-top w-100" alt=""
-                                 src="{{video.image}}">
-                            <div class="card-block px-3 mt-4">
-                            <span class="overlane-text mt-5">
-                                VIDEO
-                            </span>
-                                <h6 class="card-title">
-                                    {{video.title}}
-                                </h6>
-                                <p class="pt-3">
-                                    <a class="link" href="{{video.url}}" target="_blank">Watch Now <i
-                                            class="fas fa-play-circle"></i></a>
-                                </p>
-                            </div>
-                        
+                        <img alt="" src="{{video.image}}"/>
                     </div>
                 </div>
                 {% endfor %}
@@ -44,96 +37,23 @@ permalink: /discover/media
     </div>
 
     <div class="news">
-        {% for news in news_en limit: 3 %}
-        <div class="row my-4 news-card">
-            {% if news.type == "video" %}
-            <a class="embed-anchor"  data-toggle="modal" data-target="#myModal"
-               data-src="{{news.url}}"></a>
-            {% else %}
-            <a class="card-anchor-absolute" href="{{news.url}}" target="_blank"></a>
-            {% endif %}
-            <div class="col-md-3">
-                <div class="news-card-img">
-                    {% if news.type == "video" %}
-                    <img class="card-img-top w-100" alt=""
-                         src="{{news.image}}"/>
-                    {% else %}
-                    <img class="img-fluid w-100" alt="" src="{{news.image}}"/>
-                    {% endif %}
-                </div>
-            </div>
-            <div class="col-md-9">
-                <div class="news-card-body mt-3">
-                    {% if news.type == "video" %}
-                    <span class="overlane-text">VIDEO • {{news.date}}</span>
-                    {% else %}
-                    <span class="overlane-text">ARTICLE • {{news.date}}</span>
-                    {% endif %}
-                    <h6>
-                        {{news.title}}
-                    </h6>
-                    {% if news.type == "video" %}
-                    <p>
-                        <a class="embed-link" data-toggle="modal" data-target="#myModal"
-                           data-src="{{news.url}}">Watch Now <i
-                                class="fas fa-play-circle"></i></a>
-                    </p>
-                    {% else %}
-                    <p>
-                        <a class="link" href="{{news.url}}" target="_blank">Read more</a>
-                    </p>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-        <hr/>
-        {% endfor %}
-        <a class="button-primary" href="/discover/media/en">All News in English</a>
-    </div>
-
-    <div class="news">
-        {% for news in news_ee limit: 3 %}
+        <span class="overlane-text">CONTINIUE READING</span>
+        <h4 class="mb-5">Explore articles, reports and videos that feature ADL</h4>
+        {% for news in articles %}
         <div class="row my-4 news-card" id="news">
-            {% if news.type == "video" %}
-            <a class="embed-anchor"  data-toggle="modal" data-target="#myModal"
-               data-src="{{news.url}}"></a>
-            {% else %}
-            <a class="card-anchor-absolute" href="{{news.url}}" target="_blank"></a>
-            {% endif %}
-            <div class="col-md-3">
-                <div class="news-card-img">
-                    {% if news.type == "video" %}
-                    <img class="card-img-top w-100" alt=""
-                         src="{{news.image}}"/>
-                    {% else %}
-                    <img class="img-fluid w-100" alt="" src="{{news.image}}"/>
-                    {% endif %}
-                </div>
-            </div>
-            <div class="col-md-9">
+            <a class="card-anchor-absolute" href="{{news.url}}" target="_blank" style="z-index:1000"></a>
+            <div class="col-md">
                 <div class="news-card-body mt-3">
-                    {% if news.type == "video" %}
-                    <span class="overlane-text">VIDEO • {{news.date}}</span>
-                    {% else %}
-                    <span class="overlane-text">ARTICLE • {{news.date}}</span>
-                    {% endif %}
+
                     <h6>
                         {{news.title}}
                     </h6>
-                
-                {% if news.type == "video" %}
-                <a class="embed-link" data-toggle="modal" data-target="#myModal"
-                   data-src="{{news.url}}">Watch Now <i
-                        class="fas fa-play-circle"></i></a>
-                {% else %}
-                <a class="link" href="{{news.url}} " target="_blank">Read more</a>
-                {% endif %}
-            </div>
+                    <span class="overlane-text">ARTICLE • {{news.date}}</span>
+                </div>
             </div>
         </div>
         <hr/>
         {% endfor %}
-        <a class="button-primary" href="/discover/media/ee">All News in Estonian</a>
     </div>
 
 
