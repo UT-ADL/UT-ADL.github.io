@@ -1,41 +1,41 @@
 - name: Tambet Matiisen
-  position: Tech Lead of Autonomous Driving Lab
+  position: Tech Lead of Autonomous Driving Lab<br>Learned Driving Team Lead
   group: lead
   email: tambet.matiisen@ut.ee
   image: /images/team/tambet.png
 
 - name: Georg Vann
-  position: Industry Cooperation Coordinator
+  position: Industry Cooperation Coordinator<br>&nbsp;
   group: lead
   email: georg.vann@ut.ee
   image: /images/team/georg.png
 
 - name: Naveed Muhammad
-  position: Associate Professor of Autonomous Driving
+  position: Associate Professor of Autonomous Driving<br>Behavior Prediction Team Lead
   group: team lead
   email: naveed.muhammad@ut.ee
   image: /images/team/naveed.png
 
 - name: Meelis Kull
-  position: Associate Professor in Machine Learning
+  position: Associate Professor in Machine Learning<br>Perception Uncertainty Team Lead
   group: team lead
   email: meelis.kull@ut.ee
   image: /images/team/meelis.png
 
 - name: Edgar Sepp
-  position: Mapping Lead of Autonomous Driving Lab
+  position: Mapping Team Lead<br>&nbsp;
   group: team lead
   email: edgar.sepp@ut.ee
   image: /images/team/edgar.png
 
 - name: Mahir Gulzar
-  position: PhD Student in Motion Prediction
+  position: PhD Student in Motion Prediction<br>
   group: student
   email: mahir.gulzar@ut.ee
   image: /images/team/mahir.png
 
 - name: Romet Aidla
-  position: Master Student in End-to-End Driving
+  position: Master Student in Learned Driving<br>
   group: student
   email: romet.aidla@ut.ee
   image: /images/team/romet.png

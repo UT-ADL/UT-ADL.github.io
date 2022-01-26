@@ -77,7 +77,7 @@
   field: MSc
   year: 2020
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=70046&year=2020
-  
+
 - title: "Security Risk Management in Autonomous Driving Vehicles: Architecture Perspective"
   supervisor: Raimundas Matulevičius, Abasi-Amefon O. Affia
   research_area: Security
@@ -85,7 +85,7 @@
   field: MSc
   year: 2020
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=70098&year=2020
-  
+
 - title: Securing Passenger's Data in Autonomous Vehicles
   supervisor: Raimundas Matulevičius, Mari Seeba
   research_area: Security
@@ -94,4 +94,34 @@
   year: 2021
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72371&year=2021
   
-  
+- title: Tool for Creating High Definition Maps in Lanelet2 format
+  supervisor: Tambet Matiisen, Edgar Sepp
+  research_area: High-definition maps
+  author: Karl-Johan Pilve
+  field: BSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71905&year=2021
+
+- title: Generating Vector Map Data for Autonomous Driving
+  supervisor: Tambet Matiisen, Edgar Sepp
+  research_area: High-definition maps
+  author: Krister Looga
+  field: BSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72097&year=2021
+
+- title: Human-like Speed in Curves
+  supervisor: Tambet Matiisen
+  research_area: Autonomy software
+  author: Eduard Rudi
+  field: BSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71953&year=2021
+
+- title: Navigation Application Input Rendering for a Self-driving Car’s Neural Network
+  supervisor: Tambet Matiisen
+  research_area: Learned driving
+  author: Erik Marcus Maks
+  field: BSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72141&year=2021
