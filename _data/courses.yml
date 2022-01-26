@@ -2,7 +2,7 @@
   title: Introduction to Autonomous Driving
   code: LTAT.06.011
   spicyness: 2
-  weight: 6
+  ects: 6
   lecturer: Naveed Muhammad
   link: https://ois2.ut.ee/#/courses/LTAT.06.011/details
   description: Introduces all the sub-problems that need to be solved to build an autonomous driving system.
@@ -11,7 +11,7 @@
   title: Introduction to Data Science
   code: LTAT.02.002
   spicyness: 2
-  weight: 6
+  ects: 6
   lecturer: Meelis Kull
   link: https://ois2.ut.ee/#/courses/LTAT.02.002/details
   description: Sensor data analysis is at the core of modern self-driving. This course gives a brief overview of the basic concepts, principles and practice of data science. The main goal is to learn to plan and carry out a simple practical data science project.
@@ -20,7 +20,7 @@
   title: Machine Learning
   code: MTAT.03.227
   spicyness: 2
-  weight: 6
+  ects: 6
   lecturer: Dmytro Fishman
   link: https://ois2.ut.ee/#/courses/MTAT.03.227/details
   description: Introduces the core concepts of machine learning and data science. Allows to do a project related to AD.
@@ -29,7 +29,7 @@
   title: Neural Networks
   code: LTAT.02.001
   spicyness: 2
-  weight: 6
+  ects: 6
   lecturer: Raul Vicente
   link: https://ois2.ut.ee/#/courses/LTAT.02.001/details
   description: Introduces ML algorithms called neural networks (NNs). NNs are mainly used in the perception module of modular stacks for autonomous driving, but also in other modules. In end-to-end driving approaches, the entire driving stack is one big neural network. Also, there is a possibility to do a project that is related to autonomous driving.
@@ -38,7 +38,7 @@
   title: Optimization for Robot Control
   code: LOTI.05.084
   spicyness: 1
-  weight: 3
+  ects: 3
   lecturer: Arun Singh
   link: https://ois2.ut.ee/#/courses/LOTI.05.084/details
   description: Basics on optimization, especially in light of trajectory optimization, model predictive control from the point of view of robotics motion planning and control.
@@ -47,7 +47,7 @@
   title: Motion Planning and State Estimation in Robotics
   code: LOTI.05.083
   spicyness: 1
-  weight: 3
+  ects: 3
   lecturer: Arun Singh
   link: https://ois2.ut.ee/#/courses/LOTI.05.083/details
   description: Basics of robot motion planning, control, and state estimation. Tasks like navigating mobile robots through obstacle filled environments.
@@ -56,7 +56,7 @@
   title: Robotics II
   code: LOTI.05.088
   spicyness: 3
-  weight: 12
+  ects: 12
   lecturer: Janno Jõgeva
   link: https://ois2.ut.ee/#/courses/LOTI.05.088/details
   description: Introduces mapping (SLAM) and computer vision related topics, alongside hands-on robotics.
@@ -65,7 +65,7 @@
   title: Autonomous Vehicles Project
   code: LTAT.06.012
   spicyness: 2
-  weight: 6
+  ects: 6
   lecturer: Naveed Muhammad
   link: https://ois2.ut.ee/#/courses/LTAT.06.012/details
   description: Allows you to spend a considerable amount of time on a topic of your choice related to AD.
@@ -74,7 +74,7 @@
   title: Data Science Project
   code: LTAT.00.009
   spicyness: 3
-  weight: 6
+  ects: 6
   lecturer: Sven Laur
   link: https://ois2.ut.ee/#/courses/LTAT.00.009/details
   description: There is a possibility to do a project related to AD.
@@ -83,7 +83,7 @@
   title: Robotics Technology
   code: LOTI.05.057
   spicyness: 1
-  weight: 6
+  ects: 6
   lecturer: Karl Kruusamäe
   link: https://ois2.ut.ee/#/courses/LOTI.05.057/details
   description: Introduces using the Robot Operating System (ROS) that is also used on the ADL’s self-driving Lexus.
@@ -92,7 +92,7 @@
   title: QGIS with Fundamental of GIS
   code: LTOM.02.034
   spicyness: 1
-  weight: 3
+  ects: 3
   lecturer: Kiira Mõisja
   link: https://ois2.ut.ee/#/courses/LTOM.02.034/version/71a87908-581e-c06a-0ed9-4f974ae71b1b/details
   description: Introduces basics of geoinformatics via QGIS freeware. Amongst other things, QGIS is also relevant for creating maps used by self-driving cars.
@@ -101,7 +101,7 @@
   title: Spatial Databases
   code: LTOM.02.040
   spicyness: 2
-  weight: 6
+  ects: 6
   lecturer: Valentina Sagris
   link: https://ois2.ut.ee/#/courses/LTOM.02.040/details
   description: Introduces how spatial data can be represented and treated. Spatial data in the form of maps is crucial for modular approaches in self-driving.
@@ -110,7 +110,7 @@
   title: Intelligent Transportation Systems
   code: MTAT.08.040
   spicyness: 2
-  weight: 6
+  ects: 6
   lecturer: Amnir Hadachi
   link: https://ois2.ut.ee/#/courses/MTAT.08.040/details
   description: Topics related to autonomous transportation, such as intelligent traffic management and intelligent infrastructure.
