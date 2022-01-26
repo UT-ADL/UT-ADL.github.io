@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-{% include head.html %}
+    {% include head.html %}
 </head>
 
 <body>
@@ -12,16 +12,15 @@
 
         <div class="project-page">
             <main>
-                <div class="page-heading container-fluid d-inline-flex align-items-end">
-                    <div class="page-heading-inner main-content-container mb-5">
-                        <h1 class="page-title-header text-white">Discover ADL</h1>
-                        <p class="page-title-caption text-white mt-3"> Lorem ipsum dolor sit amet, consectetur
-                            adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                        </p>
-                    </div>
-                </div>
+
+                {% include page-heading.html 
+                    title="Discover ADL"
+                    body="Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+                %}
+
                 {% include subnavigation-bar.html navigation-bar-title="discover" %}
                 <div class="content main-content-container mt-5">
                     <div class="container-fluid">

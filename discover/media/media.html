@@ -6,7 +6,7 @@ permalink: /discover/media
 ---
 {% assign videos = site.data.media | where: "type", "video" %}
 {% assign articles = site.data.media | where: "type", "article" %}
-<div class="container-fluid mb-5 mt-5">
+<div class="container-fluid mb-5">
     <div class="row">
         <div class="col-md-12">
             <h2>ADL in media</h2>
@@ -26,9 +26,8 @@ permalink: /discover/media
                             <span class="embed-text">{{video.title}}</span>
 
                         </div>
-                        <a class="embed-anchor" data-toggle="modal" data-target="#myModal"
-                           data-src="{{video.url}}"></a>
-                        <img alt="" src="{{video.image}}"/>
+                        <a class="embed-anchor" data-toggle="modal" data-target="#myModal" data-src="{{video.url}}"></a>
+                        <img alt="" src="{{video.image}}" />
                     </div>
                 </div>
                 {% endfor %}
@@ -52,7 +51,7 @@ permalink: /discover/media
                 </div>
             </div>
         </div>
-        <hr/>
+        <hr />
         {% endfor %}
     </div>
 

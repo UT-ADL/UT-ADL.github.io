@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-{% include head.html %}
+    {% include head.html %}
 </head>
 
 <body>
@@ -11,14 +11,13 @@
         {% include main-navigation-bar.html %}
 
         <main>
-            <div class="page-heading container-fluid d-inline-flex align-items-end">
-                <div class="page-heading-inner main-content-container mb-5">
-                    <h1 class="page-title-header text-white">{{page.subtitle}}</h1>
-                    <p class="page-title-caption text-white mt-3 w-75"> We are the Autonomous Driving Lab - see what it
-                        is that we do.<br>
-                        Spoiler: we make cars drive. By themselves.</p>
-                </div>
-            </div>
+
+            {% include page-heading.html 
+                title=page.subtitle
+                body="We are the Autonomous Driving Lab - see what it is that we do.
+                <br/>
+                Spoiler: we make cars drive. By themselves."
+            %}
 
             {% include subnavigation-bar.html navigation-bar-title="discover" %}
 

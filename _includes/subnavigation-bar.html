@@ -1,29 +1,34 @@
-<div class="navbar-secondary container-fluid">
-    <nav class="main-content-container navbar navbar-expand-lg navbar-light">
-        <div class="row collapse navbar-collapse">
-            <div class="col-12">
-                <!-- Gets all the data for navigation -->
-                {% for navigation-bar in site.data.navigation-bars %}
-                <!-- Selects the correct one via title, included as a parameter -->
-                {% if navigation-bar.title == include.navigation-bar-title %}
-                <!-- Loops through all the navigation elements and populates the navbar with them -->
-                {% for navigation-bar-element in navigation-bar.subfolderitems %}
-                <!-- Sets the navigation element as active if it is the current page -->
-                {% assign active-url = navigation-bar-element.url | append: ".html" %}
-                {% assign active-url-permalink = navigation-bar-element.url | append: "/" %}
-                <!-- Debug -->
-                <!--<p>A:{{active-url}}</p>
+<div class="container-fluid">
+    <nav class="navbar-secondary navbar navbar-expand navbar-light">
+        <div class="main-content-container">
+            <div class="container-fluid">
+                <div class="row collapse navbar-collapse">
+                    <div class="col-12">
+                        <!-- Gets all the data for navigation -->
+                        {% for navigation-bar in site.data.navigation-bars %}
+                        <!-- Selects the correct one via title, included as a parameter -->
+                        {% if navigation-bar.title == include.navigation-bar-title %}
+                        <!-- Loops through all the navigation elements and populates the navbar with them -->
+                        {% for navigation-bar-element in navigation-bar.subfolderitems %}
+                        <!-- Sets the navigation element as active if it is the current page -->
+                        {% assign active-url = navigation-bar-element.url | append: ".html" %}
+                        {% assign active-url-permalink = navigation-bar-element.url | append: "/" %}
+                        <!-- Debug -->
+                        <!--<p>A:{{active-url}}</p>
                 <p>P:{{page.url}}</p>-->
-                {% if page.url contains active-url-permalink or page.url == active-url or page.url == navigation-bar-element.url or page.url == active-url-permalink %}
-                <a class="active-subnavigation"
-                    href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
-                {% else %}
-                <a class="subnavigation" href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
-                <!--<p>{{navigation-bar-element.url}} | {{page.url}}</p>-->
-                {% endif %}
-                {% endfor %}
-                {% endif %}
-                {% endfor %}
+                        {% if page.url contains active-url-permalink or page.url == active-url or page.url == navigation-bar-element.url or page.url == active-url-permalink %}
+                        <a class="active-subnavigation"
+                            href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+                        {% else %}
+                        <a class="subnavigation"
+                            href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+                        <!--<p>{{navigation-bar-element.url}} | {{page.url}}</p>-->
+                        {% endif %}
+                        {% endfor %}
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
         </div>
     </nav>

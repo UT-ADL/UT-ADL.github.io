@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-{% include head.html %}
+    {% include head.html %}
 </head>
 
 <body>
@@ -12,15 +12,12 @@
 
         <div>
             <main>
-                <div class="page-heading container-fluid d-inline-flex align-items-end">
-                    <div class="page-heading-inner main-content-container mb-5">
-                        <h1 class="page-title-header text-white">{{page.subtitle}}</h1>
-                        <p class="page-title-caption text-white mt-3 w-75">
-                            We believe that self-driving cars can’t come soon enough. If you feel the same way and 
-                            want to be smart enough to do something about it, then rest assured: you’ve come to the right place.
-                        </p>
-                    </div>
-                </div>
+
+                {% include page-heading.html 
+                    title=page.subtitle
+                    body="We believe that self-driving cars can’t come soon enough. If you feel the same way and 
+                    want to be smart enough to do something about it, then rest assured: you’ve come to the right place."
+                %}
 
                 {% include subnavigation-bar.html navigation-bar-title="teaching" %}
 

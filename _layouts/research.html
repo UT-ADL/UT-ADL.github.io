@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-{% include head.html %}
+    {% include head.html %}
 </head>
 
 <body>
@@ -12,14 +12,13 @@
         {% include main-navigation-bar.html %}
 
         <main>
-            <div class="page-heading container-fluid d-inline-flex align-items-end">
-                <div class="page-heading-inner main-content-container mb-5">
-                    <h1 class="page-title-header text-white">{{page.subtitle}}</h1>
-                    <p class="page-title-caption text-white mt-3 w-75"> Making cars drive by themselves is a big task. A
-                        huge task. To help you (and us) better understand what is needed to make it happen, we have
-                        divided our work into focus areas.</p>
-                </div>
-            </div>
+
+            {% include page-heading.html 
+                title=page.subtitle
+                body="Making cars drive by themselves is a big task. A
+                    huge task. To help you (and us) better understand what is needed to make it happen, we have
+                    divided our work into focus areas."
+            %}
 
             <!-- Sub-navigation bar-->
             {% include subnavigation-bar.html navigation-bar-title="research" %}
