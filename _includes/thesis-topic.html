@@ -7,10 +7,10 @@
     class="thesis-topic-row{% if include.availability.BSc %} bsc{% endif %}{% if include.availability.MSc %} msc{% endif %}{% if include.availability.PhD %} phd{% endif %}">
     <!-- Header -->
     <div class="row course-header mt-4 pt-2">
-        <div class="col-4 d-flex align-items-center">
+        <div class="col-md-4 d-flex align-items-center">
             <h5>{{ include.type | upcase }}</h5>
         </div>
-        <div class="col-8 d-flex align-items-center">
+        <div class="col-md-8 d-flex align-items-center">
             <!-- Availability -->
             <p class="course-header-icon-gap">
                 <i class="fas fa-pen" style="display: unset; margin: 0; color: #5C5C5C"></i>
@@ -37,7 +37,7 @@
     <!-- Body -->
     <div class="row course-body mb-4">
         <div class="col-4">
-            <h3>{{ include.title }}</h3>
+            <h3 style="word-break: break-word">{{ include.title }}</h3>
         </div>
         <div class="col-5">
             <p>{{ include.description }}</p>
