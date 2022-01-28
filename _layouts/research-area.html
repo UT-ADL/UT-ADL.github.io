@@ -48,7 +48,7 @@
                                     href="mailto:{{page.lead_email}}">{{page.lead_email}}</a>
                             </p>
                             <hr/>
-                            {% if page.webURL != null and page.twitter != null and page.facebook != null and
+                            {% if page.webURL != null or page.twitter != null or page.facebook != null or
                             page.instagram != null %}
                             <span class="overlane-text">GROUP CHANNELS</span>
                             <br>
@@ -65,7 +65,6 @@
                             <a href="{{page.instagram}}" target="_blank"><i class="fab fa-instagram-square"></i></a>
                             {% endif %}
                             {% endif %}
-
                         </div>
                     </div>
                 </div>

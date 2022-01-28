@@ -1,7 +1,7 @@
 <div class="{{ include.year | downcase }} row defended-thesis-row">
     <div class="col-8">
         <div class="row mb-2">
-            <h5>{{ include.title }}</h5>
+            <h5></b><a class="link" href="{{include.link}}" target="_blank"><strong>{{ include.title }}</strong></a></h5>
         </div>
         <div class="row">
             <div class="col">
@@ -23,9 +23,9 @@
                 </p>
 
                 <span>•</span>
-                {% assign link = include.link | strip_newlines %}
-                {% if link != "" %}
-                <a href="{{include.link}}" target="_blank"><i class="fas fa-globe"></i></a>
+                {% assign website = include.website | strip_newlines %}
+                {% if website != "" %}
+                <a href="{{include.website}}" target="_blank"><i class="fas fa-globe"></i></a>
                 {% endif %}
 
                 {% assign github = include.github | strip_newlines %}
