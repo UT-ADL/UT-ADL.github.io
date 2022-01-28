@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
-{% include head.html %}
+    {% include head.html %}
 </head>
 
 <body>
     <main>
         <div class="landing_nav">
-            {% include main-navigation-bar.html %}
+            {% include main-navigation-bar.html 
+                applyMobileBackground=true
+            %}
         </div>
         {{content}}
     </main>
