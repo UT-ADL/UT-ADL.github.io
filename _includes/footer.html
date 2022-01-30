@@ -2,53 +2,58 @@
     <div class="main-content-container">
         <div class="container-fluid">
             <div class="row row-cols-10 py-5">
-                <div class="col-6">
+                <div class="col-md-6 mt-5 mt-md-0 order-last order-md-first">
                     <h5 class="mb-3">Autonomous Driving Lab</h5>
                     <p class="mb-2">Narva mnt 18</p>
                     <p class="mb-2">51009 Tartu, Estonia</p>
-                    <br>
-                    <br>
+                    <br class="d-none d-md-block">
+                    <br class="d-none d-md-block">
                     <p><a href="mailto:adl@ut.ee">adl@ut.ee</a></p>
                     <h4 class="align-bottom" style="font-weight: 100; display:table-cell">Autonomous Driving Lab</h4>
                 </div>
 
-                <!-- This needs to happen, using just | where would return a string instead of an object. -->
-                {% for navigation-bar in site.data.navigation-bars %}
-                {% if navigation-bar.title == "main" %}
-                {% assign main-navigation-bars = navigation-bar %}
-                {% break %}
-                {% endif %}
-                {% endfor %}
 
-
-
-                {% assign footer-navigation-columns = "discover,lab,research,teaching" | split: "," %}
-                {% for footer-navigation-column in footer-navigation-columns %}
-
-                {% for main-navigation-bar in main-navigation-bars.subfolderitems %}
-                {% if main-navigation-bar.url contains footer-navigation-column %}
-                {% assign footer-navigation-column-title = main-navigation-bar.page %}
-                {% break %}
-                {% endif %}
-                {% endfor %}
-
-                {% for navigation-bar in site.data.navigation-bars %}
-                {% if navigation-bar.title == footer-navigation-column%}
-                <div class="col">
-                    <h5 class="mb-3">{{ footer-navigation-column-title }}</h5>
-                    <ul class="nav flex-column">
-                        {% for navigation-bar-element in navigation-bar.subfolderitems %}
-                        <li class="nav-item mb-2"><a href="{{ navigation-bar-element.url }}"
-                                class="nav-link p-0">{{ navigation-bar-element.page }}</a></li>
+                <div class="col-md-6">
+                    <div class="row">
+                        <!-- This needs to happen, using just | where would return a string instead of an object. -->
+                        {% for navigation-bar in site.data.navigation-bars %}
+                        {% if navigation-bar.title == "main" %}
+                        {% assign main-navigation-bars = navigation-bar %}
+                        {% break %}
+                        {% endif %}
                         {% endfor %}
-                    </ul>
+
+
+
+                        {% assign footer-navigation-columns = "discover,lab,research,teaching" | split: "," %}
+                        {% for footer-navigation-column in footer-navigation-columns %}
+
+                        {% for main-navigation-bar in main-navigation-bars.subfolderitems %}
+                        {% if main-navigation-bar.url contains footer-navigation-column %}
+                        {% assign footer-navigation-column-title = main-navigation-bar.page %}
+                        {% break %}
+                        {% endif %}
+                        {% endfor %}
+
+
+                        {% for navigation-bar in site.data.navigation-bars %}
+                        {% if navigation-bar.title == footer-navigation-column%}
+                        <div class="col-md-3 col-sm-3 mt-4 mt-sm-0 col-6">
+                            <h5 class="mb-3">{{ footer-navigation-column-title }}</h5>
+                            <ul class="nav flex-column">
+                                {% for navigation-bar-element in navigation-bar.subfolderitems %}
+                                <li class="nav-item mb-2"><a href="{{ navigation-bar-element.url }}"
+                                        class="nav-link p-0">{{ navigation-bar-element.page }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% break%}
+                        {% endif %}
+                        {% endfor %}
+
+                        {% endfor %}
+                    </div>
                 </div>
-                {% break%}
-                {% endif %}
-                {% endfor %}
-
-                {% endfor %}
-
             </div>
         </div>
     </div>
