@@ -7,39 +7,46 @@
     class="thesis-topic-row{% if include.availability.BSc %} bsc{% endif %}{% if include.availability.MSc %} msc{% endif %}{% if include.availability.PhD %} phd{% endif %}">
     <!-- Header -->
     <div class="row course-header mt-4 pt-2">
-        <div class="col-md-4 d-flex align-items-center">
+        <div class="col-md-4 d-flex align-items-center mb-2 mb-md-0">
             <h5>{{ include.type | upcase }}</h5>
         </div>
-        <div class="col-md-8 d-flex align-items-center">
-            <!-- Availability -->
-            <p class="course-header-icon-gap">
-                <i class="fas fa-pen" style="display: unset; margin: 0; color: #5C5C5C"></i>
-                {{ availabilityText | upcase }}
-            </p>
+        <div class="col-md-8 d-md-flex align-items-center">
+
+            <div style="display: flex;" class="d-md-inline-flex align-items-center me-0 me-md-3">
+                <!-- Availability -->
+                <p>
+                    <i class="fas fa-pen" style="display: unset; margin: 0; color: #5C5C5C"></i>
+                    {{ availabilityText | upcase }}
+                </p>
+            </div>
 
             <!-- Group lead(s) -->
             {% for lead in include.leads %}
-            <a href="mailto:{{lead.email}}">
-                <i class="fas fa-envelope" style="display: unset; margin: 0; color: #5C5C5C"></i>
-                <p class="course-header-icon-gap">{{ lead.name | upcase }}</p>
-            </a>
+            <div style="display: flex;" class="d-md-inline-flex align-items-center me-0 me-md-3">
+                <a href="mailto:{{lead.email}}">
+                    <i class="fas fa-envelope" style="display: unset; margin: 0; color: #5C5C5C"></i>
+                    <p class="course-header-icon-gap">{{ lead.name | upcase }}</p>
+                </a>
+            </div>
             {% endfor %}
 
-            {% if include.file != null and include.file != "#" %}
-            <a href="{{include.file}}" download><i class="fas fa-file"
-                    style="display: unset; margin: 0; color: #5C5C5C"></i>
-                <p class="course-header-icon-gap">FILE</p>
-            </a>
-            {% endif %}
+            <div style="display: flex;" class="d-md-inline-flex align-items-center me-0 me-md-3">
+                {% if include.file != null and include.file != "#" %}
+                <a href="{{include.file}}" download><i class="fas fa-file"
+                        style="display: unset; margin: 0; color: #5C5C5C"></i>
+                    <p class="course-header-icon-gap">FILE</p>
+                </a>
+                {% endif %}
+            </div>
         </div>
     </div>
 
     <!-- Body -->
     <div class="row course-body mb-4">
-        <div class="col-4">
+        <div class="col-md-4">
             <h3 style="word-break: break-word">{{ include.title }}</h3>
         </div>
-        <div class="col-5">
+        <div class="col-md-5">
             <p>{{ include.description }}</p>
         </div>
     </div>
