@@ -1,41 +1,51 @@
 <!-- Header -->
 <div class="row course-header mt-4 pt-2">
-    <div class="col-md-4 align-items-center">
+    <div class="col-lg-4 d-flex align-items-center mb-2 mb-lg-0">
         <h5>{{ include.type | upcase }}</h5>
     </div>
-    <div class="col-md-8  d-flex align-items-center">
-        <!-- Spicyness car icons -->
-        {% assign spicyness = include.spicyness %}
-        {% for in in (1..3) %}
-        {% if spicyness > 0 %}
-        <i class="fa fa-car" style="color: #5C5C5C" aria-hidden="true"></i>
-        {% else %}
-        <i class="fa fa-car" style="color: #5C5C5C; opacity: 30%;" aria-hidden="true"></i>
-        {% endif %}
-        {% assign spicyness = spicyness | minus: 1 %}
-        {% endfor %}
-        <!-- ECTS -->
-        <p class="course-header-icon-gap">{{ include.ects }} ECTS</p>
+    <div class="col-lg-8 d-sm-flex align-items-center">
 
-        <!-- Code -->
-        <i class="fa fa-graduation-cap" style="color: #5C5C5C" aria-hidden="true"></i>
-        <p class="course-header-icon-gap">{{ include.code | upcase }}</p>
-        <!-- Lecturer -->
-        <i class="fa fa-user" style="color: #5C5C5C" aria-hidden="true"></i>
-        <p class="course-header-icon-gap">LECTURER: {{ include.lecturer | upcase }}</p>
+        <div style="display: flex;" class="d-sm-inline-flex align-items-center course-header-icon-gap">
+            <!-- Spicyness car icons -->
+            {% assign spicyness = include.spicyness %}
+            {% for in in (1..3) %}
+            {% if spicyness > 0 %}
+            <i class="fa fa-car" style="color: #5C5C5C" aria-hidden="true"></i>
+            {% else %}
+            <i class="fa fa-car" style="color: #5C5C5C; opacity: 30%;" aria-hidden="true"></i>
+            {% endif %}
+            {% assign spicyness = spicyness | minus: 1 %}
+            {% endfor %}
+            <!-- ECTS -->
+            <p>{{ include.ects }} ECTS</p>
+        </div>
+
+        <div style="display: flex;" class="d-sm-inline-flex align-items-center course-header-icon-gap">
+            <!-- Code -->
+            <i class="fa fa-graduation-cap" style="color: #5C5C5C" aria-hidden="true"></i>
+            <p>{{ include.code | upcase }}</p>
+        </div>
+
+        <div style="display: flex;" class="d-sm-inline-flex align-items-center">
+            <!-- Lecturer -->
+            <i class="fa fa-user" style="color: #5C5C5C" aria-hidden="true"></i>
+            <p>LECTURER: {{ include.lecturer | upcase }}</p>
+        </div>
     </div>
 </div>
 
 <!-- Body -->
 <div class="row course-body mb-3">
-    <div class="col-4">
+    <div class="col-lg-4">
         <h3 style="word-break: break-word">{{ include.title }}</h3>
     </div>
-    <div class="col-5">
+    <div class="col-lg-5 col-md-8 col-sm-8">
         <p><b>Content and relation to ADL activities:</b><br />{{ include.description }}</p>
     </div>
-    <div class="col-2 offset-1">
-        <a class="button-primary" href="{{ include.link }}" target="_blank">Learn more</a>
+    <div class="col-lg-2 col-md-3 col-sm-3 offset-sm-1 d-flex justify-content-center">
+        <div>
+            <a class="button-primary" href="{{ include.link }}" target="_blank">Learn more</a>
+        </div>
     </div>
 </div>
 <hr />
