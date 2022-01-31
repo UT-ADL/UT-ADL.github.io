@@ -2,7 +2,7 @@
 layout: research-area
 title: Behavior prediction
 research_area: Behavior prediction
-icon: /images/icons/behaviourP.png
+icon: /images/icons/behaviourPR.png
 research_lead: Naveed Muhammad
 lead_image: "/images/team/naveed.png"
 lead_description: Associate Professor of Autonomous Driving
