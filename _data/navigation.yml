@@ -3,7 +3,7 @@
   - page: Discover ADL
     url: /discover/about
     prefix: discover
-  - page: The Lab
+  - page: The Tech
     url: /lab/vehicle
     prefix: lab
   - page: Research
@@ -17,12 +17,10 @@
   subfolderitems:
   - page: About us
     url: /discover/about
-  - page: Projects
-    url: /discover/projects
-  - page: Media
-    url: /discover/media
   - page: Meet our team
     url: /discover/team
+  - page: Media
+    url: /discover/media
     
 - title: lab
   subfolderitems:
@@ -41,6 +39,8 @@
     url: /research/research-areas
   - page: Publications
     url: /research/publications
+  - page: Projects
+    url: /research/projects
 
 - title: teaching
   subfolderitems:

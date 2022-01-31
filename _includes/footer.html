@@ -9,16 +9,15 @@
                     <br class="d-none d-md-block">
                     <br class="d-none d-md-block">
                     <p><a href="mailto:adl@ut.ee">adl@ut.ee</a></p>
-                    <h4 class="align-bottom" style="font-weight: 100; display:table-cell">Autonomous Driving Lab</h4>
                 </div>
 
 
                 <div class="col-md-6">
                     <div class="row">
                         <!-- This needs to happen, using just | where would return a string instead of an object. -->
-                        {% for navigation-bar in site.data.navigation-bars %}
+                        {% for navigation-bar in site.data.navigation %}
                         {% if navigation-bar.title == "main" %}
-                        {% assign main-navigation-bars = navigation-bar %}
+                        {% assign main-navigation = navigation-bar %}
                         {% break %}
                         {% endif %}
                         {% endfor %}
@@ -28,7 +27,7 @@
                         {% assign footer-navigation-columns = "discover,lab,research,teaching" | split: "," %}
                         {% for footer-navigation-column in footer-navigation-columns %}
 
-                        {% for main-navigation-bar in main-navigation-bars.subfolderitems %}
+                        {% for main-navigation-bar in main-navigation.subfolderitems %}
                         {% if main-navigation-bar.url contains footer-navigation-column %}
                         {% assign footer-navigation-column-title = main-navigation-bar.page %}
                         {% break %}
@@ -36,7 +35,7 @@
                         {% endfor %}
 
 
-                        {% for navigation-bar in site.data.navigation-bars %}
+                        {% for navigation-bar in site.data.navigation %}
                         {% if navigation-bar.title == footer-navigation-column%}
                         <div class="col-md-3 col-sm-3 mt-4 mt-sm-0 col-6">
                             <h5 class="mb-3">{{ footer-navigation-column-title }}</h5>
