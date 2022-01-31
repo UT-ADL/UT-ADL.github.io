@@ -1,7 +1,7 @@
 ---
 layout: research-area
 title: Human-vehicle interaction
-
+icon: /images/icons/HumanVI.png
 research_lead: Karl Kruusamäe
 lead_image: "#"
 lead_description: Associate Professor of Robotics Engineering

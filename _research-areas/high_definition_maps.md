@@ -1,7 +1,7 @@
 ---
 layout: research-area
 title: High-definition maps
-
+icon: /images/icons/HighDM.png
 research_lead: Edgar Sepp 
 lead_image: "/images/team/edgar.png"
 lead_description: Mapping Lead of Autonomous Driving Lab 
@@ -27,5 +27,5 @@ order to make these processes scalable for large areas. We employ deep learning 
 sources: orthophotos, lidar point clouds, dashcam footage, etc. We also aim for a unified representation of the map data
 that could be later converted into any standardized HD map format, e.g. OpenDRIVE, Lanelet2, Autoware CSV.
 
-![High-definition map](/images/research/hd_map.png){:class="img-fluid"}
+![High-definition map](/images/research/hd_map.jpg){:class="img-fluid"}
 

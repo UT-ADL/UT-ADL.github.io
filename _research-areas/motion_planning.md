@@ -1,7 +1,7 @@
 ---
 layout: research-area
 title: Motion planning
-
+icon: /images/icons/MotionP.png
 research_lead: Arun Kumar Singh
 lead_image: "#"
 lead_description: Associate Professor of Collaborative Robotics

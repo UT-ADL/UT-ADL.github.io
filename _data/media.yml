@@ -2,63 +2,63 @@
   url: "https://www.youtube.com/embed/Uq5KH6PRMmY"
   image: "https://img.youtube.com/vi/Uq5KH6PRMmY/maxresdefault.jpg"
   language: en
-  date: 30/11/2020
+  date: 2020-11-30
   title: Autonomous Driving Lab September Street Demo
   
 - type: article
   url: "https://researchinestonia.eu/2021/05/03/ut-and-bolt-expand-collaboration-to-develop-it-solutions-for-self-driving-vehicles/"
   image: "https://researchinestonia.eu/rwp/wp-content/uploads/fly-images/6919/self-driving-car-demo_13_MathisBogens-scaled-1-1170x770-c.jpg"
   language: en
-  date: 3/05/2021
+  date: 2021-05-03
   title: University of Tartu and Bolt expand collaboration to develop IT solutions for self-driving vehicles
 
 - type: article
   url: "https://www.cs.ut.ee/en/news/university-tartus-self-driving-car-has-reached-city-traffic"
   image: "https://www.cs.ut.ee/sites/default/files/dsc03093_11_0.jpg"
   language: en
-  date: 07/12/2020
+  date: 2020-12-07
   title: University of Tartu’s self-driving car has reached city traffic
 
 - type: video
   url: "https://www.youtube.com/embed/narMXyL5mPY"
   image: "https://img.youtube.com/vi/narMXyL5mPY/mqdefault.jpg"
   language: en
-  date: 10/09/2020
+  date: 2020-09-10
   title: The World’s First Self-Driving Car to Drive on the Official WRC Rally Stage
 
 - type: video
   url: "https://www.youtube.com/embed/oxqmYSn-erk"
   image: "https://img.youtube.com/vi/oxqmYSn-erk/mqdefault.jpg"
   language: en
-  date: 4/03/2020
+  date: 2020-03-04
   title: University of Tartu Autonomous Driving Lab Test Car Reveal
   
 - type: article
   url: "https://etv.err.ee/1608370293/teadusest"
   image: "https://s.err.ee/photo/crop/2021/10/04/1170810h7321t48.jpg"
   language: ee
-  date: 28/10/2021
+  date: 2021-10-28
   title: TeadusEST 3. osa - isejuhtivad sõidukid
 
 - type: article
   url: "https://www.cs.ut.ee/et/uudised/tartu-ulikool-bolt-laiendavad-koostood-isejuhtivate-soidukite-jaoks-vajalike-it-lahenduste"
   image: "https://www.cs.ut.ee/sites/default/files/styles/ut_image_default/public/foto_mathis_bogens_bolt_16-9_0.jpg?itok=1SPRC9np"
   language: ee
-  date: 22/04/2021
+  date: 2021-04-22
   title: Tartu Ülikool ja Bolt laiendavad koostööd isejuhtivate sõidukite jaoks vajalike IT-lahenduste arendamiseks
   
 - type: article
   url: "https://tartu.postimees.ee/7132368/isejuhtiv-auto-joudis-linnaliiklusse"
   image: "https://f7.pmo.ee/J7cEhuaIO2wkvc6oN6wZOssVk2o=/1370x820/smart/nginx/o/2020/12/13/13527618t1h5cf2.jpg"
   language: ee
-  date: 14/12/2020
+  date: 2020-12-14
   title: Isejuhtiv auto jõudis linnaliiklusse
 
 - type: article
   url: "https://tehnika.postimees.ee/7055143/bolti-ja-tartu-ulikooli-isejuhtiv-auto-rally-estonial"
   image: "https://f11.pmo.ee/NRx6ysb8CSTmzGCcNVyXlKBkLk0=/1370x820/smart/nginx/o/2020/01/28/12900542t1hfabb.jpg"
   language: ee
-  date: 04/09/2020
+  date: 2020-09-04
   title: Bolti ja Tartu Ülikooli isejuhtiv auto Rally Estonial
     
   

@@ -1,7 +1,7 @@
 ---
 layout: research-area
 title: Security
-
+icon: /images/icons/Security.png
 research_lead: Raimundas Matulevicius
 lead_image: "#"
 lead_description: Professor of Information Security

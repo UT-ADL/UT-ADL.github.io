@@ -5,7 +5,7 @@ subtitle: Discover ADL
 permalink: /discover/media
 ---
 {% assign videos = site.data.media | where: "type", "video" %}
-{% assign articles = site.data.media | where: "type", "article" %}
+{% assign sorted = site.data.media | sort: "date" | reverse %}
 <div class="container-fluid mb-5">
     <div class="row">
         <div class="col-md-12">
@@ -38,7 +38,7 @@ permalink: /discover/media
     <div class="news">
         <span class="overlane-text">CONTINIUE READING</span>
         <h4 class="mb-5">Explore articles, reports and videos that feature ADL</h4>
-        {% for news in articles %}
+        {% for news in sorted %}
         <div class="row my-4 news-card" id="news">
             <a class="card-anchor-absolute" href="{{news.url}}" target="_blank" style="z-index:1000"></a>
             <div class="col-md">
@@ -47,7 +47,11 @@ permalink: /discover/media
                     <h6>
                         {{news.title}}
                     </h6>
+                    {% if news.type == "article" %}
                     <span class="overlane-text">ARTICLE • {{news.date}}</span>
+                    {% else %}
+                    <span class="overlane-text">VIDEO • {{news.date}}</span>
+                    {% endif %}
                 </div>
             </div>
         </div>
