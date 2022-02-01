@@ -11,6 +11,8 @@
   authors: Vivek K. Adajania, Aditya Sharma, Anish Gupta, Houman Masnavi, K Madhava Krishna, Arun K.Singh
   year: 2021
   link: https://arxiv.org/abs/2109.10392
+  github: https://github.com/vivek-uka/Batch-Opt-Highway-Driving
+  video: https://www.youtube.com/watch?v=HPME4cYlR24
 
 - title: "GPU Accelerated Convex Approximations for Fast Multi-Agent Trajectory Optimization"
   conference: IEEE

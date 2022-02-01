@@ -3,7 +3,7 @@
   - page: Discover ADL
     url: /discover/about
     prefix: discover
-  - page: The Tech
+  - page: The Lab
     url: /lab/vehicle
     prefix: lab
   - page: Research
