@@ -3,7 +3,7 @@ layout: research-area
 title: High-definition maps
 icon: /images/icons/HighDM.png
 research_lead: Edgar Sepp 
-lead_image: "/images/team/edgar.png"
+lead_image: "/images/team/edgar.jpg"
 lead_description: Mapping Lead of Autonomous Driving Lab 
 lead_email: edgar.sepp@ut.ee
 ---

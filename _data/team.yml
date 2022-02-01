@@ -1,5 +1,5 @@
 - name: Tambet Matiisen
-  position: Tech Lead of Autonomous Driving Lab<br>Learned Driving Team Lead
+  position: Project Manager, Autonomy Software and Learned Driving Team Lead
   group: lead
   email: tambet.matiisen@ut.ee
   image: /images/team/tambet.jpg
@@ -11,32 +11,133 @@
   image: /images/team/georg.jpg
 
 - name: Naveed Muhammad
-  position: Associate Professor of Autonomous Driving<br>Behavior Prediction Team Lead
+  position: Associate Professor of Autonomous Driving, Behavior Prediction Team Lead
   group: team lead
   email: naveed.muhammad@ut.ee
   image: /images/team/naveed.jpg
 
+- name: Arun Kumar Singh
+  position: Associate Professor of Collaborative Robotics, Motion Planning Team Lead
+  group: team lead
+  email: arun.singh@ut.ee
+  image: /images/team/arun.jpg
+
+- name: Karl Kruusamäe
+  position: Associate Professor of Robotics Engineering, Human-Vehicle Interaction and Teleoperation Team Lead
+  group: team lead
+  email: karl.kruusamae@ut.ee
+  image: /images/team/karl.jpg
+
 - name: Meelis Kull
-  position: Associate Professor in Machine Learning<br>Perception Uncertainty Team Lead
+  position: Associate Professor in Machine Learning, Perception Uncertainty Team Lead
   group: team lead
   email: meelis.kull@ut.ee
   image: /images/team/meelis.jpg
 
-- name: Edgar Sepp
-  position: Mapping Team Lead<br>&nbsp;
+- name: Raimundas Matulevičius
+  position: Professor of Information Security, Security Team Lead
   group: team lead
+  email: raimundas.matulevicius@ut.ee
+  image: /images/team/raimundas.jpg
+
+- name: Dietmar Pfahl
+  position: Professor of Software Engineering, Validation & Testing Team Lead
+  group: team lead
+  email: dietmar.pfahl@ut.ee
+  image: /images/team/dietmar.jpg
+
+- name: Kuldar Taveter
+  position: Associate Professor in Information Systems, Requirements Analysis Team Lead
+  group: team lead
+  email: kuldar.taveter@ut.ee
+  image: /images/team/kuldar.jpg
+
+- name: Edgar Sepp
+  position: Scientific Programmer, High-Definition Maps Team Lead
+  group: engineer
   email: edgar.sepp@ut.ee
   image: /images/team/edgar.jpg
 
+- name: Muhammad Zain Bashir
+  position: Autonomy Software Engineer
+  group: engineer
+  email: muhammad.zain.bashir@ut.ee
+  image: /images/team/zain.jpg
+
+- name: Valentina Sagris
+  position: GIS Software Engineer
+  group: engineer
+  email: valentina.sagris@ut.ee
+  image: /images/team/valentina.jpg
+
+- name: Ardi Tampuu
+  position: Research Software Engineer, Educational Technology Team Lead
+  group: engineer
+  email: ardi.tampuu@ut.ee
+  image: /images/team/ardi.jpg
+
 - name: Mahir Gulzar
-  position: PhD Student in Motion Prediction<br>
+  position: PhD Student in Behavior Prediction
   group: student
   email: mahir.gulzar@ut.ee
   image: /images/team/mahir.jpg
 
 - name: Romet Aidla
-  position: Master Student in Learned Driving<br>
+  position: Master Student in Learned Driving
   group: student
   email: romet.aidla@ut.ee
   image: /images/team/romet.jpg
 
+- name: Kertu Toompea
+  position: Master Student in Validation & Testing
+  group: student
+  email: kertu.toompea@ut.ee
+  image: /images/team/kertu.jpg
+
+- name: Allan Mitt
+  position: Master Student in Validation & Testing
+  group: student
+  email: allan.mitt@ut.ee
+  image: /images/team/allan.jpg
+
+- name: Markus Kängsepp
+  position: PhD Student in Perception Uncertainty
+  group: student
+  email: markus.kangsepp@ut.ee
+  image: /images/team/markus.jpg
+
+- name: Rauno Põlluaas
+  position: Master Student in Teleoperation
+  group: student
+  email: markus.kangsepp@ut.ee
+  image: /images/team/markus.jpg
+
+- name: Dmytro Zabolotnii
+  position: PhD Student in Behavior Prediction
+  group: student
+  email: dmytro.zabolotnii@ut.ee
+  image: /images/team/dmytro.jpg
+
+- name: Houman Masnavi
+  position: PhD Student in Motion Planning
+  group: student
+  email: houman.masnavi@ut.ee
+  image: /images/team/houman.jpg
+
+#- name: Amefon Affia
+#  position: PhD Student in Security
+#  group: student
+#  email: amefon.affia@ut.ee
+#  image: /images/team/amefon.jpg
+
+#- name: Debasis Kumar
+#  position: PhD Student in Behavior Prediction
+#  group: student
+#  email: debasis.kumar@ut.ee
+#  image: /images/team/debasis.jpg
+
+#- name: Tahira Iqbal
+#  position: PhD Student in Requirements Analysis
+#  group: student
+#  email: tahira.iqbal@ut.ee
+#  image: /images/team/tahira.jpg

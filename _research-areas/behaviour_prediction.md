@@ -4,7 +4,7 @@ title: Behavior prediction
 research_area: Behavior prediction
 icon: /images/icons/BehaviourPR.png
 research_lead: Naveed Muhammad
-lead_image: "/images/team/naveed.png"
+lead_image: "/images/team/naveed.jpg"
 lead_description: Associate Professor of Autonomous Driving
 lead_email: naveed.muhammad@ut.ee
 ---

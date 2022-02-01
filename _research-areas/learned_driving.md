@@ -3,7 +3,7 @@ layout: research-area
 title: Learned driving
 icon: /images/icons/LearnedD.png
 research_lead: Tambet Matiisen
-lead_image: "/images/team/tambet.png"
+lead_image: "/images/team/tambet.jpg"
 lead_description: Tech Lead of the Autonomous Driving Lab
 lead_email: tambet.matiisen@ut.ee
 

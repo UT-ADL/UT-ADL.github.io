@@ -3,7 +3,7 @@ layout: research-area
 title: Validation & testing
 icon: /images/icons/ValidationAT.png
 research_lead: Dietmar Pfahl
-lead_image: "/images/team/dietmar.png"
+lead_image: "/images/team/dietmar.jpg"
 lead_description: Professor of Software Engineering
 lead_email: dietmar.pfahl@ut.ee
 ---
