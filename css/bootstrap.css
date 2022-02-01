@@ -106,11 +106,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(3.052em );
+  font-size: calc(2.652em );
 }
 
 h2, .h2 {
-  font-size: calc(2.241rem);
+  font-size: calc(2.141rem);
 }
 
 
