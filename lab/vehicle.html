@@ -69,7 +69,10 @@ subtitle: The Lab
                         Ouster OS1-128 lidar
                     </h3>
                     <p>
-                        The short-range lidar helps to detect close-by and small obstacles.
+                        The short-range lidar helps to detect close-by and small obstacles around the vehicle. 
+                        Ouster OS1-128 produces very dense point cloud with its 128 rotating laser beams and has detection range around 40 meters.
+                        The precision of lidar measurements is 2-3 cm.
+                        Ground removal and clustering are applied to extract obstacles from the point cloud.
                     </p>
                 </div>
             </div>
@@ -85,6 +88,9 @@ subtitle: The Lab
                     </h3>
                     <p>
                         The long-range lidar helps to detect far-away obstacles, e.g. cars and pedestrians.
+                        Velodyne VLP-32C lidar has 32 lidar beams and has detection range about 80 meters.
+                        Ground removal and clustering are applied to extract obstacles from the point cloud.
+                        Alternatively special neural network can be used to detect other vehicles and pedestrians.
                     </p>
                 </div>
             </div>
@@ -100,6 +106,10 @@ subtitle: The Lab
                     </h3>
                     <p>
                         The two cameras keep an eye on traffic lights.
+                        The left camera is pointed forward to see the farther traffic lights.
+                        The right camera is pointed slightly to the right to see the closest traffic lights next to the stopline.
+                        Traffic light locations are known from the high-definition map and are projected to the camera image.
+                        Then a patch with the traffic light is extracted from the camera image and neural network is used to classify if the light is red, green or yellow.
                     </p>
                 </div>
             </div>
@@ -114,7 +124,10 @@ subtitle: The Lab
                         Aptiv ESR 2.5 radar
                     </h3>
                     <p>
-                        The radar helps to estimate the location and speed of vehicles in front.
+                        The radar uses reflections of radio waves to estimate the distance to the other vehicles ahead.
+                        In addition it also produces instant speed measurements of those vehicles using Doppler effect.
+                        Radar is very good in detecting big metallic objects, like cars, but struggles with humans and smaller objects.
+                        Additionally its distance measurements are very accurate in longitudinal direction, but lack precision in lateral direction.
                     </p>
                 </div>
             </div>
@@ -126,11 +139,12 @@ subtitle: The Lab
                 </div>
                 <div class="component-card-text col-lg-9">
                     <h3>
-                        NovAtel PwrPak7D-E2 GNSS device
+                        NovAtel PwrPak7D GNSS device
                     </h3>
                     <p>
-                        The GNSS device determines the location of the car using satellite positioning and corrections
-                        from nearby base stations.
+                        The GNSS device determines the location of the car using satellite positioning and corrections from nearby base stations.
+                        The system makes use of Real-Time Kinematic (RTK) system with ESTPOS base station network to consistently achieve 5-10 cm positioning accuracy.
+                        The car needs to know its precise position on the high-definition map to follow the virtual rails drawn on the map.
                     </p>
                 </div>
             </div>
@@ -145,7 +159,10 @@ subtitle: The Lab
                         AStuff Spectra computer
                     </h3>
                     <p>
-                        The computer runs the Autoware software that makes the driving decisions.
+                        The computer runs the Autoware.AI software that makes all the driving decisions. 
+                        Autoware.AI is open-source autonomous driving software stack that is built on top of Robot Operating System (ROS).
+                        Other than that the computer is just a normal PC running Ubuntu operating system.
+                        Over time we have made many tunings, bug fixes and adaptations to the Autoware.AI software.
                     </p>
                 </div>
             </div>
