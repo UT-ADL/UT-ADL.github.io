@@ -4,6 +4,52 @@ title: Media
 subtitle: Discover ADL
 permalink: /discover/media
 ---
+<script>
+    var currentlySelectedField = "all";
+
+    function filterByField(field) {
+        //Button styling
+        const previouslySelectedButton = document.getElementById(currentlySelectedField);
+        previouslySelectedButton.classList.remove("filter-button-selected");
+        const deselect_filter_button_x = document.getElementById("deselect-filter-button-x");
+        if (deselect_filter_button_x !== null) {
+            deselect_filter_button_x.remove();
+        } else {}
+
+        if (currentlySelectedField === field) {
+            document.getElementById("all").classList.add("filter-button-selected");
+            currentlySelectedField = "all";
+        } else {
+            document.getElementById("all").classList.remove("filter-button-selected");
+            const nowSelectedButton = document.getElementById(field);
+            nowSelectedButton.classList.add("filter-button-selected");
+            currentlySelectedField = field;
+            if (field !== "all") {
+                nowSelectedButton.innerHTML = nowSelectedButton.innerHTML +
+                    "<span id='deselect-filter-button-x'> ✖</span>";
+            } //
+        }
+
+
+
+        //Actually displays the neccessary rows
+        const thesis_rows = document.getElementsByClassName("news-card-filter");
+        for (var i = 0; i < thesis_rows.length; i++) {
+            if (currentlySelectedField !== "all") {
+                thesis_rows[i].style.display = "none";
+            } else {
+                thesis_rows[i].style.display = "block";
+            }
+        }
+        if (currentlySelectedField !== "all") {
+            const thesis_rows_field = document.getElementsByClassName(currentlySelectedField)
+            for (var i = 0; i < thesis_rows_field.length; i++) {
+                thesis_rows_field[i].style.display = "block";
+            }
+        }
+    }
+</script>
+
 {% assign videos = site.data.media | where: "type", "video" %}
 {% assign sorted = site.data.media | sort: "date" | reverse %}
 <div class="container-fluid mb-5">
@@ -38,24 +84,40 @@ permalink: /discover/media
     <div class="news">
         <span class="overlane-text">CONTINIUE READING</span>
         <h4 class="mb-5">Explore articles, reports and videos that feature ADL</h4>
-        {% for news in sorted %}
-        <div class="row my-4 news-card" id="news">
-            <a class="card-anchor-absolute" href="{{news.url}}" target="_blank" style="z-index:1000"></a>
-            <div class="col-md">
-                <div class="news-card-body mt-3">
-
-                    <h6>
-                        {{news.title}}
-                    </h6>
-                    {% if news.type == "article" %}
-                    <span class="overlane-text">ARTICLE • {{news.date}}</span>
-                    {% else %}
-                    <span class="overlane-text">VIDEO • {{news.date}}</span>
-                    {% endif %}
+        <div class="row mb-5">
+            <div class="col-md-8">
+                <div id="all" class="filter-button filter-button-selected mt-2 mt-md-0" style="cursor: pointer;"
+                    onclick="filterByField('all')">
+                    <button type="button">All</button>
+                </div>
+                <div id="ee" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('ee')">
+                    <button type="button">EE</button>
+                </div>
+                <div id="en" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('en')">
+                    <button type="button">EN</button>
                 </div>
             </div>
         </div>
-        <hr />
+        {% for news in sorted %}
+        <div class="news-card-filter {{news.language}}">
+            <div class="row my-4 news-card" id="news">
+                <a class="card-anchor-absolute" href="{{news.url}}" target="_blank" style="z-index:1000"></a>
+                <div class="col-md mb-2">
+                    <div class="news-card-body mt-3">
+
+                        <h6>
+                            {{news.title}}
+                        </h6>
+                        {% if news.type == "article" %}
+                        <span class="overlane-text">ARTICLE • {{news.date}}</span>
+                        {% else %}
+                        <span class="overlane-text">VIDEO • {{news.date}}</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </div>
         {% endfor %}
     </div>
 
