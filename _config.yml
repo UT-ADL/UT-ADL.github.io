@@ -35,7 +35,7 @@ collections:
     permalink: /research/:collection/:path/
   projects:
     output: true
-    permalink: /discover/:collection/:path/
+    permalink: /research/:collection/:path/
     
 webrick:
   headers:
