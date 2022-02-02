@@ -20,11 +20,15 @@ subtitle: Discover ADL
         {% assign students = site.data.team | where: "group","student" %}
         {% for lead in leads %}
         <div class="col-xxl-3 mb-5">
-            <div class="card" style="border: none">
+            <div class="card team-member-card" style="border: none">
+                {% if lead.image %}
                 <img src="{{ lead.image }}" alt="Image of {{ lead.name }}" class="pb-3" />
+                {% else %}
+                <img src="/images/team/lead.png" alt="" class="pb-3" />
+                {% endif %}
                 <h5>{{lead.name}}</h5>
                 <p>{{lead.position}}</p>
-                <p><a href="mailto:{{lead.email}}">{{lead.email}}</a></p>
+                <p class="team-member-email"><a href="mailto:{{lead.email}}">{{lead.email}}</a></p>
             </div>
         </div>
         {% endfor %}
@@ -33,11 +37,15 @@ subtitle: Discover ADL
     <div class="row">
         {% for team_lead in team_leads %}
         <div class="col-xxl-3 mb-5">
-            <div class="card" style="border: none">
+            <div class="card team-member-card" style="border: none">
+                {% if team_lead.image %}
                 <img src="{{ team_lead.image }}" alt="Image of {{ team_lead.name }}" class="pb-3 " />
+                {% else %}
+                <img src="/images/team/lead.png" alt="" class="pb-3" />
+                {% endif %}
                 <strong class="pt-3">{{team_lead.name}}</strong>
                 <p>{{team_lead.position}}</p>
-                <p><a href="mailto:{{team_lead.email}}">{{team_lead.email}}</a></p>
+                <p class="team-member-email"><a href="mailto:{{team_lead.email}}">{{team_lead.email}}</a></p>
             </div>
         </div>
         {% endfor %}
@@ -46,11 +54,15 @@ subtitle: Discover ADL
     <div class="row">
         {% for engineer in engineers %}
         <div class="col-xxl-3 mb-5">
-            <div class="card" style="border: none">
+            <div class="card team-member-card" style="border: none">
+                {% if engineer.image %}
                 <img src="{{ engineer.image }}" alt="Image of {{ engineer.name }}" class="pb-3" />
+                {% else %}
+                <img src="/images/team/engineer.png" alt="" class="pb-3" />
+                {% endif %}
                 <strong class="pt-3">{{engineer.name}}</strong>
                 <p>{{engineer.position}}</p>
-                <p><a href="mailto:{{engineer.email}}">{{engineer.email}}</a></p>
+                <p class="team-member-email"><a href="mailto:{{engineer.email}}">{{engineer.email}}</a></p>
             </div>
         </div>
         {% endfor %}
@@ -59,11 +71,15 @@ subtitle: Discover ADL
     <div class="row">
         {% for student in students %}
         <div class="col-xxl-3 mb-5">
-            <div class="card" style="border: none">
+            <div class="card team-member-card" style="border: none">
+                {% if student.image %}
                 <img src="{{ student.image }}" alt="Image of {{ student.name }}" class="pb-3" />
+                {% else %}
+                <img src="/images/team/student.png" alt="" class="pb-3" />
+                {% endif %}
                 <strong class="pt-3">{{student.name}}</strong>
                 <p>{{student.position}}</p>
-                <p><a href="mailto:{{student.email}}">{{student.email}}</a></p>
+                <p class="team-member-email"><a href="mailto:{{student.email}}">{{student.email}}</a></p>
             </div>
         </div>
         {% endfor %}
