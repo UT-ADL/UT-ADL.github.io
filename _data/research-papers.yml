@@ -5,15 +5,6 @@
   year: 2021
   link: https://ieeexplore.ieee.org/abstract/document/9559998/authors#authors
 
-- title: "Multi-Modal Model Predictive Control through Batch Non-Holonomic Trajectory Optimization: Application to Highway Driving"
-  conference: IEEE
-  research_area: Motion planning
-  authors: Vivek K. Adajania, Aditya Sharma, Anish Gupta, Houman Masnavi, K Madhava Krishna, Arun K.Singh
-  year: 2021
-  link: https://arxiv.org/abs/2109.10392
-  github: https://github.com/vivek-uka/Batch-Opt-Highway-Driving
-  video: https://www.youtube.com/watch?v=HPME4cYlR24
-
 - title: "GPU Accelerated Convex Approximations for Fast Multi-Agent Trajectory Optimization"
   conference: IEEE
   research_area: Motion planning
@@ -78,3 +69,11 @@
   year: 2019
   link: https://link.springer.com/chapter/10.1007/978-3-030-33246-4_18
   
+- title: "Multi-Modal Model Predictive Control through Batch Non-Holonomic Trajectory Optimization: Application to Highway Driving"
+  conference: IEEE
+  research_area: Motion planning
+  authors: Vivek K. Adajania, Aditya Sharma, Anish Gupta, Houman Masnavi, K Madhava Krishna, Arun K.Singh
+  year: 2021
+  link: https://arxiv.org/abs/2109.10392
+  github: https://github.com/vivek-uka/Batch-Opt-Highway-Driving
+  video: https://www.youtube.com/watch?v=HPME4cYlR24
