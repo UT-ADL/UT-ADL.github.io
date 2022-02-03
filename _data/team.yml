@@ -20,7 +20,7 @@
   position: Associate Professor of Collaborative Robotics, Motion Planning Team Lead
   group: team lead
   email: arun.singh@ut.ee
-#  image: /images/team/arun.jpg
+  image: /images/team/arun.jpg
 
 - name: Karl Kruusamäe
   position: Associate Professor of Robotics Engineering, HVI and Teleoperation Team Lead
@@ -38,7 +38,7 @@
   position: Professor of Information Security, Security Team Lead
   group: team lead
   email: raimundas.matulevicius@ut.ee
-#  image: /images/team/raimundas.jpg
+  image: /images/team/raimundas.jpg
 
 - name: Dietmar Pfahl
   position: Professor of Software Engineering, Validation & Testing Team Lead
@@ -62,7 +62,7 @@
   position: Autonomy Software Engineer
   group: engineer
   email: muhammad.zain.bashir@ut.ee
-#  image: /images/team/zain.jpg
+  image: /images/team/zain.jpg
 
 - name: Valentina Sagris
   position: GIS Software Engineer
@@ -74,13 +74,31 @@
   position: Research Software Engineer, Educational Technology Team Lead
   group: engineer
   email: ardi.tampuu@ut.ee
-#  image: /images/team/ardi.jpg
+  image: /images/team/ardi.jpg
 
 - name: Mahir Gulzar
   position: PhD Student in Behavior Prediction
   group: student
   email: mahir.gulzar@ut.ee
   image: /images/team/mahir.jpg
+
+- name: Dmytro Zabolotnii
+  position: PhD Student in Behavior Prediction
+  group: student
+  email: dmytro.zabolotnii@ut.ee
+  image: /images/team/dmytro.jpg
+
+- name: Houman Masnavi
+  position: PhD Student in Motion Planning
+  group: student
+  email: houman.masnavi@ut.ee
+  image: /images/team/houman.jpg
+
+- name: Markus Kängsepp
+  position: PhD Student in Perception Uncertainty
+  group: student
+  email: markus.kangsepp@ut.ee
+  image: /images/team/markus.jpg
 
 - name: Romet Aidla
   position: Master Student in Learned Driving
@@ -98,31 +116,13 @@
   position: Master Student in Validation & Testing
   group: student
   email: allan.mitt@ut.ee
-#  image: /images/team/allan.jpg
-
-- name: Markus Kängsepp
-  position: PhD Student in Perception Uncertainty
-  group: student
-  email: markus.kangsepp@ut.ee
-#  image: /images/team/markus.jpg
+  image: /images/team/allan.jpg
 
 - name: Rauno Põlluaas
   position: Master Student in Teleoperation
   group: student
   email: markus.kangsepp@ut.ee
-#  image: /images/team/rauno.jpg
-
-- name: Dmytro Zabolotnii
-  position: PhD Student in Behavior Prediction
-  group: student
-  email: dmytro.zabolotnii@ut.ee
-#  image: /images/team/dmytro.jpg
-
-- name: Houman Masnavi
-  position: PhD Student in Motion Planning
-  group: student
-  email: houman.masnavi@ut.ee
-#  image: /images/team/houman.jpg
+  image: /images/team/rauno.jpg
 
 #- name: Amefon Affia
 #  position: PhD Student in Security
