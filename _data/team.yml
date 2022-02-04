@@ -1,5 +1,5 @@
 - name: Tambet Matiisen
-  position: Project Manager, Autonomy Software and Learned Driving Team Lead
+  position: Tech Lead, Autonomy Software and Learned Driving Team Lead
   group: lead
   email: tambet.matiisen@ut.ee
   image: /images/team/tambet.jpg
@@ -118,10 +118,10 @@
   email: allan.mitt@ut.ee
   image: /images/team/allan.jpg
 
-- name: Rauno Põlluaas
+- name: Rauno Põlluäär
   position: Master Student in Teleoperation
   group: student
-  email: markus.kangsepp@ut.ee
+  email: rauno.polluaar@ut.ee
   image: /images/team/rauno.jpg
 
 #- name: Amefon Affia
