@@ -77,3 +77,10 @@
   link: https://arxiv.org/abs/2109.10392
   github: https://github.com/vivek-uka/Batch-Opt-Highway-Driving
   video: https://www.youtube.com/watch?v=HPME4cYlR24
+
+- title: "Information Security Analysis in the Passenger-Autonomous Vehicle Interaction"
+  conference: ARES2021
+  research_area: Security
+  authors: Mariia Bakhtina, Raimundas Matulevicius
+  year: 2021
+  link: https://doi.org/10.1145/3465481.3470045
