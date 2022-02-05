@@ -1,7 +1,7 @@
 ---
 layout: research-area
 title: Autonomy software
-icon: /images/icons/AutonomySW.png
+icon: /images/icons/autonomy_software.png
 research_lead: Tambet Matiisen
 lead_image: "/images/team/tambet.jpg"
 lead_description: Tech Lead of the Autonomous Driving Lab

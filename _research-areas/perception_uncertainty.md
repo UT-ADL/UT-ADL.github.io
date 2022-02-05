@@ -1,7 +1,7 @@
 ---
 layout: research-area
 title: Perception uncertainty
-icon: /images/icons/PerceptionU.png
+icon: /images/icons/perception_uncertainty.png
 research_lead: Meelis Kull
 lead_image: "/images/team/meelis.jpg"
 lead_description: Associate Professor in Machine Learning

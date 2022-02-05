@@ -1,7 +1,7 @@
 ---
 layout: research-area
 title: Educational Technology
-icon: /images/icons/AutonomySW.png
+icon: /images/icons/educational_technology.png
 research_lead: Ardi Tampuu
 lead_image: "/images/team/ardi.jpg"
 lead_description: Educational Technology Lead of the Autonomous Driving Lab
