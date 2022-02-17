@@ -61,4 +61,16 @@
   date: 2020-09-04
   title: Bolti ja Tartu Ülikooli isejuhtiv auto Rally Estonial
     
-  
+- type: article
+  url: "https://investor.postimees.ee/7448349/bercman-solmis-koostoolepingu-isejuhtiva-noudesoiduki-testimiseks"
+  image: "https://f9.pmo.ee/ugxu75sE0Bz44x6QqFXY8QNXGbQ=/1370x820/smart/nginx/o/2021/06/17/13856481t1heea0.jpg"
+  language: ee
+  date: 2022-02-07
+  title: Bercman sõlmis koostöölepingu isejuhtiva nõudesõiduki testimiseks
+
+- type: article
+  url: "https://tartu.ee/et/uudised/tartus-hakatakse-testima-isejuhtivat-noudluspohist-soidukit"
+  image: "https://tartu.ee/sites/default/files/field/image/EvelinLumi_BH9A1063%20%283%29_0.jpg"
+  language: ee
+  date: 2022-02-14
+  title: Tartus hakatakse testima isejuhtivat nõudluspõhist sõidukit

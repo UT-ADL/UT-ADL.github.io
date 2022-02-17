@@ -41,7 +41,11 @@
                         <div class="col-lg-1 mt-3">
                         </div>
                         <div class="col-lg-3 project-channels mt-2">
-                            <img src="{{page.lead_image}}" alt=""><br>
+                            {% if page.lead_image %}
+                            <img src="{{ page.lead_image }}" alt="{{page.research_lead}}" class="pb-3 img-fluid" />
+                            {% else %}
+                            <img src="/images/team/lead.png" alt="" class="pb-3 img-fluid" />
+                            {% endif %}
                             <strong>{{page.research_lead}}</strong>
                             <p>{{page.lead_description}}</p>
                             <p><i class="fas fa-envelope"></i><a
