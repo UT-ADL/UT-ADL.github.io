@@ -81,3 +81,17 @@
   language: ee
   date: 2022-03-21
   title: Isejuhtiv Lexus sõidab virtuaalses ülikoolilinnas
+
+- type: article
+  url: "https://tartu.postimees.ee/7482207/kularahvas-tellib-linna-soitmiseks-peagi-lexuse"
+  image: "https://f8.pmo.ee/5qeQ4uAhIL7F-He2p2lwBW9NjQc=/1536x0/smart/nginx/o/2022/03/21/14438909t1h9b55.jpg"
+  language: ee
+  date: 2022-03-22
+  title: Külarahvas tellib linna sõitmiseks peagi Lexuse
+
+- type: article
+  url: "https://vikerraadio.err.ee/1608529705/huvitaja-ukrainakeelne-digioppe-platvorm-isejuhtiv-auto-tartus"
+  image: "https://s.err.ee/photo/crop/2021/08/27/1124045h9e61t70.jpg"
+  language: ee
+  date: 2022-03-25
+  title: Huvitaja. Ukrainakeelne digiõppe platvorm. Isejuhtiv auto Tartus
