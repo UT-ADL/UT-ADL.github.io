@@ -1,7 +1,6 @@
 ---
 layout: project
 title: Research and Development of Self-Driving Vehicle Technology Field
-category: projects
 webURL: https://www.etis.ee/Portal/Projects/Display/0c9656d8-ee9d-4d89-a5ae-66f8379ff0e9?lang=ENG
 ---
 

@@ -43,7 +43,7 @@ webrick:
     X-Frame-Options: ""
     X-XSS-Protection: 1
 # Build settings
-plugins:
+plugins_dir:
   - jekyll-feed
 
 # Exclude from processing.
