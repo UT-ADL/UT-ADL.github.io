@@ -117,6 +117,12 @@
   group: student
   email: allan.mitt@ut.ee
   image: /images/team/allan.jpg
+  
+- name: Laima Anna Dalbina
+  position: Master Student / Programmer in Validation & Testing
+  group: student / programmer
+  email: laima.anna.dalbina@ut.ee
+#  image: /images/team/laima.jpg
 
 - name: Rauno Põlluäär
   position: Master Student in Teleoperation
