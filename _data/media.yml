@@ -100,7 +100,7 @@
   url: "https://tartu.ee/et/uudised/aprillis-soidab-tartu-linnas-isejuhtiv-uhissoiduk"
   image: "https://tartu.ee/sites/default/files/styles/news_header_image/public/field/image/4O7A6545.jpg?itok=mdg439VI"
   language: ee
-  date: 2022-04-5
+  date: 2022-04-05
   title: "Aprillis sõidab Tartu linnas isejuhtiv ühissõiduk"
 
 - type: article
@@ -116,3 +116,17 @@
   language: ee
   date: 2022-04-12
   title: "Tartlased võivad tasuta proovida isesõitvat autot"
+
+- type: article
+  url: "https://reporter.postimees.ee/7499440/reporter-tartus-soidab-isejuhtiv-uhissoiduk-nagu-varskelt-load-saanud-noor-juht"
+  image: ""
+  language: ee
+  date: 2022-04-12
+  title: "Reporter: Tartus sõidab isejuhtiv ühissõiduk nagu värskelt load saanud noor juht"
+
+- type: article
+  url: "https://tartu.ee/en/news/selfdriving-public-transport-vehicle-available-tartu-april"
+  image: "https://tartu.ee/sites/default/files/styles/news_header_image/public/field/image/4O7A6545.jpg?itok=mdg439VI"
+  language: en
+  date: 2022-04-06
+  title: "Self-driving public transport vehicle available in Tartu in April"
