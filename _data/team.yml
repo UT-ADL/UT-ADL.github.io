@@ -52,6 +52,12 @@
   email: kuldar.taveter@ut.ee
 #  image: /images/team/kuldar.jpg
 
+- name: Ardi Tampuu
+  position: Lecturer of Artificial Intelligence, Educational Technology Team Lead
+  group: team lead
+  email: ardi.tampuu@ut.ee
+  image: /images/team/ardi.jpg
+
 - name: Edgar Sepp
   position: Scientific Programmer, High-Definition Maps Team Lead
   group: engineer
@@ -69,12 +75,6 @@
   group: engineer
   email: valentina.sagris@ut.ee
 #  image: /images/team/valentina.jpg
-
-- name: Ardi Tampuu
-  position: Research Software Engineer, Educational Technology Team Lead
-  group: engineer
-  email: ardi.tampuu@ut.ee
-  image: /images/team/ardi.jpg
 
 - name: Mahir Gulzar
   position: PhD Student in Behavior Prediction
