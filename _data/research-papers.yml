@@ -84,3 +84,12 @@
   authors: Mariia Bakhtina, Raimundas Matulevicius
   year: 2021
   link: https://doi.org/10.1145/3465481.3470045
+
+- title: "LiDAR-as-Camera for End-to-End Driving"
+  conference: ICRA2022 workshop
+  research_area: Learned driving
+  authors: Ardi Tampuu, Romet Aidla, Jan Are van Gent, Tambet Matiisen
+  year: 2022
+  link: https://drive.google.com/file/d/1S-YzcJccHsM0LTmpnaC91I5yWi1FQqPk/view
+  video: https://youtu.be/PkfvBnkAS8o
+  github: https://github.com/UT-ADL/e2e-rally-estonia

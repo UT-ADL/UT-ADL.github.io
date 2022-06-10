@@ -3,7 +3,7 @@ layout: research-area
 title: Teleoperation
 icon: /images/icons/teleoperation.png
 research_lead: Karl Kruusamäe 
-#lead_image: "/images/team/karl.jpg"
+lead_image: "/images/team/karl.jpg"
 lead_description: Associate Professor of Robotics Engineering
 lead_email: karl.kruusamae@ut.ee
 ---

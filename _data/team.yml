@@ -26,7 +26,7 @@
   position: Associate Professor of Robotics Engineering, HVI and Teleoperation Team Lead
   group: team lead
   email: karl.kruusamae@ut.ee
-#  image: /images/team/karl.jpg
+  image: /images/team/karl.jpg
 
 - name: Meelis Kull
   position: Associate Professor in Machine Learning, Perception Uncertainty Team Lead
@@ -74,7 +74,13 @@
   position: GIS Software Engineer
   group: engineer
   email: valentina.sagris@ut.ee
-#  image: /images/team/valentina.jpg
+  image: /images/team/valentina.jpg
+
+- name: Basant Sharma
+  position: Motion Planning Engineer
+  group: engineer
+  email: basant.sharma@ut.ee
+#  image: /images/team/basant.jpg
 
 - name: Mahir Gulzar
   position: PhD Student in Behavior Prediction
@@ -110,7 +116,7 @@
   position: Master Student in Validation & Testing
   group: student
   email: kertu.toompea@ut.ee
-#  image: /images/team/kertu.jpg
+  image: /images/team/kertu.jpg
 
 - name: Allan Mitt
   position: Master Student in Validation & Testing
@@ -130,20 +136,32 @@
   email: rauno.polluaar@ut.ee
   image: /images/team/rauno.jpg
 
-#- name: Amefon Affia
-#  position: PhD Student in Security
-#  group: student
-#  email: amefon.affia@ut.ee
+- name: Amefon Affia
+  position: PhD Student in Security
+  group: student
+  email: amefon.affia@ut.ee
 #  image: /images/team/amefon.jpg
 
-#- name: Debasis Kumar
-#  position: PhD Student in Behavior Prediction
-#  group: student
-#  email: debasis.kumar@ut.ee
+- name: Debasis Kumar
+  position: PhD Student in Behavior Prediction
+  group: student
+  email: debasis.kumar@ut.ee
 #  image: /images/team/debasis.jpg
 
-#- name: Tahira Iqbal
-#  position: PhD Student in Requirements Analysis
-#  group: student
-#  email: tahira.iqbal@ut.ee
+- name: Tahira Iqbal
+  position: PhD Student in Requirements Analysis
+  group: student
+  email: tahira.iqbal@ut.ee
 #  image: /images/team/tahira.jpg
+
+- name: Jatal Shrestha
+  position: PhD Student in Motion Planning
+  group: student
+  email: jatal.shrestha@ut.ee
+#  image: /images/team/jatal.jpg
+
+- name: Laima Anna Dalbina
+  position: Master Student in Validation & Testing
+  group: student
+  email: laima.anna.dalbina@ut.ee
+#  image: /images/team/laima.jpg
