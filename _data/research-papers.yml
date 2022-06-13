@@ -93,3 +93,9 @@
   link: https://drive.google.com/file/d/1S-YzcJccHsM0LTmpnaC91I5yWi1FQqPk/view
   video: https://youtu.be/qzo61V7G1EM?t=5761
   github: https://github.com/UT-ADL/e2e-rally-estonia
+
+- title: "Air-flow sensing for vehicle length estimation in autonomous driving applications"
+  conference: ETFA2021
+  research_area: Behavior prediction
+  authors: Roman Matvejev, Yar Muhammad, Naveed Muhammad
+  link: https://ieeexplore.ieee.org/document/9613563
