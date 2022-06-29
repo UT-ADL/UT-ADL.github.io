@@ -139,6 +139,61 @@
   research_area: Validation & testing
   author: Mike Gomes Camara
   field: MSc
-  year: 2021
+  year: 2022
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74730&year=2022
 
+- title: Agent Behavior Modeling in Roundabout Traffic
+  supervisor: Naveed Muhammad, Yar Muhammad
+  research_area: Behavior prediction
+  author: Heidi Korp
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74817&year=2022
+
+- title: State of the art VR Driving Simulation for Physical Test Car Using LiDAR for Mapping the Surrounding Environment
+  supervisor: Ulrich Norbisrath
+  research_area: Teleoperation
+  author: Raigo Kõvask
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74845&year=2022
+
+- title: Forecasting Human Trajectories with Uncertainty Estimation
+  supervisor: Meelis Kull, Novin Shahroudi
+  research_area: Perception uncertainty
+  author: Karl Riis
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75142&year=2022
+
+- title: Teleoperation of Remote Controlled Toy Cars in VR
+  supervisor: Ulrich Norbisrath
+  research_area: Teleoperation
+  author: Amirabbas Sherafatian
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74821&year=2022
+
+- title: Effect of Delays/Lag and Fighting it in Self-driving Neural Networks
+  supervisor: Ardi Tampuu
+  research_area: Learned driving
+  author: Ilmar Uduste
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74970&year=2022
+
+- title: Testing Nvidia Drive for Small Cars in Toy Town
+  supervisor: Ardi Tampuu
+  research_area: Learned driving
+  author: Illimar Laanisto
+  field: BSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74678&year=2022
+
+- title: Leading Vehicle Length Estimation Using Pressure Data for Use in Autonomous Driving
+  supervisor: Naveed Muhammad
+  research_area: Behavior prediction
+  author: Matis Ottan
+  field: BSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74510&year=2022
