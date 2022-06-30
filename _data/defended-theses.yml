@@ -134,6 +134,30 @@
   year: 2021
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72125&year=2021
 
+- title: Modelling Interactions Between Traffic and Crosswalk Agents at Unsignalized Crossings
+  supervisor: Naveed Muhammad, Yar Muhammad
+  research_area: Behavior prediction
+  author: Laura Liis Metsvaht
+  field: MSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72407&year=2021
+
+- title: Multihead Attention Enhanced Memory Augmented Neural Network for Multimodal Trajectory Prediction
+  supervisor: Naveed Muhammad, Yar Muhammad
+  research_area: Behavior prediction
+  author: Farhan Syakir
+  field: MSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=73708&year=2021
+
+- title: Air-flow sensing for applications in autonomous driving
+  supervisor: Naveed Muhammad, Yar Muhammad
+  research_area: Behavior prediction
+  author: Roman Matvejev
+  field: BSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71873&year=2021
+
 - title: Using Adversarial Defense Methods to Improve the Performance of Deep-Neural-Network-Controlled Automatic Driving Systems
   supervisor: Dietmar Pfahl
   research_area: Validation & testing
