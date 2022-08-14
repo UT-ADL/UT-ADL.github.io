@@ -3,6 +3,7 @@ layout: blogpost
 title: University of Tartu and Bolt expand collaboration to develop IT solutions for self-driving vehicles
 date: 2020-12-07
 image: https://www.gigabyte.com/FileUpload/Global/Insight/Article/154/o202009241819172567.jpg
+alt: AI image classification
 permalink: /blog/:title/
 language: ee
 author: jill
