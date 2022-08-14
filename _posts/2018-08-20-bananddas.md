@@ -5,6 +5,7 @@ date: 2020-12-07
 image: https://www.gigabyte.com/FileUpload/Global/Insight/Article/154/o202009241819172567.jpg
 alt: AI image classification
 permalink: /blog/:title/
+meta: Self-driving public transport vehicle available in Tartu in April
 language: ee
 author: jill
 ---

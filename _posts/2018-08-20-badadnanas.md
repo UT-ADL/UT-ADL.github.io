@@ -4,6 +4,7 @@ title: Self-driving public transport vehicle available in Tartu in April
 date: 2020-12-07
 image: https://courses.cs.ut.ee/2021/AutVehProj/fall/uploads/Main/lexus.jpg
 alt: ADL autonomous vehicle
+meta: Self-driving public transport vehicle available in Tartu in April
 permalink: /blog/:title/
 language: ee
 author: jill
