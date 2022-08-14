@@ -1,0 +1,80 @@
+---
+layout: blog
+title: Blog
+permalink: /blog
+---
+
+<script>
+	var currentlySelectedField = "all";
+
+	function filterByField(field) {
+		//Button styling
+		const previouslySelectedButton = document.getElementById(currentlySelectedField);
+		previouslySelectedButton.classList.remove("filter-button-selected");
+		const deselect_filter_button_x = document.getElementById("deselect-filter-button-x");
+		if (deselect_filter_button_x !== null) {
+			deselect_filter_button_x.remove();
+		} else {}
+
+		if (currentlySelectedField === field) {
+			document.getElementById("all").classList.add("filter-button-selected");
+			currentlySelectedField = "all";
+		} else {
+			document.getElementById("all").classList.remove("filter-button-selected");
+			const nowSelectedButton = document.getElementById(field);
+			nowSelectedButton.classList.add("filter-button-selected");
+			currentlySelectedField = field;
+			if (field !== "all") {
+				nowSelectedButton.innerHTML = nowSelectedButton.innerHTML +
+					"<span id='deselect-filter-button-x'> ✖</span>";
+			} //
+		}
+
+
+
+		//Actually displays the neccessary rows
+		const thesis_rows = document.getElementsByClassName("news-card-filter");
+		for (var i = 0; i < thesis_rows.length; i++) {
+			if (currentlySelectedField !== "all") {
+				thesis_rows[i].style.display = "none";
+			} else {
+				thesis_rows[i].style.display = "block";
+			}
+		}
+		if (currentlySelectedField !== "all") {
+			const thesis_rows_field = document.getElementsByClassName(currentlySelectedField)
+			for (var i = 0; i < thesis_rows_field.length; i++) {
+				thesis_rows_field[i].style.display = "block";
+			}
+		}
+	}
+</script>
+<div class="container-fluid mb-5">
+	<div id="all" class="filter-button filter-button-selected mt-2 mt-md-0" style="cursor: pointer;"
+		 onclick="filterByField('all')">
+		<button type="button">See All</button>
+	</div>
+	<div id="en" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('en')">
+		<button type="button">Only in English</button>
+	</div>
+	<div id="ee" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('ee')">
+		<button type="button">Vaata uudiseid eesti keeles</button>
+	</div>
+	
+		{% for post in site.posts %}
+		<div class="news-card-filter {{post.language}}">
+			<div class="row my-4 news-card" id="news">
+				<a class="card-anchor-absolute" href="{{post.url}}" style="z-index:1000"></a>
+				<div class="col-md mb-2">
+					<div class="news-card-body mt-3">
+						<h6>
+							{{post.title}}
+						</h6>
+						<span class="overlane-text">NEWS • {{post.date | date: "%D"}}</span>
+					</div>
+				</div>
+			</div>
+			<hr />
+		</div>
+		{% endfor %}
+</div>

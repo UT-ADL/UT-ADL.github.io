@@ -1,5 +1,6 @@
 - title: main
   subfolderitems:
+
   - page: Discover ADL
     url: /discover/about
     prefix: discover
@@ -12,7 +13,12 @@
   - page: Teaching
     url: /teaching/courses
     prefix: teaching
+  - page: Blog
+    url: /blog
+    prefix: Blog
 
+- title: blog
+  
 - title: discover
   subfolderitems:
   - page: About us
