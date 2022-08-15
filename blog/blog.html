@@ -66,7 +66,10 @@ meta: An overview of the Autonomous Driving Lab blog
 		<div class="news-card-filter {{post.language}}">
 			<div class="row my-4 news-card" id="news">
 				<a class="card-anchor-absolute" href="{{post.url}}" style="z-index:1000"></a>
-				<div class="col-md mb-2">
+				<div class="col-md-3">
+					<img alt="{{post.alt}}" src="{{post.image}}" style="max-width: 100%">
+				</div>
+				<div class="col-md-9 mb-2">
 					<div class="news-card-body mt-3">
 						<h6>
 							{{post.title}}

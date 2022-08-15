@@ -21,19 +21,13 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
         });
     });
 	
-	function scrollToComponentCard(dataTarget){
-		var cards = document.getElementsByClassName("component-card")
-		for (let card of cards) {
-			if(card.getAttribute('id') === dataTarget){
-				card.scrollIntoView()
-				break
-			}
-		}
+	function scrollToCar(){
+		var carElement = document.getElementsByClassName("row")
+		carElement[0].scrollIntoView()
 	}
     $(document).ready(function(){
-	    $(".image-hotspot").on('click', function(event) {
-			var dataTarget = event.target.getAttribute('data-target')
-			scrollToComponentCard(dataTarget)
+	    $(".image-hotspot").on('click', function() {
+			scrollToCar()
 	    });
     });
 </script>
