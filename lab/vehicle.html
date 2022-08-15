@@ -20,6 +20,22 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
             $(target).show();
         });
     });
+	
+	function scrollToComponentCard(dataTarget){
+		var cards = document.getElementsByClassName("component-card")
+		for (let card of cards) {
+			if(card.getAttribute('id') === dataTarget){
+				card.scrollIntoView()
+				break
+			}
+		}
+	}
+    $(document).ready(function(){
+	    $(".image-hotspot").on('click', function(event) {
+			var dataTarget = event.target.getAttribute('data-target')
+			scrollToComponentCard(dataTarget)
+	    });
+    });
 </script>
 <div class="container-fluid">
     <!-- Padding, margins (nb! Row in the middle of specs) -->
@@ -34,9 +50,9 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
             <p>The most obvious piece of hardware that we utilize is our Lexus RX450h.
                 It’s not your average SUV, however, as it is equipped with all the sensors that are a prerequisite for
                 basic autonomy.
-                The car and hardware were adapted by <a  rel="noreferrer" target="_blank"
+                The car and hardware were adapted by <a  rel="nofollow" target="_blank"
                     href="https://autonomoustuff.com/">AutonomouStuff</a> and
-                everything is running on <a target="_blank" rel="noreferrer" 
+                everything is running on <a target="_blank" rel="nofollow" 
                     href="https://github.com/Autoware-AI/autoware.ai">Autoware.AI</a> software.
             </p>
         </div>
@@ -215,7 +231,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="col-md-2">
-                <a href="https://ouster.com/products/scanning-lidar/os1-sensor/" rel="noreferrer" target="_blank">Manufacturer's
+                <a href="https://ouster.com/products/scanning-lidar/os1-sensor/" rel="nofollow" target="_blank">Manufacturer's
                     specs</a>
             </div>
         </div>
@@ -260,7 +276,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="col-md-2">
-                <a href="https://velodynelidar.com/products/ultra-puck/" rel="noreferrer" target="_blank">Manufacturer's specs</a>
+                <a href="https://velodynelidar.com/products/ultra-puck/" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
@@ -289,7 +305,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="col-md-2">
-                <a href="https://autonomoustuff.com/products/allied-vision-mako-g-319c" rel="noreferrer" target="_blank">Manufacturer's
+                <a href="https://autonomoustuff.com/products/allied-vision-mako-g-319c" rel="nofollow" target="_blank">Manufacturer's
                     specs</a>
             </div>
         </div>
@@ -314,14 +330,14 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                         INS rate: max 200 Hz
                     </li>
                     <li class="list-item">
-                        RTK service: <a target="_blank" rel="noreferrer"
+                        RTK service: <a target="_blank" rel="nofollow"
                             href="https://geoportaal.maaamet.ee/eng/Spatial-Data/Geodetic-Data/Geodetic-Networks/Estonian-Permanent-GNSS-Reference-Station-Network-p671.html">ESTPOS</a>
                     </li>
                 </ul>
             </div>
             <div class="col-md-2">
                 <a href="https://novatel.com/products/gnss-inertial-navigation-systems/combined-systems/pwrpak7d-e2"
-				   rel="noreferrer" target="_blank">Manufacturer's
+				   rel="nofollow" target="_blank">Manufacturer's
                     specs</a>
             </div>
         </div>
@@ -367,7 +383,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="col-md-2">
-                <a href="https://autonomoustuff.com/products/aptiv-esr-2-5-24v" rel="noreferrer" target="_blank">Manufacturer's specs</a>
+                <a href="https://autonomoustuff.com/products/aptiv-esr-2-5-24v" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
@@ -396,7 +412,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="col-md-2">
-                <a href="http://sekolab.com/products/camera/" rel="noreferrer" target="_blank">Manufacturer's specs</a>
+                <a href="http://sekolab.com/products/camera/" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
@@ -422,7 +438,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="col-md-2">
-                <a href="https://autonomoustuff.com/products/pacmod" rel="noreferrer"  target="_blank">Manufacturer's specs</a>
+                <a href="https://autonomoustuff.com/products/pacmod" rel="nofollow"  target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
@@ -460,7 +476,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="col-md-2">
-                <a href="https://autonomoustuff.com/products/astuff-spectra" rel="noreferrer" target="_blank">Manufacturer's specs</a>
+                <a href="https://autonomoustuff.com/products/astuff-spectra" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
@@ -495,7 +511,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="col-md-2">
-                <a href="https://developer.nvidia.com/drive/drive-agx" rel="noreferrer" target="_blank">Manufacturer's specs</a>
+                <a href="https://developer.nvidia.com/drive/drive-agx" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
@@ -524,7 +540,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="col-md-2">
-                <a href="https://comma.ai/shop/products/two" rel="noreferrer" target="_blank">Manufacturer's specs</a>
+                <a href="https://comma.ai/shop/products/two" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
