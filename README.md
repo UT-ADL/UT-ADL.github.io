@@ -17,6 +17,7 @@ Quickstart regarding the content:
 * To add new defended theses edit [\_data/defended-theses.yml](_data/defended-theses.yml).
 * To change the research area descriptions edit one of the Markdown files in [\_research-areas](_research-areas).
 * To add new project add new Markdown file to [\_projects](_projects).
+* To add new blog post add new Markdown file to [\_posts](_posts).
 
 More details about those files in the sections below.
 
@@ -116,7 +117,7 @@ List of defended theses shown on the [Defended theses page](https://adl.cs.ut.ee
 * `instagram` - optional link for the group or research lead Instagram page.
 
 ## Projects
-[Projects](https://adl.cs.ut.ee/research/projects)  are implemented as [collection](https://jekyllrb.com/docs/step-by-step/09-collections/) in [\_projects](_projects) directory. The content is in [Markdown](https://kramdown.gettalong.org/quickref.html) files, but within Markdown file [HTML can also be used](https://stackoverflow.com/questions/28030858/jekyll-include-html-partial-inside-markdown-file). Each of the files includes [front matter](https://jekyllrb.com/docs/step-by-step/03-front-matter/) with following attributes:
+[Projects](https://adl.cs.ut.ee/research/projects) are implemented as [collection](https://jekyllrb.com/docs/step-by-step/09-collections/) in [\_projects](_projects) directory. The content is in [Markdown](https://kramdown.gettalong.org/quickref.html) files, but within Markdown file [HTML can also be used](https://stackoverflow.com/questions/28030858/jekyll-include-html-partial-inside-markdown-file). Each of the files includes [front matter](https://jekyllrb.com/docs/step-by-step/03-front-matter/) with following attributes:
 * `layout` - must be `project`.
 * `title` - title of the page.
 * `category` - not used.
@@ -124,3 +125,15 @@ List of defended theses shown on the [Defended theses page](https://adl.cs.ut.ee
 * `twitter` - optional link to the project Twitter page.
 * `facebook` - optional link to the project Facebook page.
 * `instagram` - optional link to the project Instagram page.
+
+## Blog posts
+[Blog](https://adl.cs.ut.ee/blog) is implemented as usual [Jekyll blogging functionality](https://jekyllrb.com/docs/step-by-step/08-blogging/) in [\_posts](_posts) directory. The content is in [Markdown](https://kramdown.gettalong.org/quickref.html) files, but within Markdown file [HTML can also be used](https://stackoverflow.com/questions/28030858/jekyll-include-html-partial-inside-markdown-file). The files must be named in format `YYYY-MM-DD-title.md`. Each of the files includes [front matter](https://jekyllrb.com/docs/step-by-step/03-front-matter/) with following attributes:
+* `layout` - must be `blogpost`.
+* `title` - title of the post.
+* `date` - date of the post in YYYY-MM-DD format.
+* `image` - main image of the post, will be shown on the front page and as the first thing on blog post page.
+* `alt` - textual description of the image.
+* `permalink` - must be `/blog/:title/`
+* `meta` - description of the page in [meta tag](https://developers.google.com/search/docs/advanced/crawling/special-tags)
+* `language` - either `ee` or `en`. Blog posts can be filtered by this.
+* `author` - name of the author of the post.
