@@ -6,7 +6,7 @@ image: /images/blog/esscass2022.jpg
 alt: ADL autonomous vehicle
 meta: ADL represented at ESSCaSS 2022
 permalink: /blog/:title/
-language: ee
+language: en
 author: Georg Vann
 ---
 We were represented among the distinguished line-up of speakers that took the stage during [ESSCaSS 2022](https://www.facebook.com/SummerSchoolCS), the 19th Estonian Summer School on Computer and System Science.

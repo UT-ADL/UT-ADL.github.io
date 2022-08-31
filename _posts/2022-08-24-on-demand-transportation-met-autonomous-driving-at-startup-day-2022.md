@@ -6,7 +6,7 @@ image: /images/blog/startupday2022.jpg
 alt: AI image classification
 permalink: /blog/:title/
 meta: On-demand transportation met autonomous driving at sTARTUp Day 2022
-language: ee
+language: en
 author: Georg Vann
 ---
 Our public appearances continued with our very own side event “On-demand transport meets autonomous driving” at [sTARTUp Day 2022](https://www.startupday.ee/)!
