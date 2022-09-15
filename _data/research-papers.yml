@@ -107,3 +107,10 @@
   authors: Naveed Muhammad, Klas Hedenberg, Björn Åstrand
   year: 2021
   link: https://ieeexplore.ieee.org/document/9613565
+
+- title: "Leading Vehicle Length Estimation Using Pressure Data for Use in Autonomous Driving"
+  conference: ETFA2022
+  research_area: Behavior prediction
+  authors: Matis Ottan, Naveed Muhammad
+  year: 2022
+#  link: https://ieeexplore.ieee.org/document/9613563
