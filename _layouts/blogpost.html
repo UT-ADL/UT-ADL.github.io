@@ -26,7 +26,9 @@
 					</h3>
 					<div class="row g-0">
 						<div class="col-lg-8 mt-3">
+							{% if page.image != null and page.image != "" %}
 							<img class="mb-5" alt="{{page.alt}}" src="{{page.image}}" style="max-width: 100%">
+							{% endif %}
 							{{content}}
 						</div>
 					</div>
