@@ -1,5 +1,5 @@
 - title: Vehicle motion prediction at a roundabout
-  description: As human drivers we instinctively predict the motion of other road agents, be it manually driven vehicles, pedestrians and cyclists etc. This however is not a trivial task for an autonomous vehicle. In this project you will investigate and then integrate a vehicle motion prediction technique on a real autonomous vehicle. For this you will be working on an existing open source software stack like <a href='https://www.autoware.org/' target='_blank'>https://www.autoware.org/</a> and integrate an existing baseline pattern-based motion prediction model for vehicles that can be used by the motion planners. Autoware uses a third-party motion planner i.e. OpenPlanner. For testing you will be focusing on a roundabout scenario. You can choose any other autonomy stack and planner to work with but this should be agreed first. 
+  description: In this project you will investigate and then integrate a vehicle motion prediction technique on a real autonomous vehicle. For this you will be working on an existing open source software stack like <a href='https://www.autoware.org/' target='_blank'>https://www.autoware.org/</a> and integrate an existing baseline pattern-based motion prediction model for vehicles that can be used by the motion planners. Autoware uses a third-party motion planner i.e. OpenPlanner. For testing you will be focusing on a roundabout scenario. You can choose any other autonomy stack and planner to work with but this should be agreed first. 
   type: Behavior prediction
   availability: 
     BSc: no
@@ -13,7 +13,7 @@
   file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
 
 - title: Anomaly detection in pedestrian motion along the streets and at crosswalks
-  description: As human drivers we instinctively predict the motion of other road agents, be it manually driven vehicles, pedestrians and cyclists etc. This includes detecting/recognising any anomalous behaviour in other agents, for example a pedestrian who is about to jump on the road without being at a crosswalk, or a pedestrian who is standing by a crosswalk but doesn’t intend to cross the road. Such detection of anomalous behaviour is not a trivial task for an autonomous vehicle. In this project you will investigate and implement such anomalous behaviour techniques for autonomous driving applications. You can use any current non-trivial baseline solution and test it using an open-source Autonomous Driving simulator compliant with the Autoware platform, based on Robotic Operating System (ROS). Successful implementation of the working algorithm in the simulator environment can lead to further integration and testing using an actual vehicle with autonomous driving capabilities and a full sensor suite.
+  description: In this project you will investigate and implement such anomalous behaviour techniques for autonomous driving applications. You can use any current non-trivial baseline solution and test it using an open-source Autonomous Driving simulator compliant with the Autoware platform, based on Robotic Operating System (ROS). Successful implementation of the working algorithm in the simulator environment can lead to further integration and testing using an actual vehicle with autonomous driving capabilities and a full sensor suite.
   type: Behavior prediction
   availability: 
     BSc: yes
@@ -27,7 +27,7 @@
   file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
 
 - title: Review and comparison of non-supervised machine learning solutions and/or non-machine learning solutions for the task of pedestrian motion prediction
-  description: As human drivers, we instinctively predict the motion of other road agents, be it manually driven vehicles, pedestrians and cyclists, etc. This, however, is not a trivial task for an autonomous vehicle. There was a surge of state-of-art supervised machine learning solutions using advanced neural network architectures in recent years. The proposed solutions show promising results in the offline dynamic objects prediction competitions (i.e., Nuscenes Prediction <a href='https://www.nuscenes.org/prediction' target='_blank'>https://www.nuscenes.org/prediction</a>), however, they create implicit dependency on having an extensive and diverse training dataset and often ignore practical realities of running the proposed solution on a potentially real autonomous driving vehicle. You will investigate and create a list of selected non-supervised or non-machine learning solutions with similar evaluation metrics. Later, you will be able to re-implement (or use an open-source implementation) and compare them experimentally with the known supervised learning state-of-art solutions, using Autonomous Driving simulator compliant with the Autoware platform or the historical trips data obtained by our vehicle with autonomous driving capabilities. A practical result will be the survey article on the state of the research in the area with experimental results obtained using real-life driving data.
+  description: You will investigate and create a list of selected non-supervised or non-machine learning solutions with similar evaluation metrics. Later, you will be able to re-implement (or use an open-source implementation) and compare them experimentally with the known supervised learning state-of-art solutions, using Autonomous Driving simulator compliant with the Autoware platform or the historical trips data obtained by our vehicle with autonomous driving capabilities. A practical result will be the survey article on the state of the research in the area with experimental results obtained using real-life driving data.
   type: Behavior prediction
   availability: 
     BSc: no
@@ -41,7 +41,7 @@
   file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
 
 - title: Flow sensing for applications in autonomous driving
-  description: "The usual sensing modalities that are available to autonomous vehicles i.e. vision, radar and lidar have their limitations. For example, none of them is very suitable for estimating the length of a leading vehicle. Additional sensing modalities, such as wind flow sensing, might have the potential to meaningfully complement the usual sensing modalities in autonomous driving. You will build upon the innovative work done on flow-sensing applications in autonomous driving by Roman Matvejev and Matis Ottan (thesis links below). There are multiple directions that can be investigated. For example, (i) working in simulations and proposing new applications of flow sensing in autonomous driving, (ii) investigating new feature extraction and classification/regression methods etc. or (iii) expanding out of simulations with physical validation of flow sensing in autonomous driving. Roman and Matis’ theses can be accessed at the following links: <a href='https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71873&year=2021' target='_blank'>https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71873&year=2021</a> <a href='https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74510&year=2022' target='_blank'>https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74510&year=2022</a>"
+  description: "You will build upon the innovative work done on flow-sensing applications in autonomous driving by Roman Matvejev and Matis Ottan (thesis links below). There are multiple directions that can be investigated. For example, (i) working in simulations and proposing new applications of flow sensing in autonomous driving, (ii) investigating new feature extraction and classification/regression methods etc. or (iii) expanding out of simulations with physical validation of flow sensing in autonomous driving. Roman and Matis’ theses can be accessed at the following links: <a href='https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71873&year=2021' target='_blank'>https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71873&year=2021</a> <a href='https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74510&year=2022' target='_blank'>https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74510&year=2022</a>"
   type: Sensing
   availability: 
     BSc: yes
@@ -55,7 +55,7 @@
   file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
 
 - title: Precise GNSS localization
-  description: Global Navigation Satellite Systems (GNSS) such as Galileo, GPS etc. suffer from errors caused by atmospheric conditions (and a variety of other factors). Some techniques for enhancing GNSS-localization accuracy (such as D-GPS and RTK etc.) work on the principle that if a base station (the exact location of which is known) is experiencing a specific error in localization because of the atmospheric conditions, then other GNSS devices in the vicinity must be experiencing the same error. In this project you will investigate a custom precise GNSS localization solution. The solution can, for instance, be based on using smartphones as a base station and mobile units. The base station would know it’s precise location and would communicate the localization error that it is experiencing to the mobile units and thus allow the mobile units to correct their localization estimates.
+  description: In this project you will investigate a custom precise GNSS localization solution. The solution can, for instance, be based on using smartphones as a base station and mobile units. The base station would know it’s precise location and would communicate the localization error that it is experiencing to the mobile units and thus allow the mobile units to correct their localization estimates.
   type: Localization
   availability: 
     BSc: yes
@@ -67,7 +67,7 @@
   file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
 
 - title: Openbot for autonomous driving research
-  description: One of the main hurdles in entering autonomous driving education and research is the cost and complexity of life-size autonomous driving systems. At the same time, open-source and low-cost robots have gotten significant attention in recent years, one example being the Openbot (<a href='https://www.openbot.org/home' target='_blank'>https://www.openbot.org/home</a>). In this project you will investigate Openbot as a platform for use in autonomous driving education and research. You have the possibility of investigating different aspects of autonomous driving such as localization, motion prediction, end-to-end navigation etc. using the platform in this project.
+  description: In this project you will investigate <a href='https://www.openbot.org/home'>Openbot</a> as a platform for use in autonomous driving education and research. You have the possibility of investigating different aspects of autonomous driving such as localization, motion prediction, end-to-end navigation etc. using the platform in this project.
   type: Educational technology
   availability: 
     BSc: yes
@@ -79,7 +79,7 @@
   file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
 
 - title: Donkey Car platform for autonomous driving research
-  description: "One of the main hurdles in entering autonomous driving education and research is the cost and complexity of life-size autonomous driving systems. One answer to this is small-scale platforms such as the Donkey Car. In this project you will study what aspects of autonomous driving are well suited to be studied using small-scale vehicles. And what aspects aren’t. The investigation includes the areas such as mapping and localization, behaviour prediction, end-to-end driving, control, safety, comfort, planning etc. And then: either investigate one of these areas further using the donkey car platform; or design a small-scale “city” with donkey cars as the test platform to be used in autonomous-driving research."
+  description: "In this project you will study what aspects of autonomous driving are well suited to be studied using small-scale vehicles. And what aspects aren’t. The investigation includes the areas such as mapping and localization, behaviour prediction, end-to-end driving, control, safety, comfort, planning etc. And then: either investigate one of these areas further using the donkey car platform; or design a small-scale “city” with donkey cars as the test platform to be used in autonomous-driving research."
   type: Educational technology
   availability: 
     BSc: yes
@@ -88,6 +88,34 @@
   leads:
     - name: Naveed Muhammad
       email: naveed.muhammad@ut.ee
+  file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
+
+- title: Review and comparison of 2D/3D tracking methods for self driving cars
+  description: "In this research, you will investigate available literature on object tracking in both 2D (images) and 3D from the perspective of an autonomous vehicle. You will review state-of-the-art tracking methodologies, categorize them and discuss their performance factors. As an example, you can read multi-object tracking fundamentals for autonomous driving in this thesis: <a href='https://repository.tudelft.nl/islandora/object/uuid%3Af536b829-42ae-41d5-968d-13bbaa4ec736'>https://repository.tudelft.nl/islandora/object/uuid%3Af536b829-42ae-41d5-968d-13bbaa4ec736</a>"
+  type: Behavior prediction
+  availability: 
+    BSc: no
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Mahir Gulzar
+      email: mahir.gulzar@ut.ee
+    - name: Naveed Muhammad
+      email: naveed.muhammad@ut.ee
+  file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
+
+- title: A unified object detection model in birds-eye-view using public datasets
+  description: "This thesis project thus aims to leverage from the advancements made by the Computer Vision community in using Neural networks on Image data. The idea is to project lidar data into a birds eye view (BEV) image and use segmentation models such as <a href='https://towardsdatascience.com/understanding-semantic-segmentation-with-unet-6be4f42d4b47'>Unet</a> to segment out objects of interest. You will be required to collect all open source perception data sets (eg, <a href='https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=bev'>KITTI</a>, <a href='https://www.nuscenes.org/nuscenes'>NuSCENES</a>, <a href='https://waymo.com/open/'>WAYMO</a>, <a href='https://level-5.global/data/'>LYFT</a> etc) for self driving and unify them into a single format that can be used to train segmentation models. You will be validating the performance of those models and will also be able to test high performing models on the lab's vehicle, in real driving scenarios."
+  type: Behavior prediction
+  availability: 
+    BSc: no
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Muhammad Zain Bashir
+      email: muhammad.zain.bashir@ut.ee
+    - name: Mahir Gulzar
+      email: mahir.gulzar@ut.ee
   file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
 
 - title: Systematic literature review theses
@@ -107,3 +135,67 @@
     - name: Mahir Gulzar
       email: mahir.gulzar@ut.ee
   file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
+
+- title: "Applied project: testing the limits of minicars by making them drive from IoT lab to ADL"
+  description: "This project consists in using whatever means necessary to make a 1:10 scale minicar to drive 
+ autonomously from a location on the 2nd floor (IoT lab, room 2018) to a location on the 3rd floor 
+ (Autonomous Driving Lab). This encompasses driving and avoiding obstacles on the 2nd and 
+ the 3rd-floor hallways, waiting for the elevator door to open, taking the elevator, performing a 
+ U-turn inside the elevator, and passing through doors (waiting for someone to open them). 
+ If possible, the student should attempt to use as many different technologies as possible, to see 
+ if they are applicable for the task and the hardware used. For example, in certain sections, it 
+ might be enough just to detect the line between the wall and the floor and make decisions 
+ based on it. In the elevator, to make a U-turn, a hardcoded sequence of commands lasting a 
+ few seconds may be needed. In other sections, neural networks trained to imitate human driving 
+ may be useful. The task can be dumbed down as much as possible initially, e.g. assuming an 
+ empty hallway and open doors. 
+ In all, the project’s goal is to map the limits of the car platform, and its reliability in performing the 
+ subtasks of this composite task. For example, how reliably can the car replay a recorded 
+ trajectory? 
+ Scientifically speaking, the thesis will describe the route as a set of subsequent challenging 
+ tasks, discusses the requirements of each subtask, discusses methods to solve these tasks, 
+ selects methods based on simplicity, expected performance, and the project's goals"
+  type: Educational technology
+  availability: 
+    BSc: yes
+    MSc: no
+    PhD: no
+  leads:
+    - name: Ardi Tampuu
+      email: ardi.tampuu@ut.ee
+#  file: ""
+
+- title: " Repeating self-driving experiments done on Lexus on minicars: Mixture density networks and energy-based models on Donkeycar S1"
+  description: "Testing models on the real car is cool but comes with a cost. In a day of testing, we are able to 
+ do a maximum of 10 test runs. Moreover, during the day and between days conditions can 
+ change and it is hard to guarantee a fair comparison. Also, on real roads, the challenging 
+ situations are few and far between - during 25 minutes test run, there are 10-15 challenging 
+ situations (sharp turns, intersections). 
+ All this means that if we want to compare 3-4 approaches to self-driving, we need to spend 
+ many many days on the test route to have enough evidence to claim the superiority of any 
+ approach over another. With the 1:10 scale minicars the testing of solutions is significantly faster 
+ and simpler: 
+ -   No need to spend an hour driving to the test location and back (+ time saved on cleaning 
+ the car from mud) 
+ -   One lap on a reasonably-sized route takes up to a minute instead of 25 minutes. 
+ -   One can construct a variety of “roads” with any density of difficult situations. 
+ -   Weather conditions, including light conditions, are much more stable indoors, allowing 
+ fair comparison across time 
+ In 2022 we have worked on comparing different network architectures’ ability to drive the real 
+ car based on camera images. This includes neural networks performing regression and 
+ classification, mixture density networks, and energy-based models. With a variety of models 
+ needing testing, we need to draw conclusions from just 3 runs per model, meaning we lack 
+ statistical power. I  n the present thesis, you would train the same types of neural networks 
+ for the minicar and evaluate their abilities using the same metrics and ideas as was done 
+ on the real car.  Likely the number of repetitions you can run is higher and differences between 
+ approaches will be more significant. This work aims to demonstrate that certain studies we can 
+ do on the real car can actually be more effectively done on the minicar."
+  type: Educational technology
+  availability: 
+    BSc: no
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Ardi Tampuu
+      email: ardi.tampuu@ut.ee
+#  file: ""
