@@ -391,3 +391,51 @@ camera images - every image will have its own descriptors that need to be matche
     - name: Tambet Matiisen
       email: tambet.matiisen@ut.ee
   file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
+
+- title: "Efficient intervention with uplift models"
+  description: "Uplift model is a trending technique to estimate the effect of an intervention at an individual or segment level. It enables machine learning models to provide reasonable answers to relevant business questions around product features, campaigns, and recommendation offers.<br><br>In this research topic you will implement state-of-the-art uplift models and evaluate their application in feature personalisation for customers."
+  type: Bolt
+  availability:
+    BSc: no
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Carlos Bentes
+      email: carlos.bentes@bolt.eu
+#  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
+
+- title: "Understanding city characteristics through clustering analysis"
+  description: "Operating in 100+ cities and 40+ countries includes a lot of complexity for reporting and ML applications. To reduce this complexity we can cluster the cities based on map, traffic, and/or business data and describe their characteristics through prototypical examples, so called “exemplars”. The immense advantage of exemplars lies in understanding business wide dynamics on a handful of examples and generalising their characteristics to other members of the same cluster.<br><br>In this topic you will get the opportunity to handle geospatial data in a real business context. You will use different clustering techniques and evaluate their cluster quality. By serving “cluster exemplars” you will understand different city characteristics and their impact on our business. Your analysis has the potential to impact the entire reporting and modelling at Bolt."
+  type: Bolt
+  availability:
+    BSc: no
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Sophie Laturnus
+      email: sophie.laturnus@bolt.eu
+#  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
+
+- title: "Always valid p-values for experiment monitoring"
+  description: 'In this research topic you will implement and evaluate methods for always-valid inference of metrics in an AB experiment. This technique is useful to provide data teams with relevant metrics during an experiment execution without increasing the false positive rate from "peeking" results.'
+  type: Bolt
+  availability:
+    BSc: no
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Carlos Bentes
+      email: carlos.bentes@bolt.eu
+#  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
+
+- title: "Machine learning models for map element detections"
+  description: "Maps are the key ingredient for all our services at Bolt. Their data is used in many applications - be it visualizing a trip in a rider’s invoice, routing from A to B, or estimating the time of arrival for the yummy dinner of that Mexican place you ordered. It is, therefore, critical to keep our maps as up to date as possible. For this, we can use GPS tracking data of our ride hailing drivers to detect e.g. longer waiting times or uni-directional driving patterns to indicate map elements such as traffic lights or one ways.<br><br>In this project, you will research, design and test a machine learning model (e.g. LightGBM, GNN or HMM) that can detect missing map elements from our ride hailing tracking data. This could be detecting and assigning new turn restrictions, one ways, and traffic lights, or finding missing roads."
+  type: Bolt
+  availability:
+    BSc: no
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Sophie Laturnus
+      email: sophie.laturnus@bolt.eu
+#  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
