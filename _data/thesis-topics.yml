@@ -439,3 +439,27 @@ camera images - every image will have its own descriptors that need to be matche
     - name: Sophie Laturnus
       email: sophie.laturnus@bolt.eu
 #  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
+
+- title: "Deep Reinforcement Learning for Order Dispatching in Ridehailing"
+  description: "Finding the best driver for every order is one of the most crucial problems in ridehailing. However, real-life constraints make it almost impossible to solve this problem to optimality. One has to consider reliability and latency requirements as well as multiple business objectives when finding the optimal dispatching policy. In this project you will implement various deep learning architectures and evaluate their performance for multiobjective dispatching optimization task."
+  type: Bolt
+  availability:
+    BSc: no
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Anatolii Prokhorchuk
+      email: anatolii.prokhorchuk@bolt.eu
+#  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
+
+- title: "Solving Vehicle Routing Problem with Constraints for quick grocery delivery"
+  description: "Attended home delivery and same-day delivery have been studied extensively in the past. In recent years however, quick and rapid grocery delivery have changed the way people in cities order their food. This in turn have created novel problems for companies trying to optimize their delivery routing. In this project, we are interested in how does the introduction of 15 minute delivery option in addition to longer delivery options changes the optimal routing solution. The main part of the project concerns solving the vehicle routing problem with time windows with additional considerations such as including stochastic demand, stochastic travel times or joint pricing optimization."
+  type: Bolt
+  availability:
+    BSc: no
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Anatolii Prokhorchuk
+      email: anatolii.prokhorchuk@bolt.eu
+#  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
