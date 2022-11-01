@@ -4,17 +4,17 @@
   email: tambet.matiisen@ut.ee
   image: /images/team/tambet.jpg
 
+- name: Naveed Muhammad
+  position: Associate Professor of Autonomous Driving, Behavior Prediction Team Lead
+  group: lead
+  email: naveed.muhammad@ut.ee
+  image: /images/team/naveed.jpg
+
 - name: Georg Vann
   position: Industry Cooperation Coordinator
   group: lead
   email: georg.vann@ut.ee
   image: /images/team/georg_w.jpg
-
-- name: Naveed Muhammad
-  position: Associate Professor of Autonomous Driving, Behavior Prediction Team Lead
-  group: team lead
-  email: naveed.muhammad@ut.ee
-  image: /images/team/naveed.jpg
 
 - name: Arun Kumar Singh
   position: Associate Professor of Collaborative Robotics, Motion Planning Team Lead
