@@ -114,3 +114,10 @@
   authors: Matis Ottan, Naveed Muhammad
   year: 2022
   link: https://ieeexplore.ieee.org/document/9921656
+
+- title: "Calibrated Perception Uncertainty Across Objects and Regions in Bird's-Eye-View"
+  conference: ML4AD workshop
+  research_area: Perception uncertainty
+  authors: Markus Kängsepp, Meelis Kull
+  year: 2022
+  link: https://ml4ad.github.io/files/papers2022/Calibrated%20Perception%20Uncertainty%20Across%20Objects%20and%20Regions%20in%20Bird's-Eye-View.pdf
