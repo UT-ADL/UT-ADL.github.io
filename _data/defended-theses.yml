@@ -128,7 +128,7 @@
 
 - title: Simulation of Tartu City Centre for Testing Autonomous Vehicles
   supervisor: Tambet Matiisen
-  research_area: Validation & testing
+  research_area: Autonomy software
   author: Allan Mitt
   field: BSc
   year: 2021
@@ -200,7 +200,7 @@
 
 - title: Effect of Delays/Lag and Fighting it in Self-driving Neural Networks
   supervisor: Ardi Tampuu
-  research_area: Learned driving
+  research_area: Educational technology
   author: Ilmar Uduste
   field: MSc
   year: 2022
@@ -221,3 +221,27 @@
   field: BSc
   year: 2022
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75182&year=2022
+
+- title: Comparing Output Modalities in End-to-End Driving
+  supervisor: Tambet Matiisen, Ardi Tampuu
+  research_area: Learned driving
+  author: Romet Aidla
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75346&year=2022
+
+- title: Energy-Based Models for End-to-End Autonomous Driving
+  supervisor: Tambet Matiisen
+  research_area: Learned driving
+  author: Mykyta Baliesnyi
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75382&year=2022
+
+- title: Driving Speed as a Hidden Factor Behind Distribution Shift
+  supervisor: Ardi Tampuu
+  research_area: Educational technology
+  author: Kristjan Roosild
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75358&year=2022
