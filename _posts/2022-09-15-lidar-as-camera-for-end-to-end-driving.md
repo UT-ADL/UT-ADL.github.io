@@ -12,7 +12,9 @@ language: en
 author: Ardi Tampuu
 ---
 
-Ouster LiDARs can output surround-view images with intensity, depth, and ambient radiation channels. These measurements originate from the same sensor, rendering them perfectly aligned in time and space. The fact that grayscale-image-like intensity and ambient radiation images are aligned with depth information is a very interesting property for self-driving. Aligning information from different sensors is very sensitive to temporal synchronization issues and needs precise calibration of sensors. Hence, fusing an image from an RGB camera and depth information from a LiDAR requires a considerable and continuous engineering effort. With Ouster LiDAR-as-camera feature you get it basically for free. 
+**Figure 1.** Ouster modalities rendered as raster images. Top: intensity. Middle: depth. Bottom: ambient radiation.
+
+Ouster LiDARs can output surround-view images with intensity, depth, and ambient radiation channels (see Figure 1). These measurements originate from the same sensor, rendering them perfectly aligned in time and space. The fact that grayscale-image-like intensity and ambient radiation images are aligned with depth information is a very interesting property for self-driving. Aligning information from different sensors is very sensitive to temporal synchronization issues and needs precise calibration of sensors. Hence, fusing an image from an RGB camera and depth information from a LiDAR requires a considerable and continuous engineering effort. With Ouster LiDAR-as-camera feature you get it basically for free. 
 
 In [the paper](https://arxiv.org/abs/2206.15170) presented at [ICRA Fresh Perspectives on the Future of Autonomous Driving workshop](https://www.icra2022av.org/), we investigated whether these LiDAR images are sufficient for an end-to-end driving model to learn the road-following task with a real car. Driving based on only depth sensing has been attempted before, but Ouster LiDAR’s output images add two new channels of information: intensity and ambient radiation. They look like grayscale images of the scene and might compensate for the lack of visible light information. Importantly, LiDAR-as-camera feature allows using very well-studied convolutional networks on LiDAR data and performing apples-to-apples comparison with the camera-based models.
 
@@ -26,7 +28,7 @@ After conditioning the models to imitate human behavior on the collected dataset
 
 ![Inputs to the model](/images/blog/inputs.png){:width="100%"}
 
-**Figure 1.** Examples of summer, autumn and winter for the two input modalities. RGB colors on LiDAR images correspond to intensity, range and ambient radiation channels. Red box denotes the cropped region of interest that was the input to the network.
+**Figure 2.** Examples of summer, autumn and winter for the two input modalities. RGB colors on LiDAR images correspond to intensity, range and ambient radiation channels. Red box denotes the cropped region of interest that was the input to the network.
 
 ## Driving Performance
 
@@ -47,13 +49,13 @@ Being able to generalize to new light and weather conditions is the expected ben
 * In favorable conditions for both model types, LiDAR-image based models show same-or-better performance in the road-following task as RGB camera-based models.
 * Light conditions influence camera images, while intensity and range LiDAR channels are not affected. This is due to the active nature of the LiDAR sensor that produces by itself the signal it measures.
 * Night and winter conditions were not in the training set. LiDAR models can handle night with minimal and winter with partial reduction in performance.
-* In winter the failures were mainly in open field sections.
+* In winter the failures were mainly in open field sections (see Figure 3).
 
 
 ![Interventions during night](/images/blog/night_interventions.png){:width="48%"}
 ![Interventions during winter](/images/blog/winter_interventions.png){:width="50%"}
 
-**Figure 2.** Interventions during night (left) and winter (right) driving with the LiDAR model. The map also depicts land usage: dark green denotes forest while light green denotes agricultural land. Grey areas are of an unspecified usage, mostly residential use with private houses, partially fenced gardens. On the winter trajectory, there is only one intervention in the forest, while more open areas prove challenging for the summer-trained LiDAR model in the winter.
+**Figure 3.** Interventions during night (left) and winter (right) driving with the LiDAR model. The map also depicts land usage: dark green denotes forest while light green denotes agricultural land. Grey areas are of an unspecified usage, mostly residential use with private houses, partially fenced gardens. On the winter trajectory, there is only one intervention in the forest, while more open areas prove challenging for the summer-trained LiDAR model in the winter.
 
 Below is the video of autonomous driving at night. RGB camera image is shown for illustration, but driving is done based on LiDAR images.
 
