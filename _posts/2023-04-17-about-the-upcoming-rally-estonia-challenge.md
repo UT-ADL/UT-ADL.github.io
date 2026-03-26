@@ -3,17 +3,17 @@ layout: blogpost
 title: About the upcoming Rally Estonia Challenge
 date: 2023-04-17
 image: /images/blog/rally_estonia_challenge.jpg
-alt: Rally Estonia Challenge
+alt: Lexus in snow with fallen tree
 permalink: /blog/:title/
 meta: About the upcoming Rally Estonia Challenge
 language: en
 author: Georg Vann
 ---
 
-The Autonomous Driving Lab is hosting a competitive neural network training event called the Rally Estonia Challenge.
+We are holding a neural network training competition: The Rally Estonia Challenge.
 
-Competitors receive access to 500 kilometers of data collected from WRC Rally Estonia stages throughout all four seasons. The objective involves training neural networks capable of autonomously controlling a Lexus vehicle on comparable tracks.
+Participating teams get access to 500 km worth of data gathered from the stages of WRC Rally Estonia across all four seasons. The aim is to train neural networks that are capable of autonomously steering our Lexus on similar tracks.
 
-The evaluation process begins in simulation, with the three highest-performing entries advancing to real-world testing on actual rally routes. Winners receive WRC Rally Estonia 2023 passes, monetary awards, and the opportunity to advance autonomous transportation technology in rural regions.
+The initial evaluation will take place in a simulated environment and the three most capable solutions will then compete on the actual rally tracks. In addition to glory, passes to the WRC Rally Estonia 2023 and monetary prizes, the participants can expect to contribute towards bringing autonomous transportation in rural areas that much closer to being a reality.
 
-The submission deadline is May 31st. Teams interested in participating can find additional details about the competition through the lab's [teaching section](/teaching/the-rally-estonia-challenge).
+The teams have until May 31st to submit their solutions. [Read more](/teaching/the-rally-estonia-challenge) about the competition!

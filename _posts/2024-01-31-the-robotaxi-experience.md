@@ -10,47 +10,44 @@ language: en
 author: Tambet Matiisen
 ---
 
-The Autonomous Driving Lab expanded its focus from technical challenges to user experience in autonomous transportation. As self-driving technology matures, the team explored how robotaxis should function for different user groups through a collaborative project with the Sandbox digital product management program.
+The Autonomous Driving Lab has traditionally focused on the intricate technical challenges inherent in self-driving vehicles. However, as the technology approaches a level of maturity where widespread public adoption becomes feasible, our focus is expanding to encompass the user experience in autonomous transportation, particularly in the context of robotaxis.
 
-## Key Questions Addressed
+This includes:
+1. How do you order the robotaxi? What if the car cannot stop anywhere, but only in designated places, e.g. bus stops?
+2. How do you easily recognize your robotaxi if they all look the same? How to make it easily recognizable to kids?
+3. How does the robotaxi ensure that the person who entered the taxi is the person who actually ordered it, not some random bystander?
+4. How can the robotaxi ensure that it is safe to start moving? Doors must be closed, seatbelts must be on, anything else?
+5. How do you tell the robotaxi to open the trunk? What if you need help lifting your luggage?
+6. How to entertain the users during the ride? Some people hate the small-talk with the driver, some enjoy it.
+7. What if you change your mind during the ride? How can you ask for a stop or change of destination?
+8. How do you confirm that you have left the car and the robotaxi can start moving? What if you don't close the door properly - does the robotaxi stay there forever?
+9. Can the robotaxi ask help from the passer-by? E.g. to close the door, or why not even assist in a challenging situation? Can the driving assistance be crowd-sourced?
+10. How to ensure cleanliness of the robotaxi for the next passenger? What about the lost items?
 
-The lab identified ten critical design challenges:
+In autumn semester 2023 we decided to tackle some of those challenges together with the Sandbox digital product management program. We proposed the topic for the Digital Product Management Industry Project course, where students attempt to solve real-world business problems. The focus is mainly on WHAT is the problem and WHY it needs to be solved, rather than HOW we are going to solve it.
 
-- Ordering mechanisms and designated stop locations
-- Vehicle recognition and identification
-- User authentication and safety verification
-- Pre-drive safety checks (doors, seatbelts)
-- Trunk operation and luggage assistance
-- In-ride entertainment options
-- Mid-ride modifications and stop requests
-- Exit confirmation and door closure
-- Crowdsourced assistance possibilities
-- Vehicle cleanliness and lost items management
+The students divided themselves into five groups focusing on different robotaxi use-cases:
 
-## Student Project Teams
+## Business Travelers
 
-Five groups tackled different user scenarios:
+The key concept proposed by the team was "The Moving Office". The idea is that during a business trip the robotaxi could be your cozy home office, where you can do both work and relax in-between the meetings. Key points: Import meetings from calendar and automatically plan trips; in-car work options (fast wifi, larger monitor, video call equipment, possibly printer); reserve the robotaxi for the entire day.
 
-### Business Travelers
+## Families and Kids
 
-The concept focused on "The Moving Office" — transforming robotaxis into productive workspaces. Key features included calendar integration for trip planning, in-car work amenities (WiFi, monitors, video equipment), and all-day reservations with belongings storage.
+The key idea was to give the robotaxi AI a personality - Scooby Doo in the example. Kids communicate with a familiar cartoon character in a language they understand. Key features: the kid could ask the taxi to honk or flash lights to identify it; parents could track their kid; the app offers collectibles to keep the kid engaged.
 
-### Families and Kids
+## Elderly People
 
-This team designed child-friendly interfaces featuring an AI personality. Features encompassed vehicle recognition (honking/flashing), parental tracking, and engagement activities during rides.
+From user interviews it became clear that any new technology induces anxiety in elderly people. Therefore making sure they feel safe and in control at all times seemed especially crucial. Key features: visualization of how the car sees surroundings; availability of first aid kit; ability to pull over or call relatives/support at any moment. Ideas for future: reversing the robotaxi concept (take services to people instead); voice interface instead of app; use by disabled people.
 
-### Elderly People
+## Tourists with a Lot of Luggage
 
-Prioritizing safety and control, this solution included visualization of vehicle perception, emergency medical supplies, and communication options. Future concepts explored voice interfaces and services for disabled users.
+Key features: ability to specify luggage size in advance; automatic measurement of luggage using phone camera; luggage lifting help from a robotic arm.
 
-### Tourists with Luggage
+## Tourists Interested in Sightseeing
 
-The prototype addressed luggage challenges through advance sizing specifications, automatic measurement via phone camera, and robotic arm assistance for lifting heavy items.
+Key features: automatic creation of route based on available time or desired sights; audio guide during the ride; integration with accommodation and restaurants.
 
-### Sightseeing Tourists
+## Conclusion
 
-This team proposed automated route creation, audio guides highlighting passing landmarks, and integration with accommodation and restaurant services.
-
-## Additional Insights
-
-Cross-team proposals included NFC phone-based door unlocking, preference profiles for music and temperature, in-vehicle snacks/medications, and notably, karaoke features enabling unselfconscious singing without driver presence.
+Many other insightful proposals were made: opening the robotaxi door by placing the phone near the door handle (NFC/Bluetooth); saving preferences for music/temperature in the app; sale of snacks, drinks and medications in the robotaxi; and our favorite -- karaoke in the car! As there is no driver, there is no embarrassment in singing alone (or with your friends). This could be the killer feature of robotaxis!
