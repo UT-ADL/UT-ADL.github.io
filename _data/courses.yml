@@ -10,7 +10,7 @@
 - type: Introductory course
   title: Introduction to Data Science
   code: LTAT.02.002
-  spicyness: 2
+  spicyness: 1
   ects: 6
   lecturer: Meelis Kull
   link: https://ois2.ut.ee/#/courses/LTAT.02.002/details
@@ -19,7 +19,7 @@
 - type: Related subtasks
   title: Machine Learning
   code: MTAT.03.227
-  spicyness: 2
+  spicyness: 3
   ects: 6
   lecturer: Dmytro Fishman
   link: https://ois2.ut.ee/#/courses/MTAT.03.227/details
@@ -28,7 +28,7 @@
 - type: Related subtasks
   title: Neural Networks
   code: LTAT.02.001
-  spicyness: 2
+  spicyness: 3
   ects: 6
   lecturer: Raul Vicente
   link: https://ois2.ut.ee/#/courses/LTAT.02.001/details
@@ -37,7 +37,7 @@
 - type: Related subtasks
   title: Optimization for Robot Control
   code: LOTI.05.084
-  spicyness: 1
+  spicyness: 3
   ects: 3
   lecturer: Arun Singh
   link: https://ois2.ut.ee/#/courses/LOTI.05.084/details
@@ -46,7 +46,7 @@
 - type: Related subtasks
   title: Motion Planning and State Estimation in Robotics
   code: LOTI.05.083
-  spicyness: 1
+  spicyness: 3
   ects: 3
   lecturer: Arun Singh
   link: https://ois2.ut.ee/#/courses/LOTI.05.083/details
@@ -55,7 +55,7 @@
 - type: Related subtasks
   title: Deep Learning for Computer Vision
   code: LTAT.02.028
-  spicyness: 2
+  spicyness: 3
   ects: 6
   lecturer: Dmytro Fishman
   link: https://ois2.ut.ee/#/courses/LTAT.02.028/details
@@ -64,7 +64,7 @@
 - type: Related subtasks
   title: Robotics II
   code: LOTI.05.088
-  spicyness: 3
+  spicyness: 2
   ects: 12
   lecturer: Jaano Jõgeva
   link: https://ois2.ut.ee/#/courses/LOTI.05.088/details
@@ -91,7 +91,7 @@
 - type: Related subtasks
   title: Data Science Project
   code: LTAT.00.009
-  spicyness: 3
+  spicyness: 2
   ects: 6
   lecturer: Sven Laur
   link: https://ois2.ut.ee/#/courses/LTAT.00.009/details

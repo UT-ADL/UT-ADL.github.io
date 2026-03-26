@@ -10,14 +10,14 @@
 
 # 2024
 
-- title: "Exploring Smartphone-Based Reinforcement Learning Control for Educational Robotics"
+- title: "Exploring Smartphone-Based Reinforcement Learning Control for Educational Robotics: Implementation on OpenBot"
   supervisor: Naveed Muhammad
   research_area: Educational technology
   author: Lilou Gras
   field: MSc
   year: 2024
 
-- title: "Machine learning solutions for pedestrian trajectory prediction – systematic literature review"
+- title: "Machine learning solutions for the task of pedestrian trajectory prediction – a systematic literature review"
   supervisor: Naveed Muhammad
   research_area: Behavior prediction
   author: Ankit Garg
@@ -25,9 +25,9 @@
   year: 2024
   link: https://thesis.cs.ut.ee/3ac0b792-d9f7-4672-8f84-9f34af2eda0f
 
-- title: "Continuous Collaborative Mapping in Unknown Environments: Multi-Robot System Approach"
+- title: "Continuous Collaborative Mapping in Unknown Environments: A Multi-Robot System Approach"
   supervisor: Naveed Muhammad
-  research_area: Perception
+  research_area: Behavior prediction
   author: Malcom Maurice Radigon
   field: MSc
   year: 2024
@@ -38,6 +38,7 @@
   author: Uroš Petrovic
   field: MSc
   year: 2024
+  link: https://www.ims.ut.ee/www-public2/at/2024/msc/atprog-magistrit55-loti.05.036-urosh-petrovic-text-20231223.pdf
 
 - title: "Security Risk Management in Teleoperated Driving"
   supervisor: Raimundas Matulevičius, Abasi-amefon Obot Affia
@@ -45,6 +46,7 @@
   author: Nataliia Pabat
   field: MSc
   year: 2024
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79453
 
 - title: "Creation of Digital Twin for Tartu"
   supervisor: Tambet Matiisen
@@ -52,13 +54,15 @@
   author: Allan Mitt
   field: MSc
   year: 2024
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79023
 
 - title: "Physical A*: Graph-Based Search Algorithm for Robot Navigation On-the-Go"
   supervisor: Tambet Matiisen
-  research_area: Motion planning
+  research_area: Learned driving
   author: Anish Shrestha
   field: MSc
   year: 2024
+  link: https://www.ims.ut.ee/www-public2/at/2024/msc/june/atprog-magistrit55-loti.05.036-Anish_Shrestha-text-20240522.pdf
 
 - title: "Asymmetric Deep Multi-Task Learning"
   supervisor: Tambet Matiisen
@@ -66,6 +70,7 @@
   author: Ali Maharramov
   field: MSc
   year: 2024
+  link: https://www.ims.ut.ee/www-public2/at/2024/msc/june/atprog-magistrit55-loti.05.036-Ali_Maharramov-text-20240520.pdf
 
 - title: "Lane Centerline Detection from Orthophotos using Transformer Networks"
   supervisor: Tambet Matiisen, Edgar Sepp
@@ -73,6 +78,7 @@
   author: Karl-Johan Pilve
   field: MSc
   year: 2024
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79361
 
 - title: "Creation of Materials to Teach Data Science via Self-Driving"
   supervisor: Ardi Tampuu
@@ -80,13 +86,15 @@
   author: Artur Kreegipuu
   field: BSc
   year: 2024
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79253
 
-- title: "Designing and Implementing Bird's-eye View Interface for Self-driving Vehicle's Teleoperation System"
+- title: "Designing and Implementing a Bird's-eye View Interface for a Self-driving Vehicle's Teleoperation System"
   supervisor: Karl Kruusamäe
   research_area: Teleoperation
   author: Rauno Põlluäär
   field: MSc
   year: 2024
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79393
 
 - title: "Automating Classification of Disengagements using FoxGlove"
   supervisor: Dietmar Pfahl
@@ -94,6 +102,7 @@
   author: Pirjo Jõelo
   field: BSc
   year: 2024
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79505
 
 - title: "Simulation-based Safety Testing of an Automated Driving System (ADS)"
   supervisor: Dietmar Pfahl
@@ -101,6 +110,7 @@
   author: Laima Anna Dalbina
   field: MSc
   year: 2024
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79321
 
 # 2023
 
@@ -118,6 +128,7 @@
   author: Jatan Shrestha
   field: MSc
   year: 2023
+  link: https://ims.ut.ee/www-public2/at/2023/msc/atprog-magistrit55-loti.05.036-jatan-shrestha-text-20230522.pdf
 
 - title: "Development of a continuous teleoperation system for urban road vehicle"
   supervisor: Karl Kruusamäe, Ulrich Norbisrath
@@ -125,6 +136,7 @@
   author: Erki Veeväli
   field: BSc
   year: 2023
+  link: https://ims.ut.ee/www-public2/at/2023/bsc/atprog-bakalaureuset55-loti.05.029-erki-veev2li-text-20230513.pdf
 
 - title: "XR Teleoperation Demo Development"
   supervisor: Ulrich Norbisrath
@@ -132,10 +144,11 @@
   author: Matevž Zorec
   field: MSc
   year: 2023
+  link: https://ims.ut.ee/www-public2/at/2023/msc/atprog-magistrit55-loti.05.036-matevzh-borjan-zorec-text-20230525.pdf
 
 - title: "Object Recognition Using a Sparse 3D Camera Point Cloud"
   supervisor: Tambet Matiisen, Jan Bogdanov
-  research_area: Perception
+  research_area: Autonomy software
   author: Timo Tiirats
   field: MSc
   year: 2023
@@ -146,6 +159,7 @@
   author: Valentina Sagris
   field: MSc
   year: 2023
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=76559
 
 - title: "Georeferenced Visual SLAM"
   supervisor: Tambet Matiisen, Edgar Sepp
@@ -153,16 +167,17 @@
   author: Erik Mägi
   field: MSc
   year: 2023
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=77221
 
 # 2022
 
 - title: "Review and Comparison of Vision- and LiDAR-based Methods for Autonomous Vehicle Localization"
   supervisor: Debasis Kumar, Naveed Muhammad
-  research_area: Perception
+  research_area: Behavior prediction
   author: Anna Ulst
   field: BSc
   year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75182&year=2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75182&language=en
 
 - title: "A continuous teleoperating system based on shared control concept"
   supervisor: Karl Kruusamäe, Arun Kumar Singh
@@ -256,7 +271,7 @@
 
 - title: "Digital twin for Narva street roundabout in Tartu"
   supervisor: Karl Kruusamäe
-  research_area: Autonomy software
+  research_area: Teleoperation
   author: Rudolf Põldma
   field: BSc
   year: 2021

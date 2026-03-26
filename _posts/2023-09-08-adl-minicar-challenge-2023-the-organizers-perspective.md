@@ -7,7 +7,7 @@ alt: Minicar Challenge 2023
 permalink: /blog/:title/
 meta: ADL Minicar Challenge 2023
 language: en
-author: Edgar Sepp
+author: Ardi Tampuu
 ---
 
 In this blog post, we try to illustrate what was going on behind the scenes of the ADL Minicar Challenge 2023. ADL Minicar challenge is a self-driving software competition. This means that while the competing solutions will be deployed and must perform well on hardware, modifications to the hardware are forbidden. The competition was held in January 2021 and January 2022 as part of the DeltaX student competition series but was hosted independently in 2023 under the flag of the Autonomous Driving Lab.
