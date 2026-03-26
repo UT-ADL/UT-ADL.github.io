@@ -1,11 +1,11 @@
 ---
 layout: research-area
-title: Perception uncertainty
+title: Perception
 icon: /images/icons/perception_uncertainty.png
-research_lead: Meelis Kull
-lead_image: "/images/team/meelis.jpg"
-lead_description: Associate Professor in Machine Learning
-lead_email: meelis.kull@ut.ee
+research_lead: Amnir Hadachi
+lead_image: "/images/team/amnir.jpg"
+lead_description: Associate Professor of Smart City Technologies
+lead_email: amnir.hadachi@ut.ee
 ---
 
 Incorporating uncertainty estimation in the autonomous driving pipeline.

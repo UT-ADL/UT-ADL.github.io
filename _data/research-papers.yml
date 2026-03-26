@@ -1,9 +1,265 @@
-﻿- title: "A Survey on Motion Prediction of Pedestrians and Vehicles for Autonomous Driving"
-  conference: IEEE
+# 2025
+
+- title: "MonoMPC: Monocular Vision Based Navigation with Learned Collision Model and Risk-Aware Model Predictive Control"
+  conference: IEEE Robotics and Automation Letters
+  research_area: Motion planning
+  authors: Basant Sharma, Prajyot Jadhav, Pranjal Paul, K. Madhava Krishna, Arun Kumar Singh
+  year: 2025
+
+- title: "MMD-OPT: Maximum Mean Discrepancy-Based Sample Efficient Collision Risk Minimization for Autonomous Driving"
+  conference: IEEE Transactions on Automation Science and Engineering
+  research_area: Motion planning
+  authors: Basant Sharma, Arun Kumar Singh
+  year: 2025
+
+- title: "Trajectory Optimization Under Stochastic Dynamics Leveraging Maximum Mean Discrepancy"
+  conference: IEEE Robotics and Automation Letters
+  research_area: Motion planning
+  authors: Basant Sharma, Arun Kumar Singh
+  year: 2025
+
+- title: "Automated Classification of ADS Disengagements Using Convolutional Neural Networks"
+  conference: PROFES
+  research_area: Validation & testing
+  authors: Elisabet Hein, Ali Ihsan Güllü, Faiz Ali Shah, Dietmar Pfahl
+  year: 2025
+
+- title: "From Scenario Selection to Simulation: Safety Testing of an Automated Driving System"
+  conference: PROFES
+  research_area: Validation & testing
+  authors: Fauzia Khan, Ali Ihsan Güllü, Hina Anwar, Dietmar Pfahl
+  year: 2025
+
+- title: "A Robust LSTM-Based Test Selection Method for Self-Driving Cars"
+  conference: PROFES
+  research_area: Validation & testing
+  authors: Ali Ihsan Güllü, Faiz Ali Shah, Dietmar Pfahl
+  year: 2025
+
+- title: "ITS4SDC at the ICST 2025 Tool Competition - Self-Driving Car Testing Track"
+  conference: ICST
+  research_area: Validation & testing
+  authors: Ali Güllü, Faiz Ali Shah, Dietmar Pfahl
+  year: 2025
+
+- title: "An LSTM-based Test Selection Method for Self-Driving Cars"
+  conference: arXiv
+  research_area: Validation & testing
+  authors: Ali Güllü, Faiz Ali Shah, Dietmar Pfahl
+  year: 2025
+
+# 2024
+
+- title: "Scenario Driven Development for Open Source Autonomous Driving Stack"
+  conference: ETFA 2024
+  research_area: Behavior prediction
+  authors: Mahir Gulzar, Tambet Matiisen, Naveed Muhammad
+  year: 2024
+
+- title: "LeGo-Drive: Language-enhanced Goal-oriented Closed-Loop End-to-End Autonomous Driving"
+  conference: IROS 2024
+  research_area: Learned driving
+  authors: Pranjal Paul, Anant Garg, Tushar Choudhary, Arun Kumar Singh, K. Madhava Krishna
+  year: 2024
+
+- title: "Talk2BEV: Language-enhanced Bird's-eye View Maps for Autonomous Driving"
+  conference: ICRA 2024
+  research_area: Learned driving
+  authors: T. Choudhary, V. Dewangan, S. Chandhok, S. Priyadarshan, A. Jain, A. K. Singh, S. Srivastava, K. M. Jatavallabhula, K. M. Krishna
+  year: 2024
+
+- title: "Learning Sampling Distribution and Safety Filter for Autonomous Driving with VQ-VAE and Differentiable Optimization"
+  conference: IROS
+  research_area: Motion planning
+  authors: Simon Idoko, Basant Sharma, Arun Kumar Singh
+  year: 2024
+
+- title: "Comparing Approaches for Prioritizing and Selecting Scenarios in Simulation-based Safety Testing of Automated Driving Systems"
+  conference: WiPiEC Journal
+  research_area: Validation & testing
+  authors: Fauzia Khan, Hina Anwar, Dietmar Pfahl
+  year: 2024
+
+- title: "Pedestrian Collision Avoidance in Autonomous Vehicles: A Review"
+  conference: MDPI Computers
+  research_area: Behavior prediction
+  authors: Timothé Verstraete, Naveed Muhammad
+  year: 2024
+
+- title: "The Effects of Speed and Delays on Test-Time Performance of End-to-End Self-Driving"
+  conference: MDPI Sensors
+  research_area: Learned driving
+  authors: Ardi Tampuu, Kristjan Roosild, Ilmar Uduste
+  year: 2024
+
+- title: "Navigating roundabouts and unprotected turns in autonomous driving"
+  conference: IEEE Transactions on Field Robotics
   research_area: Behavior prediction
   authors: Mahir Gulzar, Yar Muhammad, Naveed Muhammad
+  year: 2024
+
+# 2023
+
+- title: "Hilbert Space Embedding-Based Trajectory Optimization for Multi-Modal Uncertain Obstacle Trajectory Prediction"
+  conference: IROS 2023
+  research_area: Motion planning
+  authors: Basant Sharma, Aditya Sharma, K. Madhava Krishna, Arun Kumar Singh
+  year: 2023
+
+- title: "End-to-End Learning of Behavioural Inputs for Autonomous Driving in Dense Traffic"
+  conference: IROS 2023
+  research_area: Motion planning
+  authors: Jatan Shrestha, Simon Idoko, Basant Sharma, Arun Kumar Singh
+  year: 2023
+
+- title: "Emotions, Readiness for Act, and Safe/Unsafe Acts in Safety Critical Systems: A Position Paper"
+  conference: IEEE
+  research_area: Requirements engineering
+  authors: Gharib, M.
+  year: 2023
+
+- title: "Emotions in requirements engineering: A systematic mapping study"
+  conference: IEEE
+  research_area: Requirements engineering
+  authors: Iqbal, T., Anwar, H., Filzah, S., Gharib, M., Mooses, K., Taveter, K.
+  year: 2023
+
+- title: "A Process for Scenario Prioritization and Selection in Simulation-Based Safety Testing of Automated Driving Systems"
+  conference: PROFES
+  research_area: Validation & testing
+  authors: Fauzia Khan, Hina Anwar, Dietmar Pfahl
+  year: 2023
+
+- title: "Safety Testing of Automated Driving Systems: A Literature Review"
+  conference: IEEE Access
+  research_area: Validation & testing
+  authors: Fauzia Khan, Mariana Falco, Hina Anwar, Dietmar Pfahl
+  year: 2023
+
+- title: "A Survey on Localization for Autonomous Vehicles"
+  conference: IEEE Access
+  research_area: Perception
+  authors: Debasis Kumar, Naveed Muhammad
+  year: 2023
+
+- title: "Object Detection in Adverse Weather for Autonomous Driving through Data Merging and YOLOv8"
+  conference: MDPI Sensors
+  research_area: Perception
+  authors: Debasis Kumar, Naveed Muhammad
+  year: 2023
+
+- title: "How Can Simulation-based Safety Testing Help Understand the Real-World Safety of Autonomous Driving Systems?"
+  conference: WiPiEC Journal
+  research_area: Validation & testing
+  authors: Fauzia Khan, Laima Dalbina, Hina Anwar, Dietmar Pfahl
+  year: 2023
+
+- title: "UAP-BEV: Uncertainty Aware Planning Using Bird's Eye View Generated from Surround Monocular Images"
+  conference: IEEE CASE 2023
+  research_area: Motion planning
+  authors: Vikrant Dewangan, Basant Sharma, Tushar Choudhary, Sarthak Sharma, Aakash Aanegola, Arun K. Singh, K. Madhava Krishna
+  year: 2023
+
+- title: "Bi-Level Optimization Augmented with Conditional Variational Autoencoder for Autonomous Driving in Dense Traffic"
+  conference: IEEE CASE
+  research_area: Motion planning
+  authors: Arun Kumar Singh, Jatan Shrestha, Nicola Albarella
+  year: 2023
+
+- title: "LiDAR-as-Camera for End-to-End Driving"
+  conference: MDPI Sensors
+  research_area: Learned driving
+  authors: Ardi Tampuu, Romet Aidla, Jan Are van Gent, Tambet Matiisen
+  year: 2023
+  github: https://github.com/UT-ADL/e2e-rally-estonia
+  video: https://youtu.be/qzo61V7G1EM?t=5761
+
+# 2022
+
+- title: "A Comparative Study of Two Co-Design Methodologies"
+  conference: 1st Design Factory Global Network Research Conference
+  research_area: Requirements engineering
+  authors: Taveter, K., Ainamo, A., Iqbal, T., Mooses, K., Laanelepp, M.
+  year: 2022
+
+- title: "Drift Reduced Navigation with Deep Explainable Features"
+  conference: IROS 2022
+  research_area: Motion planning
+  authors: Mohd Omama, Sundar Sripada Venugopalaswamy Sriraman, Sandeep Chinchali, Arun Kumar Singh, K. Madhava Krishna
+  year: 2022
+
+- title: "Controlling Steering with Energy-Based Models"
+  conference: NeurIPS ML4AD workshop
+  research_area: Learned driving
+  authors: Mykyta Baliesnyi, Ardi Tampuu, Tambet Matiisen
+  year: 2022
+
+- title: "Calibrated Perception Uncertainty Across Objects and Regions in Bird's-Eye-View"
+  conference: NeurIPS ML4AD workshop
+  research_area: Perception
+  authors: Markus Kängsepp, Meelis Kull
+  year: 2022
+  link: https://ml4ad.github.io/files/papers2022/Calibrated%20Perception%20Uncertainty%20Across%20Objects%20and%20Regions%20in%20Bird's-Eye-View.pdf
+
+- title: "Leading Vehicle Length Estimation Using Pressure Data for Use in Autonomous Driving"
+  conference: ETFA 2022
+  research_area: Behavior prediction
+  authors: Matis Ottan, Naveed Muhammad
+  year: 2022
+  link: https://ieeexplore.ieee.org/document/9921656
+
+# 2021
+
+- title: "Adaptive warning fields for warehouse AGVs"
+  conference: ETFA 2021
+  research_area: Behavior prediction
+  authors: Naveed Muhammad, Klas Hedenberg, Björn Åstrand
   year: 2021
-  link: https://ieeexplore.ieee.org/abstract/document/9559998/authors#authors
+  link: https://ieeexplore.ieee.org/document/9613565
+
+- title: "Air-flow sensing for vehicle length estimation in autonomous driving applications"
+  conference: ETFA 2021
+  research_area: Behavior prediction
+  authors: Roman Matvejev, Yar Muhammad, Naveed Muhammad
+  year: 2021
+  link: https://ieeexplore.ieee.org/document/9613563
+
+- title: "Information Security Analysis in the Passenger-Autonomous Vehicle Interaction"
+  conference: ARES 2021
+  research_area: Security
+  authors: Mariia Bakhtina, Raimundas Matulevicius
+  year: 2021
+  link: https://doi.org/10.1145/3465481.3470045
+
+- title: "Multi-Modal Model Predictive Control through Batch Non-Holonomic Trajectory Optimization: Application to Highway Driving"
+  conference: IEEE
+  research_area: Motion planning
+  authors: Vivek K. Adajania, Aditya Sharma, Anish Gupta, Houman Masnavi, K Madhava Krishna, Arun K. Singh
+  year: 2021
+  link: https://arxiv.org/abs/2109.10392
+  github: https://github.com/vivek-uka/Batch-Opt-Highway-Driving
+  video: https://www.youtube.com/watch?v=HPME4cYlR24
+
+- title: "Security Risk Estimation and Management in Autonomous Driving Vehicles"
+  conference: CAiSE
+  research_area: Security
+  authors: Abasi-amefon O. Affia, Raimundas Matulevičius, Rando Tõnisson
+  year: 2021
+  link: https://link.springer.com/chapter/10.1007%2F978-3-030-79108-7_2
+
+- title: "Securing an MQTT-based Traffic Light Perception System for Autonomous Driving"
+  conference: IEEE
+  research_area: Security
+  authors: Abasi-Amefon O. Affia, Raimundas Matulevičius
+  year: 2021
+  link: https://ieeexplore.ieee.org/abstract/document/9527989
+
+- title: "Interpreting externally expressed intentions of an autonomous vehicle"
+  conference: IEEE
+  research_area: Human-vehicle interaction
+  authors: Maarika Oidekivi, Alexander Nolte, Alvo Aabloo, Karl Kruusamäe
+  year: 2021
+  link: https://ieeexplore.ieee.org/document/9538693
 
 - title: "GPU Accelerated Convex Approximations for Fast Multi-Agent Trajectory Optimization"
   conference: IEEE
@@ -12,12 +268,21 @@
   year: 2021
   link: https://ieeexplore.ieee.org/document/9361261
 
-- title: "A Novel Trajectory Optimization for Affine Systems: Beyond Convex-Concave Procedure"
+- title: "A Survey on Motion Prediction of Pedestrians and Vehicles for Autonomous Driving"
   conference: IEEE
-  research_area: Motion planning
-  authors: Fatemeh Rastgar, Arun Kumar Singh, Houman Masnavi, Karl Kruusamae, Alvo Aabloo
+  research_area: Behavior prediction
+  authors: Mahir Gulzar, Yar Muhammad, Naveed Muhammad
+  year: 2021
+  link: https://ieeexplore.ieee.org/abstract/document/9559998/authors#authors
+
+# 2020
+
+- title: "A Survey of End-to-End Driving: Architectures and Training Methods"
+  conference: IEEE
+  research_area: Learned driving
+  authors: Ardi Tampuu, Tambet Matiisen, Maksym Semikin, Dmytro Fishman, Naveed Muhammad
   year: 2020
-  link: https://ieeexplore.ieee.org/document/9341566
+  link: https://ieeexplore.ieee.org/document/9310544
 
 - title: "Bi-Convex Approximation of Non-Holonomic Trajectory Optimization"
   conference: IEEE
@@ -26,98 +291,25 @@
   year: 2020
   link: https://ieeexplore.ieee.org/document/9197092
 
-- title: "Model Predictive Control for Autonomous Driving considering Actuator Dynamics"
+- title: "A Novel Trajectory Optimization for Affine Systems: Beyond Convex-Concave Procedure"
   conference: IEEE
   research_area: Motion planning
-  authors: Mithun Babu, Raghu Ram Theerthala, Arun Kumar Singh, B.P. Baladhurgesh, Bharath Gopalakrishnan, K. Madhava Krishna, Shanti Medasani
-  year: 2019
-  link: https://ieeexplore.ieee.org/document/8814940
-
-  
-- title: "A Survey of End-to-End Driving: Architectures and Training Methods"
-  conference: IEEE
-  research_area: Learned driving
-  authors: Ardi Tampuu, Tambet Matiisen, Maksym Semikin, Dmytro Fishman, Naveed Muhammad
+  authors: Fatemeh Rastgar, Arun Kumar Singh, Houman Masnavi, Karl Kruusamae, Alvo Aabloo
   year: 2020
-  link: https://ieeexplore.ieee.org/document/9310544
+  link: https://ieeexplore.ieee.org/document/9341566
 
-- title: "Interpreting externally expressed intentions of an autonomous vehicle"
-  conference: IEEE
-  research_area: Human-vehicle interaction
-  authors: Maarika Oidekivi, Alexander Nolte, Alvo Aabloo, Karl Kruusamäe
-  year: 2021
-  link: https://ieeexplore.ieee.org/document/9538693
-  
-- title: "Securing an MQTT-based Traffic Light Perception System for Autonomous Driving"
-  conference: IEEE
-  research_area: Security
-  authors: Abasi-Amefon O. Affia, Raimundas Matulevičius
-  year: 2021
-  link: https://ieeexplore.ieee.org/abstract/document/9527989
-  
-- title: "Security Risk Estimation and Management in Autonomous Driving Vehicles"
-  conference: CAiSE
-  research_area: Security
-  authors: Abasi-amefon O. Affia, Raimundas Matulevičius, Rando Tõnisson
-  year: 2021
-  link: https://link.springer.com/chapter/10.1007%2F978-3-030-79108-7_2
-  
+# 2019
+
 - title: "Security Risk Management in Cooperative Intelligent Transportation Systems: A Systematic Literature Review"
   conference: OTM
   research_area: Security
   authors: Abasi-Amefon O. Affia, Raimundas Matulevičius, Alexander Nolte
   year: 2019
   link: https://link.springer.com/chapter/10.1007/978-3-030-33246-4_18
-  
-- title: "Multi-Modal Model Predictive Control through Batch Non-Holonomic Trajectory Optimization: Application to Highway Driving"
+
+- title: "Model Predictive Control for Autonomous Driving considering Actuator Dynamics"
   conference: IEEE
   research_area: Motion planning
-  authors: Vivek K. Adajania, Aditya Sharma, Anish Gupta, Houman Masnavi, K Madhava Krishna, Arun K.Singh
-  year: 2021
-  link: https://arxiv.org/abs/2109.10392
-  github: https://github.com/vivek-uka/Batch-Opt-Highway-Driving
-  video: https://www.youtube.com/watch?v=HPME4cYlR24
-
-- title: "Information Security Analysis in the Passenger-Autonomous Vehicle Interaction"
-  conference: ARES2021
-  research_area: Security
-  authors: Mariia Bakhtina, Raimundas Matulevicius
-  year: 2021
-  link: https://doi.org/10.1145/3465481.3470045
-
-- title: "LiDAR-as-Camera for End-to-End Driving"
-  conference: ICRA2022 workshop
-  research_area: Learned driving
-  authors: Ardi Tampuu, Romet Aidla, Jan Are van Gent, Tambet Matiisen
-  year: 2022
-  link: https://drive.google.com/file/d/1S-YzcJccHsM0LTmpnaC91I5yWi1FQqPk/view
-  video: https://youtu.be/qzo61V7G1EM?t=5761
-  github: https://github.com/UT-ADL/e2e-rally-estonia
-
-- title: "Air-flow sensing for vehicle length estimation in autonomous driving applications"
-  conference: ETFA2021
-  research_area: Behavior prediction
-  authors: Roman Matvejev, Yar Muhammad, Naveed Muhammad
-  year: 2021
-  link: https://ieeexplore.ieee.org/document/9613563
-
-- title: "Adaptive warning fields for warehouse AGVs"
-  conference: ETFA2021
-  research_area: Behavior prediction
-  authors: Naveed Muhammad, Klas Hedenberg, Björn Åstrand
-  year: 2021
-  link: https://ieeexplore.ieee.org/document/9613565
-
-- title: "Leading Vehicle Length Estimation Using Pressure Data for Use in Autonomous Driving"
-  conference: ETFA2022
-  research_area: Behavior prediction
-  authors: Matis Ottan, Naveed Muhammad
-  year: 2022
-  link: https://ieeexplore.ieee.org/document/9921656
-
-- title: "Calibrated Perception Uncertainty Across Objects and Regions in Bird's-Eye-View"
-  conference: ML4AD workshop
-  research_area: Perception uncertainty
-  authors: Markus Kängsepp, Meelis Kull
-  year: 2022
-  link: https://ml4ad.github.io/files/papers2022/Calibrated%20Perception%20Uncertainty%20Across%20Objects%20and%20Regions%20in%20Bird's-Eye-View.pdf
+  authors: Mithun Babu, Raghu Ram Theerthala, Arun Kumar Singh, B.P. Baladhurgesh, Bharath Gopalakrishnan, K. Madhava Krishna, Shanti Medasani
+  year: 2019
+  link: https://ieeexplore.ieee.org/document/8814940

@@ -1,4 +1,356 @@
-- title: Traffic Light Detection by Fusing Object Detection and Map Info
+# 2025
+
+- title: "Automating the Classification of Disengagements Using Convolutional Neural Networks"
+  supervisor: Dietmar Pfahl
+  research_area: Validation & testing
+  author: Elisabet Hein
+  field: BSc
+  year: 2025
+  link: https://thesis.cs.ut.ee/6f4f09c6-0ad3-420f-816a-423dd6f8b026
+
+# 2024
+
+- title: "Exploring Smartphone-Based Reinforcement Learning Control for Educational Robotics"
+  supervisor: Naveed Muhammad
+  research_area: Educational technology
+  author: Lilou Gras
+  field: MSc
+  year: 2024
+
+- title: "Machine learning solutions for pedestrian trajectory prediction – systematic literature review"
+  supervisor: Naveed Muhammad
+  research_area: Behavior prediction
+  author: Ankit Garg
+  field: MSc
+  year: 2024
+  link: https://thesis.cs.ut.ee/3ac0b792-d9f7-4672-8f84-9f34af2eda0f
+
+- title: "Continuous Collaborative Mapping in Unknown Environments: Multi-Robot System Approach"
+  supervisor: Naveed Muhammad
+  research_area: Perception
+  author: Malcom Maurice Radigon
+  field: MSc
+  year: 2024
+
+- title: "Small-Scale Cars for Autonomous Driving Research"
+  supervisor: Naveed Muhammad
+  research_area: Educational technology
+  author: Uroš Petrovic
+  field: MSc
+  year: 2024
+
+- title: "Security Risk Management in Teleoperated Driving"
+  supervisor: Raimundas Matulevičius, Abasi-amefon Obot Affia
+  research_area: Security
+  author: Nataliia Pabat
+  field: MSc
+  year: 2024
+
+- title: "Creation of Digital Twin for Tartu"
+  supervisor: Tambet Matiisen
+  research_area: Autonomy software
+  author: Allan Mitt
+  field: MSc
+  year: 2024
+
+- title: "Physical A*: Graph-Based Search Algorithm for Robot Navigation On-the-Go"
+  supervisor: Tambet Matiisen
+  research_area: Motion planning
+  author: Anish Shrestha
+  field: MSc
+  year: 2024
+
+- title: "Asymmetric Deep Multi-Task Learning"
+  supervisor: Tambet Matiisen
+  research_area: Learned driving
+  author: Ali Maharramov
+  field: MSc
+  year: 2024
+
+- title: "Lane Centerline Detection from Orthophotos using Transformer Networks"
+  supervisor: Tambet Matiisen, Edgar Sepp
+  research_area: High-definition maps
+  author: Karl-Johan Pilve
+  field: MSc
+  year: 2024
+
+- title: "Creation of Materials to Teach Data Science via Self-Driving"
+  supervisor: Ardi Tampuu
+  research_area: Educational technology
+  author: Artur Kreegipuu
+  field: BSc
+  year: 2024
+
+- title: "Designing and Implementing Bird's-eye View Interface for Self-driving Vehicle's Teleoperation System"
+  supervisor: Karl Kruusamäe
+  research_area: Teleoperation
+  author: Rauno Põlluäär
+  field: MSc
+  year: 2024
+
+- title: "Automating Classification of Disengagements using FoxGlove"
+  supervisor: Dietmar Pfahl
+  research_area: Validation & testing
+  author: Pirjo Jõelo
+  field: BSc
+  year: 2024
+
+- title: "Simulation-based Safety Testing of an Automated Driving System (ADS)"
+  supervisor: Dietmar Pfahl
+  research_area: Validation & testing
+  author: Laima Anna Dalbina
+  field: MSc
+  year: 2024
+
+# 2023
+
+- title: "Visibility aware navigation"
+  supervisor: Arun Kumar Singh, Karl Kruusamäe
+  research_area: Motion planning
+  author: Houman Masnavi
+  field: PhD
+  year: 2023
+  link: http://dspace.ut.ee/handle/10062/91394
+
+- title: "Sampling-based Bi-level Optimization aided by Behaviour Cloning for Autonomous Driving"
+  supervisor: Arun Kumar Singh
+  research_area: Motion planning
+  author: Jatan Shrestha
+  field: MSc
+  year: 2023
+
+- title: "Development of a continuous teleoperation system for urban road vehicle"
+  supervisor: Karl Kruusamäe, Ulrich Norbisrath
+  research_area: Teleoperation
+  author: Erki Veeväli
+  field: BSc
+  year: 2023
+
+- title: "XR Teleoperation Demo Development"
+  supervisor: Ulrich Norbisrath
+  research_area: Teleoperation
+  author: Matevž Zorec
+  field: MSc
+  year: 2023
+
+- title: "Object Recognition Using a Sparse 3D Camera Point Cloud"
+  supervisor: Tambet Matiisen, Jan Bogdanov
+  research_area: Perception
+  author: Timo Tiirats
+  field: MSc
+  year: 2023
+
+- title: "Semi-automatic generation of Lanelet2 maps for autonomous driving"
+  supervisor: Edgar Sepp, Tambet Matiisen
+  research_area: High-definition maps
+  author: Valentina Sagris
+  field: MSc
+  year: 2023
+
+- title: "Georeferenced Visual SLAM"
+  supervisor: Tambet Matiisen, Edgar Sepp
+  research_area: High-definition maps
+  author: Erik Mägi
+  field: MSc
+  year: 2023
+
+# 2022
+
+- title: "Review and Comparison of Vision- and LiDAR-based Methods for Autonomous Vehicle Localization"
+  supervisor: Debasis Kumar, Naveed Muhammad
+  research_area: Perception
+  author: Anna Ulst
+  field: BSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75182&year=2022
+
+- title: "A continuous teleoperating system based on shared control concept"
+  supervisor: Karl Kruusamäe, Arun Kumar Singh
+  research_area: Teleoperation
+  author: Markus Erik Sügis
+  field: BSc
+  year: 2022
+  link: http://hdl.handle.net/10062/83015
+
+- title: "Energy-Based Models for End-to-End Autonomous Driving"
+  supervisor: Tambet Matiisen
+  research_area: Learned driving
+  author: Mykyta Baliesnyi
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75382&year=2022
+
+- title: "Comparing Output Modalities in End-to-End Driving"
+  supervisor: Tambet Matiisen, Ardi Tampuu
+  research_area: Learned driving
+  author: Romet Aidla
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75346&year=2022
+
+- title: "Driving Speed as a Hidden Factor Behind Distribution Shift"
+  supervisor: Ardi Tampuu
+  research_area: Educational technology
+  author: Kristjan Roosild
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75358&year=2022
+
+- title: "Leading Vehicle Length Estimation Using Pressure Data for Use in Autonomous Driving"
+  supervisor: Naveed Muhammad
+  research_area: Behavior prediction
+  author: Matis Ottan
+  field: BSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74510&year=2022
+
+- title: "Effect of Delays/Lag and Fighting it in Self-driving Neural Networks"
+  supervisor: Ardi Tampuu
+  research_area: Educational technology
+  author: Ilmar Uduste
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74970&year=2022
+
+- title: "Teleoperation of Remote Controlled Toy Cars in VR"
+  supervisor: Ulrich Norbisrath
+  research_area: Teleoperation
+  author: Amirabbas Sherafatian
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74821&year=2022
+
+- title: "Forecasting Human Trajectories with Uncertainty Estimation"
+  supervisor: Meelis Kull, Novin Shahroudi
+  research_area: Perception
+  author: Karl Riis
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75142&year=2022
+
+- title: "State of the art VR Driving Simulation for Physical Test Car Using LiDAR for Mapping the Surrounding Environment"
+  supervisor: Ulrich Norbisrath
+  research_area: Teleoperation
+  author: Raigo Kõvask
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74845&year=2022
+
+- title: "Agent Behavior Modeling in Roundabout Traffic"
+  supervisor: Naveed Muhammad, Yar Muhammad
+  research_area: Behavior prediction
+  author: Heidi Korp
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74817&year=2022
+
+- title: "Using Adversarial Defense Methods to Improve the Performance of Deep-Neural-Network-Controlled Automatic Driving Systems"
+  supervisor: Dietmar Pfahl
+  research_area: Validation & testing
+  author: Mike Gomes Camara
+  field: MSc
+  year: 2022
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74730&year=2022
+
+# 2021
+
+- title: "Digital twin for Narva street roundabout in Tartu"
+  supervisor: Karl Kruusamäe
+  research_area: Autonomy software
+  author: Rudolf Põldma
+  field: BSc
+  year: 2021
+  link: http://hdl.handle.net/10062/72674
+
+- title: "Simulation of Tartu City Centre for Testing Autonomous Vehicles"
+  supervisor: Tambet Matiisen
+  research_area: Autonomy software
+  author: Allan Mitt
+  field: BSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72125&year=2021
+
+- title: "Air-flow sensing for applications in autonomous driving"
+  supervisor: Naveed Muhammad, Yar Muhammad
+  research_area: Behavior prediction
+  author: Roman Matvejev
+  field: BSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71873&year=2021
+
+- title: "Multihead Attention Enhanced Memory Augmented Neural Network for Multimodal Trajectory Prediction"
+  supervisor: Naveed Muhammad, Yar Muhammad
+  research_area: Behavior prediction
+  author: Farhan Syakir
+  field: MSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=73708&year=2021
+
+- title: "Modelling Interactions Between Traffic and Crosswalk Agents at Unsignalized Crossings"
+  supervisor: Naveed Muhammad, Yar Muhammad
+  research_area: Behavior prediction
+  author: Laura Liis Metsvaht
+  field: MSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72407&year=2021
+
+- title: "Navigation Application Input Rendering for a Self-driving Car's Neural Network"
+  supervisor: Tambet Matiisen
+  research_area: Learned driving
+  author: Erik Marcus Maks
+  field: BSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72141&year=2021
+
+- title: "Human-like Speed in Curves"
+  supervisor: Tambet Matiisen
+  research_area: Autonomy software
+  author: Eduard Rudi
+  field: BSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71953&year=2021
+
+- title: "Generating Vector Map Data for Autonomous Driving"
+  supervisor: Tambet Matiisen, Edgar Sepp
+  research_area: High-definition maps
+  author: Krister Looga
+  field: BSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72097&year=2021
+
+- title: "Tool for Creating High Definition Maps in Lanelet2 format"
+  supervisor: Tambet Matiisen, Edgar Sepp
+  research_area: High-definition maps
+  author: Karl-Johan Pilve
+  field: BSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71905&year=2021
+
+- title: "Securing Passenger's Data in Autonomous Vehicles"
+  supervisor: Raimundas Matulevičius, Mari Seeba
+  research_area: Security
+  author: Mariia Bakhtina
+  field: MSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72371&year=2021
+
+- title: "External human-vehicle interaction - a study in the context of an autonomous ride-hailing service"
+  supervisor: Karl Kruusamäe, Alexander Udo Nolte, Andres Kuusik
+  research_area: Human-vehicle interaction
+  author: Kristina Meister
+  field: MSc
+  year: 2021
+  link: https://dspace.ut.ee/bitstream/handle/10062/72350/meister_kristina.pdf
+
+- title: "Using LiDAR as Camera for End-to-End Driving"
+  supervisor: Tambet Matiisen
+  research_area: Learned driving
+  author: Jan Aare van Gent
+  field: MSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72431&year=2021
+
+- title: "Traffic Light Detection by Fusing Object Detection and Map Info"
   supervisor: Tambet Matiisen, Meelis Kull
   research_area: Autonomy software
   author: Tetiana Shtym
@@ -6,7 +358,7 @@
   year: 2021
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72435&year=2021
 
-- title: Automatic Road Boundaries Extraction for High Definition maps
+- title: "Automatic Road Boundaries Extraction for High Definition maps"
   supervisor: Naveed Muhammad, Dmytro Fishman
   research_area: High-definition maps
   author: Dmytro Zabolotnii
@@ -14,7 +366,7 @@
   year: 2021
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72241&year=2021
 
-- title: Creating High-Definition Vector Maps for Autonomous Driving
+- title: "Creating High-Definition Vector Maps for Autonomous Driving"
   supervisor: Tambet Matiisen
   research_area: High-definition maps
   author: Edgar Sepp
@@ -22,7 +374,17 @@
   year: 2021
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71505&year=2021
 
-- title: Detection of Changes in Maps Using LiDAR Point Clouds
+- title: "Change Detection in HD-Maps Using Camera Images for Autonomous Driving"
+  supervisor: Dmytro Fishman, Naveed Muhammad
+  research_area: High-definition maps
+  author: Navid Bamdad Roshan
+  field: MSc
+  year: 2021
+  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72213&year=2021
+
+# 2020
+
+- title: "Detection of Changes in Maps Using LiDAR Point Clouds"
   supervisor: Dmytro Fishman
   research_area: High-definition maps
   author: Vladyslav Fediukov
@@ -30,39 +392,15 @@
   year: 2020
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=69463&year=2020
 
-- title: Change Detection in HD-Maps Using Camera Images for Autonomous Driving
-  supervisor: Dmytro Fishman, Naveed Muhammad
-  research_area: High-definition maps
-  author: Navid Bamdad Roshan
-  field: MSc
-  year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72213&year=2021
-  
-- title: Using LiDAR as Camera for End-to-End Driving
-  supervisor: Tambet Matiisen
-  research_area: Learned driving
-  author: Jan Aare van Gent
-  field: MSc
-  year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72431&year=2021
-  
-- title: Estimating the distribution of risks of a self-driving car's object detection model with a Poisson process
+- title: "Estimating the distribution of risks of a self-driving car's object detection model with a Poisson process"
   supervisor: Meelis Kull
-  research_area: Perception uncertainty
+  research_area: Perception
   author: Getter Põru
   field: MSc
   year: 2020
   link: https://dspace.ut.ee/bitstream/handle/10062/68254/poru_getter_MSc_2020.pdf
-  
-- title: External human-vehicle interaction - a study in the context of an autonomous ride-hailing service
-  supervisor: Karl Kruusamäe, Alexander Udo Nolte, Andres Kuusik
-  research_area: Human-vehicle interaction
-  author: Kristina Meister
-  field: MSc
-  year: 2021
-  link: https://dspace.ut.ee/bitstream/handle/10062/72350/meister_kristina.pdf
-  
-- title: Communicating and interpreting machine intent
+
+- title: "Communicating and interpreting machine intent"
   supervisor: Karl Kruusamäe
   research_area: Human-vehicle interaction
   author: Maarika Oidekivi
@@ -70,7 +408,7 @@
   year: 2020
   link: https://www.ims.ut.ee/www-public2/at/2020/MSc/atprog-courses-magistrit55-loti.05.036-maarika-oidekivi-text-20200603.pdf
 
-- title: Design and Evaluation of a User Interface to Increase Trust in Autonomous Vehicles
+- title: "Design and Evaluation of a User Interface to Increase Trust in Autonomous Vehicles"
   supervisor: Alexander Nolte
   research_area: Human-vehicle interaction
   author: Timo Soiunen
@@ -85,163 +423,3 @@
   field: MSc
   year: 2020
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=70098&year=2020
-
-- title: Securing Passenger's Data in Autonomous Vehicles
-  supervisor: Raimundas Matulevičius, Mari Seeba
-  research_area: Security
-  author: Mariia Bakhtina
-  field: MSc
-  year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72371&year=2021
-  
-- title: Tool for Creating High Definition Maps in Lanelet2 format
-  supervisor: Tambet Matiisen, Edgar Sepp
-  research_area: High-definition maps
-  author: Karl-Johan Pilve
-  field: BSc
-  year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71905&year=2021
-
-- title: Generating Vector Map Data for Autonomous Driving
-  supervisor: Tambet Matiisen, Edgar Sepp
-  research_area: High-definition maps
-  author: Krister Looga
-  field: BSc
-  year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72097&year=2021
-
-- title: Human-like Speed in Curves
-  supervisor: Tambet Matiisen
-  research_area: Autonomy software
-  author: Eduard Rudi
-  field: BSc
-  year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71953&year=2021
-
-- title: Navigation Application Input Rendering for a Self-driving Car’s Neural Network
-  supervisor: Tambet Matiisen
-  research_area: Learned driving
-  author: Erik Marcus Maks
-  field: BSc
-  year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72141&year=2021
-
-- title: Simulation of Tartu City Centre for Testing Autonomous Vehicles
-  supervisor: Tambet Matiisen
-  research_area: Autonomy software
-  author: Allan Mitt
-  field: BSc
-  year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72125&year=2021
-
-- title: Modelling Interactions Between Traffic and Crosswalk Agents at Unsignalized Crossings
-  supervisor: Naveed Muhammad, Yar Muhammad
-  research_area: Behavior prediction
-  author: Laura Liis Metsvaht
-  field: MSc
-  year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72407&year=2021
-
-- title: Multihead Attention Enhanced Memory Augmented Neural Network for Multimodal Trajectory Prediction
-  supervisor: Naveed Muhammad, Yar Muhammad
-  research_area: Behavior prediction
-  author: Farhan Syakir
-  field: MSc
-  year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=73708&year=2021
-
-- title: Air-flow sensing for applications in autonomous driving
-  supervisor: Naveed Muhammad, Yar Muhammad
-  research_area: Behavior prediction
-  author: Roman Matvejev
-  field: BSc
-  year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71873&year=2021
-
-- title: Using Adversarial Defense Methods to Improve the Performance of Deep-Neural-Network-Controlled Automatic Driving Systems
-  supervisor: Dietmar Pfahl
-  research_area: Validation & testing
-  author: Mike Gomes Camara
-  field: MSc
-  year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74730&year=2022
-
-- title: Agent Behavior Modeling in Roundabout Traffic
-  supervisor: Naveed Muhammad, Yar Muhammad
-  research_area: Behavior prediction
-  author: Heidi Korp
-  field: MSc
-  year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74817&year=2022
-
-- title: State of the art VR Driving Simulation for Physical Test Car Using LiDAR for Mapping the Surrounding Environment
-  supervisor: Ulrich Norbisrath
-  research_area: Teleoperation
-  author: Raigo Kõvask
-  field: MSc
-  year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74845&year=2022
-
-- title: Forecasting Human Trajectories with Uncertainty Estimation
-  supervisor: Meelis Kull, Novin Shahroudi
-  research_area: Perception uncertainty
-  author: Karl Riis
-  field: MSc
-  year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75142&year=2022
-
-- title: Teleoperation of Remote Controlled Toy Cars in VR
-  supervisor: Ulrich Norbisrath
-  research_area: Teleoperation
-  author: Amirabbas Sherafatian
-  field: MSc
-  year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74821&year=2022
-
-- title: Effect of Delays/Lag and Fighting it in Self-driving Neural Networks
-  supervisor: Ardi Tampuu
-  research_area: Educational technology
-  author: Ilmar Uduste
-  field: MSc
-  year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74970&year=2022
-
-- title: Leading Vehicle Length Estimation Using Pressure Data for Use in Autonomous Driving
-  supervisor: Naveed Muhammad
-  research_area: Behavior prediction
-  author: Matis Ottan
-  field: BSc
-  year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74510&year=2022
-
-- title: Review and Comparison of Vision- and LiDAR-based Methods for Autonomous Vehicle Localization
-  supervisor: Debasis Kumar, Naveed Muhammad
-  research_area: Localization
-  author: Anna Ulst
-  field: BSc
-  year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75182&year=2022
-
-- title: Comparing Output Modalities in End-to-End Driving
-  supervisor: Tambet Matiisen, Ardi Tampuu
-  research_area: Learned driving
-  author: Romet Aidla
-  field: MSc
-  year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75346&year=2022
-
-- title: Energy-Based Models for End-to-End Autonomous Driving
-  supervisor: Tambet Matiisen
-  research_area: Learned driving
-  author: Mykyta Baliesnyi
-  field: MSc
-  year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75382&year=2022
-
-- title: Driving Speed as a Hidden Factor Behind Distribution Shift
-  supervisor: Ardi Tampuu
-  research_area: Educational technology
-  author: Kristjan Roosild
-  field: MSc
-  year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75358&year=2022

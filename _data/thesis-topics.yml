@@ -1,20 +1,6 @@
-- title: Vehicle motion prediction at a roundabout
-  description: In this project you will investigate and then integrate a vehicle motion prediction technique on a real autonomous vehicle. For this you will be working on an existing open source software stack like <a href='https://www.autoware.org/' target='_blank'>https://www.autoware.org/</a> and integrate an existing baseline pattern-based motion prediction model for vehicles that can be used by the motion planners. Autoware uses a third-party motion planner i.e. OpenPlanner. For testing you will be focusing on a roundabout scenario. You can choose any other autonomy stack and planner to work with but this should be agreed first. 
-  type: Behavior prediction
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Mahir Gulzar
-      email: mahir.gulzar@ut.ee
-    - name: Naveed Muhammad
-      email: naveed.muhammad@ut.ee
-  file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
-
-- title: Anomaly detection in pedestrian motion along the streets and at crosswalks
-  description: In this project you will investigate and implement such anomalous behaviour techniques for autonomous driving applications. You can use any current non-trivial baseline solution and test it using an open-source Autonomous Driving simulator compliant with the Autoware platform, based on Robotic Operating System (ROS). Successful implementation of the working algorithm in the simulator environment can lead to further integration and testing using an actual vehicle with autonomous driving capabilities and a full sensor suite.
-  type: Behavior prediction
+- title: Prototyping Vision-Based Localization Using Milestone-Board Information
+  description: "Creating a scenario with highways and virtual milestone boards, then implementing a particle filter for map-based localization within the created environment."
+  type: Perception
   availability:
     BSc: yes
     MSc: yes
@@ -22,27 +8,11 @@
   leads:
     - name: Naveed Muhammad
       email: naveed.muhammad@ut.ee
-    - name: Dmytro Zabolotnii
-      email: dmytro.zabolotnii@ut.ee
-  file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
+  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=80868"
 
-- title: Review and comparison of non-supervised machine learning solutions and/or non-machine learning solutions for the task of pedestrian motion prediction
-  description: You will investigate and create a list of selected non-supervised or non-machine learning solutions with similar evaluation metrics. Later, you will be able to re-implement (or use an open-source implementation) and compare them experimentally with the known supervised learning state-of-art solutions, using Autonomous Driving simulator compliant with the Autoware platform or the historical trips data obtained by our vehicle with autonomous driving capabilities. A practical result will be the survey article on the state of the research in the area with experimental results obtained using real-life driving data.
-  type: Behavior prediction
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Dmytro Zabolotnii
-      email: dmytro.zabolotnii@ut.ee
-    - name: Naveed Muhammad
-      email: naveed.muhammad@ut.ee
-  file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
-
-- title: Flow sensing for applications in autonomous driving
-  description: "You will build upon the innovative work done on flow-sensing applications in autonomous driving by Roman Matvejev and Matis Ottan (thesis links below). There are multiple directions that can be investigated. For example, (i) working in simulations and proposing new applications of flow sensing in autonomous driving, (ii) investigating new feature extraction and classification/regression methods etc. or (iii) expanding out of simulations with physical validation of flow sensing in autonomous driving. Roman and Matis’ theses can be accessed at the following links: <a href='https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71873&year=2021' target='_blank'>https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71873&year=2021</a> <a href='https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74510&year=2022' target='_blank'>https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74510&year=2022</a>"
-  type: Sensing
+- title: Vehicle Localization in OpenStreetMap Using Distances to Cities
+  description: "Implementing map-based-localization in Open Street Map for Estonia using distances to cities as measurements via particle filtering."
+  type: Perception
   availability:
     BSc: yes
     MSc: yes
@@ -50,25 +20,11 @@
   leads:
     - name: Naveed Muhammad
       email: naveed.muhammad@ut.ee
-    - name: Debasis Kumar
-      email: debasis.kumar@ut.ee
-  file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
+  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=81104"
 
-- title: Precise GNSS localization
-  description: In this project you will investigate a custom precise GNSS localization solution. The solution can, for instance, be based on using smartphones as a base station and mobile units. The base station would know it’s precise location and would communicate the localization error that it is experiencing to the mobile units and thus allow the mobile units to correct their localization estimates.
-  type: Localization
-  availability:
-    BSc: yes
-    MSc: no
-    PhD: no
-  leads:
-    - name: Naveed Muhammad
-      email: naveed.muhammad@ut.ee
-  file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
-
-- title: Openbot for autonomous driving research
-  description: In this project you will investigate <a href='https://www.openbot.org/home'>Openbot</a> as a platform for use in autonomous driving education and research. You have the possibility of investigating different aspects of autonomous driving such as localization, motion prediction, end-to-end navigation etc. using the platform in this project.
-  type: Educational technology
+- title: Air-Flow Sensing for Perception in Autonomous Driving
+  description: "Exploring wind flow sensing applications in autonomous driving through simulation, feature extraction methods, or physical validation."
+  type: Perception
   availability:
     BSc: yes
     MSc: yes
@@ -76,11 +32,11 @@
   leads:
     - name: Naveed Muhammad
       email: naveed.muhammad@ut.ee
-  file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
+  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=80137"
 
-- title: Donkey Car platform for autonomous driving research
-  description: "In this project you will study what aspects of autonomous driving are well suited to be studied using small-scale vehicles. And what aspects aren’t. The investigation includes the areas such as mapping and localization, behaviour prediction, end-to-end driving, control, safety, comfort, planning etc. And then: either investigate one of these areas further using the donkey car platform; or design a small-scale “city” with donkey cars as the test platform to be used in autonomous-driving research."
-  type: Educational technology
+- title: Vision-Based Localization on City Scale Using Open Street Map
+  description: "Developing street name recognition, matching perceived information with map data, implementing particle filters, and integrating into Autoware Mini software stack."
+  type: Perception
   availability:
     BSc: yes
     MSc: yes
@@ -88,39 +44,11 @@
   leads:
     - name: Naveed Muhammad
       email: naveed.muhammad@ut.ee
-  file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
+  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=80142"
 
-- title: Review and comparison of 2D/3D tracking methods for self driving cars
-  description: "In this research, you will investigate available literature on object tracking in both 2D (images) and 3D from the perspective of an autonomous vehicle. You will review state-of-the-art tracking methodologies, categorize them and discuss their performance factors. As an example, you can read multi-object tracking fundamentals for autonomous driving in this thesis: <a href='https://repository.tudelft.nl/islandora/object/uuid%3Af536b829-42ae-41d5-968d-13bbaa4ec736'>https://repository.tudelft.nl/islandora/object/uuid%3Af536b829-42ae-41d5-968d-13bbaa4ec736</a>"
-  type: Behavior prediction
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Mahir Gulzar
-      email: mahir.gulzar@ut.ee
-    - name: Naveed Muhammad
-      email: naveed.muhammad@ut.ee
-  file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
-
-- title: A unified object detection model in birds-eye-view using public datasets
-  description: "This thesis project thus aims to leverage from the advancements made by the Computer Vision community in using Neural networks on Image data. The idea is to project lidar data into a birds eye view (BEV) image and use segmentation models such as <a href='https://towardsdatascience.com/understanding-semantic-segmentation-with-unet-6be4f42d4b47'>Unet</a> to segment out objects of interest. You will be required to collect all open source perception data sets (eg, <a href='https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=bev'>KITTI</a>, <a href='https://www.nuscenes.org/nuscenes'>NuSCENES</a>, <a href='https://waymo.com/open/'>WAYMO</a>, <a href='https://level-5.global/data/'>LYFT</a> etc) for self driving and unify them into a single format that can be used to train segmentation models. You will be validating the performance of those models and will also be able to test high performing models on the lab's vehicle, in real driving scenarios."
-  type: Behavior prediction
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Muhammad Zain Bashir
-      email: muhammad.zain.bashir@ut.ee
-    - name: Mahir Gulzar
-      email: mahir.gulzar@ut.ee
-  file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
-
-- title: Systematic literature review theses
-  description: "It is possible to take up conducting a systematic literature review, within the area of autonomous driving, as your thesis topic. The review process involves finding, reading, and analysing research articles, and then synthesising a review on a particular topic. The topics available for conducting the reviews are as follows: Systematic literature review on pedestrian motion prediction methods for real-time use in autonomous driving (Naveed Muhammad, Dmytro Zabolotnii); Systematic literature review on detection of anomalous pedestrian behaviour in autonomous driving (Naveed Muhammad, Dmytro Zabolotnii); Systematic literature review on identifying traffic priority sengements on roads, for applications in autonomous driving (Naveed Muhammad, Mahir Gulzar); Systematic literature review of openly available datasets in autonomous driving  (Naveed Muhammad, Debasis Kumar)."
-  type: Behavior prediction
+- title: Map-Based Localization for Autonomous Vehicles Using Lidar
+  description: "Investigating lidar sensors for map-based localization through particle filtering or deep learning, exploring sensor requirements and real-time implementation."
+  type: Perception
   availability:
     BSc: yes
     MSc: yes
@@ -128,338 +56,16 @@
   leads:
     - name: Naveed Muhammad
       email: naveed.muhammad@ut.ee
-    - name: Debasis Kumar
-      email: debasis.kumar@ut.ee
-    - name: Dmytro Zabolotnii
-      email: dmytro.zabolotnii@ut.ee
-    - name: Mahir Gulzar
-      email: mahir.gulzar@ut.ee
-  file: "https://docs.google.com/document/d/1L-nCW0qb7G5W3Iatl-qqYL9_RQUXkfBc6BoE6q-YnWA/edit?usp=sharing"
+  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=80990"
 
-- title: "Applied project: testing the limits of minicars by making them drive from IoT lab to ADL"
-  description: "This project consists in using whatever means necessary to make a 1:10 scale minicar to drive 
- autonomously from a location on the 2nd floor (IoT lab, room 2018) to a location on the 3rd floor 
- (Autonomous Driving Lab). This encompasses driving and avoiding obstacles on the 2nd and 
- the 3rd-floor hallways, waiting for the elevator door to open, taking the elevator, performing a 
- U-turn inside the elevator, and passing through doors (waiting for someone to open them). 
- If possible, the student should attempt to use as many different technologies as possible, to see 
- if they are applicable for the task and the hardware used. For example, in certain sections, it 
- might be enough just to detect the line between the wall and the floor and make decisions 
- based on it. In the elevator, to make a U-turn, a hardcoded sequence of commands lasting a 
- few seconds may be needed. In other sections, neural networks trained to imitate human driving 
- may be useful. The task can be dumbed down as much as possible initially, e.g. assuming an 
- empty hallway and open doors. 
- In all, the project’s goal is to map the limits of the car platform, and its reliability in performing the 
- subtasks of this composite task. For example, how reliably can the car replay a recorded 
- trajectory? 
- Scientifically speaking, the thesis will describe the route as a set of subsequent challenging 
- tasks, discusses the requirements of each subtask, discusses methods to solve these tasks, 
- selects methods based on simplicity, expected performance, and the project's goals"
-  type: Educational technology
-  availability:
-    BSc: yes
-    MSc: no
-    PhD: no
-  leads:
-    - name: Ardi Tampuu
-      email: ardi.tampuu@ut.ee
-#  file: ""
-
-- title: "Repeating self-driving experiments done on Lexus on minicars: Mixture density networks and energy-based models on Donkeycar S1"
-  description: "Testing models on the real car is cool but comes with a cost. In a day of testing, we are able to 
- do a maximum of 10 test runs. Moreover, during the day and between days conditions can 
- change and it is hard to guarantee a fair comparison. Also, on real roads, the challenging 
- situations are few and far between - during 25 minutes test run, there are 10-15 challenging 
- situations (sharp turns, intersections). 
- All this means that if we want to compare 3-4 approaches to self-driving, we need to spend 
- many many days on the test route to have enough evidence to claim the superiority of any 
- approach over another. With the 1:10 scale minicars the testing of solutions is significantly faster 
- and simpler: 
- -   No need to spend an hour driving to the test location and back (+ time saved on cleaning 
- the car from mud) 
- -   One lap on a reasonably-sized route takes up to a minute instead of 25 minutes. 
- -   One can construct a variety of “roads” with any density of difficult situations. 
- -   Weather conditions, including light conditions, are much more stable indoors, allowing 
- fair comparison across time 
- In 2022 we have worked on comparing different network architectures’ ability to drive the real 
- car based on camera images. This includes neural networks performing regression and 
- classification, mixture density networks, and energy-based models. With a variety of models 
- needing testing, we need to draw conclusions from just 3 runs per model, meaning we lack 
- statistical power. I  n the present thesis, you would train the same types of neural networks 
- for the minicar and evaluate their abilities using the same metrics and ideas as was done 
- on the real car.  Likely the number of repetitions you can run is higher and differences between 
- approaches will be more significant. This work aims to demonstrate that certain studies we can 
- do on the real car can actually be more effectively done on the minicar."
-  type: Educational technology
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Ardi Tampuu
-      email: ardi.tampuu@ut.ee
-#  file: ""
-
-- title: "Map real-life features necessary for autonomous driving"
-  description: "Different approaches to autonomous driving exist, but solutions that have gone further to date use HD maps. HD maps have very good spatial accuracy and gather lane-level information about different features necessary for autonomous driving. This topic aims to develop pipelines for the automatic mapping of these features. Necessary features could be traffic lights, traffic signs, road markings, wayarea, etc. Different sensor data (camera images, lidar point cloud, car odometry, GNSS localization) and methods (detect features using Yolo or other neural networks, 3D point cloud processing, 3D image reconstruction, triangulation, image segmentation) could be used."
-  type: Mapping
+- title: Implementation of Test Scenarios for ADS in the Carla Simulator
+  description: "Testing Automated Driving Systems in simulators with focus on transferring results from simulated to real-world systems."
+  type: Validation & testing
   availability:
     BSc: yes
     MSc: yes
     PhD: no
   leads:
-    - name: Edgar Sepp
-      email: edgar.sepp@ut.ee
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Build a 3D point cloud map and use it for localization"
-  description: "One quite often used localization method for autonomous cars is matching the ego vehicle’s current lidar scan with the existing point cloud map. Usually, these point cloud maps are done using specialized mapping cars equipped with lidar sensor(s) and expensive GNSS equipment capable of RTK GNSS localization. This usually provides good accuracy, but is expensive, requires good conditions for mapping, and needs heavy processing (removing dynamic obstacles, loop closure, SLAM techniques). One way to construct the 3D point cloud map would be to use images and perform Structure from Motion. The aim of this topic is to investigate the creation of these point clouds and their suitability for an image or lidar-based localization. This topic can also be divided into different parts: mapping stage - 3D point cloud map generation; localization part (lidar or camera-based)."
-  type: Mapping
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Edgar Sepp
-      email: edgar.sepp@ut.ee
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Convert real-world spatial data into a usable format"
-  description: "There are several open-source software stacks available in autonomous driving and often they need different map formats. Autonomous Driving Lab is interested in testing and validating different approaches to autonomous driving, and hence we need to be able to generate maps in different formats. At the same time when the map data is gathered this format information and relations between the features are not there, because they might be coming from different pipelines (manual digitizing, machine learning model, some other algorithm). Creating these relations manually is time-consuming and prone to errors. The aim of this topic is to create the relations (different formats need different relations) for the map data automatically. As an example, we could imagine mapped traffic lights, but they need to be associated with the right lanes or centerline trajectory needs to know which is its right and left edge, and is there a right or left lane, is there a branching at the end of the lane, etc. One of the possible formats, the map data needs to be transformed to, is <a href='https://www.asam.net/standards/detail/opendrive/'>ASAM OpenDrive</a>."
-  type: Mapping
-  availability:
-    BSc: yes
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Edgar Sepp
-      email: edgar.sepp@ut.ee
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Localization using SfM point cloud"
-  description: "Localization using point cloud is quite commonly used in autonomous driving. Usually, the source point cloud is collected by a lidar sensor using RTK GNSS positioning and applying a lot of filtering on top of it to remove dynamic objects and achieve good geometric quality. In this topic, it is proposed that a point cloud map is composed using the camera images and Structure from Motion process and the points are actually image features (descriptors). The localization can now be performed using:
-lidar - then the point cloud might need to be additionally processed to make it more suitable for accurate localization (densification, some other filtering);
-camera images - every image will have its own descriptors that need to be matched with the point cloud. Extra information (car odometry, visual odometry from images) could be used to improve the accuracy. The challenge here is to build a real-time localization capability."
-  type: Localization
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-    - name: Edgar Sepp
-      email: edgar.sepp@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Better positioning using smartphones"
-  description: "The positioning accuracy of an average mobile phone is 2-5 meters. To use mobile phones as dashcams for mapping, better location accuracy is desirable. This can be achieved by recording GNSS raw data and postprocessing it later together with additional info about the atmospheric conditions at that moment and precise satellite locations. This can be done with <a href='https://developer.android.com/guide/topics/sensors/gnss'>newer Android phones</a>. This project aims to investigate these methods, taking hints from <a href='https://www.kaggle.com/c/google-smartphone-decimeter-challenge/'>Google Smartphone Decimeter Challenge</a> and <a href='https://github.com/commaai/laika'>comma.ai laika</a> projects."
-  type: Localization
-  availability:
-    BSc: yes
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-    - name: Edgar Sepp
-      email: edgar.sepp@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Fallback to lane following in case of GNSS failure"
-  description: "Using Global Navigation Satellite Systems (GNSS) is one of the primary sources used for localization (positioning). Knowing your precise current position is essential in map-based trajectory following. Sometimes GNSS localization can be not accurate enough or just fail. Such events cannot be allowed in fully autonomous driving, so there must be some fallback to rely on in such cases. This project aims to develop a fallback method to mitigate GNSS failures. One simple option is to continue with lane following until the GNSS regains its accuracy or stop safely when GNSS localization is lost completely. The goal of this project is to develop a method for fusing map-based and lane-following trajectories."
-  type: Localization
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-    - name: Edgar Sepp
-      email: edgar.sepp@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Setting up RTK base station for accurate positioning"
-  description: "Build <a href='https://en.wikipedia.org/wiki/Real-time_kinematic_positioning'>RTK</a> base station from scratch following the tutorial <a href='https://learn.sparkfun.com/tutorials/how-to-build-a-diy-gnss-reference-station/all'>here</a>. This includes acquiring the physical hardware, setting up the software and testing localization against it with our car platform."
-  type: Localization
-  availability:
-    BSc: yes
-    MSc: no
-    PhD: no
-  leads:
-    - name: Edgar Sepp
-      email: edgar.sepp@ut.ee
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Get a selected autonomous driving software stack to work with actual car"
-  description: "Several open-source software stacks for autonomous driving are available. Autonomous Driving Lab (ADL) is interested in testing different software stacks to learn about their positive and negative sides. Testing this software means that it should also be tested with the existing research platform (Lexus RX450h) in ADL. This project is about selecting one of the following software stacks and get it working in real life with a real car:
-<ul>
-<li><a href='https://apollo.auto'>Apollo</a></li>
-<li><a href='https://github.com/autowarefoundation/autoware'>New Autoware</a></li>
-</ul>"
-  type: Base autonomy
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-    - name: Mahir Gulzar
-      email: mahir.gulzar@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Adapt CARLA Leaderboard for Tartu simulation"
-  description: "<a href='http://carla.org/'>CARLA</a> is a simulation engine often used for testing autonomous vehicles. <a href='https://leaderboard.carla.org/'>CARLA Leaderboard</a> is a well known benchmark based on CARLA simulation that measures the performance of autonomous driving solutions. We want to adapt the CARLA Leaderboard to work against the <a href='https://adl.cs.ut.ee/lab/simulation'>Tartu simulation</a> that we built ourselves."
-  type: Base autonomy
-  availability:
-    BSc: yes
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-    - name: Allan Mitt
-      email: allan.mitt@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Adapt VISTA simulation to use depth"
-  description: "<a href='https://github.com/vista-simulator/vista'>VISTA</a> is a simulation engine developed in MIT that creates the environment automatically from recorded camera images. Currently the simulation has severe distortions due to using a simplified approach to render novel views of the same scene. Your task is to make the VISTA rendering engine to use either monocular depth estimates or lidar data to produce distortion-free renderings of the scene. Basically replicate <a href='https://arxiv.org/abs/2111.12083'>this paper</a>."
-  type: Learned driving
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Adapt VISTA simulation for human driving"
-  description: "<a href='https://github.com/vista-simulator/vista'>VISTA</a> is a simulation engine developed in MIT that creates the environment automatically from recorded camera images. The simulation is mainly meant for testing autonomy software, but it could be also used for example by WRC rally drivers to prepare for the next stage. Your task is to tune the VISTA engine for human driving, including developing accurate vehicle dynamics models."
-  type: Learned driving
-  availability:
-    BSc: yes
-    MSc: no
-    PhD: no
-  leads:
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Use VISTA to learn driving policy for real world"
-  description: "<a href='https://github.com/vista-simulator/vista'>VISTA</a> is a simulation engine developed in MIT that creates the environment automatically from recorded camera images. In this project you will use reinforcement learning to learn a driving model in simulation and later deploy it on a real car in the real world. Basically replication of <a href='https://ieeexplore.ieee.org/document/8957584'>this paper</a>."
-  type: Learned driving
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Scaling laws for end-to-end driving"
-  description: "<a href='https://arxiv.org/abs/2001.08361'>Scaling laws</a> have completely transformed the NLP field, making it possible to have models like <a href='https://en.wikipedia.org/wiki/GPT-3'>GPT-3</a> that generate human-level text. We would like to develop a similar kind of scaling laws for end-to-end driving. In this project you will train a number of models of different sizes on different sizes of datasets collected from CARLA simulation. The end result is a simple model that represents the dependency between dataset size, model size and model performance in CARLA Leaderboard."
-  type: Learned driving
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Train end-to-end model on all of the world's data"
-  description: "Data is the most critical component in training highly performant neural networks. Autonomous Driving Lab with just one car is not able to collect enough data required to train the highest quality models. Therefore we want to make use of all the public data in the world. Your task in this project is to look up all potential sources for the data, convert them to common format and train one big end-to-end driving model on this dataset."
-  type: Learned driving
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Tambet Matiisen
-      email: tambet.matiisen@ut.ee
-  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Efficient intervention with uplift models"
-  description: "Uplift model is a trending technique to estimate the effect of an intervention at an individual or segment level. It enables machine learning models to provide reasonable answers to relevant business questions around product features, campaigns, and recommendation offers.<br><br>In this research topic you will implement state-of-the-art uplift models and evaluate their application in feature personalisation for customers."
-  type: Bolt
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Carlos Bentes
-      email: carlos.bentes@bolt.eu
-#  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Understanding city characteristics through clustering analysis"
-  description: "Operating in 100+ cities and 40+ countries includes a lot of complexity for reporting and ML applications. To reduce this complexity we can cluster the cities based on map, traffic, and/or business data and describe their characteristics through prototypical examples, so called “exemplars”. The immense advantage of exemplars lies in understanding business wide dynamics on a handful of examples and generalising their characteristics to other members of the same cluster.<br><br>In this topic you will get the opportunity to handle geospatial data in a real business context. You will use different clustering techniques and evaluate their cluster quality. By serving “cluster exemplars” you will understand different city characteristics and their impact on our business. Your analysis has the potential to impact the entire reporting and modelling at Bolt."
-  type: Bolt
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Sophie Laturnus
-      email: sophie.laturnus@bolt.eu
-#  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Always valid p-values for experiment monitoring"
-  description: 'In this research topic you will implement and evaluate methods for always-valid inference of metrics in an AB experiment. This technique is useful to provide data teams with relevant metrics during an experiment execution without increasing the false positive rate from "peeking" results.'
-  type: Bolt
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Carlos Bentes
-      email: carlos.bentes@bolt.eu
-#  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Machine learning models for map element detections"
-  description: "Maps are the key ingredient for all our services at Bolt. Their data is used in many applications - be it visualizing a trip in a rider’s invoice, routing from A to B, or estimating the time of arrival for the yummy dinner of that Mexican place you ordered. It is, therefore, critical to keep our maps as up to date as possible. For this, we can use GPS tracking data of our ride hailing drivers to detect e.g. longer waiting times or uni-directional driving patterns to indicate map elements such as traffic lights or one ways.<br><br>In this project, you will research, design and test a machine learning model (e.g. LightGBM, GNN or HMM) that can detect missing map elements from our ride hailing tracking data. This could be detecting and assigning new turn restrictions, one ways, and traffic lights, or finding missing roads."
-  type: Bolt
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Sophie Laturnus
-      email: sophie.laturnus@bolt.eu
-#  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Deep Reinforcement Learning for Order Dispatching in Ridehailing"
-  description: "Finding the best driver for every order is one of the most crucial problems in ridehailing. However, real-life constraints make it almost impossible to solve this problem to optimality. One has to consider reliability and latency requirements as well as multiple business objectives when finding the optimal dispatching policy. In this project you will implement various deep learning architectures and evaluate their performance for multiobjective dispatching optimization task."
-  type: Bolt
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Anatolii Prokhorchuk
-      email: anatolii.prokhorchuk@bolt.eu
-#  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
-
-- title: "Solving Vehicle Routing Problem with Constraints for quick grocery delivery"
-  description: "Attended home delivery and same-day delivery have been studied extensively in the past. In recent years however, quick and rapid grocery delivery have changed the way people in cities order their food. This in turn have created novel problems for companies trying to optimize their delivery routing. In this project, we are interested in how does the introduction of 15 minute delivery option in addition to longer delivery options changes the optimal routing solution. The main part of the project concerns solving the vehicle routing problem with time windows with additional considerations such as including stochastic demand, stochastic travel times or joint pricing optimization."
-  type: Bolt
-  availability:
-    BSc: no
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Anatolii Prokhorchuk
-      email: anatolii.prokhorchuk@bolt.eu
-#  file: "https://docs.google.com/document/d/1-dhKTRYkoNEqXdkmSbwGvjOJfkuALiCDZ-1-cgHQkrw/edit?usp=sharing"
+    - name: Dietmar Pfahl
+      email: dietmar.pfahl@ut.ee
+  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=80824"
