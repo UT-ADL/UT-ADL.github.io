@@ -30,8 +30,6 @@ a {
 
 header .navbar {
     background: #40916C !important;
-    /*padding-left: 8.5%;
-    padding-right: 8.5%;*/
 }
 
 header {
@@ -146,8 +144,6 @@ header .nav-item {
         max-height: 100vh;
     }
     #myCarousel .carousel-caption {
-        /*width: 80%;
-        min-width: 80%;*/
         vertical-align: middle;
         width: 60%;
         max-width: 80%;
@@ -543,21 +539,6 @@ i {
     margin-right: 2px;
 }
 
-/*
-.course-header p {
-    margin-left: 6px;
-    margin-right: 24px;
-}
-
-.course-header p:last-child {
-    margin-right: 0px;
-}
-
-
-.course-header p:first-child {
-    margin-left: 0px;
-}
-*/
 .course-header-icon-gap p {
     margin-left: 6px;
     margin-right: 24px;
@@ -611,7 +592,6 @@ i {
 
 .research-card {
     padding: 20px;
-    /*position: relative;*/
     border: 1px solid #40916C;
     border-radius: 4px;
     height: 100px;
@@ -652,7 +632,6 @@ i {
 }
 
 .research-card-body p {
-    /*margin-top: 0px will apply inline mt-3 instead.*/
     margin-bottom: 0;
 }
 
@@ -697,12 +676,12 @@ i {
 
 .image-hotspot {
 	font-family: 'DM Sans', sans-serif;
-    border: 1px orange solid;
+    border: 1px #F39117 solid;
     border-radius: 50px;
     cursor: pointer;
     position: absolute;
     z-index: 9999;
-    color: orange;
+    color: #F39117;
     font-weight: 100;
     line-height: 0;
     text-align: center;
@@ -833,10 +812,6 @@ i {
     padding-bottom: 0;
 }
 
-.defended-theses-row p {
-    padding-bottom: 0;
-}
-
 
 .main-content-container {
     display: block;
@@ -869,7 +844,6 @@ i {
     
 }
 .demo-track span {
-    /*margin-top: 12px;*/
     font-size: 16px;
     line-height: 25px;
     font-weight: 400;

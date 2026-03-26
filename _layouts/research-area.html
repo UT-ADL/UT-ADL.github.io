@@ -31,7 +31,7 @@
             <!--<div class="container-fluid">-->
             <div class="content main-content-container pt-5">
                 <div class="container-fluid ">
-                    <h2 class="w-50 5">
+                    <h2 class="w-50">
                         {{page.title}}
                     </h2>
                     <div class="row g-0">
@@ -44,7 +44,7 @@
                             {% if page.lead_image %}
                             <img src="{{ page.lead_image }}" alt="{{page.research_lead}}" class="pb-3 img-fluid" />
                             {% else %}
-                            <img src="/images/team/lead.png" alt="" class="pb-3 img-fluid" />
+                            <img src="/images/team/lead.png" alt="Team lead" class="pb-3 img-fluid" />
                             {% endif %}
                             <strong>{{page.research_lead}}</strong>
                             <p>{{page.lead_description}}</p>
