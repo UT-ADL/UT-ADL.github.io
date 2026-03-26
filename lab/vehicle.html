@@ -5,32 +5,6 @@ subtitle: The Lab
 meta: Overview of the Lexus RX450h that is equipped with all the sensors for basic autonomy.
 ---
 
-<script>
-    $(document).ready(function () {
-        $('.image-hotspot').hover(function () {
-            $('#cards .component-card').hide();
-            var target = '#' + $(this).data('target');
-            $(target).show();
-        });
-    });
-    $(document).ready(function () {
-        $('.image-hotspot').click(function () {
-            $('#cards .component-card').hide();
-            var target = '#' + $(this).data('target');
-            $(target).show();
-        });
-    });
-	
-	function scrollToCar(){
-		var carElement = document.getElementsByClassName("row")
-		carElement[0].scrollIntoView()
-	}
-    $(document).ready(function(){
-	    $(".image-hotspot").on('click', function() {
-			scrollToCar()
-	    });
-    });
-</script>
 <div class="container-fluid">
     <!-- Padding, margins (nb! Row in the middle of specs) -->
     <!-- Font -->

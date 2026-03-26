@@ -2,91 +2,74 @@
 layout: teaching
 title: Thesis topics
 subtitle: Teaching
-meta: See all the available thesis topics and don’t hesitate to contact us, should your own idea of a self-driving topic not be listed!
+meta: See all the available thesis topics and don't hesitate to contact us, should your own idea of a self-driving topic not be listed!
 ---
-<script>
-    var currentlySelectedField = "all";
-
-    function filterByField(field) {
-        //Button styling
-        const previouslySelectedButton = document.getElementById(currentlySelectedField);
-        previouslySelectedButton.classList.remove("filter-button-selected");
-        const deselect_filter_button_x = document.getElementById("deselect-filter-button-x");
-        if (deselect_filter_button_x !== null) {
-            deselect_filter_button_x.remove();
-        } else {}
-
-        if (currentlySelectedField === field) {
-            document.getElementById("all").classList.add("filter-button-selected");
-            currentlySelectedField = "all";
-        } else {
-            document.getElementById("all").classList.remove("filter-button-selected");
-            const nowSelectedButton = document.getElementById(field);
-            nowSelectedButton.classList.add("filter-button-selected");
-            currentlySelectedField = field;
-            if (field !== "all") {
-                nowSelectedButton.innerHTML = nowSelectedButton.innerHTML +
-                    "<span id='deselect-filter-button-x'> ✖</span>";
-            } //
-        }
-
-
-
-        //Actually displays the neccessary rows
-        const thesis_rows = document.getElementsByClassName("thesis-topic-row");
-        for (var i = 0; i < thesis_rows.length; i++) {
-            if (currentlySelectedField !== "all") {
-                thesis_rows[i].style.display = "none";
-            } else {
-                thesis_rows[i].style.display = "block";
-            }
-        }
-        if (currentlySelectedField !== "all") {
-            const thesis_rows_field = document.getElementsByClassName(currentlySelectedField)
-            for (var i = 0; i < thesis_rows_field.length; i++) {
-                thesis_rows_field[i].style.display = "block";
-            }
-        }
-    }
-</script>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-8">
-            <h2>{{page.title}}</h2>
-            <p class="pt-md-3">So you’re thinking of making the culmination of your studies about self-driving?</p>
-            <p>Good, because we need all the help we can get. See all the available thesis topics and don’t hesitate to
+            <h2>{{ page.title }}</h2>
+            <p class="pt-md-3">So you're thinking of making the culmination of your studies about self-driving?</p>
+            <p>Good, because we need all the help we can get. See all the available thesis topics and don't hesitate to
                 contact us, should your own idea of a self-driving topic not be listed!</p>
         </div>
     </div>
 </div>
 <div class="spacer-medium"></div>
 <div class="container-fluid">
-    <div class="row mb-5">
-        <div class="col-md-8">
-            <div id="all" class="filter-button filter-button-selected mt-2 mt-md-0" style="cursor: pointer;"
-                onclick="filterByField('all')">
-                <button type="button">All Theses</button>
-            </div>
-            <div id="bsc" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('bsc')">
-                <button type="button">BSc</button>
-            </div>
-            <div id="msc" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('msc')">
-                <button type="button">MSc</button>
-            </div>
-            <div id="phd" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('phd')">
-                <button type="button">PhD</button>
-            </div>
-        </div>
+    <div class="menu-tags" data-filter-group="level" data-filter-target="#topics-list">
+        <a class="menu-link active" data-filter-value="all" href="#">All topics</a>
+        <a class="menu-link" data-filter-value="bsc" href="#">BSc</a>
+        <a class="menu-link" data-filter-value="msc" href="#">MSc</a>
+        <a class="menu-link" data-filter-value="phd" href="#">PhD</a>
     </div>
-    {% for topic in site.data.thesis-topics %}
-    {% include thesis-topic.html 
-        title=topic.title 
-        description=topic.description
-        type=topic.type
-        availability=topic.availability
-        leads=topic.leads
-        lead_email=topic.lead_email
-        file=topic.file
-    %}
-    {% endfor %}
+
+    <div id="topics-list" class="mt-4">
+        {% for topic in site.data.thesis-topics %}
+        {% assign levels = "" %}
+        {% if topic.availability.BSc %}{% assign levels = levels | append: "bsc," %}{% endif %}
+        {% if topic.availability.MSc %}{% assign levels = levels | append: "msc," %}{% endif %}
+        {% if topic.availability.PhD %}{% assign levels = levels | append: "phd," %}{% endif %}
+        <div class="filter-item" data-filter-level="{{ levels | split: ',' | join: ',' }}">
+            <details class="topic-card">
+                <summary>{{ topic.title }}</summary>
+                <div class="topic-details">
+                    {% if topic.description != blank %}
+                    <p>{{ topic.description }}</p>
+                    {% endif %}
+
+                    <div class="mb-3">
+                        {% if topic.availability.BSc %}
+                        <span class="badge-degree badge-available">BSc</span>
+                        {% else %}
+                        <span class="badge-degree badge-unavailable">BSc</span>
+                        {% endif %}
+                        {% if topic.availability.MSc %}
+                        <span class="badge-degree badge-available">MSc</span>
+                        {% else %}
+                        <span class="badge-degree badge-unavailable">MSc</span>
+                        {% endif %}
+                        {% if topic.availability.PhD %}
+                        <span class="badge-degree badge-available">PhD</span>
+                        {% else %}
+                        <span class="badge-degree badge-unavailable">PhD</span>
+                        {% endif %}
+                    </div>
+
+                    {% for lead in topic.leads %}
+                    <div class="mb-2">
+                        <i class="fas fa-envelope" style="color: var(--primary);"></i>
+                        <a href="mailto:{{ lead.email }}">{{ lead.name }}</a>
+                    </div>
+                    {% endfor %}
+
+                    {% if topic.file != null and topic.file != "#" %}
+                    <div class="mt-2">
+                        <a href="{{ topic.file }}" target="_blank" class="custom-btn">View details</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </details>
+        </div>
+        {% endfor %}
+    </div>
 </div>

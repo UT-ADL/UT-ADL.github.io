@@ -8,25 +8,19 @@ Dorpat Autonomous Driving Challenge is the world’s first benchmark of real-wor
 
 <div class="row mb-5 pb-5">
     <div class="col-md-6">
-        <div class="embedded_video">
-            <div class="embed-overlay"></div>
-            <div class="embed-body">
-                <i class="embed-icon far fa-play-circle"></i>
+        <div class="embedded-video-card" data-video-src="https://www.youtube.com/embed/oPd3HMmZQ6M">
+            <img alt="Simulation demo" src="https://img.youtube.com/vi/oPd3HMmZQ6M/maxresdefault.jpg" />
+            <div class="video-overlay">
+                <i class="far fa-play-circle play-icon"></i>
             </div>
-            <a class="embed-anchor" data-toggle="modal" data-target="#myModal"
-                data-src="https://www.youtube.com/embed/oPd3HMmZQ6M"></a>
-            <img alt="" src="https://img.youtube.com/vi/oPd3HMmZQ6M/maxresdefault.jpg" />
         </div>
     </div>
     <div class="col-md-6">
-        <div class="embedded_video">
-            <div class="embed-overlay"></div>
-            <div class="embed-body">
-                <i class="embed-icon far fa-play-circle"></i>
+        <div class="embedded-video-card" data-video-src="https://www.youtube.com/embed/ANxnvw-rceI">
+            <img alt="Simulation demo" src="https://img.youtube.com/vi/ANxnvw-rceI/maxresdefault.jpg" />
+            <div class="video-overlay">
+                <i class="far fa-play-circle play-icon"></i>
             </div>
-            <a class="embed-anchor" data-toggle="modal" data-target="#myModal"
-                data-src="https://www.youtube.com/embed/ANxnvw-rceI"></a>
-            <img alt="" src="https://img.youtube.com/vi/ANxnvw-rceI/maxresdefault.jpg" />
         </div>
     </div>
 </div>

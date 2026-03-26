@@ -1,14 +1,4 @@
 <header>
-    <script>
-        function setMobileBackground() {
-            var header = document.getElementsByTagName('header')[0];
-            if (header.classList.contains('navbar-mobile-background')) {
-                header.classList.remove('navbar-mobile-background');
-            } else {
-                header.classList.add('navbar-mobile-background');
-            }
-        }
-    </script>
     <div class="main-content-container">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -16,7 +6,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"
-                    {% if include.applyMobileBackground %}onclick="setMobileBackground()" {% endif %}>
+                    {% if include.applyMobileBackground %}data-mobile-bg{% endif %}>
                     <span class="navbar-toggler-icon"></span>
                 </button>
 

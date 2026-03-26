@@ -1,47 +1,31 @@
+<!-- This include is kept for backward compatibility but publications.html now renders items directly -->
 <div class="{{ include.year | downcase }} row defended-thesis-row">
     <div class="col-8">
         <div class="row mb-2">
-            <h5></b><a class="link" href="{{include.link}}" target="_blank"><strong>{{ include.title }}</strong></a></h5>
+            <h5><a class="link" href="{{ include.link }}" target="_blank"><strong>{{ include.title }}</strong></a></h5>
         </div>
         <div class="row">
             <div class="col">
-
-                <p class>
-                    {{ include.authors }}
-                </p>
-
-                <span>•</span>
-
-                <p>
-                    {{ include.conference }}
-                </p>
-
-                <span>•</span>
-
-                <p>
-                    {{ include.year }}
-                </p>
-
-                <span>•</span>
-                {% assign website = include.website | strip_newlines %}
-                {% if website != "" %}
-                <a href="{{include.website}}" target="_blank" rel="nofollow"><i class="fas fa-globe"></i></a>
-                {% endif %}
-
-                {% assign github = include.github | strip_newlines %}
-                {% if github != "" %}
-                <a href="{{include.github}}" target="_blank" rel="nofollow" ><i class="fab fa-github"></i></a>
-                {% endif %}
-
-                {% assign file = include.file | strip_newlines %}
-                {% if file != "" %}
-                <a href="{{include.file}}" download><i class="fas fa-file"></i></a>
-                {% endif %}
-
-                {% assign video = include.video | strip_newlines %}
-                {% if video != "" %}
-                <a href="{{include.video}}" target="_blank" rel="nofollow"><i class="fas fa-video"></i></a>
-                {% endif %}
+                <p>{{ include.authors }}</p>
+                <span>&bull;</span>
+                <p>{{ include.conference }}</p>
+                <span>&bull;</span>
+                <p>{{ include.year }}</p>
+                <span class="item-links">
+                    {% if include.website != blank %}
+                    <span>&bull;</span>
+                    <a href="{{ include.website }}" target="_blank" rel="nofollow"><i class="fas fa-globe"></i></a>
+                    {% endif %}
+                    {% if include.github != blank %}
+                    <a href="{{ include.github }}" target="_blank" rel="nofollow"><i class="fab fa-github"></i></a>
+                    {% endif %}
+                    {% if include.file != blank %}
+                    <a href="{{ include.file }}" download><i class="fas fa-file"></i></a>
+                    {% endif %}
+                    {% if include.video != blank %}
+                    <a href="{{ include.video }}" target="_blank" rel="nofollow"><i class="fas fa-video"></i></a>
+                    {% endif %}
+                </span>
             </div>
         </div>
     </div>

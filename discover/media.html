@@ -5,76 +5,29 @@ subtitle: Discover ADL
 permalink: /discover/media
 meta: Overview of publications where ADL has appeared in media.
 ---
-<script>
-    var currentlySelectedField = "all";
-
-    function filterByField(field) {
-        //Button styling
-        const previouslySelectedButton = document.getElementById(currentlySelectedField);
-        previouslySelectedButton.classList.remove("filter-button-selected");
-        const deselect_filter_button_x = document.getElementById("deselect-filter-button-x");
-        if (deselect_filter_button_x !== null) {
-            deselect_filter_button_x.remove();
-        } else {}
-
-        if (currentlySelectedField === field) {
-            document.getElementById("all").classList.add("filter-button-selected");
-            currentlySelectedField = "all";
-        } else {
-            document.getElementById("all").classList.remove("filter-button-selected");
-            const nowSelectedButton = document.getElementById(field);
-            nowSelectedButton.classList.add("filter-button-selected");
-            currentlySelectedField = field;
-            if (field !== "all") {
-                nowSelectedButton.innerHTML = nowSelectedButton.innerHTML +
-                    "<span id='deselect-filter-button-x'> ✖</span>";
-            } //
-        }
-
-
-
-        //Actually displays the neccessary rows
-        const thesis_rows = document.getElementsByClassName("news-card-filter");
-        for (var i = 0; i < thesis_rows.length; i++) {
-            if (currentlySelectedField !== "all") {
-                thesis_rows[i].style.display = "none";
-            } else {
-                thesis_rows[i].style.display = "block";
-            }
-        }
-        if (currentlySelectedField !== "all") {
-            const thesis_rows_field = document.getElementsByClassName(currentlySelectedField)
-            for (var i = 0; i < thesis_rows_field.length; i++) {
-                thesis_rows_field[i].style.display = "block";
-            }
-        }
-    }
-</script>
-
 {% assign videos = site.data.media | where: "type", "video" %}
 {% assign sorted = site.data.media | sort: "date" | reverse %}
+
 <div class="container-fluid mb-5">
     <div class="row">
         <div class="col-md-12">
             <h2>ADL in media</h2>
         </div>
     </div>
+
+    <!-- Video section -->
     <div class="row mt-3">
         <span class="overlane-text mb-3">VIDEO</span>
         <div class="col-md-12">
             <div class="row">
                 {% for video in videos %}
-                <div class="col-xl-4 mt-3">
-                    <div class="embedded_video">
-                        <div class="embed-overlay"></div>
-                        <div class="embed-body">
-                            <i class="far fa-play-circle"></i>
-
-                            <span class="embed-text">{{video.title}}</span>
-
+                <div class="col-xl-4 col-md-6 mt-3">
+                    <div class="embedded-video-card" data-video-src="{{ video.url }}">
+                        <img alt="{{ video.title }}" src="{{ video.image }}" />
+                        <div class="video-overlay">
+                            <i class="far fa-play-circle play-icon"></i>
                         </div>
-                        <a class="embed-anchor" data-toggle="modal" data-target="#myModal" data-src="{{video.url}}"></a>
-                        <img alt="" src="{{video.image}}" />
+                        <div class="video-title">{{ video.title }}</div>
                     </div>
                 </div>
                 {% endfor %}
@@ -82,45 +35,44 @@ meta: Overview of publications where ADL has appeared in media.
         </div>
     </div>
 
-    <div class="news">
-        <span class="overlane-text">CONTINIUE READING</span>
+    <!-- Articles section -->
+    <div class="news mt-5">
+        <span class="overlane-text">CONTINUE READING</span>
         <h4 class="mb-5">Explore articles, reports and videos that feature ADL</h4>
-        <div class="row mb-5">
-            <div class="col-md-8">
-                <div id="all" class="filter-button filter-button-selected mt-2 mt-md-0" style="cursor: pointer;"
-                    onclick="filterByField('all')">
-                    <button type="button">All</button>
-                </div>
-                <div id="ee" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('ee')">
-                    <button type="button">Only in Estonian</button>
-                </div>
-                <div id="en" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('en')">
-                    <button type="button">Only in English</button>
-                </div>
-            </div>
-        </div>
-        {% for news in sorted %}
-        <div class="news-card-filter {{news.language}}">
-            <div class="row my-4 news-card" id="news">
-                <a class="card-anchor-absolute" href="{{news.url}}" target="_blank" rel="nofollow" style="z-index:1000"></a>
-                <div class="col-md mb-2">
-                    <div class="news-card-body mt-3">
 
-                        <h6>
-                            {{news.title}}
-                        </h6>
-                        {% if news.type == "article" %}
-                        <span class="overlane-text">ARTICLE • {{news.date}}</span>
-                        {% else %}
-                        <span class="overlane-text">VIDEO • {{news.date}}</span>
-                        {% endif %}
+        <div class="menu-tags mb-4" data-filter-group="lang" data-filter-target="#media-list">
+            <a class="menu-link active" data-filter-value="all" href="#">See all</a>
+            <a class="menu-link" data-filter-value="en" href="#">English</a>
+            <a class="menu-link" data-filter-value="ee" href="#">Estonian</a>
+        </div>
+
+        <div id="media-list">
+            {% for news in sorted %}
+            <div class="filter-item news-card-filter" data-filter-lang="{{ news.language }}">
+                <div class="row my-4 news-card" id="news">
+                    <a class="card-anchor-absolute" href="{{ news.url }}" target="_blank" rel="nofollow" style="z-index:1000"></a>
+                    <div class="col-md mb-2">
+                        <div class="news-card-body mt-3">
+                            <h6>{{ news.title }}</h6>
+                            {% if news.type == "article" %}
+                            <span class="overlane-text">ARTICLE &bull; {{ news.date }}</span>
+                            {% else %}
+                            <span class="overlane-text">VIDEO &bull; {{ news.date }}</span>
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
+                <hr />
             </div>
-            <hr />
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
+</div>
 
-
+<!-- Video Modal -->
+<div id="video-modal" class="video-modal-overlay">
+    <div class="video-modal-inner">
+        <button class="video-modal-close">&times;</button>
+        <iframe src="" allowfullscreen></iframe>
+    </div>
 </div>
