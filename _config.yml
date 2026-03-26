@@ -43,7 +43,7 @@ webrick:
     X-XSS-Protection: "1; mode=block"
     X-Content-Type-Options: nosniff
 # Build settings
-plugins_dir:
+plugins:
   - jekyll-feed
 
 # Exclude from processing.
