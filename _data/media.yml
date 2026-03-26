@@ -1,10 +1,38 @@
 ﻿- type: video
+  url: "https://www.youtube.com/embed/3OjjovHoWC8"
+  image: "https://img.youtube.com/vi/3OjjovHoWC8/mqdefault.jpg"
+  language: en
+  date: 2024-12-01
+  title: Autonomous Driving Lab Clevon Teleoperation demo 2024
+
+- type: article
+  url: "https://tradewithestonia.com/clevon-and-the-university-of-tartu-are-developing-remote-control-of-vehicles/"
+  image: ""
+  language: en
+  date: 2024-04-30
+  title: Clevon and the University of Tartu are developing remote control of vehicles
+
+- type: article
+  url: "https://e-estonia.com/tartu-aims-to-become-the-european-capital-of-self-driving-vehicles/"
+  image: ""
+  language: en
+  date: 2023-02-15
+  title: Tartu aims to become the European capital of self-driving vehicles
+
+- type: video
+  url: "https://www.youtube.com/embed/aP1L64Pgw8g"
+  image: "https://img.youtube.com/vi/aP1L64Pgw8g/mqdefault.jpg"
+  language: en
+  date: 2022-12-01
+  title: Autonomous on-demand transport pilot in Tartu 2022
+
+- type: video
   url: "https://www.youtube.com/embed/Uq5KH6PRMmY"
   image: "https://img.youtube.com/vi/Uq5KH6PRMmY/maxresdefault.jpg"
   language: en
   date: 2020-11-30
-  title: Autonomous Driving Lab September Street Demo
-  
+  title: Autonomous Driving Lab Tartu street demo September 2020
+
 - type: article
   url: "https://researchinestonia.eu/2021/05/03/ut-and-bolt-expand-collaboration-to-develop-it-solutions-for-self-driving-vehicles/"
   image: "https://researchinestonia.eu/rwp/wp-content/uploads/fly-images/6919/self-driving-car-demo_13_MathisBogens-scaled-1-1170x770-c.jpg"
@@ -23,7 +51,7 @@
   url: "https://www.youtube.com/embed/narMXyL5mPY"
   image: "https://img.youtube.com/vi/narMXyL5mPY/mqdefault.jpg"
   language: en
-  date: 2020-09-10
+  date: 2021-09-10
   title: The World’s First Self-Driving Car to Drive on the Official WRC Rally Stage
 
 - type: video
@@ -41,14 +69,14 @@
   title: TeadusEST 3. osa - isejuhtivad sõidukid
 
 - type: article
-  url: "https://www.cs.ut.ee/et/uudised/tartu-ulikool-bolt-laiendavad-koostood-isejuhtivate-soidukite-jaoks-vajalike-it-lahenduste"
+  url: "https://ut.ee/et/sisu/tartu-ulikool-ja-bolt-laiendavad-koostood-isejuhtivate-soidukite-jaoks-vajalike-it-lahenduste"
   image: "https://www.cs.ut.ee/sites/default/files/styles/ut_image_default/public/foto_mathis_bogens_bolt_16-9_0.jpg?itok=1SPRC9np"
   language: ee
   date: 2021-04-22
   title: Tartu Ülikool ja Bolt laiendavad koostööd isejuhtivate sõidukite jaoks vajalike IT-lahenduste arendamiseks
   
 - type: article
-  url: "https://tartu.postimees.ee/7132368/isejuhtiv-auto-joudis-linnaliiklusse"
+  url: "https://tartu.postimees.ee/7132368/video-isejuhtiv-auto-joudis-linnaliiklusse"
   image: "https://f7.pmo.ee/J7cEhuaIO2wkvc6oN6wZOssVk2o=/1370x820/smart/nginx/o/2020/12/13/13527618t1h5cf2.jpg"
   language: ee
   date: 2020-12-14
@@ -111,6 +139,20 @@
   title: "ÕL VIDEO | Tulevik peaaegu kohal: Vorbuse rahvast veab Tartusse isesõitev auto"
 
 - type: article
+  url: "https://www.aripaev.ee/raadio/episood/teadlane-toome-boltiga-isesoitva-auto-tanavale-mone-aasta-parast"
+  image: ""
+  language: ee
+  date: 2024-04-09
+  title: "Teadlane: toome Boltiga isesõitva auto tänavale mõne aasta pärast"
+
+- type: article
+  url: "https://tehnika.postimees.ee/7995703/clevoni-ja-tartu-ulikooli-koostoos-saab-ulikooli-isejuhtivat-katseautot-nuud-kaugjuhtida"
+  image: ""
+  language: ee
+  date: 2024-04-08
+  title: Clevoni ja Tartu Ülikooli koostöös saab ülikooli isejuhtivat katseautot nüüd kaugjuhtida
+
+- type: article
   url: "https://tartu.postimees.ee/7498443/tartlased-voivad-tasuta-proovida-isesoitvat-autot"
   image: "https://f10.pmo.ee/yZKVQE4sdqcgQSZOSa5tYqkEOO4=/1536x0/smart/nginx/o/2022/04/11/14478945t1hc587.jpg"
   language: ee
@@ -118,7 +160,7 @@
   title: "Tartlased võivad tasuta proovida isesõitvat autot"
 
 - type: article
-  url: "https://reporter.postimees.ee/7499440/reporter-tartus-soidab-isejuhtiv-uhissoiduk-nagu-varskelt-load-saanud-noor-juht"
+  url: "https://reporter.kanal2.ee/7499440/reporter-tartus-soidab-isejuhtiv-uhissoiduk-nagu-varskelt-load-saanud-noor-juht"
   image: ""
   language: ee
   date: 2022-04-12

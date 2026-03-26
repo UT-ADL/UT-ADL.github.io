@@ -21,21 +21,25 @@
   
 - title: discover
   subfolderitems:
-  - page: About us
+  - page: About
     url: /discover/about
-  - page: Meet our team
+  - page: Working principles
+    url: /discover/working-principles
+  - page: Team
     url: /discover/team
   - page: Media
     url: /discover/media
-    
+
 - title: lab
   subfolderitems:
     - page: Vehicle
       url: /lab/vehicle
+    - page: Software
+      url: /lab/software
     - page: Simulation
       url: /lab/simulation
-    - page: Parking lot
-      url: /lab/parking-lot
+    - page: Closed course
+      url: /lab/closed-course
     - page: Demo track
       url: /lab/demo-track
 
@@ -58,3 +62,5 @@
     url: /teaching/defended-theses
   - page: Minicar Challenge
     url: /teaching/minicar-challenge
+  - page: The Rally Estonia Challenge
+    url: /teaching/the-rally-estonia-challenge

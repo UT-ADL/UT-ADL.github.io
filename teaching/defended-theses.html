@@ -4,56 +4,10 @@ title: Defended theses
 subtitle: Teaching
 meta: Take a look at all the magnificent theses that our students have written about self-driving.
 ---
-{% assign defended-theses = site.data.defended-theses %}
-<script>
-    var currentlySelectedField = "all";
-
-    function filterByField(field) {
-        //Button styling
-        const previouslySelectedButton = document.getElementById(currentlySelectedField);
-        previouslySelectedButton.classList.remove("filter-button-selected");
-        const deselect_filter_button_x = document.getElementById("deselect-filter-button-x");
-        if (deselect_filter_button_x !== null) {
-            deselect_filter_button_x.remove();
-        } else {}
-
-        if (currentlySelectedField === field) {
-            document.getElementById("all").classList.add("filter-button-selected");
-            currentlySelectedField = "all";
-        } else {
-            document.getElementById("all").classList.remove("filter-button-selected");
-            const nowSelectedButton = document.getElementById(field);
-            nowSelectedButton.classList.add("filter-button-selected");
-            currentlySelectedField = field;
-            if (field !== "all") {
-                nowSelectedButton.innerHTML = nowSelectedButton.innerHTML +
-                    "<span id='deselect-filter-button-x'> ✖</span>";
-            } //
-        }
-
-
-
-        //Actually displays the neccessary rows
-        const thesis_rows = document.getElementsByClassName("defended-thesis-row");
-        for (var i = 0; i < thesis_rows.length; i++) {
-            if (currentlySelectedField !== "all") {
-                thesis_rows[i].style.display = "none";
-            } else {
-                thesis_rows[i].style.display = "block";
-            }
-        }
-        if (currentlySelectedField !== "all") {
-            const thesis_rows_field = document.getElementsByClassName(currentlySelectedField)
-            for (var i = 0; i < thesis_rows_field.length; i++) {
-                thesis_rows_field[i].style.display = "block";
-            }
-        }
-    }
-</script>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-8">
-            <h2>{{page.title}}</h2>
+            <h2>{{ page.title }}</h2>
             <p class="pt-md-3">Take a look at all the magnificent theses that our students have written about
                 self-driving. Surely this list contains the names of future leading specialists of the self-driving
                 academia and industry!</p>
@@ -62,32 +16,44 @@ meta: Take a look at all the magnificent theses that our students have written a
 </div>
 <div class="spacer-medium"></div>
 <div class="container-fluid">
-    <div class="row mb-5">
-        <div class="col-md-8">
-            <div id="all" class="filter-button filter-button-selected mt-2 mt-md-0" style="cursor: pointer;"
-                onclick="filterByField('all')">
-                <button type="button">All Theses</button>
-            </div>
-            <div id="bsc" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('bsc')">
-                <button type="button">BSc</button>
-            </div>
-            <div id="msc" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('msc')">
-                <button type="button">MSc</button>
-            </div>
-            <div id="phd" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('phd')">
-                <button type="button">PhD</button>
+    {% assign theses = site.data.defended-theses | sort: 'year' | reverse %}
+    {% assign degrees = theses | map: 'field' | uniq | sort_natural %}
+    {% assign years = theses | map: 'year' | uniq | sort | reverse %}
+
+    <div class="menu-tags" data-filter-group="degree" data-filter-target="#theses-list">
+        <a class="menu-link active" data-filter-value="all" href="#">All</a>
+        {% for degree in degrees %}
+        <a class="menu-link" data-filter-value="{{ degree }}" href="#">{{ degree }}</a>
+        {% endfor %}
+        {% for year in years %}
+        <a class="menu-link" data-filter-value="{{ year }}" href="#">{{ year }}</a>
+        {% endfor %}
+    </div>
+
+    <div id="theses-list">
+        {% for thesis in theses %}
+        <div class="filter-item item-row" data-filter-degree="{{ thesis.field }},{{ thesis.year }}">
+            {% if thesis.link != blank %}
+            <a class="item-title" href="{{ thesis.link }}" target="_blank">{{ thesis.title }}</a>
+            {% else %}
+            <span class="item-title" style="cursor: default;">{{ thesis.title }}</span>
+            {% endif %}
+            <div class="item-meta">
+                {% if thesis.author != blank %}
+                <span>{{ thesis.author }}</span>
+                <span class="dot">&bull;</span>
+                <span>{{ thesis.field }}</span>
+                {% endif %}
+                {% if thesis.supervisor != blank %}
+                <span class="dot">&bull;</span>
+                <span>Supervisor: {{ thesis.supervisor }}</span>
+                {% endif %}
+                {% if thesis.year != blank %}
+                <span class="dot">&bull;</span>
+                <span>{{ thesis.year }}</span>
+                {% endif %}
             </div>
         </div>
+        {% endfor %}
     </div>
-    {% assign theses = site.data.defended-theses | sort: 'year' | reverse %}
-    {% for thesis in theses %}
-    {% include defended-thesis.html
-        title=thesis.title
-        author=thesis.author
-        field=thesis.field
-        link=thesis.link
-        supervisor=thesis.supervisor
-        year=thesis.year
-    %}
-    {% endfor %}
 </div>

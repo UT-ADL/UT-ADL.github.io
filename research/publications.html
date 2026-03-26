@@ -4,94 +4,63 @@ title: Publications
 subtitle: Research
 meta: Here you can see all our publications, no matter which research area they belong to.
 ---
-<script>
-    var currentlySelectedField = "all";
-
-    function filterByField(field) {
-        //Button styling
-        const previouslySelectedButton = document.getElementById(currentlySelectedField);
-        previouslySelectedButton.classList.remove("filter-button-selected");
-        const deselect_filter_button_x = document.getElementById("deselect-filter-button-x");
-        if (deselect_filter_button_x !== null) {
-            deselect_filter_button_x.remove();
-        } else {}
-
-        if (currentlySelectedField === field) {
-            document.getElementById("all").classList.add("filter-button-selected");
-            currentlySelectedField = "all";
-        } else {
-            document.getElementById("all").classList.remove("filter-button-selected");
-            const nowSelectedButton = document.getElementById(field);
-            nowSelectedButton.classList.add("filter-button-selected");
-            currentlySelectedField = field;
-            if (field !== "all") {
-                nowSelectedButton.innerHTML = nowSelectedButton.innerHTML +
-                    "<span id='deselect-filter-button-x'> ✖</span>";
-            } //
-        }
-
-
-
-        //Actually displays the neccessary rows
-        const thesis_rows = document.getElementsByClassName("defended-thesis-row");
-        for (var i = 0; i < thesis_rows.length; i++) {
-            if (currentlySelectedField !== "all") {
-                thesis_rows[i].style.display = "none";
-            } else {
-                thesis_rows[i].style.display = "block";
-            }
-        }
-        if (currentlySelectedField !== "all") {
-            const thesis_rows_field = document.getElementsByClassName(currentlySelectedField)
-            for (var i = 0; i < thesis_rows_field.length; i++) {
-                thesis_rows_field[i].style.display = "block";
-            }
-        }
-    }
-</script>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-8">
-            <h2>{{page.title}}</h2>
-            <p class="pt-md-3">Here you can see <em>all</em> our publications, no matter which research area they belong
-                to.</p>
+            <h2>{{ page.title }}</h2>
+            <p class="pt-md-3">Here you can see <em>all</em> our publications, no matter which research area they belong to.</p>
         </div>
     </div>
 </div>
 <div class="spacer-medium"></div>
 <div class="container-fluid">
-    <div class="row mb-5">
-        <div class="col-md-8">
-            <div id="all" class="filter-button filter-button-selected mt-2 mt-md-0" style="cursor: pointer;"
-                onclick="filterByField('all')">
-                <button type="button">All Publications</button>
-            </div>
-            <div id="2022" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('2022')">
-                <button type="button">2022</button>
-            </div>
-            <div id="2021" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('2021')">
-                <button type="button">2021</button>
-            </div>
-            <div id="2020" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('2020')">
-                <button type="button">2020</button>
-            </div>
-            <div id="2019" class="filter-button mt-2 mt-md-0" style="cursor: pointer;" onclick="filterByField('2019')">
-                <button type="button">2019</button>
+    {% assign papers = site.data.research-papers | sort: 'year' | reverse %}
+    {% assign years = papers | map: 'year' | uniq %}
+
+    <div class="menu-tags" data-filter-group="year" data-filter-target="#publication-list">
+        <a class="menu-link active" data-filter-value="all" href="#">All publications</a>
+        {% for year in years %}
+        <a class="menu-link" data-filter-value="{{ year }}" href="#">{{ year }}</a>
+        {% endfor %}
+    </div>
+
+    <div id="publication-list">
+        {% for paper in papers %}
+        <div class="filter-item item-row" data-filter-year="{{ paper.year }}">
+            {% if paper.link != blank %}
+            <a class="item-title" href="{{ paper.link }}" target="_blank">{{ paper.title }}</a>
+            {% else %}
+            <span class="item-title" style="cursor: default;">{{ paper.title }}</span>
+            {% endif %}
+            <div class="item-meta">
+                {% if paper.authors != blank %}
+                <span>{{ paper.authors }}</span>
+                {% endif %}
+                {% if paper.conference != blank %}
+                <span class="dot">&bull;</span>
+                <span>{{ paper.conference }}</span>
+                {% endif %}
+                {% if paper.year != blank %}
+                <span class="dot">&bull;</span>
+                <span>{{ paper.year }}</span>
+                {% endif %}
+                <span class="item-links">
+                    {% if paper.link != blank %}
+                    <span class="dot">&bull;</span>
+                    <a href="{{ paper.link }}" target="_blank" title="Paper link"><i class="fas fa-globe"></i></a>
+                    {% endif %}
+                    {% if paper.github != blank %}
+                    <a href="{{ paper.github }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    {% endif %}
+                    {% if paper.video != blank %}
+                    <a href="{{ paper.video }}" target="_blank" title="Video"><i class="fas fa-video"></i></a>
+                    {% endif %}
+                    {% if paper.file != blank %}
+                    <a href="{{ paper.file }}" target="_blank" title="Download"><i class="fas fa-file"></i></a>
+                    {% endif %}
+                </span>
             </div>
         </div>
+        {% endfor %}
     </div>
-    {% assign papers = site.data.research-papers | sort: 'year' | reverse %}
-    {% for paper in papers %}
-    {% include /research-papers.html
-    title=paper.title
-    authors=paper.authors
-    conference=paper.conference
-    year=paper.year
-    link=paper.link
-    github=paper.github
-    video=paper.video
-    file=paper.file
-    website=paper.website
-    %}
-    {% endfor %}
 </div>
