@@ -59,7 +59,7 @@
   ects: 6
   lecturer: Dmytro Fishman
   link: https://ois2.ut.ee/#/courses/LTAT.02.028/details
-  description: Introduces deep learning methods for computer vision tasks relevant to autonomous driving perception.
+  description: From recognising number plates to detecting highly invasive renal masses, computer vision algorithms have become a key driving force behind many areas vital for modern society. This course will dive into the core computer vision tasks such as image classification, object detection, and segmentation from the perspective of deep neural networks. We will also explore more advanced topics, such as image generation, attention and transformers, and self-supervised learning.
 
 - type: Related subtasks
   title: Robotics II
@@ -104,7 +104,7 @@
   ects: 3
   lecturer: Ivar Koppel
   link: https://ois2.ut.ee/#/courses/LTAT.06.026/details
-  description: High performance computing techniques relevant for training and running autonomous driving models.
+  description: The use of university high performance cluster for training machine learning models and running simulations.
 
 - type: Related fields
   title: QGIS with Fundamental of GIS
