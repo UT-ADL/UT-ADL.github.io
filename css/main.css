@@ -246,13 +246,6 @@ header .nav-item {
     background-color: #A0A0A0;
 }
 
-#partners {
-    padding: 50px;
-    margin-left: 7.3%;
-    margin-right: 7.3%;
-}
-
-
 main h2 small.text-muted {
     font-family: DM Sans;
     font-style: normal;
@@ -703,29 +696,6 @@ hr {
     left: 7.7%;
     top: 68%;
 }
-
-.modal {
-    max-width: 100%;
-}
-
-.modal-content {
-    flex-direction: unset;
-    margin: 200px auto;
-}
-
-.close {
-    position: absolute;
-    right: -30px;
-    top: 0;
-    padding: 0;
-    font-size: 2rem;
-    font-weight: normal;
-    color: #fff;
-    border: none;
-    background-color: transparent;
-    opacity: 1;
-}
-
 
 .map-card {
     padding: 20px;

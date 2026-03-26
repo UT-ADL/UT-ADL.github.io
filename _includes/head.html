@@ -3,7 +3,7 @@
 	<meta property="og:title" content="{{page.title}}">
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="{{page.url}}">
-	<meta property="og:image" content="../">
+	<meta property="og:image" content="{{page.image | default: '/images/landing/landing1.jpg' | prepend: site.url}}">
 	<meta name="description" content="{{page.meta | default: site.description}}">
 
 
@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter&family=Barlow:ital,wght@0,400;1,800&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/c3a5593886.js" crossorigin="anonymous" defer></script>
-    <title> {{page.title}} - Autonomous Driving Lab</title>
+    <title>{{page.title}} - Autonomous Driving Lab</title>
 
     <!-- Site JS -->
     <script src="/js/site.js" defer></script>
