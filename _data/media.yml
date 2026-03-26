@@ -1,4 +1,11 @@
-﻿- type: article
+﻿- type: video
+  url: "https://www.youtube.com/embed/3OjjovHoWC8"
+  image: "https://img.youtube.com/vi/3OjjovHoWC8/mqdefault.jpg"
+  language: en
+  date: 2024-12-01
+  title: Autonomous Driving Lab Clevon Teleoperation demo 2024
+
+- type: article
   url: "https://tradewithestonia.com/clevon-and-the-university-of-tartu-are-developing-remote-control-of-vehicles/"
   image: ""
   language: en
