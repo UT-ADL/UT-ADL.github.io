@@ -1,14 +1,73 @@
 ---
+layout: lab
+title: Software
 permalink: /lab/software
-redirect_to: /lab/vehicle
+subtitle: The Lab
+meta: Autoware Mini is a minimalistic Python-based autonomy software developed in-house with MIT license.
 ---
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="refresh" content="0; url=/lab/vehicle">
-  <link rel="canonical" href="/lab/vehicle">
-</head>
-<body>
-  <p>Redirecting to <a href="/lab/vehicle">Vehicle</a>...</p>
-</body>
-</html>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="mb-3">{{page.title}}</h2>
+            <p>The software running on our car is <strong>Autoware Mini</strong>. Autoware Mini is a minimalistic
+                Python-based autonomy software. We developed it in-house, it has a permissive MIT license and is
+                open-source.</p>
+            <p>Autoware Mini is built on Python and ROS 1 and is therefore easy to start tinkering with. It utilizes
+                Autoware messages to define the interfaces between its modules and is aimed to be compatible with
+                Autoware. Autoware Mini is working on ROS Noetic (available on Ubuntu 20.04 or on other Linux versions,
+                with the help of Conda RoboStack).</p>
+            <h4>Goals</h4>
+            <p>We developed Autoware Mini so that it would be:</p>
+            <ul>
+                <li>easy to get started with — it has a minimal amount of dependencies</li>
+                <li>simple and pedagogical — it utilizes simple Python nodes and ROS 1</li>
+                <li>easy to implement machine learning based approaches on — it's written in Python</li>
+            </ul>
+            <p>Autoware Mini is aimed, first and foremost, to be used in teaching and research. While it has not been
+                designed with productization nor commercial use in mind, we are ensured in its capability, as we
+                ourselves deploy it in real traffic.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Architecture</h4>
+            <img alt="Autoware Mini architecture diagram" class="w-100 mb-4"
+                src="/images/lab/autoware_mini_architecture.png">
+            <p>The key modules of Autoware Mini are:</p>
+            <ul>
+                <li><strong>Localization</strong> — determines the vehicle's position and speed</li>
+                <li><strong>Global planner</strong> — determines the global path using Lanelet2 map</li>
+                <li><strong>Obstacle detection</strong> — generates detected objects from lidar, radar or camera</li>
+                <li><strong>Traffic light detection</strong> — generates status for stop lines</li>
+                <li><strong>Local planner</strong> — plans local path avoiding obstacles</li>
+                <li><strong>Follower</strong> — follows the local path and matches target speeds</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row mb-5 pb-5 mt-3">
+        <div class="col-md-4 my-2">
+            <a class="card-anchor" href="https://github.com/UT-ADL/autoware_mini" target="_blank" rel="nofollow">
+                <div class="tutorial-card">
+                    <div class="research-card-body w-75">
+                        <span class="overlane-text">GITHUB</span>
+                        <br>
+                        <strong>Download and install Autoware Mini</strong>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 my-2">
+            <a class="card-anchor"
+                href="https://www.youtube.com/watch?v=k3dOySPAYaY&list=PLuQzXioASss3dJvI9kLvriGXMfQEYKXZO&index=1"
+                target="_blank" rel="nofollow">
+                <div class="tutorial-card">
+                    <div class="research-card-body w-75">
+                        <span class="overlane-text">YOUTUBE</span>
+                        <br>
+                        <strong>Introduction to Autoware Mini features</strong>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
