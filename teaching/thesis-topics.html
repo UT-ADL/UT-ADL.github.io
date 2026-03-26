@@ -25,11 +25,11 @@ meta: See all the available thesis topics and don't hesitate to contact us, shou
 
     <div id="topics-list" class="mt-4">
         {% for topic in site.data.thesis-topics %}
-        {% assign levels = "" %}
-        {% if topic.availability.BSc %}{% assign levels = levels | append: "bsc," %}{% endif %}
-        {% if topic.availability.MSc %}{% assign levels = levels | append: "msc," %}{% endif %}
-        {% if topic.availability.PhD %}{% assign levels = levels | append: "phd," %}{% endif %}
-        <div class="filter-item" data-filter-level="{{ levels | split: ',' | join: ',' }}">
+        {% assign levels_arr = "" | split: "" %}
+        {% if topic.availability.BSc %}{% assign levels_arr = levels_arr | push: "bsc" %}{% endif %}
+        {% if topic.availability.MSc %}{% assign levels_arr = levels_arr | push: "msc" %}{% endif %}
+        {% if topic.availability.PhD %}{% assign levels_arr = levels_arr | push: "phd" %}{% endif %}
+        <div class="filter-item" data-filter-level="{{ levels_arr | join: ',' }}">
             <details class="topic-card">
                 <summary>{{ topic.title }}</summary>
                 <div class="topic-details">

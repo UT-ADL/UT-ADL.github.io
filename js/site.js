@@ -55,7 +55,7 @@
         if (value === 'all') {
           history.replaceState(null, '', window.location.pathname);
         } else {
-          history.replaceState(null, '', '?' + group + '=' + value);
+          history.replaceState(null, '', '?' + encodeURIComponent(group) + '=' + encodeURIComponent(value));
         }
       });
 
@@ -91,8 +91,8 @@
       overlay.className = 'video-modal-overlay';
       overlay.innerHTML =
         '<div class="video-modal-inner">' +
-        '<button class="video-modal-close">&times;</button>' +
-        '<iframe src="" allowfullscreen></iframe>' +
+        '<button class="video-modal-close" aria-label="Close video">&times;</button>' +
+        '<iframe src="" allowfullscreen allow="autoplay; encrypted-media"></iframe>' +
         '</div>';
       document.body.appendChild(overlay);
     }
@@ -116,9 +116,20 @@
 
     // Attach open handler to all triggers
     triggers.forEach(function (trigger) {
+      // Ensure keyboard focusability
+      if (!trigger.getAttribute('tabindex') && trigger.tagName !== 'A' && trigger.tagName !== 'BUTTON') {
+        trigger.setAttribute('tabindex', '0');
+        trigger.setAttribute('role', 'button');
+      }
       trigger.addEventListener('click', function (e) {
         e.preventDefault();
         openModal(this.getAttribute('data-video-src'));
+      });
+      trigger.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openModal(this.getAttribute('data-video-src'));
+        }
       });
     });
 

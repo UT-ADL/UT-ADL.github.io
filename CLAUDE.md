@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is the **Autonomous Driving Lab (ADL)** homepage at the University of Tartu, hosted at [adl.cs.ut.ee](https://adl.cs.ut.ee/). It is a **Jekyll 4.2.1** static site deployed via **GitHub Pages** — every push to `master` triggers an automatic rebuild and deploy.
+This repository contains the **Autonomous Driving Lab (ADL)** homepage at the University of Tartu, hosted at [adl.cs.ut.ee](https://adl.cs.ut.ee/). It is a **Jekyll 4.2.1** static site deployed via **GitHub Pages** — every push to `master` triggers an automatic rebuild and deploy. The site is being migrated back from **Voog CMS** to Jekyll/GitHub Pages; the `.claude/skills/voog-*` documentation covers the Voog API for fetching content during this migration.
 
 ## Quick Reference
 
@@ -141,6 +141,10 @@ Store in the appropriate subdirectory under `images/`:
 | Add a project | Create `_projects/name.md` with proper front matter |
 | Modify page layout | Edit the relevant file in `_layouts/` |
 | Change styles | Edit `css/main.css` |
+
+## Voog CMS Migration
+
+The site is being migrated from Voog CMS back to Jekyll/GitHub Pages. The `VOOG_API_KEY` environment variable provides authenticated access to the Voog API at `https://adl.cs.ut.ee/admin/api/` for fetching page content, elements, and media during migration. See `.claude/skills/voog-api/SKILL.md` for full API documentation.
 
 ## Deployment
 
