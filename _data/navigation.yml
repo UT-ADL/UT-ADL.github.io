@@ -15,7 +15,7 @@
     prefix: teaching
   - page: Blog
     url: /blog
-    prefix: Blog
+    prefix: blog
 
 - title: blog
   

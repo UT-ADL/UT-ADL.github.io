@@ -3,7 +3,7 @@
   type: Perception
   availability:
     BSc: yes
-    MSc: no
+    MSc: yes
     PhD: no
   leads:
     - name: Naveed Muhammad
@@ -14,7 +14,7 @@
   description: "Implementing map-based-localization in Open Street Map for Estonia using distances to cities as measurements via particle filtering."
   type: Perception
   availability:
-    BSc: no
+    BSc: yes
     MSc: yes
     PhD: no
   leads:
@@ -62,7 +62,7 @@
   description: "Testing Automated Driving Systems in simulators with focus on transferring results from simulated to real-world systems."
   type: Validation & testing
   availability:
-    BSc: no
+    BSc: yes
     MSc: yes
     PhD: no
   leads:

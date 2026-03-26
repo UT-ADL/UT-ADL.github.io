@@ -13,16 +13,12 @@
                         <!-- Sets the navigation element as active if it is the current page -->
                         {% assign active-url = navigation-bar-element.url | append: ".html" %}
                         {% assign active-url-permalink = navigation-bar-element.url | append: "/" %}
-                        <!-- Debug -->
-                        <!--<p>A:{{active-url}}</p>
-                <p>P:{{page.url}}</p>-->
                         {% if page.url contains active-url-permalink or page.url == active-url or page.url == navigation-bar-element.url or page.url == active-url-permalink %}
                         <a class="active-subnavigation"
                             href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
                         {% else %}
                         <a class="subnavigation"
                             href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
-                        <!--<p>{{navigation-bar-element.url}} | {{page.url}}</p>-->
                         {% endif %}
                         {% endfor %}
                         {% endif %}
