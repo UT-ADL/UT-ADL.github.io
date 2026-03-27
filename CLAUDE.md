@@ -8,7 +8,7 @@ This is the **Autonomous Driving Lab (ADL)** homepage at the University of Tartu
 
 ```bash
 # Install system deps (Ubuntu)
-sudo apt-get install ruby-full build-essential zlib1g-dev
+sudo apt-get install ruby-full ruby-bundler build-essential zlib1g-dev
 
 # Install Jekyll dependencies
 bundler install

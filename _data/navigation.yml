@@ -21,11 +21,11 @@
   
 - title: discover
   subfolderitems:
-  - page: About
+  - page: About us
     url: /discover/about
   - page: Working principles
     url: /discover/working-principles
-  - page: Team
+  - page: Meet our team
     url: /discover/team
   - page: Media
     url: /discover/media

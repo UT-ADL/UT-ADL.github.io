@@ -14,20 +14,42 @@ Most of the solutions apply some form of **data science**, very often **machine 
 
 We strongly believe that self-driving with toy cars is an **awesome way to learn the entire life cycle of data-driven solutions**. In common data science student projects the data acquisition, cleaning and model deployment phases are omitted. In here, the student will be responsible for the entire process from data collection to multiple iterations of deployment and learning from failures. Having a solution successfully deployed in the real world looks good on any CV. 
 
-### Competition in January 2023
+### Competition in January 2024
 
-A competition will be held on an undecided date in the week of 23-27.01.2023. The hardware platform will still be DonkeyCar. 
+The competition is held in January 2024 using the **DonkeyCar S1** platform. The main task is driving in a toy urban environment, with the following four challenges:
 
-The main task will be driving in a toy town, with the challenges of avoiding pedestrians and static vehicles. Two new elements will be introduced in addition to Task1 of 2022 completion (see video of 2022 winner's performance below): 1) giving way on pedestrian crossing and 2)giving way to a vehicle on the right on T-shaped intersection.
+1. **Avoiding obstacles** — static vehicles and pedestrians on the road
+2. **Pedestrian crossings** — giving way to pedestrians
+3. **Intersections** — giving way to a vehicle on the right at T-shaped intersections
+4. **Traffic signs** — obeying traffic signs
 
-To participate, please **register by sending an email to [ardi.tampuu@ut.ee](mailto:ardi.tampuu@ut.ee).**
+Participation in the competition can yield **6 ECTS** if you register to Autonomous Vehicles Project LTAT.06.012. It can also serve as a course project in various courses, e.g. Machine Learning, Neural Networks and Introduction to Data Science. The competition is also open to students from other faculties and non-students.
 
-Participation in the competition can yield 6EAP if you register to Autonomous Vehicles Project LTAT.06.012, link: https://courses.cs.ut.ee/2022/AutVehProj/fall . It can also serve as a course project in various courses, e.g. Machine Learning, Neural Networks and Introduction to Data Science. 
+We use the **DonkeyCar S1** platform. These cars come equipped with a frontal camera that is the main sensor. They also have an IMU (inertial measurement unit), that can but doesn't need to be used. The car is 1:10 scale compared to a real car. **Changing car hardware is not allowed in this competition, this is a software competition.** The existing codebase lets you get to collecting data in 10 minutes and training a neural network model in less than an hour.
 
-We will use the DonkeyCar S1 platform. These cars come equipped with a frontal camera that is the main sensor here. They also have an IMU (inertial measurement unit), that can but doesn't need to be used. The car is 10:1 scale compared to a real car. **Changing car hardware is not allowed in this competition, this is a software competition.** The existing codebase is really nice and lets you get to collecting data in 10 minutes and training a neural network model in less than an hour.
+Full rules and hardware details are available from the course page.
+
+### The Minicar
+
+The **DonkeyCar S1** is a 1:10 scale car equipped with:
+- A camera as the main sensor
+- Raspberry Pi 4b for onboard computation
+- MM1 board for motor control
+- A mobile app for remote control and data collection
+
+The car can drive autonomously using a convolutional neural network (CNN) at ~25 Hz. The model is trained on collected driving data from the toy town environment.
 
 ![Donkey car S1](/images/teaching/donkeycar.png){:width="50%"}
 {:align="center"}
+
+### Competition in January 2023
+
+The winners were:
+- **1st place:** Yevhen Pankevych & Volodymyr Savchuk
+- **2nd place:** Mihkel Lepson & Artur Tuttar
+- **3rd place:** Pavlo Pyvovar
+
+The hardware platform was DonkeyCar S1. Three new challenge elements were added compared to 2022.
 
 ### Competition in January 2022
 

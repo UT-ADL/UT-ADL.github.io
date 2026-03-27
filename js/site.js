@@ -92,7 +92,7 @@
       overlay.innerHTML =
         '<div class="video-modal-inner">' +
         '<button class="video-modal-close">&times;</button>' +
-        '<iframe src="" allowfullscreen></iframe>' +
+        '<iframe src="" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>' +
         '</div>';
       document.body.appendChild(overlay);
     }
@@ -137,7 +137,7 @@
    */
   function initHotspots() {
     document.querySelectorAll('.image-hotspot').forEach(function (hs) {
-      hs.addEventListener('click', function () {
+      hs.addEventListener('mouseenter', function () {
         var targetId = this.getAttribute('data-target');
         var target = document.getElementById(targetId);
         if (!target) return;

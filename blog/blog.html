@@ -7,9 +7,8 @@ meta: An overview of the Autonomous Driving Lab blog
 
 <div class="container-fluid mb-5">
 	<div class="menu-tags" data-filter-group="lang" data-filter-target="#blog-list">
-		<a class="menu-link active" data-filter-value="all" href="#">See all</a>
-		<a class="menu-link" data-filter-value="en" href="#">English</a>
-		<a class="menu-link" data-filter-value="ee" href="#">Estonian</a>
+		<a class="menu-link active" data-filter-value="all" href="#">All posts</a>
+		<a class="menu-link" data-filter-value="en" href="#">Only in English</a>
 	</div>
 
 	<div id="blog-list">
@@ -23,7 +22,7 @@ meta: An overview of the Autonomous Driving Lab blog
 				<div class="col-md-9 mb-2">
 					<div class="news-card-body mt-3">
 						<h6>{{ post.title }}</h6>
-						<span class="overlane-text">NEWS &bull; {{ post.date | date: "%D" }}</span>
+						<span class="overlane-text">NEWS &bull; {{ post.date | date: "%m/%d/%Y" }}</span>
 					</div>
 				</div>
 			</div>

@@ -20,7 +20,7 @@ meta: Overview of publications where ADL has appeared in media.
         <span class="overlane-text mb-3">VIDEO</span>
         <div class="col-md-12">
             <div class="row">
-                {% for video in videos %}
+                {% for video in videos limit:3 %}
                 <div class="col-xl-4 col-md-6 mt-3">
                     <div class="embedded-video-card" data-video-src="{{ video.url }}">
                         <img alt="{{ video.title }}" src="{{ video.image }}" />
@@ -42,8 +42,8 @@ meta: Overview of publications where ADL has appeared in media.
 
         <div class="menu-tags mb-4" data-filter-group="lang" data-filter-target="#media-list">
             <a class="menu-link active" data-filter-value="all" href="#">See all</a>
-            <a class="menu-link" data-filter-value="en" href="#">English</a>
-            <a class="menu-link" data-filter-value="ee" href="#">Estonian</a>
+            <a class="menu-link" data-filter-value="en" href="#">See articles in English</a>
+            <a class="menu-link" data-filter-value="ee" href="#">See articles in Estonian</a>
         </div>
 
         <div id="media-list">
@@ -73,6 +73,6 @@ meta: Overview of publications where ADL has appeared in media.
 <div id="video-modal" class="video-modal-overlay">
     <div class="video-modal-inner">
         <button class="video-modal-close">&times;</button>
-        <iframe src="" allowfullscreen></iframe>
+        <iframe src="" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
     </div>
 </div>

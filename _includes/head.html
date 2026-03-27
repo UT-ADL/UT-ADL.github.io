@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter&family=Barlow:ital,wght@0,400;1,800&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/c3a5593886.js" crossorigin="anonymous" defer></script>
-    <title>{{page.title}} - Autonomous Driving Lab</title>
+    {% if page.title and page.title != "Home" %}<title>{{page.title}} — Autonomous Driving Lab</title>{% else %}<title>Autonomous Driving Lab</title>{% endif %}
 
     <!-- Site JS -->
     <script src="/js/site.js" defer></script>

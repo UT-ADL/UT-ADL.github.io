@@ -22,7 +22,7 @@ Quickstart regarding the content:
 More details about those files in the sections below.
 
 It is easiest to change single files through GitHub web interface. One advantage of this is that the basic Markdown preview functionality works. For more complicated changes including multiple files the repository should be cloned locally so that local preview can be used. To run local preview on Ubuntu:
-1. Install system dependencies with `sudo apt-get install ruby-full build-essential zlib1g-dev`.
+1. Install system dependencies with `sudo apt-get install ruby-full ruby-bundler build-essential zlib1g-dev`.
 2. Install Jekyll dependencies with `bundler install` in repository directory where `Gemfile` is.
 3. Run `bundler exec jekyll serve` in the repository directory and open http://localhost:4000/ in browser.
 

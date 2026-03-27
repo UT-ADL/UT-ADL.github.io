@@ -1,6 +1,6 @@
 ---
 layout: index
-title: Discover
+title: Home
 meta: We help to lay foundations for the autonomous driving industry in Estonia. Autonomous Driving Lab of the University Of Tartu.
 ---
 
@@ -70,50 +70,21 @@ meta: We help to lay foundations for the autonomous driving industry in Estonia.
 </div>
 <div class="content main-content-container mt-5">
     <div class="container-fluid">
-		{% if site.posts.size > 0 %}
-		<span class="overlane-text">BLOG AND NEWS</span>
-		<h4>Find out what we have been working on</h4>
-		<div class="row my-5">
-			{% for post in site.posts limit:3%}
-			<div class="col-md-4 my-2">
-				<a class="blog-anchor" href="{{post.url}}" >
-				<div class="blog-card text-break">
-					<div class="embed-responsive ">
-						<img src="{{post.image}}" alt="{{post.alt}}">
-					</div>
-					<div class="blog-card-text">
-					<span class="overlane-text">
-                            NEWS • {{post.date | date: "%D"}}
-                        </span>
-						<br>
-						<strong>{{post.title}}</strong>
-					</div>
-				</div>
-				</a>
-			</div>
-			{% endfor %}
-		</div>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 50" width="100%">
-			<path d="M 0 40.5 L 110 40.5 L 170 0.5 L 370 0.5 L 430 40.5 L 1500 40.5" fill="none" stroke-width="1"
-				  shape-rendering="geometricPrecision" stroke-linejoin="round" stroke="rgb(64, 145, 108,0.6)"
-				  stroke-linecap="round"></path>
-		</svg>
-		{% endif %}
         <div class="row">
             <div class="col-md-6 mt-4">
-                <span class="overlane-text">FOUNDING PARTNERS</span>
-                <div class="row mt-3">
-                    <div class="col-lg-6 my-1 text-center">
-
-                        <div class="founding-partner-logo">
-                            <a href="https://bolt.eu/" target="_blank" rel="nofollow" ></a>
-                            <img src="images/logos/bolt_logo.png" class="rounded m-auto d-block" alt="Bolt logo">
+                <div class="row">
+                    <div class="col-lg-6 my-1">
+                        <span class="overlane-text">HEAD INSTITUTION</span>
+                        <div class="founding-partner-logo mt-3">
+                            <a href="https://cs.ut.ee/en" target="_blank" rel="nofollow"></a>
+                            <img src="images/logos/ati_logo.png" class="rounded m-auto d-block" alt="University of Tartu Institute of Computer Science logo">
                         </div>
                     </div>
-                    <div class="col-lg-6 my-1 text-center">
-                        <div class="founding-partner-logo">
-                            <a href="https://cs.ut.ee/en" target="_blank" rel="nofollow" ></a>
-                            <img src="images/logos/ati_logo.png" class="rounded m-auto d-block" alt="University of Tartu Insitute of Computer Science logo">
+                    <div class="col-lg-6 my-1">
+                        <span class="overlane-text">FOUNDING PARTNER</span>
+                        <div class="founding-partner-logo mt-3">
+                            <a href="https://bolt.eu/" target="_blank" rel="nofollow"></a>
+                            <img src="images/logos/bolt_logo.png" class="rounded m-auto d-block" alt="Bolt logo">
                         </div>
                     </div>
                 </div>
@@ -133,25 +104,24 @@ meta: We help to lay foundations for the autonomous driving industry in Estonia.
                             <img src="images/logos/tuit_logo.png" class="rounded m-auto d-block" alt="University of Tartu Institute of Technology logo">
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 my-1">
+                        <div class="cooperation-partner-logo">
+                            <a href="https://clevon.com/" rel="nofollow" target="_blank"></a>
+                            <img src="images/logos/clevon_logo.png" class="rounded m-auto d-block" alt="Clevon logo">
+                        </div>
+                    </div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 my-1">
                         <div class="cooperation-partner-logo">
                             <a rel="nofollow" href="https://www.traffest.com/" target="_blank"></a>
-                            <img src="images/logos/traffest_logo.png" class="rounded m-auto d-block"
-                                alt="Traffest logo">
+                            <img src="images/logos/traffest_logo.png" class="rounded m-auto d-block" alt="Traffest logo">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 my-1">
                         <div class="cooperation-partner-logo">
                             <a rel="nofollow" href="https://www.bercman.com/" target="_blank"></a>
                             <img src="images/logos/bercman_logo.png" class="rounded m-auto d-block" alt="Bercman logo">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 my-1">
-                        <div class="cooperation-partner-logo">
-                            <a rel="nofollow" href="https://www.modernmobility.eu/" target="_blank"></a>
-                            <img src="images/logos/momo_logo.png" class="rounded m-auto d-block" alt="Modern Mobility logo">
                         </div>
                     </div>
                 </div>
