@@ -2847,26 +2847,38 @@ a[href=undefined] {
 #lightSlider {
     position: relative;
     overflow: hidden;
-    white-space: nowrap;
 }
 
 #lightSlider li {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    z-index: 0;
 }
 
 #lightSlider li.active {
-    display: block;
+    position: relative;
+    opacity: 1;
+    z-index: 1;
 }
 
 .slider-pager {
     position: absolute;
-    bottom: 7px;
+    bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 12px;
     z-index: 10;
+}
+
+@media screen and (max-width: 767px) {
+    .slider-pager {
+        bottom: 7px;
+    }
 }
 
 .slider-pager button {
@@ -2899,7 +2911,7 @@ a[href=undefined] {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 1px solid #aadac4;
     border-radius: 0.25rem;
 }
 
