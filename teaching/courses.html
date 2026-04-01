@@ -5,11 +5,11 @@ permalink: /teaching/courses
 subtitle: Teaching
 meta: One of our goals is to prepare future workforce for the up-and-coming autonomous driving industry in Estonia (and elsewhere).
 ---
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-8">
+<div>
+    <div class="grid grid-cols-12 gap-4">
+        <div class="lg:col-span-8">
             <h2>{{ page.title }}</h2>
-            <p class="pt-md-3">One of our goals is to prepare future workforce for the up-and-coming autonomous driving
+            <p class="md:pt-4">One of our goals is to prepare future workforce for the up-and-coming autonomous driving
                 industry in Estonia (and elsewhere) -- this is a long process.
                 Providing the students here at the Institute of Computer Science with a variety of courses that provide
                 them with an opportunity to get familiar
@@ -20,7 +20,7 @@ meta: One of our goals is to prepare future workforce for the up-and-coming auto
     </div>
 </div>
 <div class="spacer-medium"></div>
-<div class="container-fluid">
+<div>
     {% assign categories = site.data.courses | map: 'type' | uniq %}
 
     <div class="menu-tags" data-filter-group="category" data-filter-target="#courses-list">

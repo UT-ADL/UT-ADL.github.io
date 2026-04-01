@@ -158,16 +158,87 @@
   }
 
   /**
-   * Mobile navbar background toggle
+   * Mobile menu toggle (replaces Bootstrap collapse)
    */
   function initMobileNav() {
-    document.querySelectorAll('.navbar-toggler[data-mobile-bg]').forEach(function (btn) {
+    document.querySelectorAll('.js-menu-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var header = this.closest('header');
-        if (header) {
-          header.classList.toggle('navbar-mobile-background');
+        var targetId = this.getAttribute('data-target');
+        var target = document.getElementById(targetId);
+        if (target) {
+          target.classList.toggle('hidden');
+          target.classList.toggle('flex');
+        }
+        // Toggle open state for hamburger animation
+        this.classList.toggle('open');
+        // Mobile background overlay on landing page
+        if (this.hasAttribute('data-mobile-bg')) {
+          var header = this.closest('header');
+          if (header) {
+            header.classList.toggle('navbar-mobile-background');
+          }
         }
       });
+    });
+  }
+
+  /**
+   * Simple hero slider (replaces Bootstrap carousel / LightSlider)
+   */
+  function initSlider() {
+    var slider = document.getElementById('lightSlider');
+    if (!slider) return;
+
+    var slides = slider.querySelectorAll('li');
+    if (slides.length === 0) return;
+
+    var current = 0;
+    var timer;
+
+    // Create pager
+    var pager = document.createElement('div');
+    pager.className = 'slider-pager';
+    slides.forEach(function (_, i) {
+      var btn = document.createElement('button');
+      btn.setAttribute('aria-label', 'Slide ' + (i + 1));
+      if (i === 0) btn.className = 'active';
+      btn.addEventListener('click', function () {
+        goTo(i);
+        resetTimer();
+      });
+      pager.appendChild(btn);
+    });
+    slider.parentElement.appendChild(pager);
+
+    // Show first slide
+    slides[0].classList.add('active');
+
+    function goTo(index) {
+      slides[current].classList.remove('active');
+      pager.children[current].classList.remove('active');
+      current = index;
+      slides[current].classList.add('active');
+      pager.children[current].classList.add('active');
+    }
+
+    function next() {
+      goTo((current + 1) % slides.length);
+    }
+
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(next, 5000);
+    }
+
+    // Auto-advance
+    resetTimer();
+
+    // Pause on hover
+    slider.parentElement.addEventListener('mouseenter', function () {
+      clearInterval(timer);
+    });
+    slider.parentElement.addEventListener('mouseleave', function () {
+      resetTimer();
     });
   }
 
@@ -177,5 +248,6 @@
     initVideoModal();
     initHotspots();
     initMobileNav();
+    initSlider();
   });
 })();

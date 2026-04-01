@@ -42,6 +42,8 @@
       url: /lab/closed-course
     - page: Demo track
       url: /lab/demo-track
+    - page: Demo ride
+      url: /lab/demo-ride
 
 - title: research
   subfolderitems:

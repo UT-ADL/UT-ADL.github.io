@@ -6,4 +6,4 @@ webURL: https://www.etis.ee/Portal/Projects/Display/1a4b518c-5c67-4aef-8f65-9816
 
 The objective of this project was to develop methods for human detection and terrain recognition for an unmanned ground vehicle.
 
-![Milrem unmanned ground vehicle](/images/projects/milrem.jpg){:class="img-fluid rounded"}
+![Milrem unmanned ground vehicle](/images/projects/milrem.jpg){:class="max-w-full h-auto rounded"}

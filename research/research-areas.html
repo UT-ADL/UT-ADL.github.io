@@ -5,24 +5,24 @@ permalink: /research/research-areas
 subtitle: Research
 meta: Making cars drive by themselves is a big task. A huge task. To help you (and us) better understand what is needed to make it happen, we have divided our work into focus areas.
 ---
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8 mb-4">
-            <h2 class="mb-3">{{page.title}}</h2>
+<div>
+    <div class="grid grid-cols-12 gap-4">
+        <div class="md:col-span-8 col-span-12 mb-6">
+            <h2 class="mb-4">{{page.title}}</h2>
             <p>Making cars drive by themselves is a big task. A huge task. To help you (and us) better understand what
                 is
                 needed to make it happen, we have divided our work into focus areas.</p>
         </div>
     </div>
-    <div class="row mb-5">
+    <div class="grid grid-cols-12 gap-4 mb-12">
         {% assign posts_sorted = site.research-areas | sort:"title" %}
         {% for post in posts_sorted %}
-        <div class="col-md-4 mb-4">
+        <div class="md:col-span-4 col-span-12 mb-6">
             <a class="research-card-anchor" href="{{post.url}}">
-                <div class="container-fluid research-card">
-                    <div class="research-card-body d-flex">
-                        <h5 class="d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center">
+                <div class="research-card">
+                    <div class="research-card-body flex">
+                        <h5 class="flex items-center">
+                            <div class="flex items-center justify-center">
                                 <img src="{{post.icon}}" style="margin-right: 1vw"/>
                             </div>
                             {{post.title}}

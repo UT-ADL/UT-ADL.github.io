@@ -1,11 +1,11 @@
 <!-- Header -->
-<div class="row course-header mt-4 pt-2">
-    <div class="col-lg-4 d-flex align-items-center mb-2 mb-lg-0">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-4 course-header mt-4 pt-2">
+    <div class="lg:col-span-4 flex items-center mb-2 lg:mb-0">
         <h5>{{ include.type | upcase }}</h5>
     </div>
-    <div class="col-lg-8 d-sm-flex align-items-center">
+    <div class="lg:col-span-8 sm:flex items-center">
 
-        <div style="display: flex;" class="d-sm-inline-flex align-items-center course-header-icon-gap">
+        <div class="flex sm:inline-flex items-center course-header-icon-gap">
             <!-- Spicyness car icons -->
             {% assign spicyness = include.spicyness %}
             {% for in in (1..3) %}
@@ -20,13 +20,13 @@
             <p>{{ include.ects }} ECTS</p>
         </div>
 
-        <div style="display: flex;" class="d-sm-inline-flex align-items-center course-header-icon-gap">
+        <div class="flex sm:inline-flex items-center course-header-icon-gap">
             <!-- Code -->
             <i class="fa fa-graduation-cap" style="color: var(--text-secondary)" aria-hidden="true"></i>
             <p>{{ include.code | upcase }}</p>
         </div>
 
-        <div style="display: flex;" class="d-sm-inline-flex align-items-center">
+        <div class="flex sm:inline-flex items-center">
             <!-- Lecturer -->
             <i class="fa fa-user" style="color: var(--text-secondary)" aria-hidden="true"></i>
             <p>LECTURER: {{ include.lecturer | upcase }}</p>
@@ -35,14 +35,14 @@
 </div>
 
 <!-- Body -->
-<div class="row course-body mb-3">
-    <div class="col-lg-4">
-        <h3 style="word-break: break-word">{{ include.title }}</h3>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-4 course-body mb-3">
+    <div class="lg:col-span-4">
+        <h3 class="break-words">{{ include.title }}</h3>
     </div>
-    <div class="col-lg-5 col-md-8 col-sm-8">
+    <div class="lg:col-span-5 md:col-span-8 sm:col-span-8">
         <p><b>Content and relation to ADL activities:</b><br />{{ include.description }}</p>
     </div>
-    <div class="col-lg-2 col-md-3 col-sm-3 offset-sm-1 d-flex justify-content-center">
+    <div class="lg:col-span-2 md:col-span-3 sm:col-span-3 sm:col-start-10 flex justify-center">
         <div>
             <a class="button-primary" href="{{ include.link }}" rel="nofollow" target="_blank">Register</a>
         </div>

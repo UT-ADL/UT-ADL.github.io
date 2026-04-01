@@ -5,18 +5,18 @@ permalink: /teaching/thesis-topics
 subtitle: Teaching
 meta: See all the available thesis topics and don't hesitate to contact us, should your own idea of a self-driving topic not be listed!
 ---
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8">
+<div>
+    <div class="grid grid-cols-12 gap-4">
+        <div class="md:col-span-8">
             <h2>{{ page.title }}</h2>
-            <p class="pt-md-3">So you're thinking of making the culmination of your studies about self-driving?</p>
+            <p class="md:pt-4">So you're thinking of making the culmination of your studies about self-driving?</p>
             <p>Good, because we need all the help we can get. See all the available thesis topics and don't hesitate to
                 contact us, should your own idea of a self-driving topic not be listed!</p>
         </div>
     </div>
 </div>
 <div class="spacer-medium"></div>
-<div class="container-fluid">
+<div>
     <div class="menu-tags" data-filter-group="level" data-filter-target="#topics-list">
         <a class="menu-link active" data-filter-value="all" href="#">All topics</a>
         <a class="menu-link" data-filter-value="bsc" href="#">BSc</a>
@@ -24,7 +24,7 @@ meta: See all the available thesis topics and don't hesitate to contact us, shou
         <a class="menu-link" data-filter-value="phd" href="#">PhD</a>
     </div>
 
-    <div id="topics-list" class="mt-4">
+    <div id="topics-list" class="mt-6">
         {% for topic in site.data.thesis-topics %}
         {% assign levels = "" %}
         {% if topic.availability.BSc %}{% assign levels = levels | append: "bsc," %}{% endif %}
@@ -38,7 +38,7 @@ meta: See all the available thesis topics and don't hesitate to contact us, shou
                     <p>{{ topic.description }}</p>
                     {% endif %}
 
-                    <div class="mb-3">
+                    <div class="mb-4">
                         {% if topic.availability.BSc %}
                         <span class="badge-degree badge-available">BSc</span>
                         {% else %}

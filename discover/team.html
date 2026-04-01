@@ -5,29 +5,29 @@ permalink: /discover/team
 subtitle: Discover ADL
 meta: Get an overview of the minds behind the autonomous driving lab
 ---
-<div class="container-fluid mb-5">
-    <div class="row">
-        <div class="col-md-8">
+<div class="mb-12">
+    <div class="grid grid-cols-12 gap-4">
+        <div class="md:col-span-8">
             <h2>{{page.title}}</h2>
-            <p class="mt-3">If you get incredibly excited about developing the autonomous driving industry in
+            <p class="mt-4">If you get incredibly excited about developing the autonomous driving industry in
                 Estonia, you're in the right place. Get in touch with Tambet to discuss potential cooperation.</p>
         </div>
     </div>
 </div>
-<div class="container-fluid">
-    <h4 class="my-5">Management</h4>
-    <div class="row">
+<div>
+    <h4 class="my-12">Management</h4>
+    <div class="grid grid-cols-12 gap-4">
         {% assign leads = site.data.team | where: "group","lead" %}
         {% assign team_leads = site.data.team | where: "group","team lead" %}
         {% assign engineers = site.data.team | where: "group","engineer" %}
         {% assign students = site.data.team | where: "group","student" %}
         {% for lead in leads %}
-        <div class="col-xxl-3 mb-5">
+        <div class="2xl:col-span-3 mb-12">
             <div class="card team-member-card" style="border: none">
                 {% if lead.image %}
-                <img src="{{ lead.image }}" alt="Image of {{ lead.name }}" class="pb-3 img-fluid" />
+                <img src="{{ lead.image }}" alt="Image of {{ lead.name }}" class="pb-4 max-w-full h-auto" />
                 {% else %}
-                <img src="/images/team/lead.png" alt="" class="pb-3 img-fluid" />
+                <img src="/images/team/lead.png" alt="" class="pb-4 max-w-full h-auto" />
                 {% endif %}
                 <h5>{{lead.name}}</h5>
                 <p>{{lead.position}}</p>
@@ -36,51 +36,51 @@ meta: Get an overview of the minds behind the autonomous driving lab
         </div>
         {% endfor %}
     </div>
-    <h4 class="my-5">Research leads</h4>
-    <div class="row">
+    <h4 class="my-12">Research leads</h4>
+    <div class="grid grid-cols-12 gap-4">
         {% for team_lead in team_leads %}
-        <div class="col-xxl-3 mb-5">
+        <div class="2xl:col-span-3 mb-12">
             <div class="card team-member-card" style="border: none">
                 {% if team_lead.image %}
-                <img src="{{ team_lead.image }}" alt="Image of {{ team_lead.name }}" class="pb-3 img-fluid" />
+                <img src="{{ team_lead.image }}" alt="Image of {{ team_lead.name }}" class="pb-4 max-w-full h-auto" />
                 {% else %}
-                <img src="/images/team/lead.png" alt="" class="pb-3 img-fluid" />
+                <img src="/images/team/lead.png" alt="" class="pb-4 max-w-full h-auto" />
                 {% endif %}
-                <strong class="pt-3">{{team_lead.name}}</strong>
+                <strong class="pt-4">{{team_lead.name}}</strong>
                 <p>{{team_lead.position}}</p>
                 <p class="team-member-email"><a href="mailto:{{team_lead.email}}">{{team_lead.email}}</a></p>
             </div>
         </div>
         {% endfor %}
     </div>
-    <h4 class="my-5">Engineers</h4>
-    <div class="row">
+    <h4 class="my-12">Engineers</h4>
+    <div class="grid grid-cols-12 gap-4">
         {% for engineer in engineers %}
-        <div class="col-xxl-3 mb-5">
+        <div class="2xl:col-span-3 mb-12">
             <div class="card team-member-card" style="border: none">
                 {% if engineer.image %}
-                <img src="{{ engineer.image }}" alt="Image of {{ engineer.name }}" class="pb-3 img-fluid" />
+                <img src="{{ engineer.image }}" alt="Image of {{ engineer.name }}" class="pb-4 max-w-full h-auto" />
                 {% else %}
-                <img src="/images/team/engineer.png" alt="" class="pb-3 img-fluid" />
+                <img src="/images/team/engineer.png" alt="" class="pb-4 max-w-full h-auto" />
                 {% endif %}
-                <strong class="pt-3">{{engineer.name}}</strong>
+                <strong class="pt-4">{{engineer.name}}</strong>
                 <p>{{engineer.position}}</p>
                 <p class="team-member-email"><a href="mailto:{{engineer.email}}">{{engineer.email}}</a></p>
             </div>
         </div>
         {% endfor %}
     </div>
-    <h4 class="my-5">Students</h4>
-    <div class="row">
+    <h4 class="my-12">Students</h4>
+    <div class="grid grid-cols-12 gap-4">
         {% for student in students %}
-        <div class="col-xxl-3 mb-5">
+        <div class="2xl:col-span-3 mb-12">
             <div class="card team-member-card" style="border: none">
                 {% if student.image %}
-                <img src="{{ student.image }}" alt="Image of {{ student.name }}" class="pb-3 img-fluid" />
+                <img src="{{ student.image }}" alt="Image of {{ student.name }}" class="pb-4 max-w-full h-auto" />
                 {% else %}
-                <img src="/images/team/student.png" alt="" class="pb-3 img-fluid" />
+                <img src="/images/team/student.png" alt="" class="pb-4 max-w-full h-auto" />
                 {% endif %}
-                <strong class="pt-3">{{student.name}}</strong>
+                <strong class="pt-4">{{student.name}}</strong>
                 <p>{{student.position}}</p>
                 <p class="team-member-email"><a href="mailto:{{student.email}}">{{student.email}}</a></p>
             </div>

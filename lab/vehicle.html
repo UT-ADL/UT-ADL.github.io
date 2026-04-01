@@ -6,16 +6,16 @@ subtitle: The Lab
 meta: Overview of the Lexus RX450h that is equipped with all the sensors for basic autonomy.
 ---
 
-<div class="container-fluid">
+<div>
     <!-- Padding, margins (nb! Row in the middle of specs) -->
     <!-- Font -->
     <!-- Implement car & functionality -->
     <!-- Missing features from figma (align car, border around spec details) -->
 
     <!-- Vehicle header -->
-    <div class="row">
-        <div class="col-md-8">
-            <h2 class="mb-3">{{page.title}}</h2>
+    <div class="grid grid-cols-12 gap-4">
+        <div class="md:col-span-8 col-span-12">
+            <h2 class="mb-4">{{page.title}}</h2>
             <p>The most obvious piece of hardware that we utilize is our Lexus RX450h.
                 It’s not your average SUV, however, as it is equipped with all the sensors that are a prerequisite for
                 basic autonomy.
@@ -27,8 +27,8 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
     </div>
 
     <!-- Interactable vehicle -->
-    <div class="row mt-3">
-        <div class="col">
+    <div class="grid grid-cols-12 gap-4 mt-4">
+        <div class="col-span-12">
             <div class="car-wrapper" style="position: relative">
                 <button class="image-hotspot" id="lidar-hs2" data-target="lidar2">•</button>
                 <button class="image-hotspot" id="lidar-hs1" data-target="lidar1">•</button>
@@ -43,13 +43,13 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
     <hr />
 
     <!-- Highlighted circle description -->
-    <div id="cards" class="w-100">
+    <div id="cards" class="w-full">
         <div class="component-card" id="lidar1">
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="lg:col-span-3 col-span-12">
                     <img alt="" src="/images/components/LidarVelodyne.jpg" />
                 </div>
-                <div class="component-card-text col-lg-9">
+                <div class="component-card-text lg:col-span-9 col-span-12">
                     <h3>
                         Velodyne VLP-32C lidar
                     </h3>
@@ -63,11 +63,11 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
             </div>
         </div>
         <div class="component-card" id="lidar2" style="display:none">
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="lg:col-span-3 col-span-12">
                     <img alt="" src="/images/components/LidarOuster.jpg" />
                 </div>
-                <div class="component-card-text col-lg-9">
+                <div class="component-card-text lg:col-span-9 col-span-12">
                     <h3>
                         Ouster OS1-128 lidar
                     </h3>
@@ -81,11 +81,11 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
             </div>
         </div>
         <div class="component-card" id="camera" style="display: none">
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="lg:col-span-3 col-span-12">
                     <img alt="" src="/images/components/Camera.jpg" />
                 </div>
-                <div class="component-card-text col-lg-9">
+                <div class="component-card-text lg:col-span-9 col-span-12">
                     <h3>
                         Allied Vision Mako G-319C cameras
                     </h3>
@@ -100,11 +100,11 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
             </div>
         </div>
         <div class="component-card" id="radar" style="display: none">
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="lg:col-span-3 col-span-12">
                     <img alt="" src="/images/components/Radar.jpg" />
                 </div>
-                <div class="component-card-text col-lg-9">
+                <div class="component-card-text lg:col-span-9 col-span-12">
                     <h3>
                         Aptiv ESR 2.5 radar
                     </h3>
@@ -118,11 +118,11 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
             </div>
         </div>
         <div class="component-card" id="gnss" style="display: none">
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="lg:col-span-3 col-span-12">
                     <img alt="" src="/images/components/GNSS.jpg" />
                 </div>
-                <div class="component-card-text col-lg-9">
+                <div class="component-card-text lg:col-span-9 col-span-12">
                     <h3>
                         NovAtel PwrPak7D GNSS device
                     </h3>
@@ -135,11 +135,11 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
             </div>
         </div>
         <div class="component-card" id="computer" style="display: none">
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="lg:col-span-3 col-span-12">
                     <img alt="" src="/images/components/Computer.jpg" />
                 </div>
-                <div class="component-card-text col-lg-9">
+                <div class="component-card-text lg:col-span-9 col-span-12">
                     <h3>
                         AStuff Spectra computer
                     </h3>
@@ -155,8 +155,8 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
     </div>
 
     <!-- Specifications header -->
-    <div class="row w-75 my-5">
-        <div class="col">
+    <div class="grid grid-cols-12 gap-4 w-3/4 my-12">
+        <div class="col-span-12">
             <h6>For some of the more tech-savvy people amongst you, here is a list of all the major pieces of hardware
                 and sensors that we use:</h6>
         </div>
@@ -164,14 +164,14 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
 
     <!-- Individual specifications -->
     <div class="component-specs">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="md:col-span-4 col-span-12">
                 <h3>
                     Ouster OS1-128 lidar
                 </h3>
             </div>
-            <div class="col-md-6">
-                <ul class="list-unstyled">
+            <div class="md:col-span-6 col-span-12">
+                <ul class="list-none">
                     <li class="list-item">
                         Vertical resolution: 128 channels
                     </li>
@@ -198,7 +198,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="md:col-span-2 col-span-12">
                 <a href="https://ouster.com/products/scanning-lidar/os1-sensor/" rel="nofollow" target="_blank">Manufacturer's
                     specs</a>
             </div>
@@ -206,14 +206,14 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
     </div>
     <hr />
     <div class="component-specs">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="md:col-span-4 col-span-12">
                 <h3>
                     Velodyne VLP-32C lidar
                 </h3>
             </div>
-            <div class="col-md-6">
-                <ul class="list-unstyled">
+            <div class="md:col-span-6 col-span-12">
+                <ul class="list-none">
                     <li class="list-item">
                         Vertical resolution: 32 channels
                     </li>
@@ -243,21 +243,21 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="md:col-span-2 col-span-12">
                 <a href="https://velodynelidar.com/products/ultra-puck/" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
     <hr />
     <div class="component-specs">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="md:col-span-4 col-span-12">
                 <h3>
                     2x Allied Vision Mako G-319C cameras
                 </h3>
             </div>
-            <div class="col-md-6">
-                <ul class="list-unstyled">
+            <div class="md:col-span-6 col-span-12">
+                <ul class="list-none">
                     <li class="list-item">
                         Resolution: 2064 × 1544
                     </li>
@@ -272,7 +272,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="md:col-span-2 col-span-12">
                 <a href="https://autonomoustuff.com/products/allied-vision-mako-g-319c" rel="nofollow" target="_blank">Manufacturer's
                     specs</a>
             </div>
@@ -280,14 +280,14 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
     </div>
     <hr />
     <div class="component-specs">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="md:col-span-4 col-span-12">
                 <h3>
                     NovAtel PwrPak7D-E2 GNSS device
                 </h3>
             </div>
-            <div class="col-md-6">
-                <ul class="list-unstyled">
+            <div class="md:col-span-6 col-span-12">
+                <ul class="list-none">
                     <li class="list-item">
                         Signal tracking: GPS, GLONASS, BeiDou, Galileo
                     </li>
@@ -303,7 +303,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="md:col-span-2 col-span-12">
                 <a href="https://novatel.com/products/gnss-inertial-navigation-systems/combined-systems/pwrpak7d-e2"
 				   rel="nofollow" target="_blank">Manufacturer's
                     specs</a>
@@ -312,13 +312,13 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
     </div>
     <hr />
     <div class="component-specs">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="md:col-span-4 col-span-12">
                 <h3>
                     Aptiv’s multimode ESR 2.5 radar
                 </h3>
             </div>
-            <div class="col-md-6">
+            <div class="md:col-span-6 col-span-12">
                 <h6>Long-range</h6>
                 <ul class="list">
                     <li class="list-item">
@@ -350,21 +350,21 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="md:col-span-2 col-span-12">
                 <a href="https://autonomoustuff.com/products/aptiv-esr-2-5-24v" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
     <hr />
     <div class="component-specs">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="md:col-span-4 col-span-12">
                 <h3>
                     4x Sekonix cameras<br>(3x SF3324, 1x SF3325)
                 </h3>
             </div>
-            <div class="col-md-6">
-                <ul class="list-unstyled">
+            <div class="md:col-span-6 col-span-12">
+                <ul class="list-none">
                     <li class="list-item">
                         Resolution: 1928 x 1208
                     </li>
@@ -379,21 +379,21 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="md:col-span-2 col-span-12">
                 <a href="http://sekolab.com/products/camera/" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
     <hr />
     <div class="component-specs">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="md:col-span-4 col-span-12">
                 <h3>
                     PACMod by-wire kit
                 </h3>
             </div>
-            <div class="col-md-6">
-                <ul class="list-unstyled">
+            <div class="md:col-span-6 col-span-12">
+                <ul class="list-none">
                     <li class="list-item">
                         Software control of steering, throttle and brake
                     </li>
@@ -405,21 +405,21 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="md:col-span-2 col-span-12">
                 <a href="https://autonomoustuff.com/products/pacmod" rel="nofollow"  target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
     <hr />
     <div class="component-specs">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="md:col-span-4 col-span-12">
                 <h3>
                     AStuff Spectra computer
                 </h3>
             </div>
-            <div class="col-md-6">
-                <ul class="list-unstyled">
+            <div class="md:col-span-6 col-span-12">
+                <ul class="list-none">
                     <li class="list-item">
                         CPU: Intel Xeon
                     </li>
@@ -440,21 +440,21 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="md:col-span-2 col-span-12">
                 <a href="https://autonomoustuff.com/products/astuff-spectra" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
     <hr />
     <div class="component-specs">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="md:col-span-4 col-span-12">
                 <h3>
                     NVIDIA DRIVE AGX Xavier computer
                 </h3>
             </div>
-            <div class="col-md-6">
-                <ul class="list-unstyled">
+            <div class="md:col-span-6 col-span-12">
+                <ul class="list-none">
                     <li class="list-item">
                         Two Xavier Systems-on-a-Chip
                     </li>
@@ -475,21 +475,21 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="md:col-span-2 col-span-12">
                 <a href="https://developer.nvidia.com/drive/drive-agx" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
     <hr />
     <div class="component-specs">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="md:col-span-4 col-span-12">
                 <h3>
                     Comma three devkit (dashcam)
                 </h3>
             </div>
-            <div class="col-md-6">
-                <ul class="list-unstyled">
+            <div class="md:col-span-6 col-span-12">
+                <ul class="list-none">
                     <li class="list-item">
                         Cameras: wide road-facing, narrow road-facing, driver-facing
                     </li>
@@ -507,7 +507,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="md:col-span-2 col-span-12">
                 <a href="https://comma.ai/shop/comma-3x" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>

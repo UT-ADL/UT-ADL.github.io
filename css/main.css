@@ -29,43 +29,6 @@ a {
     color: var(--primary);
 }
 
-
-header .navbar {
-    background: var(--primary) !important;
-}
-
-header {
-    background: var(--primary);
-}
-
-.landing_nav header {
-    background: none;
-}
-
-.landing_nav {
-    border-bottom: rgba(255, 255, 255, 0.51) solid 1px;
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.landing_nav .navbar {
-    background: rgba(0, 0, 0, 0) !important;
-}
-
-.landing_nav .col-3,
-.landing_nav .col-9 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.landing_nav .row {
-    max-width: 100%;
-    margin: auto;
-}
-
 .overlane-text {
     color: var(--primary);
     font-weight: 500;
@@ -73,122 +36,83 @@ header {
     letter-spacing: 2px;
 }
 
-header .navbar-brand {
-    font-family: 'Triakis', serif;
-    font-style: oblique;
-    font-weight: 200;
-    font-size: 22px;
-    line-height: 22px;
-}
-
-.navbar-logo-right {
-    margin-left: 30px;
-    flex-shrink: 0;
-}
-
-.navbar-logo-right img {
-    height: 30px;
-    width: auto;
-}
-
-header .nav-item {
-    font-family: 'DM Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    margin-left: 50px;
-}
-
-#myCarousel {
-    max-height: 80%;
+/* Hero slider */
+.hero {
+    position: relative;
     width: 100%;
 }
 
-#myCarousel .carousel-caption {
-    max-width: 30%;
-    left: unset;
-    right: unset;
-    top: 33%;
+#lightSlider {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-#myCarousel .carousel-caption h1 {
-    font-size: 39px;
-    font-weight: 700;
-    line-height: 51px;
-    margin-bottom: 39px;
+#lightSlider li {
+    display: none;
+    width: 100%;
 }
 
-#myCarousel .carousel-caption .button-primary {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    text-align: center;
-    padding: 16px 48px;
+#lightSlider li.active {
+    display: block;
 }
 
-#myCarousel .carousel h1 {
-    font-style: normal;
-    font-weight: bold;
-}
-
-#myCarousel .carousel-item {
-    background-position: center;
-    background-size: cover;
-}
-
-#myCarousel .carousel-sizing {
+.slideItemBg {
     height: 75vh;
     min-height: 75vh;
-    max-height: 75vh;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
 }
 
-@media only screen and (max-width: 1280px) {
-    #myCarousel .carousel-caption {
-        max-width: 50%;
-    }
+.slideItemBg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(64, 145, 108, 0.6) 0%, rgba(64, 145, 108, 0.2) 100%);
 }
 
-@media only screen and (max-width: 991px) { /*This seems to be the breakpoint for navbar collapsing*/
-    #myCarousel .carousel-sizing {
-        height: 100vh;
-        min-height: 100vh;
-        max-height: 100vh;
-    }
-    #myCarousel .carousel-caption {
-        vertical-align: middle;
-        width: 60%;
-        max-width: 80%;
-        bottom: unset;
-        right: unset;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    #myCarousel .carousel-caption h1 {
-        text-align: center;
-    }
-    #myCarousel .carousel-caption .button-primary {
-        display: block;
-        margin: 0 auto;
-        width: unset;
-        height: unset;
-        max-width: 100%;
-    }
-    .navbar-mobile-background {
-        background-color:rgba(0, 0, 0, 0.5) !important;
-    }
+.slideItemBg > * {
+    position: relative;
+    z-index: 1;
 }
-@media only screen and (max-width: 480px) {
-    #myCarousel .carousel-caption h1 {
-        line-height: 46px;
-        font-size: 32px;
-    }
-    #myCarousel .carousel-caption .button-primary {
-        font-size: 16px;
-        line-height: 16px;
-        text-align: center;
-        padding: 16px 32px;
+
+.slider-pager {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+.slider-pager button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.3s;
+}
+
+.slider-pager button.active {
+    background: #fff;
+}
+
+.navbar-mobile-background {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .slideItemBg {
+        height: 75vh;
+        min-height: 75vh;
     }
 }
 
@@ -265,74 +189,6 @@ main h2 small.text-muted {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--primary);
-}
-
-footer {
-    background: #E5F4ED;
-    padding: 5px 0;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #191919 !important;
-}
-
-.footer-brand{
-	color: #000000;
-	font-family: 'Triakis', serif;
-	font-style: oblique;
-	font-weight: 900;
-	font-size: 22px;
-}
-
-footer h5 {
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 16px;
-}
-
-
-footer .nav-link {
-    line-height: 20px;
-    
-}
-
-
-footer .nav-link a :hover {
-    color: #C87004;
-    line-height: 20px;
-}
-footer a {
-    color: #191919;
-}
-
-.page-heading {
-    position: relative;
-    background: var(--primary);
-    padding-top: 20px;
-}
-
-.navbar-toggler {
-    z-index: 1000;
-}
-
-.navbar-secondary {
-    margin-bottom: 40px;
-}
-
-.navbar-secondary a {
-    margin: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 5px;
-}
-
-.navbar-secondary a:first-child {
-    padding-left: 0;
-    margin-left: 0;
 }
 
 .navbar-styling {
@@ -444,44 +300,6 @@ hr {
     color: var(--primary);
     background-color: var(--primary);
     border: solid 1px var(--primary);
-}
-
-/* General for pages */
-.page-header-spacer {
-    content: "";
-    margin-top: 96px;
-}
-
-.page-footer-spacer {
-    margin-bottom: 96px;
-}
-
-.spacer-medium {
-    margin-top: 64px;
-}
-
-.spacer-small {
-    margin-top: 32px;
-}
-
-/*
-    NAVIGATION
-*/
-.navigation-active {
-    border-bottom: solid 2px #FFFFFF;
-}
-
-#navbarSupportedContent .navbar-nav .navigation-inactive {
-    border-bottom: solid 2px transparent;
-}
-
-#navbarSupportedContent .navbar-nav :hover {
-    transition: 0.5s;
-    border-bottom: solid 2px #FFFFFF;
-}
-
-#navbarSupportedContent .navbar-nav li :hover {
-    border: none;
 }
 
 /*
@@ -739,15 +557,6 @@ hr {
     color: black;
 }
 
-
-
-.main-content-container {
-    display: block;
-    width: 85%;
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
 .project-page ul { /* hacky fix */
     padding-left: 24px;
     padding-right: 0px;
@@ -777,6 +586,45 @@ hr {
     min-height: 20px;
     max-height: 20px;
 }
+/* --- Demo ride page --- */
+.demo-ride-steps {
+    list-style: none;
+    counter-reset: step;
+    padding-left: 0;
+}
+.demo-ride-steps li {
+    counter-increment: step;
+    margin-bottom: 12px;
+    padding-left: 36px;
+    position: relative;
+    line-height: 1.6;
+}
+.demo-ride-steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 24px;
+}
+.demo-ride-list {
+    list-style: none;
+    padding-left: 0;
+}
+.demo-ride-list li {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
 /* ============================================
    Voog Design Sync - Additional Styles
    ============================================ */

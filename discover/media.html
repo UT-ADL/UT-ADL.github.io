@@ -8,20 +8,20 @@ meta: Overview of publications where ADL has appeared in media.
 {% assign videos = site.data.media | where: "type", "video" %}
 {% assign sorted = site.data.media | sort: "date" | reverse %}
 
-<div class="container-fluid mb-5">
-    <div class="row">
-        <div class="col-md-12">
+<div class="mb-12">
+    <div class="grid grid-cols-12 gap-4">
+        <div class="md:col-span-12">
             <h2>ADL in media</h2>
         </div>
     </div>
 
     <!-- Video section -->
-    <div class="row mt-3">
-        <span class="overlane-text mb-3">VIDEO</span>
-        <div class="col-md-12">
-            <div class="row">
+    <div class="grid grid-cols-12 gap-4 mt-4">
+        <span class="overlane-text mb-4">VIDEO</span>
+        <div class="md:col-span-12">
+            <div class="grid grid-cols-12 gap-4">
                 {% for video in videos limit:3 %}
-                <div class="col-xl-4 col-md-6 mt-3">
+                <div class="xl:col-span-4 md:col-span-6 mt-4">
                     <div class="embedded-video-card" data-video-src="{{ video.url }}">
                         <img alt="{{ video.title }}" src="{{ video.image }}" />
                         <div class="video-overlay">
@@ -36,11 +36,11 @@ meta: Overview of publications where ADL has appeared in media.
     </div>
 
     <!-- Articles section -->
-    <div class="news mt-5">
+    <div class="news mt-12">
         <span class="overlane-text">CONTINUE READING</span>
-        <h4 class="mb-5">Explore articles, reports and videos that feature ADL</h4>
+        <h4 class="mb-12">Explore articles, reports and videos that feature ADL</h4>
 
-        <div class="menu-tags mb-4" data-filter-group="lang" data-filter-target="#media-list">
+        <div class="menu-tags mb-6" data-filter-group="lang" data-filter-target="#media-list">
             <a class="menu-link active" data-filter-value="all" href="#">See all</a>
             <a class="menu-link" data-filter-value="en" href="#">See articles in English</a>
             <a class="menu-link" data-filter-value="ee" href="#">See articles in Estonian</a>
@@ -49,10 +49,10 @@ meta: Overview of publications where ADL has appeared in media.
         <div id="media-list">
             {% for news in sorted %}
             <div class="filter-item news-card-filter" data-filter-lang="{{ news.language }}">
-                <div class="row my-4 news-card" id="news">
+                <div class="grid grid-cols-12 gap-4 my-6 news-card" id="news">
                     <a class="card-anchor-absolute" href="{{ news.url }}" target="_blank" rel="nofollow" style="z-index:1000"></a>
-                    <div class="col-md mb-2">
-                        <div class="news-card-body mt-3">
+                    <div class="md:col-span-12 mb-2">
+                        <div class="news-card-body mt-4">
                             <h6>{{ news.title }}</h6>
                             {% if news.type == "article" %}
                             <span class="overlane-text">ARTICLE &bull; {{ news.date }}</span>

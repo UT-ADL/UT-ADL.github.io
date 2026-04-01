@@ -10,13 +10,60 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
+    <!-- Favicons -->
 	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    green: '#40916C',
+                    'green-hover': '#357a5b',
+                    footer: '#E5F4ED',
+                    primary: '#40916C',
+                    accent: '#F39117',
+                    'accent-hover': '#C87004',
+                },
+                width: {
+                    '85': '85%',
+                    '180': '180px',
+                    '200': '200px',
+                },
+                height: {
+                    'logo': '48px',
+                    'logoMobile': '56px',
+                    'logoTablet': '48px',
+                },
+                maxWidth: {
+                    '7xl': '1280px',
+                },
+                screens: {
+                    'tablet': '768px',
+                },
+                fontFamily: {
+                    'barlow': ['Barlow', 'serif'],
+                    'dm-sans': ['"DM Sans"', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif'],
+                    'triakis': ['Triakis', 'serif'],
+                },
+                spacing: {
+                    '5px': '5px',
+                    '6px': '6px',
+                },
+            },
+        },
+        /* Tailwind preflight (CSS reset) enabled */
+    }
+    </script>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css" type="text/css">
     <link rel="stylesheet" href="/css/fonts.css" type="text/css">
 

@@ -18,14 +18,14 @@
 			body="Find out what we have been working on."
 			%}
 
-			<div class="content main-content-container mt-5">
-				<div class="container-fluid">
+			<div class="mx-auto max-w-7xl w-85 mt-12 mb-24">
+				<div>
 					<span class="overlane-text">{{page.date | date: "%D"}}</span>
-					<h3 class="w-50 mb-5">
+					<h3 class="w-1/2 mb-12">
 						{{page.title}}
 					</h3>
-					<div class="row g-0">
-						<div class="col-lg-8 mt-3">
+					<div class="grid grid-cols-1 lg:grid-cols-12">
+						<div class="lg:col-span-8 mt-3">
 							{% if page.image != null and page.image != "" %}
 							<p>
 								<img alt="{{page.alt}}" src="{{page.image}}" style="max-width: 100%">

@@ -21,20 +21,18 @@
                 %}
     
                 {% include subnavigation-bar.html navigation-bar-title="research" %}
-                <div class="content main-content-container mt-5">
-                    <div class="container-fluid">
-                        <h2 class="w-50">
+                <div class="mx-auto max-w-7xl w-85 mt-12 mb-24">
+                    <div>
+                        <h2 class="w-1/2">
                             {{page.title}}
                         </h2>
-                        <div class="row">
-                            <div class="col-md-9 mt-2 pe-5">
-                                <div class="container-lg g-0 pt-3">
-                                    <div class="row">
-                                        {{content}}
-                                    </div>
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+                            <div class="md:col-span-9 mt-2 pr-12">
+                                <div>
+                                    {{content}}
                                 </div>
                             </div>
-                            <div class="col-md-3 project-channels mt-2 px-5">
+                            <div class="md:col-span-3 project-channels mt-2 px-12">
                                 <hr />
                                 <span class="overlane-text">PROJECT CHANNELS</span>
                                 <br>

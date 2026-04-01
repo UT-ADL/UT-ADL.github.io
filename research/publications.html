@@ -5,16 +5,16 @@ permalink: /research/publications
 subtitle: Research
 meta: Here you can see all our publications, no matter which research area they belong to.
 ---
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8">
+<div>
+    <div class="grid grid-cols-12 gap-4">
+        <div class="md:col-span-8 col-span-12">
             <h2>{{ page.title }}</h2>
-            <p class="pt-md-3">Here you can see <em>all</em> our publications, no matter which research area they belong to.</p>
+            <p class="md:pt-4">Here you can see <em>all</em> our publications, no matter which research area they belong to.</p>
         </div>
     </div>
 </div>
 <div class="spacer-medium"></div>
-<div class="container-fluid">
+<div>
     {% assign papers = site.data.research-papers | sort: 'year' | reverse %}
     {% assign years = papers | map: 'year' | uniq %}
 

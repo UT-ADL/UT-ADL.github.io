@@ -5,18 +5,18 @@ permalink: /teaching/defended-theses
 subtitle: Teaching
 meta: Take a look at all the magnificent theses that our students have written about self-driving.
 ---
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8">
+<div>
+    <div class="grid grid-cols-12 gap-4">
+        <div class="md:col-span-8">
             <h2>{{ page.title }}</h2>
-            <p class="pt-md-3">Take a look at all the magnificent theses that our students have written about
+            <p class="md:pt-4">Take a look at all the magnificent theses that our students have written about
                 self-driving. Surely this list contains the names of future leading specialists of the self-driving
                 academia and industry!</p>
         </div>
     </div>
 </div>
 <div class="spacer-medium"></div>
-<div class="container-fluid">
+<div>
     {% assign theses = site.data.defended-theses | sort: 'year' | reverse %}
     {% assign degrees = theses | map: 'field' | uniq | sort_natural %}
     {% assign years = theses | map: 'year' | uniq | sort | reverse %}

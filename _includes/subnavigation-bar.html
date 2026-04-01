@@ -1,31 +1,27 @@
 <div class="navbar-styling">
-    <div class="main-content-container">
-        <nav class="navbar-secondary navbar navbar-expand navbar-light">
-            <div class="container-fluid">
-                <div class="row collapse navbar-collapse">
-                    <div class="col-12">
-                        <!-- Gets all the data for navigation -->
-                        {% for navigation-bar in site.data.navigation %}
-                        <!-- Selects the correct one via title, included as a parameter -->
-                        {% if navigation-bar.title == include.navigation-bar-title %}
-                        <!-- Loops through all the navigation elements and populates the navbar with them -->
-                        {% for navigation-bar-element in navigation-bar.subfolderitems %}
-                        <!-- Sets the navigation element as active if it is the current page -->
-                        {% assign active-url = navigation-bar-element.url | append: ".html" %}
-                        {% assign active-url-permalink = navigation-bar-element.url | append: "/" %}
-                        {% if page.url contains active-url-permalink or page.url == active-url or page.url == navigation-bar-element.url or page.url == active-url-permalink %}
-                        <a class="active-subnavigation"
-                            href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
-                        {% else %}
-                        <a class="subnavigation"
-                            href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
-                        {% endif %}
-                        {% endfor %}
-                        {% endif %}
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
+    <div class="mx-auto max-w-7xl w-85">
+        <nav class="menu-sub py-3">
+            <ul class="flex flex-wrap">
+                {% for navigation-bar in site.data.navigation %}
+                {% if navigation-bar.title == include.navigation-bar-title %}
+                {% for navigation-bar-element in navigation-bar.subfolderitems %}
+                {% assign active-url = navigation-bar-element.url | append: ".html" %}
+                {% assign active-url-permalink = navigation-bar-element.url | append: "/" %}
+                {% if page.url contains active-url-permalink or page.url == active-url or page.url == navigation-bar-element.url or page.url == active-url-permalink %}
+                <li class="list-none">
+                    <a class="text-primary font-bold mr-8 tablet:mr-12"
+                        href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+                </li>
+                {% else %}
+                <li class="list-none">
+                    <a class="text-primary hover:text-green-hover mr-8 tablet:mr-12"
+                        href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+            </ul>
         </nav>
     </div>
 </div>

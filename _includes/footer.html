@@ -1,55 +1,44 @@
-<footer class="mt-5">
-    <div class="main-content-container">
-        <div class="container-fluid">
-            <div class="row row-cols-10 py-5">
-                <div class="col-md-6 mt-5 mt-md-0 order-last order-md-first">
-                    <h5 class="mb-3 footer-brand">Autonomous Driving Lab</h5>
-                    <p class="mb-2">Narva mnt 18, room 3095</p>
-                    <p class="mb-2">51009 Tartu, Estonia</p>
-                    <p><a href="mailto:adl@ut.ee">adl@ut.ee</a></p>
-                </div>
+<footer class="bg-footer text-[#191919] py-6 mt-12">
+    <div class="mx-auto max-w-7xl w-85">
+        <div class="grid md:grid-cols-12 gap-4">
+            <div class="md:col-span-5">
+                <p class="mb-2 mt-6px"><img src="/images/logos/adl_logo.svg" alt="Autonomous Driving Lab" class="w-200" /></p>
+                <p class="mb-2">Narva mnt 18, room 3095</p>
+                <p class="mb-2">51009 Tartu, Estonia</p>
+                <p><a href="mailto:adl@ut.ee" class="text-[#191919]">adl@ut.ee</a></p>
+            </div>
+            <div class="md:col-span-7">
+                <div class="grid md:grid-cols-12 gap-4">
+                    {% for navigation-bar in site.data.navigation %}
+                    {% if navigation-bar.title == "main" %}
+                    {% assign main-navigation = navigation-bar %}
+                    {% break %}
+                    {% endif %}
+                    {% endfor %}
 
+                    {% assign footer-navigation-columns = "discover,lab,research,teaching" | split: "," %}
+                    {% for footer-navigation-column in footer-navigation-columns %}
 
-                <div class="col-md-6">
-                    <div class="row">
-                        <!-- This needs to happen, using just | where would return a string instead of an object. -->
-                        {% for navigation-bar in site.data.navigation %}
-                        {% if navigation-bar.title == "main" %}
-                        {% assign main-navigation = navigation-bar %}
-                        {% break %}
-                        {% endif %}
-                        {% endfor %}
+                    {% for main-navigation-bar in main-navigation.subfolderitems %}
+                    {% if main-navigation-bar.url contains footer-navigation-column %}
+                    {% assign footer-navigation-column-title = main-navigation-bar.page %}
+                    {% break %}
+                    {% endif %}
+                    {% endfor %}
 
-
-
-                        {% assign footer-navigation-columns = "discover,lab,research,teaching" | split: "," %}
-                        {% for footer-navigation-column in footer-navigation-columns %}
-
-                        {% for main-navigation-bar in main-navigation.subfolderitems %}
-                        {% if main-navigation-bar.url contains footer-navigation-column %}
-                        {% assign footer-navigation-column-title = main-navigation-bar.page %}
-                        {% break %}
-                        {% endif %}
-                        {% endfor %}
-
-
-                        {% for navigation-bar in site.data.navigation %}
-                        {% if navigation-bar.title == footer-navigation-column%}
-                        <div class="col-md-3 col-sm-3 mt-4 mt-sm-0 col-6">
-                            <h5 class="mb-3">{{ footer-navigation-column-title }}</h5>
-                            <ul class="nav flex-column">
-                                {% for navigation-bar-element in navigation-bar.subfolderitems %}
-                                <li class="nav-item mb-2"><a href="{{ navigation-bar-element.url }}"
-                                        class="nav-link p-0 text-dark">{{ navigation-bar-element.page }}</a></li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        {% break%}
-                        {% endif %}
-                        {% endfor %}
-
+                    {% for navigation-bar in site.data.navigation %}
+                    {% if navigation-bar.title == footer-navigation-column %}
+                    <div class="col-span-3">
+                        <p class="font-bold mb-2">{{ footer-navigation-column-title }}</p>
+                        {% for navigation-bar-element in navigation-bar.subfolderitems %}
+                        <a class="block mb-2 text-primary font-normal hover:text-green-hover" href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
                         {% endfor %}
                     </div>
+                    {% break %}
+                    {% endif %}
+                    {% endfor %}
+
+                    {% endfor %}
                 </div>
             </div>
         </div>
