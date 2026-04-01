@@ -158,26 +158,39 @@
   }
 
   /**
-   * Mobile menu toggle (replaces Bootstrap collapse)
+   * Mobile menu toggle
+   * Uses .menu-wrapper (Voog pattern) and .menu-btn with .open class
    */
   function initMobileNav() {
     document.querySelectorAll('.js-menu-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var targetId = this.getAttribute('data-target');
-        var target = document.getElementById(targetId);
-        if (target) {
-          target.classList.toggle('hidden');
-          target.classList.toggle('flex');
+        // Toggle the mobile menu-wrapper visibility
+        var header = this.closest('.header') || this.closest('header');
+        if (header) {
+          var menuWrapper = header.querySelector('.menu-wrapper');
+          if (menuWrapper) {
+            menuWrapper.classList.toggle('hidden');
+          }
         }
-        // Toggle open state for hamburger animation
+        // Toggle open state for hamburger animation (also set inline on the button)
         this.classList.toggle('open');
         // Mobile background overlay on landing page
         if (this.hasAttribute('data-mobile-bg')) {
-          var header = this.closest('header');
-          if (header) {
-            header.classList.toggle('navbar-mobile-background');
+          var navWrapper = this.closest('.menu-expande') || this.closest('[class*="bg-green"]');
+          if (navWrapper) {
+            navWrapper.classList.toggle('expande');
           }
         }
+      });
+    });
+
+    // Close menu on outside click (side click handler)
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('.js-prevent-sideclick')) return;
+      document.querySelectorAll('.menu-wrapper:not(.hidden)').forEach(function (menu) {
+        menu.classList.add('hidden');
+        var btn = document.querySelector('.js-menu-btn.open');
+        if (btn) btn.classList.remove('open');
       });
     });
   }

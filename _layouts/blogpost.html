@@ -1,46 +1,33 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
 	{% include head.html %}
 </head>
 
-<body>
-<div>
-
-	{% include main-navigation-bar.html %}
-
-	<div class="project-page">
-		<main>
-
-			{% include page-heading.html
-			title="Blog"
-			body="Find out what we have been working on."
-			%}
-
-			<div class="mx-auto max-w-7xl w-85 mt-12 mb-24">
-				<div>
-					<span class="overlane-text">{{page.date | date: "%D"}}</span>
-					<h3 class="w-1/2 mb-12">
-						{{page.title}}
-					</h3>
-					<div class="grid grid-cols-1 lg:grid-cols-12">
-						<div class="lg:col-span-8 mt-3">
-							{% if page.image != null and page.image != "" %}
-							<p>
-								<img alt="{{page.alt}}" src="{{page.image}}" style="max-width: 100%">
-							</p>
-							{% endif %}
-							{{content}}
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		{% include footer.html %}
-	</div>
-</div>
-{% include foot.html %}
+<body class="post-page">
+    <div class="bg-green border-b white-55 h-logoMobile md:h-logoTablet xl:h-logo flex items-center">
+        {% include main-navigation-bar.html %}
+    </div>
+    {% include page-heading.html title="Blog" %}
+    <div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
+        <main role="main">
+            <span class="overlane-text">{{page.date | date: "%D"}}</span>
+            <h3 class="w-1/2 mb-12">{{page.title}}</h3>
+            <div class="grid grid-cols-1 tablet:grid-cols-12">
+                <div class="tablet:col-span-9 content-formatted mt-3">
+                    {% if page.image != null and page.image != "" %}
+                    <p>
+                        <img alt="{{page.alt}}" src="{{page.image}}" style="max-width: 100%">
+                    </p>
+                    {% endif %}
+                    {{content}}
+                </div>
+            </div>
+        </main>
+    </div>
+    {% include footer.html %}
+    {% include foot.html %}
 </body>
 
 </html>

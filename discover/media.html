@@ -9,17 +9,17 @@ meta: Overview of publications where ADL has appeared in media.
 {% assign sorted = site.data.media | sort: "date" | reverse %}
 
 <div class="mb-12">
-    <div class="grid grid-cols-12 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
         <div class="md:col-span-12">
             <h2>ADL in media</h2>
         </div>
     </div>
 
     <!-- Video section -->
-    <div class="grid grid-cols-12 gap-4 mt-4">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mt-4">
         <span class="overlane-text mb-4">VIDEO</span>
         <div class="md:col-span-12">
-            <div class="grid grid-cols-12 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
                 {% for video in videos limit:3 %}
                 <div class="xl:col-span-4 md:col-span-6 mt-4">
                     <div class="embedded-video-card" data-video-src="{{ video.url }}">
@@ -49,7 +49,7 @@ meta: Overview of publications where ADL has appeared in media.
         <div id="media-list">
             {% for news in sorted %}
             <div class="filter-item news-card-filter" data-filter-lang="{{ news.language }}">
-                <div class="grid grid-cols-12 gap-4 my-6 news-card" id="news">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 my-6 news-card" id="news">
                     <a class="card-anchor-absolute" href="{{ news.url }}" target="_blank" rel="nofollow" style="z-index:1000"></a>
                     <div class="md:col-span-12 mb-2">
                         <div class="news-card-body mt-4">

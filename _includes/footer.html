@@ -1,11 +1,12 @@
-<footer class="bg-footer text-[#191919] py-6 mt-12">
+<div id="backToTop"></div>
+<div class="bg-footer text-dark footer py-6">
     <div class="mx-auto max-w-7xl w-85">
         <div class="grid md:grid-cols-12 gap-4">
-            <div class="md:col-span-5">
+            <div class="md:col-span-5 footer-left">
                 <p class="mb-2 mt-6px"><img src="/images/logos/adl_logo.svg" alt="Autonomous Driving Lab" class="w-200" /></p>
                 <p class="mb-2">Narva mnt 18, room 3095</p>
                 <p class="mb-2">51009 Tartu, Estonia</p>
-                <p><a href="mailto:adl@ut.ee" class="text-[#191919]">adl@ut.ee</a></p>
+                <p><a href="mailto:adl@ut.ee" class="text-dark">adl@ut.ee</a></p>
             </div>
             <div class="md:col-span-7">
                 <div class="grid md:grid-cols-12 gap-4">
@@ -31,7 +32,7 @@
                     <div class="col-span-3">
                         <p class="font-bold mb-2">{{ footer-navigation-column-title }}</p>
                         {% for navigation-bar-element in navigation-bar.subfolderitems %}
-                        <a class="block mb-2 text-primary font-normal hover:text-green-hover" href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+                        <a class="block mb-2 text-primary font-normal hover:text-green" href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
                         {% endfor %}
                     </div>
                     {% break %}
@@ -43,4 +44,4 @@
             </div>
         </div>
     </div>
-</footer>
+</div>

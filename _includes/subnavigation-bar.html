@@ -1,27 +1,23 @@
-<div class="navbar-styling">
-    <div class="mx-auto max-w-7xl w-85">
-        <nav class="menu-sub py-3">
-            <ul class="flex flex-wrap">
-                {% for navigation-bar in site.data.navigation %}
-                {% if navigation-bar.title == include.navigation-bar-title %}
-                {% for navigation-bar-element in navigation-bar.subfolderitems %}
-                {% assign active-url = navigation-bar-element.url | append: ".html" %}
-                {% assign active-url-permalink = navigation-bar-element.url | append: "/" %}
-                {% if page.url contains active-url-permalink or page.url == active-url or page.url == navigation-bar-element.url or page.url == active-url-permalink %}
-                <li class="list-none">
-                    <a class="text-primary font-bold mr-8 tablet:mr-12"
-                        href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
-                </li>
-                {% else %}
-                <li class="list-none">
-                    <a class="text-primary hover:text-green-hover mr-8 tablet:mr-12"
-                        href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
-                </li>
-                {% endif %}
-                {% endfor %}
-                {% endif %}
-                {% endfor %}
-            </ul>
-        </nav>
-    </div>
-</div>
+<nav class="menu-sub py-3">
+    <ul class="menu">
+        {% for navigation-bar in site.data.navigation %}
+        {% if navigation-bar.title == include.navigation-bar-title %}
+        {% for navigation-bar-element in navigation-bar.subfolderitems %}
+        {% assign active-url = navigation-bar-element.url | append: ".html" %}
+        {% assign active-url-permalink = navigation-bar-element.url | append: "/" %}
+        {% if page.url contains active-url-permalink or page.url == active-url or page.url == navigation-bar-element.url or page.url == active-url-permalink %}
+        <li class="menu-item dropdown-btn">
+            <a class="menu-link active text-primary hover:text-green mr-8 tablet:mr-12"
+                href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+        </li>
+        {% else %}
+        <li class="menu-item dropdown-btn">
+            <a class="menu-link text-primary hover:text-green mr-8 tablet:mr-12"
+                href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

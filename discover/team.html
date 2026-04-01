@@ -6,7 +6,7 @@ subtitle: Discover ADL
 meta: Get an overview of the minds behind the autonomous driving lab
 ---
 <div class="mb-12">
-    <div class="grid grid-cols-12 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
         <div class="md:col-span-8">
             <h2>{{page.title}}</h2>
             <p class="mt-4">If you get incredibly excited about developing the autonomous driving industry in
@@ -16,7 +16,7 @@ meta: Get an overview of the minds behind the autonomous driving lab
 </div>
 <div>
     <h4 class="my-12">Management</h4>
-    <div class="grid grid-cols-12 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
         {% assign leads = site.data.team | where: "group","lead" %}
         {% assign team_leads = site.data.team | where: "group","team lead" %}
         {% assign engineers = site.data.team | where: "group","engineer" %}
@@ -37,7 +37,7 @@ meta: Get an overview of the minds behind the autonomous driving lab
         {% endfor %}
     </div>
     <h4 class="my-12">Research leads</h4>
-    <div class="grid grid-cols-12 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
         {% for team_lead in team_leads %}
         <div class="2xl:col-span-3 mb-12">
             <div class="card team-member-card" style="border: none">
@@ -54,7 +54,7 @@ meta: Get an overview of the minds behind the autonomous driving lab
         {% endfor %}
     </div>
     <h4 class="my-12">Engineers</h4>
-    <div class="grid grid-cols-12 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
         {% for engineer in engineers %}
         <div class="2xl:col-span-3 mb-12">
             <div class="card team-member-card" style="border: none">
@@ -71,7 +71,7 @@ meta: Get an overview of the minds behind the autonomous driving lab
         {% endfor %}
     </div>
     <h4 class="my-12">Students</h4>
-    <div class="grid grid-cols-12 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
         {% for student in students %}
         <div class="2xl:col-span-3 mb-12">
             <div class="card team-member-card" style="border: none">

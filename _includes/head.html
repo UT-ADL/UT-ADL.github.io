@@ -17,60 +17,13 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    green: '#40916C',
-                    'green-hover': '#357a5b',
-                    footer: '#E5F4ED',
-                    primary: '#40916C',
-                    accent: '#F39117',
-                    'accent-hover': '#C87004',
-                },
-                width: {
-                    '85': '85%',
-                    '180': '180px',
-                    '200': '200px',
-                },
-                height: {
-                    'logo': '48px',
-                    'logoMobile': '56px',
-                    'logoTablet': '48px',
-                },
-                maxWidth: {
-                    '7xl': '1280px',
-                },
-                screens: {
-                    'tablet': '768px',
-                },
-                fontFamily: {
-                    'barlow': ['Barlow', 'serif'],
-                    'dm-sans': ['"DM Sans"', 'sans-serif'],
-                    'inter': ['Inter', 'sans-serif'],
-                    'triakis': ['Triakis', 'serif'],
-                },
-                spacing: {
-                    '5px': '5px',
-                    '6px': '6px',
-                },
-            },
-        },
-        /* Tailwind preflight (CSS reset) enabled */
-    }
-    </script>
-
-    <!-- Custom CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/main.css" type="text/css">
-    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter&family=Barlow:ital,wght@0,400;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;500;600;700;900&family=Inter:wght@200;400;500;600;700;800&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/c3a5593886.js" crossorigin="anonymous" defer></script>
     {% if page.title and page.title != "Home" %}<title>{{page.title}} — Autonomous Driving Lab</title>{% else %}<title>Autonomous Driving Lab</title>{% endif %}

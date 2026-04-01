@@ -1,62 +1,49 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     {% include head.html %}
 </head>
 
-<body>
-    <div>
-
+<body class="post-page">
+    <div class="bg-green border-b white-55 h-logoMobile md:h-logoTablet xl:h-logo flex items-center">
         {% include main-navigation-bar.html %}
-
-        <div class="project-page">
-            <main>
-
-                {% include page-heading.html 
-                    title="Research"
-                    body="Making cars drive by themselves is a big task. A
-                        huge task. To help you (and us) better understand what is needed to make it happen, we have
-                        divided our work into focus areas."
-                %}
-    
-                {% include subnavigation-bar.html navigation-bar-title="research" %}
-                <div class="mx-auto max-w-7xl w-85 mt-12 mb-24">
-                    <div>
-                        <h2 class="w-1/2">
-                            {{page.title}}
-                        </h2>
-                        <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-                            <div class="md:col-span-9 mt-2 pr-12">
-                                <div>
-                                    {{content}}
-                                </div>
-                            </div>
-                            <div class="md:col-span-3 project-channels mt-2 px-12">
-                                <hr />
-                                <span class="overlane-text">PROJECT CHANNELS</span>
-                                <br>
-                                {% if page.twitter != null and page.twitter != "" %}
-                                <a href="{{page.twitter}}"><i class="fab fa-twitter"></i></a>
-                                {% endif %}
-                                {% if page.facebook != null and page.facebook != "" %}
-                                <a href="{{page.facebook}}"><i class="fab fa-facebook-square"></i></a>
-                                {% endif %}
-                                {% if page.instagram != null and page.instagram != "" %}
-                                <a href="{{page.instagram}}"><i class="fab fa-instagram-square"></i></a>
-                                {% endif %}
-                                {% if page.webURL != null and page.webURL != "" %}
-                                <a href="{{page.webURL}}"><i class="fas fa-globe"></i></a>
-                                {% endif %}
-                                <hr />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            {% include footer.html %}
+    </div>
+    {% include page-heading.html title="Research" %}
+    <div class="navbar-styling">
+        <div class="mx-auto max-w-7xl w-85">
+            {% include subnavigation-bar.html navigation-bar-title="research" %}
         </div>
     </div>
+    <div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
+        <main role="main">
+            <h2 class="w-1/2">{{page.title}}</h2>
+            <div class="grid grid-cols-1 tablet:grid-cols-12 gap-4">
+                <div class="tablet:col-span-9 mt-2 pr-12">
+                    {{content}}
+                </div>
+                <div class="tablet:col-span-3 project-channels mt-2">
+                    <hr />
+                    <span class="overlane-text">PROJECT CHANNELS</span>
+                    <br>
+                    {% if page.twitter != null and page.twitter != "" %}
+                    <a href="{{page.twitter}}"><i class="fab fa-twitter"></i></a>
+                    {% endif %}
+                    {% if page.facebook != null and page.facebook != "" %}
+                    <a href="{{page.facebook}}"><i class="fab fa-facebook-square"></i></a>
+                    {% endif %}
+                    {% if page.instagram != null and page.instagram != "" %}
+                    <a href="{{page.instagram}}"><i class="fab fa-instagram-square"></i></a>
+                    {% endif %}
+                    {% if page.webURL != null and page.webURL != "" %}
+                    <a href="{{page.webURL}}"><i class="fas fa-globe"></i></a>
+                    {% endif %}
+                    <hr />
+                </div>
+            </div>
+        </main>
+    </div>
+    {% include footer.html %}
     {% include foot.html %}
 </body>
 

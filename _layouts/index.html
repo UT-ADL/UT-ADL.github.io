@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,15 +6,13 @@
 	<meta name="image" content="../images/landing/discover.jpg">
 </head>
 
-<body>
-    <main>
-        <div class="absolute z-50 top-0 left-0 w-full border-b border-white/[0.55]">
-            {% include main-navigation-bar.html 
-                applyMobileBackground=true
-            %}
-        </div>
-        {{content}}
-    </main>
+<body class="front-page">
+    <div class="absolute w-full top-0 menu-expande border-b white-55 z-50 flex items-center h-logoMobile md:h-logoTablet xl:h-logo">
+        {% include main-navigation-bar.html
+            applyMobileBackground=true
+        %}
+    </div>
+    {{content}}
     {% include footer.html %}
     {% include foot.html %}
 </body>

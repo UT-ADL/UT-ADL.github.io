@@ -1,34 +1,26 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     {% include head.html %}
 </head>
 
-<body>
-    <div>
-
+<body class="common-page">
+    <div class="bg-green border-b white-55 h-logoMobile md:h-logoTablet xl:h-logo flex items-center">
         {% include main-navigation-bar.html %}
-
-        <div>
-            <main>
-
-                {% include page-heading.html 
-                    title=page.subtitle
-                    body="We believe that self-driving cars can’t come soon enough. If you feel the same way and 
-                    want to be smart enough to do something about it, then rest assured: you’ve come to the right place."
-                %}
-
-                {% include subnavigation-bar.html navigation-bar-title="teaching" %}
-
-                <div class="mx-auto max-w-7xl w-85 mt-12 mb-24">
-                    {{content}}
-                </div>
-            </main>
-            {% include footer.html %}
+    </div>
+    {% include page-heading.html title=page.subtitle %}
+    <div class="navbar-styling">
+        <div class="mx-auto max-w-7xl w-85">
+            {% include subnavigation-bar.html navigation-bar-title="teaching" %}
         </div>
     </div>
-
+    <div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-20">
+        <main role="main">
+            {{content}}
+        </main>
+    </div>
+    {% include footer.html %}
     {% include foot.html %}
 </body>
 

@@ -1,32 +1,26 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     {% include head.html %}
 </head>
 
-<body>
-    <div>
-
-        <!-- Main navigation bar -->
+<body class="blog-page">
+    <div class="bg-green border-b white-55 h-logoMobile md:h-logoTablet xl:h-logo flex items-center">
         {% include main-navigation-bar.html %}
-
-        <main>
-
-            {% include page-heading.html 
-                title=page.subtitle
-                body="Sure, big ideas might begin on the back of a napkin, but if they're to become a reality, they must be put to paper. Here you can see the many culminations of our efforts on self-driving research."
-            %}
-
-            <!-- Sub-navigation bar-->
-            {% include subnavigation-bar.html navigation-bar-title="research" %}
-
-            <div class="mx-auto max-w-7xl w-85 mt-12 mb-24">
-                {{content}}
-            </div>
-        </main>
-        {% include footer.html %}
     </div>
+    {% include page-heading.html title=page.subtitle %}
+    <div class="navbar-styling">
+        <div class="mx-auto max-w-7xl w-85">
+            {% include subnavigation-bar.html navigation-bar-title="research" %}
+        </div>
+    </div>
+    <div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
+        <main role="main">
+            {{content}}
+        </main>
+    </div>
+    {% include footer.html %}
     {% include foot.html %}
 </body>
 

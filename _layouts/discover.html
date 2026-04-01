@@ -1,32 +1,26 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     {% include head.html %}
 </head>
 
-<body>
-    <div>
-
+<body class="discover-page">
+    <div class="bg-green border-b white-55 h-logoMobile md:h-logoTablet xl:h-logo flex items-center">
         {% include main-navigation-bar.html %}
-
-        <main>
-
-            {% include page-heading.html 
-                title=page.subtitle
-                body="We are the Autonomous Driving Lab - see what it is that we do.
-                <br/>
-                Spoiler: we make cars drive. By themselves."
-            %}
-
-            {% include subnavigation-bar.html navigation-bar-title="discover" %}
-
-            <div class="mx-auto max-w-7xl w-85 mt-12 mb-24">
-                {{content}}
-            </div>
-        </main>
-        {% include footer.html %}
     </div>
+    {% include page-heading.html title=page.subtitle %}
+    <div class="navbar-styling">
+        <div class="mx-auto max-w-7xl w-85">
+            {% include subnavigation-bar.html navigation-bar-title="discover" %}
+        </div>
+    </div>
+    <div class="mx-auto max-w-7xl w-85 mt-12 mb-24">
+        <main role="main">
+            {{content}}
+        </main>
+    </div>
+    {% include footer.html %}
     {% include foot.html %}
 </body>
 

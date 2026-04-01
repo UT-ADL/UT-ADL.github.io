@@ -36,7 +36,7 @@ _includes/           # Reusable HTML template fragments
   main-navigation-bar.html  # Top navbar
   subnavigation-bar.html    # Section sub-navigation
   footer.html        # Site footer
-  foot.html          # Scripts (Bootstrap JS, jQuery)
+  foot.html          # End-of-body scripts (currently empty)
   page-heading.html  # Page title component
   course.html, thesis-topic.html, defended-thesis.html, research-papers.html
 _layouts/            # Page layout templates
@@ -52,9 +52,10 @@ _layouts/            # Page layout templates
 _posts/              # Blog posts (YYYY-MM-DD-title.md)
 _projects/           # Project pages (snake_case.md, layout: project)
 _research-areas/     # Research area pages (snake_case.md, layout: research-area)
-css/                 # Stylesheets (Bootstrap 5 + main.css + fonts.css)
-js/                  # JavaScript (Bootstrap 5 JS)
-fonts/               # Custom Triakis font
+css/                 # Stylesheets (compiled Tailwind v2.1.4 + custom styles in main.css)
+js/                  # JavaScript (site.js — filters, slider, modals, nav)
+fonts/               # Custom Triakis font (OTF, WOFF, WOFF2)
+assets/              # SVG icons, logos, separators (from Voog theme)
 images/              # Organized by type: team/, blog/, projects/, research/, etc.
 files/               # Static documents (PDFs, etc.)
 blog/ research/ teaching/ discover/ lab/  # Section index pages
@@ -63,13 +64,14 @@ blog/ research/ teaching/ discover/ lab/  # Section index pages
 ## Tech Stack
 
 - **Static site generator**: Jekyll 4.2.1
-- **CSS framework**: Bootstrap 5
-- **JS libraries**: jQuery 3.5.1 (CDN), Bootstrap 5 JS
+- **CSS framework**: Tailwind CSS v2.1.4 (compiled, not CDN) + LightSlider v1.1.3 CSS
+- **JS**: Custom `site.js` (vanilla JS — client-side filtering, slider, video modals, hotspots, mobile nav)
 - **Template language**: Liquid
 - **Markdown flavor**: kramdown (inline HTML allowed)
-- **Fonts**: Google Fonts (DM Sans, Barlow, Inter), FontAwesome 4.7 + v6, custom Triakis (OTF)
+- **Fonts**: Google Fonts (Barlow, Inter, DM Sans), FontAwesome v6 (kit), custom Triakis (OTF/WOFF/WOFF2)
+- **Icons**: SVG mask icons via CSS (from Voog theme) + FontAwesome for some content pages
 - **Analytics**: Google Analytics (G-LVQMEM9XNR)
-- **Primary color**: `--primary: #40916C`
+- **Primary color**: `--primary: #009469`
 
 ## Content Management Conventions
 
@@ -123,8 +125,10 @@ Store in the appropriate subdirectory under `images/`:
 - **Data-driven rendering**: Templates iterate over `site.data.*` YAML files using Liquid `{% for %}` loops
 - **Active menu highlighting**: Navigation uses `prefix` field matched against current URL
 - **Component reuse**: Includes like `course.html`, `thesis-topic.html` render individual items from data loops
+- **Client-side filtering**: `site.js` uses `data-filter-group` / `data-filter-value` attributes on `.menu-tags` containers to filter `.filter-item` elements
+- **Voog-matched layout pattern**: All sub-page layouts follow the same wrapper structure — green nav bar, page heading, navbar-styling subnav, then `<main role="main">` content area
+- **Body classes per section**: Each layout sets a body class (`front-page`, `discover-page`, `blog-page`, `post-page`, `common-page`) for section-specific CSS
 - **No CI/CD workflows**: GitHub Pages builds natively from the repo — no `.github/workflows/` needed
-- **Minimal custom JS**: Interactivity relies on Bootstrap data attributes and CSS
 
 ## Common Tasks
 

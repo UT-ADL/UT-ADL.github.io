@@ -1,6 +1,6 @@
 # Autonomous Driving Lab homepage
 
-This repository hosts the [Autonomous Driving Lab homepage](https://adl.cs.ut.ee/). The homepage is implemented using [Jekyll](https://jekyllrb.com/), which generates static web site based on HTML templates and Markdown content files. It is hosted by [GitHub Pages](https://pages.github.com/), which means that every time you commit something to the repository, the homepage is automatically updated. To get permission to edit the content send your GitHub account name to adl@ut.ee.
+This repository hosts the [Autonomous Driving Lab homepage](https://adl.cs.ut.ee/). The homepage is implemented using [Jekyll](https://jekyllrb.com/), which generates a static site based on HTML templates and Markdown content files. The design is ported from the original [Voog CMS](https://www.voog.com/) site and uses compiled Tailwind CSS v2.1.4 with custom styles. It is hosted by [GitHub Pages](https://pages.github.com/), which means that every time you commit something to the repository, the homepage is automatically updated. To get permission to edit the content send your GitHub account name to adl@ut.ee.
 
 Few links to get started with Jekyll:
 * [Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/) gives concise overview of the Jekyll basics. Recommended read.
