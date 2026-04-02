@@ -21,13 +21,11 @@
     <div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
         <main role="main">
             <h2 class="w-1/2">{{page.title}}</h2>
-            <div class="grid grid-cols-1 tablet:grid-cols-12">
+            <div class="grid grid-cols-1 tablet:grid-cols-12 gap-4">
                 <div class="tablet:col-span-8 mt-3">
                     {{content}}
                 </div>
-                <div class="tablet:col-span-1 mt-3">
-                </div>
-                <div class="tablet:col-span-3 project-channels mt-2">
+                <div class="tablet:col-start-10 tablet:col-span-3 project-channels mt-2">
                     {% if page.lead_image %}
                     <img src="{{ page.lead_image }}" alt="{{page.research_lead}}" class="pb-3 max-w-full h-auto" />
                     {% else %}

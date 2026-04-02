@@ -24,9 +24,9 @@ meta: One of our goals is to prepare future workforce for the up-and-coming auto
     {% assign categories = site.data.courses | map: 'type' | uniq %}
 
     <div class="menu-tags" data-filter-group="category" data-filter-target="#courses-list">
-        <a class="menu-link active" data-filter-value="all" href="#">All courses</a>
+        <a class="menu-link no-close active" data-filter-value="all" href="#">All courses</a>
         {% for cat in categories %}
-        <a class="menu-link" data-filter-value="{{ cat }}" href="#">{{ cat | downcase | capitalize }}</a>
+        <a class="menu-link no-close" data-filter-value="{{ cat }}" href="#">{{ cat | downcase | capitalize }}</a>
         {% endfor %}
     </div>
 

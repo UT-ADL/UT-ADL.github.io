@@ -19,9 +19,9 @@ meta: Here you can see all our publications, no matter which research area they 
     {% assign years = papers | map: 'year' | uniq %}
 
     <div class="menu-tags" data-filter-group="year" data-filter-target="#publication-list">
-        <a class="menu-link active" data-filter-value="all" href="#">All publications</a>
+        <a class="menu-link no-close active" data-filter-value="all" href="#">All publications</a>
         {% for year in years %}
-        <a class="menu-link" data-filter-value="{{ year }}" href="#">{{ year }}</a>
+        <a class="menu-link no-close" data-filter-value="{{ year }}" href="#">{{ year }}</a>
         {% endfor %}
     </div>
 

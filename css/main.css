@@ -1261,6 +1261,9 @@ hr {
 .col-span-4 {
   grid-column:span 4/span 4
 }
+.col-span-12 {
+  grid-column:span 12/span 12
+}
 .col-span-10 {
   grid-column:span 10/span 10
 }
@@ -2640,6 +2643,9 @@ a[href=undefined] {
   .md\:col-span-2 {
     grid-column:span 2/span 2
   }
+  .md\:col-span-3 {
+    grid-column:span 3/span 3
+  }
   .md\:col-span-4 {
     grid-column:span 4/span 4
   }
@@ -2648,6 +2654,9 @@ a[href=undefined] {
   }
   .md\:col-span-6 {
     grid-column:span 6/span 6
+  }
+  .md\:col-span-7 {
+    grid-column:span 7/span 7
   }
   .md\:col-span-8 {
     grid-column:span 8/span 8
@@ -2749,8 +2758,20 @@ a[href=undefined] {
     padding-left:0;
     padding-right:0
   }
+  .lg\:col-span-2 {
+    grid-column:span 2/span 2
+  }
+  .lg\:col-span-3 {
+    grid-column:span 3/span 3
+  }
   .lg\:col-span-4 {
     grid-column:span 4/span 4
+  }
+  .lg\:col-span-8 {
+    grid-column:span 8/span 8
+  }
+  .lg\:col-span-9 {
+    grid-column:span 9/span 9
   }
 }
 @media (min-width:1280px) {
@@ -2882,8 +2903,8 @@ a[href=undefined] {
 }
 
 .slider-pager button {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background: transparent;
     border: 1px solid #fff;
@@ -2903,58 +2924,45 @@ a[href=undefined] {
 /* --- Partner logos (homepage) --- */
 .founding-partner-logo,
 .cooperation-partner-logo {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
     border: 1px solid #aadac4;
-    border-radius: 0.25rem;
-}
-
-.founding-partner-logo { height: 120px; }
-.cooperation-partner-logo { height: 3rem; }
-
-.founding-partner-logo a,
-.cooperation-partner-logo a {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
+    display: block;
 }
 
 .founding-partner-logo img,
 .cooperation-partner-logo img {
     max-width: 100%;
-    max-height: 100%;
+    display: block;
 }
 
 /* --- Primary button --- */
 .button-primary {
-    display: table-cell;
-    vertical-align: middle;
     text-decoration: none;
     text-align: center;
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
+    line-height: 19px;
     border: none;
-    background: var(--accent);
-    color: white;
-    width: 300px;
-    height: 50px;
+    background: #f39117;
+    color: #fff;
+    padding: 16px 48px;
+    display: block;
     border-radius: 4px;
     transition-duration: 0.4s;
 }
 
-.button-primary:hover {
-    background-color: #C87004;
-    color: white;
+@media screen and (max-width: 767px) {
+    .button-primary {
+        font-size: 14px;
+        padding: 11.5px 24px;
+    }
+}
+
+.button-primary:hover,
+.button-primary:focus {
+    background-color: #c87004;
+    color: #fff;
 }
 
 .button-primary:active {
@@ -3018,32 +3026,78 @@ a[href=undefined] {
     position: relative;
     border: 1px solid var(--primary);
     border-radius: 4px;
-    height: 200px;
+    min-height: 200px;
+    height: 100%;
     color: #212529;
 }
 
-/* --- Filter tags (client-side filtering) --- */
-.menu-tags .menu-link {
-    display: inline-block;
-    padding: 8px 16px;
-    margin-right: 4px;
-    margin-bottom: 4px;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--primary);
-    background: transparent;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.2s, color 0.2s;
-    white-space: nowrap;
+/* Filter tags: cursor pointer for JS-driven tags */
+/* --- Missing Tailwind utilities --- */
+.my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.mt-3 {
+    margin-top: 0.75rem;
+}
+.pt-4 {
+    padding-top: 1rem;
+}
+.max-w-full {
+    max-width: 100%;
+}
+.w-3\/4 {
+    width: 75%;
+}
+.align-middle {
+    vertical-align: middle;
+}
+.list-none {
+    list-style-type: none;
+}
+.list-item {
+    display: list-item;
+}
+.m-0 {
+    margin: 0;
+}
+.p-0 {
+    padding: 0;
+}
+.font-extralight {
+    font-weight: 200;
 }
 
-.menu-tags .menu-link:hover,
-.menu-tags .menu-link.active {
-    background-color: var(--primary);
-    color: #fff;
+/* --- Overlane text (small uppercase label, same as h5) --- */
+.overlane-text {
+    color: #009469;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* --- Spacer --- */
+.spacer-medium {
+    height: 2rem;
+}
+
+.menu-tags .menu-link {
+    cursor: pointer;
+}
+
+/* --- News card overlay link --- */
+.news-card {
+    position: relative;
+}
+
+.card-anchor-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 /* --- Publication/thesis/media item rows --- */
@@ -3371,6 +3425,12 @@ a[href=undefined] {
 }
 
 .research-details a {
-    font-weight: 600;
-    color: black;
+    font-weight: 400;
+    color: #000;
+    display: block;
+}
+
+.research-details a:focus,
+.research-details a:hover {
+    color: #009469;
 }

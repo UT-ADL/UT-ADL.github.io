@@ -253,6 +253,47 @@
     slider.parentElement.addEventListener('mouseleave', function () {
       resetTimer();
     });
+
+    // Touch/swipe support
+    var touchStartX = 0;
+    var touchEndX = 0;
+    slider.addEventListener('touchstart', function (e) {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    slider.addEventListener('touchend', function (e) {
+      touchEndX = e.changedTouches[0].screenX;
+      var diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          goTo((current + 1) % slides.length);
+        } else {
+          goTo((current - 1 + slides.length) % slides.length);
+        }
+        resetTimer();
+      }
+    }, { passive: true });
+  }
+
+  /**
+   * Back-to-top button
+   */
+  function initBackToTop() {
+    var btn = document.getElementById('backToTop');
+    if (!btn) return;
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        btn.style.opacity = '1';
+        btn.style.bottom = '20px';
+      } else {
+        btn.style.opacity = '0';
+        btn.style.bottom = '50%';
+      }
+    });
+
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
 
   // Initialize on DOM ready
@@ -262,5 +303,6 @@
     initHotspots();
     initMobileNav();
     initSlider();
+    initBackToTop();
   });
 })();

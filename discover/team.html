@@ -5,87 +5,95 @@ permalink: /discover/team
 subtitle: Discover ADL
 meta: Get an overview of the minds behind the autonomous driving lab
 ---
-<div class="mb-12">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-        <div class="md:col-span-8">
-            <h2>{{page.title}}</h2>
-            <p class="mt-4">If you get incredibly excited about developing the autonomous driving industry in
-                Estonia, you're in the right place. Get in touch with Tambet to discuss potential cooperation.</p>
-        </div>
+{% assign leads = site.data.team | where: "group","lead" %}
+{% assign team_leads = site.data.team | where: "group","team lead" %}
+{% assign engineers = site.data.team | where: "group","engineer" %}
+{% assign students = site.data.team | where: "group","student" %}
+
+<div class="grid grid-cols-1 tablet:grid-cols-12 gap-6">
+    <div class="tablet:col-span-9">
+        <h2>{{page.title}}</h2>
+        <p class="mt-4">If you get incredibly excited about developing the autonomous driving industry in
+            Estonia, you're in the right place. Get in touch with Tambet to discuss potential cooperation.</p>
     </div>
 </div>
-<div>
-    <h4 class="my-12">Management</h4>
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-        {% assign leads = site.data.team | where: "group","lead" %}
-        {% assign team_leads = site.data.team | where: "group","team lead" %}
-        {% assign engineers = site.data.team | where: "group","engineer" %}
-        {% assign students = site.data.team | where: "group","student" %}
-        {% for lead in leads %}
-        <div class="2xl:col-span-3 mb-12">
-            <div class="card team-member-card" style="border: none">
-                {% if lead.image %}
-                <img src="{{ lead.image }}" alt="Image of {{ lead.name }}" class="pb-4 max-w-full h-auto" />
-                {% else %}
-                <img src="/images/team/lead.png" alt="" class="pb-4 max-w-full h-auto" />
-                {% endif %}
-                <h5>{{lead.name}}</h5>
-                <p>{{lead.position}}</p>
-                <p class="team-member-email"><i class="fa fa-envelope" style="color: var(--primary);"></i> <a href="mailto:{{lead.email}}">{{lead.email}}</a></p>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-    <h4 class="my-12">Research leads</h4>
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-        {% for team_lead in team_leads %}
-        <div class="2xl:col-span-3 mb-12">
-            <div class="card team-member-card" style="border: none">
-                {% if team_lead.image %}
-                <img src="{{ team_lead.image }}" alt="Image of {{ team_lead.name }}" class="pb-4 max-w-full h-auto" />
-                {% else %}
-                <img src="/images/team/lead.png" alt="" class="pb-4 max-w-full h-auto" />
-                {% endif %}
-                <strong class="pt-4">{{team_lead.name}}</strong>
-                <p>{{team_lead.position}}</p>
-                <p class="team-member-email"><a href="mailto:{{team_lead.email}}">{{team_lead.email}}</a></p>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-    <h4 class="my-12">Engineers</h4>
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-        {% for engineer in engineers %}
-        <div class="2xl:col-span-3 mb-12">
-            <div class="card team-member-card" style="border: none">
-                {% if engineer.image %}
-                <img src="{{ engineer.image }}" alt="Image of {{ engineer.name }}" class="pb-4 max-w-full h-auto" />
-                {% else %}
-                <img src="/images/team/engineer.png" alt="" class="pb-4 max-w-full h-auto" />
-                {% endif %}
-                <strong class="pt-4">{{engineer.name}}</strong>
-                <p>{{engineer.position}}</p>
-                <p class="team-member-email"><a href="mailto:{{engineer.email}}">{{engineer.email}}</a></p>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-    <h4 class="my-12">Students</h4>
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-        {% for student in students %}
-        <div class="2xl:col-span-3 mb-12">
-            <div class="card team-member-card" style="border: none">
-                {% if student.image %}
-                <img src="{{ student.image }}" alt="Image of {{ student.name }}" class="pb-4 max-w-full h-auto" />
-                {% else %}
-                <img src="/images/team/student.png" alt="" class="pb-4 max-w-full h-auto" />
-                {% endif %}
-                <strong class="pt-4">{{student.name}}</strong>
-                <p>{{student.position}}</p>
-                <p class="team-member-email"><a href="mailto:{{student.email}}">{{student.email}}</a></p>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
 
+<div class="grid grid-cols-1 tablet:grid-cols-12 gap-6">
+    <div class="tablet:col-span-9">
+        <h4 class="mt-12 mb-6">Management</h4>
+    </div>
+</div>
+<div class="grid grid-cols-1 tablet:grid-cols-12 gap-6 mt-6">
+    {% for lead in leads %}
+    <div class="tablet:col-span-4 flex justify-start flex-col mb-12 xl:mb-20">
+        {% if lead.image %}
+        <img src="{{ lead.image }}" alt="Image of {{ lead.name }}" class="pb-4 max-w-full h-auto" />
+        {% else %}
+        <img src="/images/team/lead.png" alt="" class="pb-4 max-w-full h-auto" />
+        {% endif %}
+        <h5>{{lead.name}}</h5>
+        <p>{{lead.position}}</p>
+        <p class="team-member-email"><i class="fa fa-envelope" style="color: var(--primary);"></i> <a href="mailto:{{lead.email}}">{{lead.email}}</a></p>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="grid grid-cols-1 tablet:grid-cols-12 gap-6">
+    <div class="tablet:col-span-9">
+        <h4 class="mt-12 mb-6">Research leads</h4>
+    </div>
+</div>
+<div class="grid grid-cols-1 tablet:grid-cols-12 gap-6 mt-6">
+    {% for team_lead in team_leads %}
+    <div class="tablet:col-span-4 flex justify-start flex-col mb-12 xl:mb-20">
+        {% if team_lead.image %}
+        <img src="{{ team_lead.image }}" alt="Image of {{ team_lead.name }}" class="pb-4 max-w-full h-auto" />
+        {% else %}
+        <img src="/images/team/lead.png" alt="" class="pb-4 max-w-full h-auto" />
+        {% endif %}
+        <strong class="pt-4">{{team_lead.name}}</strong>
+        <p>{{team_lead.position}}</p>
+        <p class="team-member-email"><a href="mailto:{{team_lead.email}}">{{team_lead.email}}</a></p>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="grid grid-cols-1 tablet:grid-cols-12 gap-6">
+    <div class="tablet:col-span-9">
+        <h4 class="mt-12 mb-6">Engineers</h4>
+    </div>
+</div>
+<div class="grid grid-cols-1 tablet:grid-cols-12 gap-6 mt-6">
+    {% for engineer in engineers %}
+    <div class="tablet:col-span-4 flex justify-start flex-col mb-12 xl:mb-20">
+        {% if engineer.image %}
+        <img src="{{ engineer.image }}" alt="Image of {{ engineer.name }}" class="pb-4 max-w-full h-auto" />
+        {% else %}
+        <img src="/images/team/engineer.png" alt="" class="pb-4 max-w-full h-auto" />
+        {% endif %}
+        <strong class="pt-4">{{engineer.name}}</strong>
+        <p>{{engineer.position}}</p>
+        <p class="team-member-email"><a href="mailto:{{engineer.email}}">{{engineer.email}}</a></p>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="grid grid-cols-1 tablet:grid-cols-12 gap-6">
+    <div class="tablet:col-span-9">
+        <h4 class="mt-12 mb-6">Students</h4>
+    </div>
+</div>
+<div class="grid grid-cols-1 tablet:grid-cols-12 gap-6 mt-6">
+    {% for student in students %}
+    <div class="tablet:col-span-4 flex justify-start flex-col mb-12 xl:mb-20">
+        {% if student.image %}
+        <img src="{{ student.image }}" alt="Image of {{ student.name }}" class="pb-4 max-w-full h-auto" />
+        {% else %}
+        <img src="/images/team/student.png" alt="" class="pb-4 max-w-full h-auto" />
+        {% endif %}
+        <strong class="pt-4">{{student.name}}</strong>
+        <p>{{student.position}}</p>
+        <p class="team-member-email"><a href="mailto:{{student.email}}">{{student.email}}</a></p>
+    </div>
+    {% endfor %}
 </div>
