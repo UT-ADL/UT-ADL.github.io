@@ -705,7 +705,7 @@ hr {
   margin-bottom:1rem
 }
 .content-formatted ul li {
-  margin-bottom:16px
+  margin-bottom:0
 }
 .container {
   width:100%
@@ -1691,7 +1691,7 @@ hr {
   transition-duration:.4s;
   line-height:19px;
   padding:16px 48px;
-  display:block
+  display:inline-block
 }
 .custom-btn:focus,.custom-btn:hover {
   background-color:#c87004;
@@ -3011,14 +3011,27 @@ a[href=undefined] {
     position: relative;
     border: 1px solid var(--primary);
     border-radius: 4px;
-    margin-top: 3rem;
-    color: #212529;
+    min-height: 100px;
+    color: #191919;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.map-card:hover {
+    background-color: rgba(170, 218, 196, 0.25);
+    border-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
 .map-card i {
     font-size: 30px;
-    margin-top: 10px;
+    min-width: 58px;
+    text-align: center;
     color: var(--primary);
+}
+
+.card-anchor {
+    display: block;
+    height: 100%;
 }
 
 .tutorial-card {
@@ -3026,7 +3039,7 @@ a[href=undefined] {
     position: relative;
     border: 1px solid var(--primary);
     border-radius: 4px;
-    min-height: 200px;
+    min-height: 100px;
     height: 100%;
     color: #212529;
 }
@@ -3265,7 +3278,9 @@ a[href=undefined] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(0, 148, 105, 0.4), rgba(0, 148, 105, 0.4));
+    background: linear-gradient(0deg, rgba(64, 145, 108, 0.4), rgba(64, 145, 108, 0.4));
+    background-blend-mode: darken, normal;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3273,7 +3288,7 @@ a[href=undefined] {
 }
 
 .embedded-video-card:hover .video-overlay {
-    background: linear-gradient(0deg, rgba(0, 148, 105, 0.6), rgba(0, 148, 105, 0.6));
+    background: linear-gradient(0deg, rgba(64, 145, 108, 0.6), rgba(64, 145, 108, 0.6));
 }
 
 .embedded-video-card .video-overlay .play-icon {

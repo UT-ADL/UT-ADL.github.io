@@ -7,8 +7,12 @@ meta: The demo track consists of a loop that takes the vehicle through the city 
 ---
 <div>
     <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-        <div class="md:col-span-8 col-span-12 demo-track">
-            <h2 class="mb-4">{{page.title}}</h2>
+        <div class="md:col-span-8 col-span-12">
+            <h3>{{page.title}}</h3>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mb-12 md:mb-14 xl:mb-16">
+        <div class="md:col-span-9 col-span-12 demo-track">
             <p>Once our experimenting with a new piece of self-driving tech has proven itself reliable in the <a
                     href="/lab/simulation">simulated</a>
                 environment and our <a href="/lab/parking-lot">closed course</a>, we are confident enough to enter
@@ -52,53 +56,44 @@ meta: The demo track consists of a loop that takes the vehicle through the city 
                 </div>1 roundabout
             </span>
 
-            
+            <img alt="Demo track" class="w-full" src="/images/lab/demo-track.jpg">
         </div>
-    </div>
-    <div class="mb-12 pb-12">
-        <img alt="Demo track" class="w-full" src="/images/lab/demo-track.jpg">
     </div>
     <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mb-12 pb-12">
         <div class="col-span-12">
-        <span class="overlane-text">
-            OPENSOURCE MAPS
-        </span>
-        <h3>Opensource maps</h3>
+        <h2>Opensource maps</h2>
         <p>We have mapped the demo track in its entirety and have made them publicly available.<br>
             Go take a look:</p>
         </div>
         <div class="md:col-span-4 col-span-12">
-            <a class="card-anchor" target="_blank" href="/files/tartu_demo_route_lanelet2_map.osm">
+            <a class="card-anchor" target="_blank" href="/files/tartu_demo_route_lanelet2_map.osm" download>
                 <div class="map-card flex items-center">
-                    <i class="fas fa-map mr-4"></i>
+                    <i class="fas fa-map"></i>
                     <div>
-                        <span class="overlane-text">MAP</span>
-                        <br>
-                        <strong>Lanelet2 map</strong>
+                        <h5 class="mb-0">Map</h5>
+                        <p class="text-primary font-semibold mb-0">Lanelet2 map</p>
                     </div>
                 </div>
             </a>
         </div>
         <div class="md:col-span-4 col-span-12">
-            <a class="card-anchor" target="_blank" href="/files/tartu_demo_route_opendrive_map.xodr">
+            <a class="card-anchor" target="_blank" href="/files/tartu_demo_route_opendrive_map.xodr" download>
                 <div class="map-card flex items-center">
-                    <i class="fas fa-map mr-4"></i>
+                    <i class="fas fa-map"></i>
                     <div>
-                        <span class="overlane-text">MAP</span>
-                        <br>
-                        <strong>Opendrive map</strong>
+                        <h5 class="mb-0">Map</h5>
+                        <p class="text-primary font-semibold mb-0">Opendrive map</p>
                     </div>
                 </div>
             </a>
         </div>
         <div class="md:col-span-4 col-span-12">
-            <a class="card-anchor" target="_blank" href="/files/tartu_demo_route_pointcloud_map.pcd">
+            <a class="card-anchor" target="_blank" href="/files/tartu_demo_route_pointcloud_map.pcd" download>
                 <div class="map-card flex items-center">
-                    <i class="fas fa-map mr-4"></i>
+                    <i class="fas fa-map"></i>
                     <div>
-                        <span class="overlane-text">MAP</span>
-                        <br>
-                        <strong>Pointcloud map</strong>
+                        <h5 class="mb-0">Map</h5>
+                        <p class="text-primary font-semibold mb-0">Pointcloud map</p>
                     </div>
                 </div>
             </a>
