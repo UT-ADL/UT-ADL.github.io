@@ -4,7 +4,7 @@ title: Human-vehicle interaction
 icon: /images/icons/human_vehicle_interaction.png
 research_lead: Karl Kruusamäe
 lead_image: "/images/team/karl.jpg"
-lead_description: Associate Professor of Robotics Engineering
+lead_description: Associate Professor of Robotics Engineering, HVI and Teleoperation Team Lead
 lead_email: karl.kruusamae@ut.ee
 ---
 

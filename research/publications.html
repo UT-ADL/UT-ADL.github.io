@@ -41,16 +41,16 @@ meta: Here you can see all our publications, no matter which research area they 
                 <p class="md:flex md:items-center mb-2 md:mb-0 text-dot">, {{ paper.year }} </p>
                 {% endif %}
                 <div class="flex md:flex">
-                    {% if paper.link != blank %}
+                    {% if paper.link and paper.link != "" %}
                     <span class="text-dot dot">&bull;</span><a href="{{ paper.link }}" target="_blank" class="mb-2 md:mb-0"><span class="icon-link"></span></a>
                     {% endif %}
-                    {% if paper.github != blank %}
+                    {% if paper.github and paper.github != "" %}
                     <a href="{{ paper.github }}" target="_blank" class="mb-2 md:mb-0"><span class="icon-github"></span></a>
                     {% endif %}
-                    {% if paper.video != blank %}
+                    {% if paper.video and paper.video != "" %}
                     <a href="{{ paper.video }}" target="_blank" class="mb-2 md:mb-0"><span class="icon-video"></span></a>
                     {% endif %}
-                    {% if paper.file != blank %}
+                    {% if paper.file and paper.file != "" %}
                     <a href="{{ paper.file }}" target="_blank" class="mb-2 md:mb-0"><span class="icon-download"></span></a>
                     {% endif %}
                 </div>

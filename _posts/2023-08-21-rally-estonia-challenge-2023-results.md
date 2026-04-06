@@ -44,3 +44,13 @@ Congratulations to the winners! The teams took quite different approaches to the
 - The winning team incorporated a recurrent neural network (RNN) into the baseline model architecture provided by the organizers.
 - The second place fine-tuned the hyperparameters of the baseline model.
 - The third place focused on the data and tried various preprocessing and data augmentation techniques, while using the baseline model as it was.
+
+<iframe width="780" height="580" src="https://www.youtube.com/embed/H8KQlzrqzh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+![Rally Estonia Challenge 2023 event](/images/blog/rally-estonia-2023-event.jpg){:class="max-w-full h-auto"}
+
+![1st, 2nd and 4th place teams at the award ceremony](/images/blog/rally-estonia-2023-photo1.jpg){:class="max-w-full h-auto"}
+
+![Rally Estonia Challenge 2023](/images/blog/rally-estonia-2023-photo2.jpg){:class="max-w-full h-auto"}
+
+![Rally Estonia Challenge 2023](/images/blog/rally-estonia-2023-photo3.jpg){:class="max-w-full h-auto"}

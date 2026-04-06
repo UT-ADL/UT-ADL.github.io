@@ -2,14 +2,18 @@
 layout: project
 title: Cooperation with the cybersecurity company CybExer Technologies
 category: Project
+webURL: https://cs.ut.ee/en/content/tartu-enhance-cybersecurity-smart-city-solutions
+start_date: 2023-07-20
+end_date: 2024-04-30
+funding: 16 700 EUR
 ---
 
-The project is a collaborative research effort between the Autonomous Driving Lab and CybExer Technologies focusing on smart city cybersecurity. The initiative aims to create a better understanding of cyber threats, enhance the cybersecurity of smart city solutions and promote risk management awareness across Estonia.
+Together with CybExer Technologies, we aim to create a better understanding of cyber threats, enhance the cybersecurity of smart city solutions and raise awareness of risk management across Estonia.
 
-The project utilizes the digital twin of Tartu city centre and employs cyber range technology — an isolated and flexible environment that is used to test the cybersecurity of technologies — to conduct security analysis of smart city mobility solutions.
+Cities and local governments worldwide are investing increasingly more time and budget in smart city solutions to improve the quality of people's lives and the efficiency of services and meet the citizens' needs through technological capabilities.
 
-**Funding:** 16,700 EUR
+During the project, we will provide the [digital twin of Tartu city centre](https://adl.cs.ut.ee/lab/simulation) and conduct a thorough security analysis of the deployed solution. We firmly believe that future smart city solutions must undergo comprehensive analysis and testing, and this can be successfully performed by means of the cyber range developed by CybExer Technologies.
 
-**Duration:** July 20, 2023 – April 30, 2024
+The applied research study led by CybExer Technologies includes investigating the cybersecurity of smart city mobility solutions using the cyber range technology. A cyber range is an isolated and flexible environment that is used to test the cybersecurity of technologies and train cybersecurity professionals.
 
-**Partner:** CybExer Technologies
+The project will investigate the data flows of smart city solutions, conduct security architecture studies and model cross-dependencies of smart city cybersecurity on the cyber range.

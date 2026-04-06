@@ -8,15 +8,19 @@ meta: A neural network training competition organized by the ADL focused on auto
 
 ## {{ page.title }}
 
-The Rally Estonia Challenge is a **neural network training competition** organized by the ADL. The goal is to train
-a neural network to autonomously drive a car in rural areas. To train the models, the lab gathered **over 500 km of
-recordings from the WRC Rally Estonia tracks** across four seasons.
+The Rally Estonia Challenge is a neural network training competition organized by the ADL.
 
-The evaluation process consists of two stages. First, the solutions are tested in
-[VISTA](https://vista.csail.mit.edu/) simulation. Then, the three best teams are evaluated with a real vehicle on
-actual rally tracks. The winner is determined by the fewest safety driver interventions.
+The challenge aims to contribute towards making autonomous transportation in rural areas feasible. To simulate such challenges, we have gathered over 500 km of recordings from the WRC Rally Estonia tracks across four different seasons.
 
-### Spring '23 Competition
+The participants train neural networks to drive on the rural Estonian roads. The results are first evaluated in the [VISTA simulation](https://github.com/vista-simulator/vista) and the three best-scoring teams are evaluated with a real car on the actual rally tracks. The team with the least interventions wins.
+
+![End-to-end driving](/images/teaching/end-to-end.png){:class="max-w-full h-auto"}
+
+## The Competition of Spring '23
+
+For results of Rally Estonia Challenge 2023 see the [blog post](/blog/rally-estonia-challenge-2023-results/).
+
+### Technical summary
 
 **Objective:** Create a data-driven autonomous driving system for a Lexus RX450h.
 

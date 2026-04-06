@@ -275,6 +275,62 @@
   }
 
   /**
+   * Horizontal card slider (replaces LightSlider for research/project carousels)
+   * Works on any <ul> with the class .card-slider or id #researchSlider / #projectSlider
+   */
+  function initCardSliders() {
+    var sliders = document.querySelectorAll('#researchSlider, #projectSlider');
+    sliders.forEach(function (slider) {
+      var items = slider.querySelectorAll('li');
+      if (items.length === 0) return;
+
+      // Wrap in a container for controls
+      var wrapper = document.createElement('div');
+      wrapper.className = 'card-slider-wrapper';
+      slider.parentNode.insertBefore(wrapper, slider);
+      wrapper.appendChild(slider);
+
+      slider.className = (slider.className || '') + ' card-slider';
+
+      // Create prev/next buttons
+      var prevBtn = document.createElement('button');
+      prevBtn.className = 'card-slider-prev';
+      prevBtn.innerHTML = '&#8249;';
+      prevBtn.setAttribute('aria-label', 'Previous');
+      var nextBtn = document.createElement('button');
+      nextBtn.className = 'card-slider-next';
+      nextBtn.innerHTML = '&#8250;';
+      nextBtn.setAttribute('aria-label', 'Next');
+      wrapper.appendChild(prevBtn);
+      wrapper.appendChild(nextBtn);
+
+      // Scroll by one item width
+      function getItemWidth() {
+        var first = items[0];
+        var style = getComputedStyle(first);
+        return first.offsetWidth + parseInt(style.marginRight || 0);
+      }
+
+      prevBtn.addEventListener('click', function () {
+        slider.scrollBy({ left: -getItemWidth(), behavior: 'smooth' });
+      });
+      nextBtn.addEventListener('click', function () {
+        slider.scrollBy({ left: getItemWidth(), behavior: 'smooth' });
+      });
+
+      // Show/hide arrows based on scroll position
+      function updateArrows() {
+        prevBtn.style.display = slider.scrollLeft <= 0 ? 'none' : '';
+        nextBtn.style.display = slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth - 2 ? 'none' : '';
+      }
+      slider.addEventListener('scroll', updateArrows);
+      // Initial state after layout
+      setTimeout(updateArrows, 100);
+      window.addEventListener('resize', updateArrows);
+    });
+  }
+
+  /**
    * Back-to-top button
    */
   function initBackToTop() {
@@ -303,6 +359,7 @@
     initHotspots();
     initMobileNav();
     initSlider();
+    initCardSliders();
     initBackToTop();
   });
 })();

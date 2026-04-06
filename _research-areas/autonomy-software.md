@@ -9,8 +9,8 @@ lead_email: tambet.matiisen@ut.ee
 twitter: https://twitter.com/tambetm
 ---
 
-The autonomy software team focuses on developing and evaluating open-source software for autonomous driving. Our main software platform is **Autoware Mini** — a minimalistic Python-based autonomy software that we developed in-house with a permissive MIT license.
+Our autonomy software group aims to develop a foundation for other groups to build upon. Other research teams can conduct experiments and suggest improvements, which we then integrate into the platform.
 
-Autoware Mini is built on Python and ROS 1, making it easy to get started with for teaching and research. It includes modules for localization, global planning, obstacle detection, traffic light detection, local planning, and trajectory following.
+![Autonomy software architecture](/images/research/base_autonomy_block.png){:class="max-w-full h-auto"}
 
-We deploy Autoware Mini in real traffic on our Lexus RX450h test vehicle and use it as the primary platform for both research and education at the lab.
+Currently, our base platform is built using [Autoware.AI](https://www.autoware.org/), specifically the [Open Access Pilot](https://gitlab.com/astuff/autoware.ai) fork created by [AutonomouStuff](https://autonomoustuff.com/). We have tested the platform by successfully driving it in the city center of Tartu, and also participated in the Tartu on-demand transportation project, providing autonomous rides to real passengers on the outskirts of Tartu.
