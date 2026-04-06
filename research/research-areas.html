@@ -5,32 +5,18 @@ permalink: /research/research-areas
 subtitle: Research
 meta: Making cars drive by themselves is a big task. A huge task. To help you (and us) better understand what is needed to make it happen, we have divided our work into focus areas.
 ---
-<div>
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-        <div class="md:col-span-8 col-span-12 mb-6">
-            <h2 class="mb-4">{{page.title}}</h2>
-            <p>Making cars drive by themselves is a big task. A huge task. To help you (and us) better understand what
-                is
-                needed to make it happen, we have divided our work into focus areas.</p>
-        </div>
+<div class="grid grid-cols-1 tablet:grid-cols-6 gap-4 mb-12 md:mb-14 xl:mb-16">
+    <div class="tablet:col-span-4">
+        <h3>{{page.title}}</h3>
+        <p class="mb-0">Making cars drive by themselves is a big task. A huge task. To help you (and us) better understand what is needed to make it happen, we have divided our work into focus areas.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mb-12">
-        {% assign posts_sorted = site.research-areas | sort:"title" %}
-        {% for post in posts_sorted %}
-        <div class="md:col-span-4 col-span-12 mb-6">
-            <a class="research-card-anchor" href="{{post.url}}">
-                <div class="research-card">
-                    <div class="research-card-body flex">
-                        <h5 class="flex items-center">
-                            <div class="flex items-center justify-center">
-                                <img src="{{post.icon}}" style="margin-right: 1vw"/>
-                            </div>
-                            {{post.title}}
-                        </h5>
-                    </div>
-                </div>
-            </a>
-        </div>
-        {% endfor %}
-    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+    {% assign posts_sorted = site.research-areas | sort:"title" %}
+    {% for post in posts_sorted %}
+    <a href="{{post.url}}" class="md:col-span-6 tablet:col-span-4 border border-green px-4 py-8 text-primary flex items-center hover:bg-bgGreen hover:bg-opacity-25 transition-colors duration-300 ease-in-out hover:border-0 hover:border-transparent green-shadow">
+        <img src="{{post.icon}}" class="mr-2 research-img"/>
+        <p class="mb-0 font-semibold">{{post.title}}</p>
+    </a>
+    {% endfor %}
 </div>

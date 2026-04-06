@@ -17,28 +17,61 @@
     </div>
     <div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
         <main role="main">
-            <h2 class="w-1/2">{{page.title}}</h2>
             <div class="grid grid-cols-1 tablet:grid-cols-12 gap-4">
-                <div class="tablet:col-span-9 mt-2 pr-12">
-                    {{content}}
+                <div class="tablet:col-span-9 content-formatted">
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <header class="post-header md:col-span-2">
+                            {% if page.category %}
+                            <h5>{{ page.category }}</h5>
+                            {% endif %}
+                            <h3 class="post-title">{{ page.title }}</h3>
+                        </header>
+                    </div>
+                    <div>
+                        <article class="post">
+                            <div class="post-content">
+                                <div class="post-body content-formatted">{{content}}</div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-                <div class="tablet:col-span-3 project-channels mt-2 tablet:px-4 xl:px-12">
-                    <hr />
-                    <span class="overlane-text">PROJECT CHANNELS</span>
-                    <br>
-                    {% if page.twitter != null and page.twitter != "" %}
-                    <a href="{{page.twitter}}"><i class="fab fa-twitter"></i></a>
+                <div class="tablet:col-span-3 tablet:px-4 xl:px-12">
+                    {% if page.webURL != null or page.twitter != null or page.facebook != null or page.instagram != null %}
+                    <div class="border-b border-green py-8">
+                        <h5 class="mb-4">Project links</h5>
+                        <div class="flex items-center">
+                            {% if page.webURL != null and page.webURL != "" %}
+                            <a href="{{page.webURL}}" target="_blank" class="icon-link inline-block mr-4"></a>
+                            {% endif %}
+                            {% if page.twitter != null and page.twitter != "" %}
+                            <a href="{{page.twitter}}" class="icon-twitter mr-4" target="_blank"></a>
+                            {% endif %}
+                            {% if page.facebook != null and page.facebook != "" %}
+                            <a href="{{page.facebook}}" class="icon-facebook" target="_blank"></a>
+                            {% endif %}
+                        </div>
+                    </div>
                     {% endif %}
-                    {% if page.facebook != null and page.facebook != "" %}
-                    <a href="{{page.facebook}}"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+            <div class="relative mt-12 md:mt-16">
+                {% assign allProjects = site.projects %}
+                <ul id="projectSlider" class="flex">
+                    {% for project in allProjects %}
+                    {% if project.title != page.title %}
+                    <li>
+                        <a href="{{project.url}}" class="md:col-span-6 tablet:col-span-4 border border-green py-4 px-6 text-primary block flex flex-col justify-start h-full hover:bg-bgGreen hover:bg-opacity-25 transition-colors duration-300 ease-in-out hover:border-0 hover:border-transparent green-shadow">
+                            {% if project.category %}
+                            <h5>{{ project.category }}</h5>
+                            {% endif %}
+                            <p class="mb-4 font-semibold leading-4 line-clamp-2">{{project.title}}</p>
+                        </a>
+                    </li>
                     {% endif %}
-                    {% if page.instagram != null and page.instagram != "" %}
-                    <a href="{{page.instagram}}"><i class="fab fa-instagram-square"></i></a>
-                    {% endif %}
-                    {% if page.webURL != null and page.webURL != "" %}
-                    <a href="{{page.webURL}}"><i class="fas fa-globe"></i></a>
-                    {% endif %}
-                    <hr />
+                    {% endfor %}
+                </ul>
+                <div class="absolute left-0 bottom-11px">
+                    <a href="/research/projects" class="custom-btn">All projects</a>
                 </div>
             </div>
         </main>

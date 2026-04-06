@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Dorpat Autonomous Driving Benchmark
+category: Project
 webURL: https://eik.ut.ee/tu-investeerib-eksperimentaalarendusse-pea-pool-miljonit-eurot/
 ---
 

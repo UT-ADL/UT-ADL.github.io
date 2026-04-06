@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Cooperation with the cybersecurity company CybExer Technologies
+category: Project
 ---
 
 The project is a collaborative research effort between the Autonomous Driving Lab and CybExer Technologies focusing on smart city cybersecurity. The initiative aims to create a better understanding of cyber threats, enhance the cybersecurity of smart city solutions and promote risk management awareness across Estonia.

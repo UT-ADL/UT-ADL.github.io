@@ -5,20 +5,17 @@ permalink: /research/publications
 subtitle: Research
 meta: Here you can see all our publications, no matter which research area they belong to.
 ---
-<div>
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-        <div class="md:col-span-8 col-span-12">
-            <h2>{{ page.title }}</h2>
-            <p class="md:pt-4">Here you can see <em>all</em> our publications, no matter which research area they belong to.</p>
-        </div>
+<div class="grid grid-cols-1 tablet:grid-cols-6">
+    <div class="tablet:col-span-4">
+        <h3>{{ page.title }}</h3>
+        Here you can see <em>all</em> our publications, no matter which research area they belong to.
     </div>
 </div>
-<div class="spacer-medium"></div>
 <div>
     {% assign papers = site.data.research-papers | sort: 'year' | reverse %}
     {% assign years = papers | map: 'year' | uniq %}
 
-    <div class="menu-tags" data-filter-group="year" data-filter-target="#publication-list">
+    <div class="flex media-items menu-tags mt-12 md:mt-16 mb-2 x-scroll" data-filter-group="year" data-filter-target="#publication-list">
         <a class="menu-link no-close active" data-filter-value="all" href="#">All publications</a>
         {% for year in years %}
         <a class="menu-link no-close" data-filter-value="{{ year }}" href="#">{{ year }}</a>
@@ -27,39 +24,36 @@ meta: Here you can see all our publications, no matter which research area they 
 
     <div id="publication-list">
         {% for paper in papers %}
-        <div class="filter-item item-row" data-filter-year="{{ paper.year }}">
+        <div class="filter-item border-b border-green py-8 block" data-filter-year="{{ paper.year }}">
             {% if paper.link != blank %}
-            <a class="item-title" href="{{ paper.link }}" target="_blank">{{ paper.title }}</a>
+            <a href="{{ paper.link }}" target="_blank" class="text-primary font-semibold block">{{ paper.title }}</a>
             {% else %}
-            <span class="item-title" style="cursor: default;">{{ paper.title }}</span>
+            <span class="text-primary font-semibold block" style="cursor: default;">{{ paper.title }}</span>
             {% endif %}
-            <div class="item-meta">
+            <div class="md:flex md:items-center">
                 {% if paper.authors != blank %}
-                <span>{{ paper.authors }}</span>
+                <p class="mb-2 md:mb-0 text-dot">{{ paper.authors }} </p>
                 {% endif %}
                 {% if paper.conference != blank %}
-                <span class="dot">&bull;</span>
-                <span>{{ paper.conference }}</span>
+                <p class="md:flex md:items-center mb-2 md:mb-0 text-dot"> <span class="dot text-dot">&bull;</span> {{ paper.conference }} </p>
                 {% endif %}
                 {% if paper.year != blank %}
-                <span class="dot">&bull;</span>
-                <span>{{ paper.year }}</span>
+                <p class="md:flex md:items-center mb-2 md:mb-0 text-dot">, {{ paper.year }} </p>
                 {% endif %}
-                <span class="item-links">
+                <div class="flex md:flex">
                     {% if paper.link != blank %}
-                    <span class="dot">&bull;</span>
-                    <a href="{{ paper.link }}" target="_blank" title="Paper link"><i class="fas fa-globe"></i></a>
+                    <span class="text-dot dot">&bull;</span><a href="{{ paper.link }}" target="_blank" class="mb-2 md:mb-0"><span class="icon-link"></span></a>
                     {% endif %}
                     {% if paper.github != blank %}
-                    <a href="{{ paper.github }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="{{ paper.github }}" target="_blank" class="mb-2 md:mb-0"><span class="icon-github"></span></a>
                     {% endif %}
                     {% if paper.video != blank %}
-                    <a href="{{ paper.video }}" target="_blank" title="Video"><i class="fas fa-video"></i></a>
+                    <a href="{{ paper.video }}" target="_blank" class="mb-2 md:mb-0"><span class="icon-video"></span></a>
                     {% endif %}
                     {% if paper.file != blank %}
-                    <a href="{{ paper.file }}" target="_blank" title="Download"><i class="fas fa-file"></i></a>
+                    <a href="{{ paper.file }}" target="_blank" class="mb-2 md:mb-0"><span class="icon-download"></span></a>
                     {% endif %}
-                </span>
+                </div>
             </div>
         </div>
         {% endfor %}

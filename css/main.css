@@ -3116,7 +3116,7 @@ a[href=undefined] {
 /* --- Publication/thesis/media item rows --- */
 .item-row {
     border-bottom: 1px solid var(--primary);
-    padding: 1.5rem 0;
+    padding: 2rem 0;
     display: block;
 }
 
@@ -3161,34 +3161,18 @@ a[href=undefined] {
 /* --- Thesis topic expandable cards --- */
 .topic-card {
     border-bottom: 1px solid var(--primary);
-    padding: 1.5rem 0;
+    padding: 2rem 0 1rem;
     overflow: hidden;
 }
 
 .topic-card summary {
     padding: 0;
     cursor: pointer;
-    font-weight: 600;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .topic-card summary::-webkit-details-marker {
     display: none;
-}
-
-.topic-card summary::after {
-    content: "+";
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: var(--primary);
-    transition: transform 0.2s;
-}
-
-.topic-card[open] summary::after {
-    content: "-";
 }
 
 .topic-card .topic-details {
@@ -3448,4 +3432,233 @@ a[href=undefined] {
 .research-details a:focus,
 .research-details a:hover {
     color: #009469;
+}
+
+/* --- Voog-style CSS mask icons --- */
+.car {
+    display: flex;
+    align-items: center;
+}
+.car::before {
+    content: "";
+    -webkit-mask: url(/assets/car.svg) no-repeat center/contain;
+    mask: url(/assets/car.svg) no-repeat center/contain;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #009469;
+    margin-right: 4px;
+}
+
+.envelope {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.envelope::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #009469;
+    margin-right: 8px;
+    -webkit-mask: url(/assets/envelope.svg) no-repeat center/contain;
+    mask: url(/assets/envelope.svg) no-repeat center/contain;
+}
+
+.dot {
+    display: inline;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.text-dot {
+    --tw-text-opacity: 1;
+    color: rgba(92, 92, 92, var(--tw-text-opacity));
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+}
+.icon-link::before {
+    content: "";
+    -webkit-mask: url(/assets/link.svg) no-repeat center/contain;
+    mask: url(/assets/link.svg) no-repeat center/contain;
+    display: block;
+    width: 20px;
+    height: 18px;
+    background-color: #009469;
+}
+.icon-link.research-area::before {
+    margin-right: 16px;
+}
+
+.icon-github {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+.icon-github::before {
+    content: "";
+    -webkit-mask: url(/assets/github.svg) no-repeat center/contain;
+    mask: url(/assets/github.svg) no-repeat center/contain;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #009469;
+}
+
+.icon-video {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+.icon-video::before {
+    content: "";
+    -webkit-mask: url(/assets/video.svg) no-repeat center/contain;
+    mask: url(/assets/video.svg) no-repeat center/contain;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #009469;
+}
+
+.icon-download {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+.icon-download::before {
+    content: "";
+    -webkit-mask: url(/assets/download.svg) no-repeat center/contain;
+    mask: url(/assets/download.svg) no-repeat center/contain;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    background-color: #009469;
+}
+
+.cap {
+    display: flex;
+    align-items: center;
+}
+.cap::before {
+    content: "";
+    -webkit-mask: url(/assets/cap.svg) no-repeat center/contain;
+    mask: url(/assets/cap.svg) no-repeat center/contain;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #009469;
+    margin-right: 8px;
+}
+
+.icon-user {
+    display: flex;
+    align-items: center;
+}
+.icon-user::before {
+    content: "";
+    -webkit-mask: url(/assets/user.svg) no-repeat no-repeat center/contain;
+    mask: url(/assets/user.svg) no-repeat no-repeat center/contain;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #009469;
+    margin-right: 8px;
+}
+
+.icon-file {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+.icon-file::before {
+    content: "";
+    -webkit-mask: url(/assets/file.svg) no-repeat center/contain;
+    mask: url(/assets/file.svg) no-repeat center/contain;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    background-color: #009469;
+}
+.icon-file.thesis {
+    margin-left: 0;
+}
+.icon-file.thesis::before {
+    margin-right: 8px;
+    width: 12px;
+    height: 15px;
+}
+
+.icon-twitter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+.icon-twitter::before {
+    content: "";
+    -webkit-mask: url(/assets/twitter.svg) no-repeat center/contain;
+    mask: url(/assets/twitter.svg) no-repeat center/contain;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #009469;
+}
+
+.icon-facebook {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+.icon-facebook::before {
+    content: "";
+    -webkit-mask: url(/assets/facebook.svg) no-repeat center/contain;
+    mask: url(/assets/facebook.svg) no-repeat center/contain;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #009469;
+}
+
+.icon-instagram {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+.icon-instagram::before {
+    content: "";
+    -webkit-mask: url(/assets/instagram.svg) no-repeat center/contain;
+    mask: url(/assets/instagram.svg) no-repeat center/contain;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #009469;
+}
+
+.icon-globe {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+.icon-globe::before {
+    content: "";
+    -webkit-mask: url(/assets/globe.svg) no-repeat center/contain;
+    mask: url(/assets/globe.svg) no-repeat center/contain;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #009469;
 }

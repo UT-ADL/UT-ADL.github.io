@@ -5,72 +5,71 @@ permalink: /teaching/thesis-topics
 subtitle: Teaching
 meta: See all the available thesis topics and don't hesitate to contact us, should your own idea of a self-driving topic not be listed!
 ---
-<div>
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-        <div class="md:col-span-8">
-            <h2>{{ page.title }}</h2>
-            <p class="md:pt-4">So you're thinking of making the culmination of your studies about self-driving?</p>
-            <p>Good, because we need all the help we can get. See all the available thesis topics and don't hesitate to
-                contact us, should your own idea of a self-driving topic not be listed!</p>
-        </div>
+<div class="grid grid-cols-1 tablet:grid-cols-6 gap-4 mb-2 md:mb-4 xl:mb-8 pb-2">
+    <div class="tablet:col-span-4">
+        <h3>{{ page.title }}</h3>
+        So you're thinking of making the culmination of your studies about self-driving?
+        Good, because we need all the help we can get. See all the available thesis topics and don't hesitate to
+        contact us, should your own idea of a self-driving topic not be listed!
     </div>
 </div>
-<div class="spacer-medium"></div>
 <div>
-    <div class="menu-tags" data-filter-group="level" data-filter-target="#topics-list">
-        <a class="menu-link no-close active" data-filter-value="all" href="#">All topics</a>
-        <a class="menu-link no-close" data-filter-value="bsc" href="#">BSc</a>
-        <a class="menu-link no-close" data-filter-value="msc" href="#">MSc</a>
-        <a class="menu-link no-close" data-filter-value="phd" href="#">PhD</a>
-    </div>
+    {% for topic in site.data.thesis-topics %}
+    <details class="border-b border-green pt-8 pb-4">
+        <summary>
+            {% assign degrees = "" %}
+            {% if topic.availability.BSc %}{% assign degrees = degrees | append: "BSC," %}{% endif %}
+            {% if topic.availability.MSc %}{% assign degrees = degrees | append: "MSC," %}{% endif %}
+            {% if topic.availability.PhD %}{% assign degrees = degrees | append: "PHD," %}{% endif %}
+            {% assign degrees = degrees | split: ',' | compact | join: ', ' %}
 
-    <div id="topics-list" class="mt-6">
-        {% for topic in site.data.thesis-topics %}
-        {% assign levels = "" %}
-        {% if topic.availability.BSc %}{% assign levels = levels | append: "bsc," %}{% endif %}
-        {% if topic.availability.MSc %}{% assign levels = levels | append: "msc," %}{% endif %}
-        {% if topic.availability.PhD %}{% assign levels = levels | append: "phd," %}{% endif %}
-        <div class="filter-item" data-filter-level="{{ levels | split: ',' | join: ',' }}">
-            <details class="topic-card">
-                <summary>{{ topic.title }}</summary>
-                <div class="topic-details">
+            <div class="flex">
+                {% if topic.type != blank %}
+                <h5>{{ topic.type }}</h5>
+                {% endif %}
+                {% if degrees != "" %}
+                <h5>{% if topic.type != blank %}<span class="dot my-4 text-green">&bull;</span>{% endif %}{{ degrees }}</h5>
+                {% endif %}
+            </div>
+            <div class="flex justify-end cursor-pointer"><h3 class="mb-4 mr-auto">{{ topic.title }}</h3><span class="chevron-down"></span></div>
+        </summary>
+        <div class="grid grid-cols-1 tablet:grid-cols-12 gap-4 mt-8 mb-8 md:mb-10 xl:mb-12">
+            <div class="tablet:col-start-4 tablet:col-span-7">
+                <div class="sm:flex">
+                    {% if topic.file != null and topic.file != "#" %}
+                    <h5><a href="{{ topic.file }}" target="_blank" class="inline-flex flex-wrap"><span class="icon-file thesis"></span>Thesis overview</a></h5>
+                    {% endif %}
+                    {% assign supervisors = "" %}
+                    {% for lead in topic.leads %}
+                        {% if supervisors != "" %}{% assign supervisors = supervisors | append: ", " %}{% endif %}
+                        {% assign supervisors = supervisors | append: lead.name %}
+                    {% endfor %}
+                    {% if supervisors != "" %}
+                    <h5 class="tablet:ml-6"><span class="icon-user">Supervisor: {{ supervisors }}</span></h5>
+                    {% endif %}
+                </div>
+                <div>
                     {% if topic.description != blank %}
                     <p>{{ topic.description }}</p>
                     {% endif %}
 
-                    <div class="mb-4">
-                        {% if topic.availability.BSc %}
-                        <span class="badge-degree badge-available">BSc</span>
-                        {% else %}
-                        <span class="badge-degree badge-unavailable">BSc</span>
-                        {% endif %}
-                        {% if topic.availability.MSc %}
-                        <span class="badge-degree badge-available">MSc</span>
-                        {% else %}
-                        <span class="badge-degree badge-unavailable">MSc</span>
-                        {% endif %}
-                        {% if topic.availability.PhD %}
-                        <span class="badge-degree badge-available">PhD</span>
-                        {% else %}
-                        <span class="badge-degree badge-unavailable">PhD</span>
-                        {% endif %}
-                    </div>
-
+                    {% assign emails = "" %}
                     {% for lead in topic.leads %}
-                    <div class="mb-2">
-                        <i class="fas fa-envelope" style="color: var(--primary);"></i>
-                        <a href="mailto:{{ lead.email }}">{{ lead.name }}</a>
-                    </div>
+                        {% if emails != "" %}{% assign emails = emails | append: "," %}{% endif %}
+                        {% assign emails = emails | append: lead.email %}
                     {% endfor %}
 
-                    {% if topic.file != null and topic.file != "#" %}
-                    <div class="mt-2">
-                        <a href="{{ topic.file }}" target="_blank" class="custom-btn">View details</a>
+                    <div class="flex mt-10 items-center">
+                        {% if emails != "" %}
+                        <a href="mailto:{{ emails }}" class="custom-btn">Email theses supervisor</a>
+                        {% endif %}
+                        {% if topic.file != null and topic.file != "#" %}
+                        <a href="{{ topic.file }}" target="_blank" class="text-orange ml-10">See thesis overview</a>
+                        {% endif %}
                     </div>
-                    {% endif %}
                 </div>
-            </details>
+            </div>
         </div>
-        {% endfor %}
-    </div>
+    </details>
+    {% endfor %}
 </div>

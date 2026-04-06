@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Vision-based off-road navigation with geographical hints
+category: Project
 ---
 
 The project aims to demonstrate feasibility of off-road autonomous navigation using vision-based sensors with imprecise satellite navigation support. Challenges addressed include: real-time navigation decisions without pre-mapped areas; outdated maps that don't reflect current environmental conditions; determining passability through puddles or tall grass using camera data rather than LIDAR.

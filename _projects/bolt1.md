@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Applied Research on Development of Autonomous Driving Lab for Level 4 Autonomy
+category: Project
 webURL: https://www.etis.ee/Portal/Projects/Display/56dd942f-308e-43b8-9938-05a98e960798?lang=ENG
 ---
 
