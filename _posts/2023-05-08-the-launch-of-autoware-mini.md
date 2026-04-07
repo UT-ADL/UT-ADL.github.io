@@ -23,4 +23,4 @@ Together with Autoware Mini, we are also releasing a new version of the [digital
 
 You may also want to check out Tambet's introduction of Autoware Mini during the UniTartuCS' Data Science Seminar, where he elaborates on the reasoning behind creating Autoware Mini and its technical implementation.
 
-<iframe src="https://www.youtube.com/embed/G-oyvkZzD5A?start=8655" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9;"></iframe>
+{% include youtube.html id="G-oyvkZzD5A" start="8655" %}

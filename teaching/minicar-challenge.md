@@ -39,7 +39,7 @@ The DonkeyCar S1 platform is equipped with a frontal camera which is the main se
 
 Email: [ardi.tampuu@ut.ee](mailto:ardi.tampuu@ut.ee) to participate.
 
-![DonkeyCar S1](/images/teaching/donkeycar.png){:class="max-w-full h-auto"}
+![DonkeyCar S1](/images/teaching/donkeycar.png)
 
 ## The minicar
 
@@ -72,7 +72,7 @@ Results of the 2023 competition:
 **2nd place (500 euros prize):** Mihkel Lepson and Artur Tuttar, score 0.054, [GitHub](https://github.com/Henrik895/ml-donkey-car-project)\\
 **3rd place (250 euros prize):** Pavlo Pyvovar, score 0.020, [github](https://github.com/Pavel-Pyvovar/ADL-Minicar-Challenge-2023)
 
-![Winners 2023](/images/teaching/winners_2023.png){:class="max-w-full h-auto" style="max-width: 410px; margin: 0 auto; display: block;"}
+![Winners 2023](/images/teaching/winners_2023.png){:style="max-width: 410px; margin: 0 auto; display: block;"}
 
 The hardware platform was DonkeyCar. The [rules](https://docs.google.com/document/d/1lKWmzDgB0UsW0jYLL02xssNvKfSIyu-uawcHl9se4VY/edit) give a good idea of the task. The main task was driving in a toy town with the challenges of avoiding pedestrians and static vehicles. Every infraction would multiply the score by a number smaller than one. Also, the percentage of the route completed autonomously will count. An example scoring route was produced for the students prior to the competition to explain scoring: ([see the video](https://drive.google.com/file/d/1FDUAhA5FW3Hfd9vd9KHWDOfSS8Ioa40N/view?usp=drive_link))
 
@@ -106,7 +106,7 @@ The rewarded teams were:
 **2nd place:** not awarded\\
 **3rd place:** not awarded
 
-![Winners 2022](/images/teaching/winners_2022.jpeg){:class="max-w-full h-auto" style="max-width: 466px; margin: 0 auto; display: block;"}
+![Winners 2022](/images/teaching/winners_2022.jpeg){:style="max-width: 466px; margin: 0 auto; display: block;"}
 
 ## Competition in January 2021
 

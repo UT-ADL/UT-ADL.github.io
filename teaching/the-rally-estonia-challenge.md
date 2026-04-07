@@ -15,7 +15,7 @@ The challenge aims to contribute towards making autonomous transportation in rur
 
 The participants train neural networks to drive on the rural Estonian roads. The results are first evaluated in the [VISTA simulation](https://github.com/vista-simulator/vista) and the three best-scoring teams are evaluated with a real car on the actual rally tracks. The team with the least interventions wins.
 
-![End-to-end driving](/images/teaching/end-to-end.png){:class="max-w-full h-auto"}
+![End-to-end driving](/images/teaching/end-to-end.png)
 
 ## The Competition of Spring '23
 
@@ -79,7 +79,7 @@ The dataset is accessible only to the participants of the competition in directo
 
 We suggest starting with the first dataset and performing all training on HPC cluster, because the dataset is readily available there. If you want to make use of the second dataset, please consult with organizers first.
 
-![264x68 will serve as your input](/images/teaching/rally-input-format.png){:class="max-w-full h-auto" style="display: block; margin: 0 auto; max-width: 599px;"}
+![264x68 will serve as your input](/images/teaching/rally-input-format.png){:style="display: block; margin: 0 auto; max-width: 599px;"}
 
 During the virtual deployment in the VISTA simulation, computations will be done on a server with NVIDIA RTX 2080Ti GPU at a frame rate of 10Hz, using the [ADL VISTA evaluation codebase](https://github.com/UT-ADL/vista-evaluation/){:target="_blank"} and [ADL version of VISTA](https://github.com/UT-ADL/vista/){:target="_blank"}. During the final deployment in the real world, computations will be done on the AStuff Spectra computer on the car with NVIDIA RTX 2080Ti GPU.
 

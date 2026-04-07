@@ -87,9 +87,7 @@ The child view Figma prototype can be found here:
 
 From the user interviews it became quickly clear that any new technology induces anxiety in elderly people. Therefore making sure they feel safe and in control at all times seemed especially crucial. Also elderly people might need physical assistance in getting into the car or fastening the seat belt. In practice a family member is usually giving a ride to their elders, so convincing them to switch to robotaxi is probably going to be challenging. Nevertheless the team did their best to deliver the least intimidating experience for them.
 
-| | | |
-|:---:|:---:|:---:|
-| ![Elderly people screen 1](/images/blog/robotaxi-elderly-screen1.png) | ![Elderly people screen 2](/images/blog/robotaxi-elderly-screen2.png) | ![Elderly people screen 3](/images/blog/robotaxi-elderly-screen3.png) |
+![Elderly people screen 1](/images/blog/robotaxi-elderly-screen1.png) ![Elderly people screen 2](/images/blog/robotaxi-elderly-screen2.png) ![Elderly people screen 3](/images/blog/robotaxi-elderly-screen3.png)
 
 Some key features of the solution:
 
@@ -138,9 +136,7 @@ The Figma prototype of the app can be found here:
 
 Another tourist team focused more on the regular tourist experience, which is sightseeing. Navigating around in foreign city can be a stressful experience, both with public transportation and a rental car. Robotaxi provides a private experience that does not waste your time in getting lost or looking for a parking place.
 
-| | | |
-|:---:|:---:|:---:|
-| ![Sightseeing screen 1](/images/blog/robotaxi-sightseeing-screen1.png) | ![Sightseeing screen 2](/images/blog/robotaxi-sightseeing-screen2.png) | ![Sightseeing screen 3](/images/blog/robotaxi-sightseeing-screen3.png) |
+![Sightseeing screen 1](/images/blog/robotaxi-sightseeing-screen1.png) ![Sightseeing screen 2](/images/blog/robotaxi-sightseeing-screen2.png) ![Sightseeing screen 3](/images/blog/robotaxi-sightseeing-screen3.png)
 
 The key features of the experience:
 

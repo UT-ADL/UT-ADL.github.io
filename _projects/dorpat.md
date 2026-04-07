@@ -14,19 +14,9 @@ Dorpat Autonomous Driving Challenge is the world's first benchmark of real-world
 
 <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mb-12 pb-12">
     <div class="md:col-span-6">
-        <div class="embedded-video-card" data-video-src="https://www.youtube.com/embed/oPd3HMmZQ6M">
-            <img alt="Simulation demo" src="https://img.youtube.com/vi/oPd3HMmZQ6M/maxresdefault.jpg" />
-            <div class="video-overlay">
-                <i class="far fa-play-circle play-icon"></i>
-            </div>
-        </div>
+        {% include youtube.html id="oPd3HMmZQ6M" quality="maxresdefault" %}
     </div>
     <div class="md:col-span-6">
-        <div class="embedded-video-card" data-video-src="https://www.youtube.com/embed/ANxnvw-rceI">
-            <img alt="Simulation demo" src="https://img.youtube.com/vi/ANxnvw-rceI/maxresdefault.jpg" />
-            <div class="video-overlay">
-                <i class="far fa-play-circle play-icon"></i>
-            </div>
-        </div>
+        {% include youtube.html id="ANxnvw-rceI" quality="maxresdefault" %}
     </div>
 </div>

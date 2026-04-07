@@ -1,0 +1,7 @@
+<div class="embedded-video-card" data-video-src="https://www.youtube.com/embed/{{ include.id }}{% if include.start %}?start={{ include.start }}{% endif %}">
+    <img alt="{{ include.title | default: 'YouTube video' }}" src="https://img.youtube.com/vi/{{ include.id }}/{{ include.quality | default: 'hqdefault' }}.jpg" />
+    <div class="video-overlay">
+        <i class="far fa-play-circle play-icon"></i>
+    </div>
+    {% if include.title %}<div class="video-title">{{ include.title }}</div>{% endif %}
+</div>

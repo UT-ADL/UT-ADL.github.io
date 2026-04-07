@@ -11,7 +11,7 @@ language: en
 author: Tambet Matiisen
 ---
 
-![Fourth place winners team Benatas posing with the car](/images/blog/rally-estonia-2023-event.jpg){:class="max-w-full h-auto"}
+![Fourth place winners team Benatas posing with the car](/images/blog/rally-estonia-2023-event.jpg)
 
 **Photo:** Fourth place winners team Benatas posing with the car.
 
@@ -21,7 +21,7 @@ The evaluation of the submitted driving models took place in two stages. As a fi
 
 A Vista simulation is created based on a real-world recording, but as the driving model feeds driving commands to the simulator, the camera viewpoint is artificially shifted as if the car had moved.
 
-<iframe src="https://www.youtube.com/embed/_oJ2Q4iQ1KE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9;"></iframe>
+{% include youtube.html id="_oJ2Q4iQ1KE" %}
 
 **Video:** Evaluation of a model in a Vista simulation.
 
@@ -29,43 +29,42 @@ If the car diverges more than 1 meter from the path followed in the underlying r
 
 **Table 1:** Vista simulation results. The first part of the model name in the first column refers to the team name, followed by the submission number and model type in parenthesis.
 
-<table style="border-collapse: collapse; font-size: 14px; text-align: center;">
-<tr><td style="background: #bdbdbd; border: 1px solid #000; padding: 2pt;">Model (type)</td><td style="background: #bdbdbd; border: 1px solid #000; padding: 2pt;">Crashes (Total)</td><td style="background: #bdbdbd; border: 1px solid #000; padding: 2pt;">Whiteness eff (Avg)</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">Anything_3 (conditional)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">167</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">2.718</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">Anything_5 (conditional)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">187</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">2.719</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">RallyPilot_2 (conditioanl)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">202</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">2.618</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">Snake_1 (conditional)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">208</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">2.792</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">Benatas_1 (steering)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">208</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">5.308</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">Benatas_2** (conditional)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">208</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">2.6</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">kkh_1.onnx (conditional)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">209</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">2.676</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">Snake_5 (conditional)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">210</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">2.879</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">Snake_2 (conditional)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">212</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">2.682</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">Anything_1 (conditional)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">215</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">2.828</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">FM_1 (conditional)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">218</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">2.554</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">SCMLsolo_2 (conditional)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">220</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">3.002</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">AA_0 (conditional)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">224</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">2.736</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">Anything_2 (conditional)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">225</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">2.922</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">RallyPilot_1 (conditional)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">228</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">2.828</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">shelduck_1 (steering)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">230</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">4.348</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">Snake_4 (conditional)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">231</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">2.84</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">SCMLsolo_1 (steering)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">232</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">5.892</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">RallyPiolt_0 (conditional)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">233</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">2.89</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">Snake_3 (conditional)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">235</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">3.022</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">DS_1 (conditional)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">236</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">3.024</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">darel_1 (conditional)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">237</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">2.753</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">Anything_4 (conditional)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">242</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">3.029</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">Snake_6** (conditional)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">248</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">2.667</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">leo_1 (steering)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">249</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">3.994</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">leo_2 (steering)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">255</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">3.623</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">leo_3 (steering)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">255</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">4.071</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">bebera_ct_0 (conditional)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">1441</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">17.23</td></tr>
-<tr><td style="background: #fff; border: 1px solid #000; padding: 2pt;">DL_1 (steering)</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">1607</td><td style="background: #fff; border: 1px solid #000; padding: 2pt;">5.453</td></tr>
-<tr><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">laughingthrush_0 (steering)</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">1647</td><td style="background: #f3f3f3; border: 1px solid #000; padding: 2pt;">10.23</td></tr>
-</table>
+| Model (type) | Crashes (Total) | Whiteness eff (Avg) |
+|---|---:|---:|
+| Anything_3 (conditional) | 167 | 2.718 |
+| Anything_5 (conditional) | 187 | 2.719 |
+| RallyPilot_2 (conditional) | 202 | 2.618 |
+| Snake_1 (conditional) | 208 | 2.792 |
+| Benatas_1 (steering) | 208 | 5.308 |
+| Benatas_2\*\* (conditional) | 208 | 2.6 |
+| kkh_1.onnx (conditional) | 209 | 2.676 |
+| Snake_5 (conditional) | 210 | 2.879 |
+| Snake_2 (conditional) | 212 | 2.682 |
+| Anything_1 (conditional) | 215 | 2.828 |
+| FM_1 (conditional) | 218 | 2.554 |
+| SCMLsolo_2 (conditional) | 220 | 3.002 |
+| AA_0 (conditional) | 224 | 2.736 |
+| Anything_2 (conditional) | 225 | 2.922 |
+| RallyPilot_1 (conditional) | 228 | 2.828 |
+| shelduck_1 (steering) | 230 | 4.348 |
+| Snake_4 (conditional) | 231 | 2.84 |
+| SCMLsolo_1 (steering) | 232 | 5.892 |
+| RallyPilot_0 (conditional) | 233 | 2.89 |
+| Snake_3 (conditional) | 235 | 3.022 |
+| DS_1 (conditional) | 236 | 3.024 |
+| darel_1 (conditional) | 237 | 2.753 |
+| Anything_4 (conditional) | 242 | 3.029 |
+| Snake_6\*\* (conditional) | 248 | 2.667 |
+| leo_1 (steering) | 249 | 3.994 |
+| leo_2 (steering) | 255 | 3.623 |
+| leo_3 (steering) | 255 | 4.071 |
+| bebera_ct_0 (conditional) | 1441 | 17.23 |
+| DL_1 (steering) | 1607 | 5.453 |
+| laughingthrush_0 (steering) | 1647 | 10.23 |
 
 Based on these results, five teams were invited to participate in the real-world evaluation of the models: Anything, RallyPilot, Snake, Benatas and kkh. The real-world evaluation took place on June 15th on a 4.5 km long section of WRC Rally Estonia's [Elva track](https://www.rally-maps.com/Rally-Estonia-2022/Elva){:target="_blank"}. The section was traversed in both directions, resulting in 9 km of driving. The car was monitored by the safety driver and a computer operator on front seats, the participating students could ride along on the back seat to observe their models drive.
 
-<iframe src="https://www.youtube.com/embed/H8KQlzrqzh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9;"></iframe>
+{% include youtube.html id="H8KQlzrqzh0" %}
 
 **Video:** Evaluation of the models in the real car.
 
@@ -73,13 +72,17 @@ The evaluation metric in the real-world tests was the number of safety driver in
 
 **Table 2:** Final evaluation results.
 
-<table style="border-collapse: collapse; font-size: 14px;">
-<tr><td style="background: #40916c; color: #fff; border: 1px solid #9e9e9e; padding: 7pt;"></td><td style="background: #40916c; color: #fff; border: 1px solid #9e9e9e; padding: 7pt;">Team</td><td style="background: #40916c; color: #fff; border: 1px solid #9e9e9e; padding: 7pt; text-align: right;">Disengagements</td><td style="background: #40916c; color: #fff; border: 1px solid #9e9e9e; padding: 7pt; text-align: right;">Whiteness</td></tr>
-<tr><td style="background: #eee; border: 1px solid #9e9e9e; padding: 7pt;">1st place</td><td style="border: 1px solid #9e9e9e; padding: 7pt;"><b>Anything</b><br>Grayson Felt<br>Anish Shrestha<br>Ali Maharramov</td><td style="border: 1px solid #9e9e9e; padding: 7pt; text-align: right;">1</td><td style="border: 1px solid #9e9e9e; padding: 7pt; text-align: right;">26.88</td></tr>
-<tr><td style="background: #eee; border: 1px solid #9e9e9e; padding: 7pt;">2nd place</td><td style="border: 1px solid #9e9e9e; padding: 7pt;"><b>Snake</b><br>Thomas Metral<br>Paul Pelletier<br>Florian Bergere</td><td style="border: 1px solid #9e9e9e; padding: 7pt; text-align: right;">3</td><td style="border: 1px solid #9e9e9e; padding: 7pt; text-align: right;">24.47</td></tr>
-<tr><td style="background: #eee; border: 1px solid #9e9e9e; padding: 7pt;">3rd place</td><td style="border: 1px solid #9e9e9e; padding: 7pt;"><b>RallyPilot</b><br>Pavlo Pyvovar<br>Yuliia Siur<br>Nikita Fordui<br>Mert Bektas</td><td style="border: 1px solid #9e9e9e; padding: 7pt; text-align: right;">3</td><td style="border: 1px solid #9e9e9e; padding: 7pt; text-align: right;">29.72</td></tr>
-<tr><td style="background: #eee; border: 1px solid #9e9e9e; padding: 7pt;">4th place</td><td style="border: 1px solid #9e9e9e; padding: 7pt;"><b>Benatas</b><br>Benjamin Eckhardt<br>Donatas Vaiciukevicius</td><td style="border: 1px solid #9e9e9e; padding: 7pt; text-align: right;">3</td><td style="border: 1px solid #9e9e9e; padding: 7pt; text-align: right;">34.35</td></tr>
-<tr><td style="background: #eee; border: 1px solid #9e9e9e; padding: 7pt;">5th place</td><td style="border: 1px solid #9e9e9e; padding: 7pt;"><b>kkh</b><br>Karl Kaspar Haavel</td><td style="border: 1px solid #9e9e9e; padding: 7pt; text-align: right;">4</td><td style="border: 1px solid #9e9e9e; padding: 7pt; text-align: right;"></td></tr>
+<table>
+<thead>
+<tr><th></th><th>Team</th><th style="text-align: right;">Disengagements</th><th style="text-align: right;">Whiteness</th></tr>
+</thead>
+<tbody>
+<tr><td>1st place</td><td><b>Anything</b><br>Grayson Felt<br>Anish Shrestha<br>Ali Maharramov</td><td style="text-align: right;">1</td><td style="text-align: right;">26.88</td></tr>
+<tr><td>2nd place</td><td><b>Snake</b><br>Thomas Metral<br>Paul Pelletier<br>Florian Bergere</td><td style="text-align: right;">3</td><td style="text-align: right;">24.47</td></tr>
+<tr><td>3rd place</td><td><b>RallyPilot</b><br>Pavlo Pyvovar<br>Yuliia Siur<br>Nikita Fordui<br>Mert Bektas</td><td style="text-align: right;">3</td><td style="text-align: right;">29.72</td></tr>
+<tr><td>4th place</td><td><b>Benatas</b><br>Benjamin Eckhardt<br>Donatas Vaiciukevicius</td><td style="text-align: right;">3</td><td style="text-align: right;">34.35</td></tr>
+<tr><td>5th place</td><td><b>kkh</b><br>Karl Kaspar Haavel</td><td style="text-align: right;">4</td><td style="text-align: right;"></td></tr>
+</tbody>
 </table>
 
 Congratulations to the winners! The teams took quite different approaches to the problem:
@@ -87,10 +90,10 @@ Congratulations to the winners! The teams took quite different approaches to the
 - The second place fine-tuned the hyperparameters of the baseline model. You can read about their experiences from their [blog post](https://medium.com/@metralthom/rally-estonia-challenge-f4f004a222e8){:target="_blank"}.
 - The third place focused on the data and tried various preprocessing and data augmentation techniques, while using the baseline model as it was. You can read about their experiences from their [blog post](https://medium.com/@ppyvovar_11902/rallypilot-a-quest-to-teach-a-car-to-drive-rally-tracks-3278ffc9176){:target="_blank"}.
 
-<div style="display: flex; gap: 8px;">
-  <a href="/images/blog/rally-estonia-2023-photo1.jpg" target="_blank" style="width: 33.333%;"><img src="/images/blog/rally-estonia-2023-photo1.jpg" alt="The winning team Anything" style="width: 100%; height: 220px; object-fit: cover;"></a>
-  <a href="/images/blog/rally-estonia-2023-photo2.jpg" target="_blank" style="width: 33.333%;"><img src="/images/blog/rally-estonia-2023-photo2.jpg" alt="Team RallyPilot won third place" style="width: 100%; height: 220px; object-fit: cover;"></a>
-  <a href="/images/blog/rally-estonia-2023-photo3.jpg" target="_blank" style="width: 33.333%;"><img src="/images/blog/rally-estonia-2023-photo3.jpg" alt="Team Benatas finished in fourth place" style="width: 100%; height: 220px; object-fit: cover;"></a>
+<div class="image-row">
+  <a href="/images/blog/rally-estonia-2023-photo1.jpg" target="_blank"><img src="/images/blog/rally-estonia-2023-photo1.jpg" alt="The winning team Anything"></a>
+  <a href="/images/blog/rally-estonia-2023-photo2.jpg" target="_blank"><img src="/images/blog/rally-estonia-2023-photo2.jpg" alt="Team RallyPilot won third place"></a>
+  <a href="/images/blog/rally-estonia-2023-photo3.jpg" target="_blank"><img src="/images/blog/rally-estonia-2023-photo3.jpg" alt="Team Benatas finished in fourth place"></a>
 </div>
 
 **Photos:** 1st, 2nd and 4th place teams at the Rally Estonia Challenge 2023 award ceremony.

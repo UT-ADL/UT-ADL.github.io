@@ -15,7 +15,7 @@ author: Ardi Tampuu
 
 ADL Minicar challenge is a **self-driving software competition**. This means that while the competing solutions will be deployed and must perform well on hardware, modifications to the hardware are forbidden. The competition was held in January 2021 and January 2022 as part of the DeltaX student competition series but was hosted independently in 2023 under the flag of the Autonomous Driving Lab. Video from the first competition in the year 2021 is added here, videos from 2022 can be seen below.
 
-<p align="center"><iframe src="https://www.youtube.com/embed/TVLp19-C9HI?wmode=transparent" allowfullscreen="true" style="width: 100%; aspect-ratio: 16/9;" frameborder="0"></iframe></p>
+{% include youtube.html id="TVLp19-C9HI" wmode="transparent" %}
 
 If you want to see the final results of the 2023 challenge, achieved by the participants, you must scroll all the way to the bottom of the page. The tasks and challenges the organizers and participants had to face when organizing the event are reported in chronological order, to the best recollection of the author.
 
@@ -37,7 +37,7 @@ In a **similar competition back in January 2022**, the students had competed in 
 
 And the students prevailed.
 
-<p align="center"><iframe src="https://www.youtube.com/embed/En4IdJDC9S0?wmode=transparent" allowfullscreen="true" style="width: 100%; aspect-ratio: 16/9;" frameborder="0"></iframe></p>
+{% include youtube.html id="En4IdJDC9S0" wmode="transparent" %}
 
 This winning performance was in fact achieved with a solution that was computationally unnecessarily costly, with every frame taking about 120-130 milliseconds to deal with. This results in 7-8 frames being processed per second. During the competition, it was visible that this solution was slow to react to obstacles compared to the eventual second-place solution. The big difference in reactiveness, decisions-per-second, came from using a slow .h5 model format instead of .tflite. The faster model did not win, simply as it was trained on considerably less data (10K frames instead of 150K).
 
@@ -47,7 +47,7 @@ Relevant **for designing the 2023 event**:
 As an additional piece of information:
 - A student project in spring 2022 ([link](https://medium.com/@donkeycar/self-driving-donkey-car-training-7b94580eb3e2){:target="_blank"}) demonstrated that the **right-hand rule can be taught to DonkeyCars**
 
-<p align="center"><iframe src="https://www.youtube.com/embed/W2t7JX1ZCho?wmode=transparent" allowfullscreen="true" style="width: 100%; aspect-ratio: 16/9;" frameborder="0"></iframe></p>
+{% include youtube.html id="W2t7JX1ZCho" wmode="transparent" %}
 
 We concluded that in the **2023 competition, more complete urban driving should be attempted** - avoiding walls, and Lego characters, as well as following some traffic rules. For this, we needed a toy town where all this could take place. A 1:10 scale town, as the donkey cars are 1:10 scale. A few blocks of houses. Do you see the problem? Where can we find the space in the University of Tartu Delta building to build this town? Every street is about 8 meters wide in the real world. Every building is measured in tens of meters.
 
@@ -74,7 +74,7 @@ Many questions arose.
 
 We found reasonable compromises, wrote the rules ([rules link](https://docs.google.com/document/d/1lKWmzDgB0UsW0jYLL02xssNvKfSIyu-uawcHl9se4VY/edit){:target="_blank"}), and even made a set of example runs with scoring illustrated.
 
-<p align="center"><iframe src="https://www.youtube.com/embed/q3T1Zvy6HZw?wmode=transparent" allowfullscreen="true" style="width: 100%; aspect-ratio: 16/9;" frameborder="0"></iframe></p>
+{% include youtube.html id="q3T1Zvy6HZw" wmode="transparent" %}
 
 The students were advised to (but were free to solve it otherwise):
 - Start with general object avoidance ability, so they would get something running
@@ -89,7 +89,7 @@ Students seemed to progress well during the semester, as evidenced by videos pro
 
 For example:
 
-<p align="center"><iframe src="https://www.youtube.com/embed/Mi6GuAZu9v8?wmode=transparent" allowfullscreen="true" style="width: 100%; aspect-ratio: 16/9;" frameborder="0"></iframe></p>
+{% include youtube.html id="Mi6GuAZu9v8" wmode="transparent" %}
 
 ## The final event 25th of January 2023
 
@@ -113,10 +113,7 @@ For everything to run smoothly, there were many judges and assistants:
 
 ![Minicar 2023 infraction table](/images/blog/minicar-2023-infraction-table.png)
 
-<div style="display: flex; gap: 8px;">
-  <img src="/images/blog/minicar-2023-counting-points.png" alt="Minicar 2023 counting points" style="width: 50%; height: 300px; object-fit: cover;">
-  <img src="/images/blog/minicar-2023-adjusting-obstacles.png" alt="Minicar 2023 adjusting obstacles" style="width: 50%; height: 300px; object-fit: cover;">
-</div>
+![Minicar 2023 counting points](/images/blog/minicar-2023-counting-points.png) ![Minicar 2023 adjusting obstacles](/images/blog/minicar-2023-adjusting-obstacles.png)
 
 The order of teams was randomly drawn and the competition consisting of 8 scenarios, designed beforehand by Ardi and Kertu, proceeded in order Scenario1-Team1, Scenario1-Team2, Scenario1-Team3, (reconfigure track), Scenario2-Team1,...
 
@@ -132,13 +129,13 @@ It was quickly clear that the performance the teams expected and had experienced
 
 Due to these issues, and possibly just the general ability of the models to generalize to different backgrounds and light conditions, the scores of the participating teams remained low. The **highest score for an individual route was 0.206**, and it contained a variety of smaller infractions. The authors of this solution were Mihkel Lepson and Artur Tuttar.
 
-<p align="center"><iframe src="https://www.youtube.com/embed/OokENkq4_Yk?wmode=transparent" allowfullscreen="true" style="width: 100%; aspect-ratio: 16/9;" frameborder="0"></iframe></p>
+{% include youtube.html id="OokENkq4_Yk" wmode="transparent" %}
 
 However, the winning criterion was the **best average of 8 runs**. The above team scored an average 0.054 driving score, whereas Yevhen Pankevych and Volodymyr Savchuk reached an average score of 0.068. Notice that with 8 laps, one perfectly clean attempt would add 0.125 points to the average and would have won the competition by a margin.
 
 The winners scored more consistently, their best run is given below.
 
-<p align="center"><iframe src="https://www.youtube.com/embed/Ax3Mry5DyWI?wmode=transparent" allowfullscreen="true" style="width: 100%; aspect-ratio: 16/9;" frameborder="0"></iframe></p>
+{% include youtube.html id="Ax3Mry5DyWI" wmode="transparent" %}
 
 ## Results of the 2023 competition
 

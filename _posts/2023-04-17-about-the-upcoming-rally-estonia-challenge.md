@@ -11,7 +11,7 @@ language: en
 author: Georg Vann
 ---
 
-![Lexus in snow with fallen tree](/images/blog/rally_estonia_challenge.jpg){:class="max-w-full h-auto"}
+![Lexus in snow with fallen tree](/images/blog/rally_estonia_challenge.jpg)
 
 We are holding a neural network training competition: The Rally Estonia Challenge.
 

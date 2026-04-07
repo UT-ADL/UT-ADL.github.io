@@ -11,7 +11,7 @@ language: en
 author: Georg Vann
 ---
 
-![ADL autonomous vehicle](/images/blog/esscass2022.jpg){:class="max-w-full h-auto"}
+![ADL autonomous vehicle](/images/blog/esscass2022.jpg)
 
 We were represented among the distinguished line-up of speakers that took the stage during [ESSCaSS 2022](https://www.facebook.com/SummerSchoolCS), the 19th Estonian Summer School on Computer and System Science.
 

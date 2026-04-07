@@ -11,7 +11,7 @@ language: en
 author: Dietmar Pfahl
 ---
 
-![TestADS workshop](/images/blog/testads24.jpeg){:class="max-w-full h-auto"}
+![TestADS workshop](/images/blog/testads24.jpeg)
 
 Together with colleagues from the UK and Sweden, we are organizing the first international workshop on the Testing of Automated Driving Systems (TestADS). The workshop takes place in Toronto, Canada, as part of the 17th IEEE International Conference on Software Testing, Verification and Validation (ICST'24).
 
