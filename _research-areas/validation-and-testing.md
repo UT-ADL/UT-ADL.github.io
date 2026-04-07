@@ -22,4 +22,4 @@ The most critical property to testing is safety. Safety testing is the process o
 |:---:|:---:|
 | ![Validation 1](/images/research/validation1.jpg) | ![Validation 2](/images/research/validation2.jpg) |
 
-<p align="center"><iframe src="https://www.youtube.com/embed/A_dHfvMgd-w?wmode=transparent" allowfullscreen="true" style="width: 560px; height: 315px;" frameborder="0"></iframe></p>
+<iframe src="https://www.youtube.com/embed/A_dHfvMgd-w?wmode=transparent" allowfullscreen="true" style="width: 100%; aspect-ratio: 16/9; border: none;"></iframe>

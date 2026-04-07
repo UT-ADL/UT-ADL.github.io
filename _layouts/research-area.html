@@ -70,7 +70,7 @@ layout: page
 </div>
 <div class="relative mt-6 md:mt-10">
     {% assign allAreas = site.research-areas | sort: "title" %}
-    <ul id="researchSlider" class="list-none p-0">
+    <ul id="researchSlider" class="card-slider">
         {% for area in allAreas %}
         {% if area.title != page.title %}
         <li>
