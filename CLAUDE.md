@@ -146,6 +146,21 @@ Store in the appropriate subdirectory under `images/`:
 | Modify page layout | Edit the relevant file in `_layouts/` |
 | Change styles | Edit `css/main.css` |
 
+## Content Conventions
+
+### Blog Post Images
+- The `image` front matter field is used only for blog listing thumbnails, NOT displayed in the post body
+- Posts that need a header image must include it explicitly as inline markdown/HTML in the content
+
+### Side-by-Side Images
+- For 2 images: use markdown table `| ![](img1) | ![](img2) |`
+- For 2+ images needing equal height: use `<div style="display: flex; gap: 8px;">` with `object-fit: cover` and fixed height
+- For gallery-style clickable images: wrap in `<a href="full-size-url" target="_blank">`
+- The compiled Tailwind CSS does NOT include `grid-cols-2` without a breakpoint prefix — use tables or flex instead
+
+### Embedded Videos
+- Use responsive sizing: `style="width: 100%; aspect-ratio: 16/9;"` instead of fixed `width`/`height` attributes
+
 ## Deployment
 
 - **Branch**: `master` (production)
