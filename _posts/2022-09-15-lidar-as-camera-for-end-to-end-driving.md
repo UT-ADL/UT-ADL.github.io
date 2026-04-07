@@ -12,6 +12,8 @@ language: en
 author: Ardi Tampuu
 ---
 
+![Ouster lidar channels](/images/blog/lidar_channels.png){:class="max-w-full h-auto"}
+
 **Figure 1.** Ouster modalities rendered as raster images. Top: intensity. Middle: depth. Bottom: ambient radiation.
 
 Ouster LiDARs can output surround-view images with intensity, depth, and ambient radiation channels (see Figure 1). These measurements originate from the same sensor, rendering them perfectly aligned in time and space. The fact that grayscale-image-like intensity and ambient radiation images are aligned with depth information is a very interesting property for self-driving. Aligning information from different sensors is very sensitive to temporal synchronization issues and needs precise calibration of sensors. Hence, fusing an image from an RGB camera and depth information from a LiDAR requires a considerable and continuous engineering effort. With Ouster LiDAR-as-camera feature you get it basically for free. 
@@ -52,15 +54,16 @@ Being able to generalize to new light and weather conditions is the expected ben
 * In winter the failures were mainly in open field sections (see Figure 3).
 
 
-![Interventions during night](/images/blog/night_interventions.png){:width="48%"}
-![Interventions during winter](/images/blog/winter_interventions.png){:width="50%"}
+<div style="display: flex; gap: 4px;">
+  <img src="/images/blog/night_interventions.png" alt="Interventions during night" style="width: 50%;">
+  <img src="/images/blog/winter_interventions.png" alt="Interventions during winter" style="width: 50%;">
+</div>
 
 **Figure 3.** Interventions during night (left) and winter (right) driving with the LiDAR model. The map also depicts land usage: dark green denotes forest while light green denotes agricultural land. Grey areas are of an unspecified usage, mostly residential use with private houses, partially fenced gardens. On the winter trajectory, there is only one intervention in the forest, while more open areas prove challenging for the summer-trained LiDAR model in the winter.
 
 Below is the video of autonomous driving at night. RGB camera image is shown for illustration, but driving is done based on LiDAR images.
 
-<iframe width="780" height="580" src="https://www.youtube.com/embed/jpdRXS1U5Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p/>
+<iframe src="https://www.youtube.com/embed/jpdRXS1U5Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9;"></iframe>
 
 ### Stability as a Predictor of Quality
 

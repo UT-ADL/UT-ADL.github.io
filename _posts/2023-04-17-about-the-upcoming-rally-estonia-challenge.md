@@ -10,6 +10,8 @@ language: en
 author: Georg Vann
 ---
 
+![Lexus in snow with fallen tree](/images/blog/rally_estonia_challenge.jpg){:class="max-w-full h-auto"}
+
 We are holding a neural network training competition: The Rally Estonia Challenge.
 
 Participating teams get access to 500 km worth of data gathered from the stages of WRC Rally Estonia across all four seasons. The aim is to train neural networks that are capable of autonomously steering our Lexus on similar tracks.

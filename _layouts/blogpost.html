@@ -12,15 +12,10 @@
     {% include page-heading.html title="Blog" %}
     <div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
         <main role="main">
-            <span class="overlane-text">{{page.date | date: "%D"}}</span>
-            <h3 class="post-title mb-12">{{page.title}}</h3>
+            <span class="overlane-text">{{page.date | date: "%m/%d/%Y"}}{% if page.author %} by {{page.author}}{% endif %}</span>
+            <h3 class="post-title">{{page.title}}</h3>
             <div class="grid grid-cols-1 tablet:grid-cols-12 gap-4">
                 <div class="tablet:col-span-9 content-formatted mt-3">
-                    {% if page.image != null and page.image != "" %}
-                    <p>
-                        <img alt="{{page.alt}}" src="{{page.image}}" style="max-width: 100%">
-                    </p>
-                    {% endif %}
                     {{content}}
                 </div>
             </div>

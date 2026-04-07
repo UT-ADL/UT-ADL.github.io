@@ -87,7 +87,7 @@ We used the DonkeyCar S1 platform. These cars come equipped with a frontal camer
 
 You can also read about the organizer's perspective, on how it was to organize this event, [here.](/blog/adl-minicar-challenge-2023-the-organizer-s-perspective)
 
-## *Competition in January 2022*
+## Competition in January 2022
 
 See more [here](https://courses.cs.ut.ee/t/DeltaXSelfDriving/Main/2022).
 
@@ -95,25 +95,25 @@ In January 2022 the second competition was held with DonkeyCars. There were two 
 
 The rewarded teams were:
 
-Task 1: object avoidance and lane following [promo video](https://drive.google.com/file/d/1AWb7K9OS040sXaDyKyH51hV61MoAK9FU/view)\\
-1st place: Rustam Abdumalikov and Aral Açıkalın [winners run](https://drive.google.com/file/d/1qED1JFRyDuxDXJ4y6F0RvhAILj8njNfm/view)\\
-2nd place: Mike Camara\\
-3rd place: Kristjan Roosild
+**Task 1:** object avoidance and lane following [promo video](https://drive.google.com/file/d/1AWb7K9OS040sXaDyKyH51hV61MoAK9FU/view)\\
+**1st place:** Rustam Abdumalikov and Aral Açıkalın [winners run](https://drive.google.com/file/d/1qED1JFRyDuxDXJ4y6F0RvhAILj8njNfm/view)\\
+**2nd place:** Mike Camara\\
+**3rd place:** Kristjan Roosild
 
-Task 2: route completion [pr video](https://drive.google.com/file/d/1CrOKqFfi5kZkyHpE5qf5ne21npsTHCCW/view)\\
-1st place: Rustam Abdumalikov and Aral Açıkalın\\
-2nd place: not awarded\\
-3rd place: not awarded
+**Task 2:** route completion [pr video](https://drive.google.com/file/d/1CrOKqFfi5kZkyHpE5qf5ne21npsTHCCW/view)\\
+**1st place:** Rustam Abdumalikov and Aral Açıkalın\\
+**2nd place:** not awarded\\
+**3rd place:** not awarded
 
 ![Winners 2022](/images/teaching/winners_2022.jpeg){:class="max-w-full h-auto" style="max-width: 466px; margin: 0 auto; display: block;"}
 
 ## Competition in January 2021
 
-See more [here.](https://courses.cs.ut.ee/t/DeltaXSelfDriving/Main/2021)
+See more [here](https://courses.cs.ut.ee/t/DeltaXSelfDriving/Main/2021).
 
 In January 2021 the first competition was held with 1:25 scale cars on a racing track. The winning solution completed the track in both directions with clean driving and great speed.
 
 The rewarded teams were:\\
-1st place: Leo Schoberwalter ([video1](https://drive.google.com/file/d/1MzgqSjSFthfcl4rvc4ZiQBDQvcD8IibS/view), [video2](https://drive.google.com/file/d/12NC186FKDB7pgkrsDROx-rrRo1FaDQS8/view), [video from onboard camera](https://drive.google.com/file/d/1R-dBgMdWhQLGk2pjV_vDJtgL8ml7Vlm7/view))\\
-2nd place: Enlik and Handy Kurniawan ([video1](https://drive.google.com/file/d/1mhBgMoL_4N9rT2IkuqKXscPD7hAwWJ_4/view), [video2](https://drive.google.com/file/d/1HlBUeXQJezDm9TfexEiBHcmumzP69lfP/view))\\
-3rd place: Thamara Luup, Mykyta Baliesnyi, Aleksasha Krylov ([video1](https://drive.google.com/file/d/1icsKWh0XZ22zLCCydekP-xTyXt4E95DD/view), [video2](https://drive.google.com/file/d/13HN55vnDwECtH478REL3H0k1Gvk1arcN/view))
+**1st place:** Leo Schoberwalter ([video1](https://drive.google.com/file/d/1MzgqSjSFthfcl4rvc4ZiQBDQvcD8IibS/view), [video2](https://drive.google.com/file/d/12NC186FKDB7pgkrsDROx-rrRo1FaDQS8/view), [video from onboard camera](https://drive.google.com/file/d/1R-dBgMdWhQLGk2pjV_vDJtgL8ml7Vlm7/view))\\
+**2nd place:** Enlik and Handy Kurniawan ([video1](https://drive.google.com/file/d/1mhBgMoL_4N9rT2IkuqKXscPD7hAwWJ_4/view), [video2](https://drive.google.com/file/d/1HlBUeXQJezDm9TfexEiBHcmumzP69lfP/view))\\
+**3rd place:** Thamara Luup, Mykyta Baliesnyi, Aleksasha Krylov ([video1](https://drive.google.com/file/d/1icsKWh0XZ22zLCCydekP-xTyXt4E95DD/view), [video2](https://drive.google.com/file/d/13HN55vnDwECtH478REL3H0k1Gvk1arcN/view))

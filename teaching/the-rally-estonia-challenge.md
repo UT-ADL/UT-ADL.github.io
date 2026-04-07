@@ -20,111 +20,90 @@ The participants train neural networks to drive on the rural Estonian roads. The
 
 For results of Rally Estonia Challenge 2023 see the [blog post](/blog/rally-estonia-challenge-2023-results/).
 
-### Technical summary
+#### Technical summary
 
-**Objective:** Create a data-driven autonomous driving system for a Lexus RX450h.
-
-**Dataset:** Camera images, turn signal states, steering angles, GPS locations from Rally Estonia tracks.
-
-**Task:** Train a neural network to transform sensor readings into steering commands.
+The objective is to create a data-driven autonomous driving system (ADS) that is as safe as possible. Participants will use recordings from approximately 500 km of driving with a Lexus RX450h on rural roads in Southern Estonia. The dataset contains camera images, turn signal states, steering angles and precise GPS locations. The goal is to train a neural network that transforms sensor readings into steering commands.
 
 #### Timeline
 
-- **April 11** — Dataset availability
-- **May 31** — Submission deadline
-- **June 5–9** — VISTA simulation evaluation
-- **June 12–15** — Real-world testing (top 3 teams)
-- **June 16** — Winner announcement and ceremony
+- **April 11th** — The dataset will be made available
+- **May 31st** — Submission deadline
+- **June 5–9th** — Evaluation of submissions in VISTA simulation
+- **June 12–15th** — Evaluation of top 3 teams in the real world
+- **June 16th** — Announcement of winners, ceremony
 
-#### Team Requirements
+#### Team requirements
 
-- Up to three persons plus supervisor
-- At least 50% must be students
-- Related to specific spring 2023 courses (Neural Networks, Special Course in Machine Learning)
-- Non-course participants welcome with student team members
+A team may have up to three persons and a supervisor. At least half of the members of each team must be students (of any university).
 
-#### Prizes
+Participation in the competition is one of the possible projects in the following courses for the spring semester of 2023:
 
-- **1st place:** €300 + three WRC Rally Estonia 2023 passes
-- **2nd & 3rd place:** €150 each
-- **Top three teams:** Rally experience, ADL t-shirts
-- Potential for publication if developed further
+1. Neural Networks (LTAT.02.001);
+2. Special Course in Machine Learning (MTAT.03.317).
 
-### General Requirements
+Participation is not limited to students from these courses; all students are welcome to participate, even if the participation is not related to their studies or coursework. Non-students can also participate as part of a team also containing students. To participate send e-mail to the organizers, see the contact section below.
 
-#### Road Navigation
+#### Prizes & outcomes
 
-Solutions must autonomously steer on roads without other traffic. Roads are mostly gravel with rare paved sections.
-Must maintain right lane on two-lane roads (Estonia drives right-handed). Single-lane roads allow flexible
-positioning with safe margins to edges.
+The winning team will be awarded 300 euros and three rally passes to the WRC Rally Estonia 2023. The second and third places will be rewarded 150 euros each. The top three teams have the chance to be onboard when their solutions are deployed and drive autonomously in the real world. They will also get ADL t-shirts to remember the occasion.
 
-#### Route Completion
+The topic of the challenge relates closely to the research interests of the ADL. Most innovative solutions may have the potential to be published if developed further in an MSc or Ph.D. thesis or internship. The ADL is willing to host these follow-up projects, offering supervision and further access to the car.
 
-Systems must navigate from point A to point B, including completing specific desired turns at intersections.
-Navigation commands are simulated via blinker signals (left, right, or straight).
+#### General requirements for solutions
 
-#### Speed Control
+The solutions must be able to autonomously steer the vehicle in all situations where there are no other traffic participants present.
 
-Vehicle speed is handled by car software, not the neural network. VISTA simulations use 100% benchmark speed;
-real-world uses 80%.
+The rural roads used in this competition are mostly gravel roads, with rare sections of paved roads. There is a mixture of two-lane and single-lane roads. On two-lane roads, the solutions must keep to the right lane, as the traffic in Estonia is right-handed. On single-lane roads, the placement on the road does not matter, but safe margins to both road edges must be maintained. In the case of pedestrians or traffic, the safety driver takes control of the vehicle but no penalties are applied.
 
-### Technical Specifications
+Importantly, the task is to complete predefined routes in the road network, driving from point A to point B. This means the autonomous system must be capable of not just keeping itself on the road but completing specific desired turns at intersections. The navigation commands suggesting the car to drive straight, turn left or turn right are simulated with blinkers. In the VISTA simulation, the system will set the turn blinker state to either left or right or leave it inactive depending on the desired route. Similarly, during runs with the real car, the safety driver will activate the blinker before reaching the intersection to indicate which way the vehicle must go.
 
-#### Model Input/Output Requirements
+The speed of the vehicle is not controlled by the solutions. In the VISTA simulations, the speed will be set to 100% of the speed used by the human driver in the benchmark recording. During real-world deployments, the speed will be set to 80% of the benchmark speed at any given location (defined by GPS location). Reaching and maintaining this speed will be handled by the car's proprietary software.
 
-Three supported model types (submitted as ONNX files):
+An example of a similar solution was implemented in Romet Aidla's MSc thesis ([video](https://www.youtube.com/watch?v=HGolLsE_abg){:target="_blank"}, [thesis](https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75346&language=en){:target="_blank"}, [GitHub repo](https://github.com/UT-ADL/e2e-rally-estonia){:target="_blank"}) and Mykyta Baliesniy's MSc thesis ([thesis](https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75382){:target="_blank"}, [GitHub repo](https://github.com/nikebless/ebm-driving){:target="_blank"}).
 
-1. **steering** — Input: `[1,3,68,264]` RGB image → Output: `[1,1]` steering angle (radians)
-2. **conditional-steering** — Input: `[1,3,68,264]` RGB image → Output: `[1,3]` steering angles (straight/left/right conditions)
-3. **conditional-waypoints** — Input: `[1,3,68,264]` RGB image → Output: `[1,60]` waypoint coordinates for three route conditions
+#### Technical requirements for solutions
 
-#### Dataset Access
+The trained networks will be submitted as [ONNX-files](https://onnx.ai/){:target="_blank"}. The participants must choose one of the three model types supported by VISTA.
 
-Located at `/gpfs/space/projects/rally2023` on HPC rocket cluster:
-- **rally-estonia-cropped-antialias** (175GB) — pre-cropped front camera images (recommended)
-- **rally-estonia-full** — full-size images from all three cameras and lidar
+| Model Type | Input Shape | Output Shape |
+|---|---|---|
+| **steering** | [1, 3, 68, 264] — 264x68 RGB image | [1,1] — steering angle in radians |
+| **conditional-steering** | [1, 3, 68, 264] — 264x68 RGB image | [1,3] — three steering angles in radians: where to turn if conditioned to go straight, left and right |
+| **conditional-waypoints** | [1, 3, 68, 264] — 264x68 RGB image | [1,60] — waypoint coordinates, for each of [left, straight, right], 3 sets of 10 X and Y coordinates |
 
-#### Hardware Specifications
+The dataset is accessible only to the participants of the competition in directory /gpfs/space/projects/rally2023 on HPC rocket cluster. The directory currently contains following two subdirectories:
 
-- **VISTA evaluation:** NVIDIA RTX 2080Ti GPU at 10Hz
-- **Real-world deployment:** AStuff Spectra computer with NVIDIA RTX 2080Ti GPU
+1. **rally-estonia-cropped-antialias** — the main dataset with pre-cropped front camera images (175GB)
+2. **rally-estonia-full** — original dataset with full-size images from all three cameras and lidar
 
-### Submission & Validation
+We suggest starting with the first dataset and performing all training on HPC cluster, because the dataset is readily available there. If you want to make use of the second dataset, please consult with organizers first.
 
-- Participants can self-validate using the example Elva track from the VISTA evaluation codebase
-- Can convert additional training set recordings to VISTA traces using provided scripts
-- Up to 5 submissions plus initial dummy submission
-- File naming: `[Team_name]_[Submission_Number].onnx` (e.g., `Eagles_1.onnx`)
+![264x68 will serve as your input](/images/teaching/rally-input-format.png){:class="max-w-full h-auto" style="display: block; margin: 0 auto; max-width: 599px;"}
 
-### Evaluation Criteria
+During the virtual deployment in the VISTA simulation, computations will be done on a server with NVIDIA RTX 2080Ti GPU at a frame rate of 10Hz, using the [ADL VISTA evaluation codebase](https://github.com/UT-ADL/vista-evaluation/){:target="_blank"} and [ADL version of VISTA](https://github.com/UT-ADL/vista/){:target="_blank"}. During the final deployment in the real world, computations will be done on the AStuff Spectra computer on the car with NVIDIA RTX 2080Ti GPU.
 
-#### Safety Driver Interventions
+- The participants can validate their models themselves by testing them against the example Elva track provided as part of [VISTA evaluation codebase](https://github.com/UT-ADL/vista-evaluation/){:target="_blank"}. Participants are free to set aside some additional recordings from the training set, convert them to VISTA traces using [provided scripts](https://github.com/UT-ADL/vista-evaluation/blob/master/create_trace.py){:target="_blank"} and validating their models against those traces as much as they please.
+- For the final testing each team can submit up to 5 times + an initial dummy submission to make sure the process is understood. At each submission, the model will be evaluated using held-out traces (not in the training set), repeating the run on each trace 3 times. The sum of interventions over all runs is the main metric. The average whiteness across all time points in all runs is the secondary metric.
+- The model names must be in the format [Team\_name]\_[Submission\_Number].onnx (e.g., Eagles\_1.onnx). The files should be uploaded via [Google form](https://forms.gle/cd9tz4UXeGhNrorL7){:target="_blank"}.
+- To be eligible for the prizes, the created software must be labeled with a free-to-use license so that the next generation of students can learn from it. The code must be made available to the organizers via a GitHub repository 24h before the main event. The repository could be private at first but made public to claim the prizes.
+- If participants want to implement a new model type, they must implement an evaluation for that type in VISTA themselves and organizers will review and accept the pull request.
 
-- **VISTA:** Triggered when vehicle exceeds 1m from human driver trajectory
-- After intervention: Car repositioned 1 second further along route
-- **Real-world:** Subjective safety driver judgment based on danger perception and traffic law compliance
-- Each trace is run 3 times; primary metric is the sum of interventions across all runs
+#### Evaluation of solutions
 
-#### Tiebreaker
+The team scoring the least safety-driver interventions will win. In the case of equally good results in terms of intervention count, the model resulting in the lowest whiteness score (c.f. our [article1](https://www.mdpi.com/1424-8220/23/5/2845){:target="_blank"} and [article2](https://arxiv.org/abs/2301.12264){:target="_blank"}) will be ranked higher.
 
-Equal intervention counts are resolved by lower whiteness score.
+The VISTA evaluations are based on recordings of human drivers traversing certain routes. The video frames contained in a recording are used to simulate what the camera would see at different deviations from the human trajectory and different poses the car can take. Whenever the virtual vehicle controlled by the evaluated model goes further than 1m from the trajectory of the human driver, a safety driver intervention is recorded. Consecutively the car is placed back on the human trajectory a bit (1 second) further along the route. Before intersections, the turn signal is activated to inform the model about the desired route (the route human took in the underlying recording). Missing a turn or turning the wrong way results in wandering more than 1m of the human trajectory and is hence penalized by an intervention.
 
-### Reference Projects
+During real-world evaluations, the safety driver is by law responsible for the safety of the test vehicle and other traffic participants. An intervention will be a subjective decision of the safety driver based on the perceived level of danger to the car and others on the road, as well as traffic laws. For example, the model may drive more than one meter from the trajectory that a human would take, but if this is safe and not violating road rules, no intervention may be called. Conversely, an intervention will be called if the model is less than 1m from the human trajectory but too close to the road edge, endangering the car.
 
-- Romet Aidla's MSc thesis: [Video](https://www.youtube.com/watch?v=HGolLsE_abg){:target="_blank"} · [Thesis](https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75346&language=en){:target="_blank"} · [GitHub](https://github.com/UT-ADL/e2e-rally-estonia){:target="_blank"}
-- Mykyta Baliesniy's MSc thesis: [Thesis](https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75382){:target="_blank"} · [GitHub](https://github.com/nikebless/ebm-driving){:target="_blank"}
+In case of an intervention, the safety driver takes control of the car and navigates it back to the center of the lane (center of the road in case of a one-lane road). In the case of on-coming traffic or pedestrians/cyclists on the road, the safety driver takes over, but no intervention is counted as reacting to other traffic participants is not evaluated in this competition.
 
-### Licensing
+#### Changes in rules
 
-The created software must be labeled with a free-to-use license for educational purposes. A GitHub repository is
-required 24 hours before the main event (can be initially private).
+The organizers maintain the liberty of making any changes or cancellations to the rules if such a need arises. However, the changes will be justified and explained to the participants.
 
-### Results
+#### Contact
 
-See the [Rally Estonia Challenge 2023 results](/blog/rally-estonia-challenge-2023-results/) blog post.
-
-### Contact
-
-- **Tambet Matiisen:** [tambet.matiisen@ut.ee](mailto:tambet.matiisen@ut.ee)
-- **Ardi Tampuu:** [ardi.tampuu@ut.ee](mailto:ardi.tampuu@ut.ee)
-- **General:** [adl@ut.ee](mailto:adl@ut.ee)
+Autonomous Driving Lab, Delta building, room 3095\\
+Tambet Matiisen, [tambet.matiisen@ut.ee](mailto:tambet.matiisen@ut.ee)\\
+Ardi Tampuu, [ardi.tampuu@ut.ee](mailto:ardi.tampuu@ut.ee)

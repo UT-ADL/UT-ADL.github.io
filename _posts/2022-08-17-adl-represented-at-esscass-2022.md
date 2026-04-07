@@ -9,6 +9,9 @@ permalink: /blog/:title/
 language: en
 author: Georg Vann
 ---
+
+![ADL autonomous vehicle](/images/blog/esscass2022.jpg){:class="max-w-full h-auto"}
+
 We were represented among the distinguished line-up of speakers that took the stage during [ESSCaSS 2022](https://www.facebook.com/SummerSchoolCS), the 19th Estonian Summer School on Computer and System Science.
 
 Tambet Matiisen, the tech lead of the lab, familiarized the audience with the past, present and the future of the lab. Most of the attention, however, was dedicated to the recent pilot project that saw our self-driving vehicle deployed as part of an on-demand public transportation service in and around Tartu.

@@ -10,7 +10,9 @@ language: en
 author: Yana Halas
 ---
 
-**The University of Tartu Institute of Computer Science and Clevon AS have signed a three-year cooperation agreement, enabling a teleoperation system for the Autonomous Driving Lab's test vehicle. Attendees at the technology demonstration were able to remotely control the car located nearly three kilometres away in the parking lot of the Estonian National Museum.**
+![Clevon cooperation demo](/images/blog/clevon_cooperation.jpg){:class="max-w-full h-auto"}
+
+The University of Tartu Institute of Computer Science and Clevon AS have signed a three-year cooperation agreement, enabling a teleoperation system for the Autonomous Driving Lab's test vehicle. Attendees at the technology demonstration were able to remotely control the car located nearly three kilometres away in the parking lot of the Estonian National Museum.
 
 According to Tambet Matiisen, the technology manager of Autonomous Driving Lab, teleoperation systems are important. "Remote control is an important technical solution in today's autonomous vehicles, allowing the vehicle to seek assistance from a human in unexpected traffic situations, such as roadworks or traffic jams," said Matiisen. He added that this allows the self-driving car to travel outside the mapped area, for example, to drop off passengers at their doorstep instead of the nearest bus stop.
 
