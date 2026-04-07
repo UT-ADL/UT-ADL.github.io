@@ -1,5 +1,7 @@
 ---
 layout: research-area
+subtitle: Research
+subnav: research
 title: Autonomy software
 icon: /images/icons/autonomy_software.png
 research_lead: Tambet Matiisen

@@ -1,5 +1,6 @@
 ---
 layout: blogpost
+subtitle: Blog
 title: We piloted an autonomous on-demand transportation service
 date: 2022-11-22
 image: /images/blog/on_demand_pilot.png

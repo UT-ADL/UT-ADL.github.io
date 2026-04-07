@@ -1,5 +1,7 @@
 ---
 layout: research-area
+subtitle: Research
+subnav: research
 title: Security
 icon: /images/icons/security.png
 research_lead: Raimundas Matulevičius

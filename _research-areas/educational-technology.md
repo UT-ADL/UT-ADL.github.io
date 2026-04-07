@@ -1,5 +1,7 @@
 ---
 layout: research-area
+subtitle: Research
+subnav: research
 title: Educational technology
 icon: /images/icons/educational_technology.png
 research_lead: Ardi Tampuu

@@ -1,5 +1,7 @@
 ---
 layout: project
+subtitle: Research
+subnav: research
 title: Dorpat Autonomous Driving Benchmark
 category: Project
 webURL: https://ut.ee/et/sisu/tartu-ulikool-investeerib-eksperimentaalarendusse-pea-pool-miljonit-eurot

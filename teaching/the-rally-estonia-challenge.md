@@ -1,8 +1,9 @@
 ---
-layout: teaching
+layout: text
 title: The Rally Estonia Challenge
 permalink: /teaching/the-rally-estonia-challenge
 subtitle: Teaching
+subnav: teaching
 meta: A neural network training competition organized by the ADL focused on autonomous driving in rural areas using data from WRC Rally Estonia tracks.
 ---
 

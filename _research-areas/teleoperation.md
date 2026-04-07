@@ -1,5 +1,7 @@
 ---
 layout: research-area
+subtitle: Research
+subnav: research
 title: Teleoperation
 icon: /images/icons/teleoperation.png
 research_lead: Karl Kruusamäe

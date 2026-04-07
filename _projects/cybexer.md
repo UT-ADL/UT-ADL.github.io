@@ -1,5 +1,7 @@
 ---
 layout: project
+subtitle: Research
+subnav: research
 title: Cooperation with the cybersecurity company CybExer Technologies
 category: Project
 webURL: https://cs.ut.ee/en/content/tartu-enhance-cybersecurity-smart-city-solutions

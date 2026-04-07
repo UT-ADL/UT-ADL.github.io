@@ -1,5 +1,7 @@
 ---
 layout: research-area
+subtitle: Research
+subnav: research
 title: Validation & testing
 icon: /images/icons/validation_and_testing.png
 research_lead: Dietmar Pfahl

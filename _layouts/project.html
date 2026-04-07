@@ -1,88 +1,74 @@
 ---
-layout: default
+layout: page
 ---
-{% include page-heading.html title="Research" %}
-<nav class="navbar-styling">
-    <div class="content-wrapper">
-        {% include subnavigation-bar.html navigation-bar-title="research" %}
+<div class="grid grid-cols-1 tablet:grid-cols-12 gap-4">
+    <div class="tablet:col-span-9 content-formatted">
+        <div class="grid md:grid-cols-3 gap-4">
+            <header class="md:col-span-2">
+                {% if page.category %}
+                <h5>{{ page.category }}</h5>
+                {% endif %}
+                <h3>{{ page.title }}</h3>
+            </header>
+        </div>
+        <article>
+            {{ content }}
+        </article>
     </div>
-</nav>
-<div class="content-wrapper mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
-    <main>
-        <div class="grid grid-cols-1 tablet:grid-cols-12 gap-4">
-            <div class="tablet:col-span-9 content-formatted">
-                <div class="grid md:grid-cols-3 gap-4">
-                    <header class="post-header md:col-span-2">
-                        {% if page.category %}
-                        <h5>{{ page.category }}</h5>
-                        {% endif %}
-                        <h3 class="post-title">{{ page.title }}</h3>
-                    </header>
-                </div>
-                <div>
-                    <article class="post">
-                        <div class="post-content">
-                            <div class="post-body content-formatted">{{ content }}</div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="tablet:col-span-3 tablet:px-4 xl:px-12">
-                {% if page.start_date %}
-                <div class="border-b border-t border-green py-8">
-                    <h5 class="mb-4">START DATE</h5>
-                    <p><b>{{ page.start_date | date: "%Y/%m/%d" }}</b></p>
-                </div>
+    <div class="tablet:col-span-3 tablet:px-4 xl:px-12">
+        {% if page.start_date %}
+        <div class="border-b border-t border-green py-8">
+            <h5 class="mb-4">START DATE</h5>
+            <p><b>{{ page.start_date | date: "%Y/%m/%d" }}</b></p>
+        </div>
+        {% endif %}
+        {% if page.end_date %}
+        <div class="border-b border-green py-8">
+            <h5 class="mb-4">END DATE</h5>
+            <p><b>{{ page.end_date | date: "%Y/%m/%d" }}</b></p>
+        </div>
+        {% endif %}
+        {% if page.funding %}
+        <div class="border-b border-green py-8">
+            <h5 class="mb-4">FUNDING</h5>
+            <p><b>{{ page.funding }}</b></p>
+        </div>
+        {% endif %}
+        {% if page.webURL != null or page.twitter != null or page.facebook != null %}
+        <div class="border-b border-green py-8">
+            <h5 class="mb-4">Project links</h5>
+            <div class="flex items-center">
+                {% if page.webURL != null and page.webURL != "" %}
+                <a href="{{ page.webURL }}" target="_blank" class="icon-link inline-block mr-4"></a>
                 {% endif %}
-                {% if page.end_date %}
-                <div class="border-b border-green py-8">
-                    <h5 class="mb-4">END DATE</h5>
-                    <p><b>{{ page.end_date | date: "%Y/%m/%d" }}</b></p>
-                </div>
+                {% if page.twitter != null and page.twitter != "" %}
+                <a href="{{ page.twitter }}" class="icon-twitter mr-4" target="_blank"></a>
                 {% endif %}
-                {% if page.funding %}
-                <div class="border-b border-green py-8">
-                    <h5 class="mb-4">FUNDING</h5>
-                    <p><b>{{ page.funding }}</b></p>
-                </div>
-                {% endif %}
-                {% if page.webURL != null or page.twitter != null or page.facebook != null %}
-                <div class="border-b border-green py-8">
-                    <h5 class="mb-4">Project links</h5>
-                    <div class="flex items-center">
-                        {% if page.webURL != null and page.webURL != "" %}
-                        <a href="{{ page.webURL }}" target="_blank" class="icon-link inline-block mr-4"></a>
-                        {% endif %}
-                        {% if page.twitter != null and page.twitter != "" %}
-                        <a href="{{ page.twitter }}" class="icon-twitter mr-4" target="_blank"></a>
-                        {% endif %}
-                        {% if page.facebook != null and page.facebook != "" %}
-                        <a href="{{ page.facebook }}" class="icon-facebook" target="_blank"></a>
-                        {% endif %}
-                    </div>
-                </div>
+                {% if page.facebook != null and page.facebook != "" %}
+                <a href="{{ page.facebook }}" class="icon-facebook" target="_blank"></a>
                 {% endif %}
             </div>
         </div>
-        <div class="relative mt-12 md:mt-16">
-            {% assign allProjects = site.projects | sort: "start_date" | reverse %}
-            <ul id="projectSlider">
-                {% for project in allProjects %}
-                {% if project.title != page.title %}
-                <li>
-                    <a href="{{ project.url }}" class="border border-green py-4 px-6 text-primary flex flex-col justify-start h-full hover:bg-bgGreen hover:bg-opacity-25 transition-colors duration-300 ease-in-out hover:border-transparent green-shadow">
-                        {% if project.category %}
-                        <h5>{{ project.category }}</h5>
-                        {% endif %}
-                        <p class="mb-4 font-semibold leading-4 line-clamp-2">{{ project.title }}</p>
-                    </a>
-                </li>
+        {% endif %}
+    </div>
+</div>
+<div class="relative mt-12 md:mt-16">
+    {% assign allProjects = site.projects | sort: "start_date" | reverse %}
+    <ul id="projectSlider" class="list-none p-0">
+        {% for project in allProjects %}
+        {% if project.title != page.title %}
+        <li>
+            <a href="{{ project.url }}" class="border border-green py-4 px-6 text-primary flex flex-col justify-start h-full hover:bg-bgGreen hover:bg-opacity-25 transition-colors duration-300 ease-in-out hover:border-transparent green-shadow">
+                {% if project.category %}
+                <h5>{{ project.category }}</h5>
                 {% endif %}
-                {% endfor %}
-            </ul>
-            <div class="absolute left-0 bottom-11px">
-                <a href="/research/projects" class="button-primary">All projects</a>
-            </div>
-        </div>
-    </main>
+                <p class="mb-4 font-semibold leading-4 line-clamp-2">{{ project.title }}</p>
+            </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <div class="absolute left-0 bottom-11px">
+        <a href="/research/projects" class="button-primary">All projects</a>
+    </div>
 </div>

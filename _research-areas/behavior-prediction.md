@@ -1,5 +1,7 @@
 ---
 layout: research-area
+subtitle: Research
+subnav: research
 title: Behavior prediction
 research_area: Behavior prediction
 icon: /images/icons/behaviour_prediction.png

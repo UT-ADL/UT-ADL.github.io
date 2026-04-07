@@ -1,5 +1,7 @@
 ---
 layout: research-area
+subtitle: Research
+subnav: research
 title: Requirements engineering
 icon: /images/icons/requirements_analysis.png
 research_lead: Kuldar Taveter

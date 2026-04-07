@@ -1,5 +1,7 @@
 ---
 layout: research-area
+subtitle: Research
+subnav: research
 title: High-definition maps
 icon: /images/icons/high_definition_maps.png
 research_lead: Edgar Sepp 

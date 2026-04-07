@@ -1,5 +1,7 @@
 ---
 layout: research-area
+subtitle: Research
+subnav: research
 title: Motion planning
 icon: /images/icons/motion_planning.png
 research_lead: Arun Kumar Singh

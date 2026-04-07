@@ -2,13 +2,15 @@
 layout: default
 ---
 {% include page-heading.html title=page.subtitle %}
+{% if page.subnav %}
 <nav class="navbar-styling">
     <div class="content-wrapper">
-        {% include subnavigation-bar.html navigation-bar-title="discover" %}
+        {% include subnavigation-bar.html navigation-bar-title=page.subnav %}
     </div>
 </nav>
+{% endif %}
 <div class="content-wrapper mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
-    <main>
+    <main class="content-formatted">
         {{ content }}
     </main>
 </div>

@@ -1,5 +1,6 @@
 ---
 layout: blogpost
+subtitle: Blog
 title: Cooperation between Clevon and ADL
 date: 2024-05-14
 image: /images/blog/clevon_cooperation.jpg

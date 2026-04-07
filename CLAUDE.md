@@ -39,16 +39,15 @@ _includes/           # Reusable HTML template fragments
   foot.html          # End-of-body scripts (currently empty)
   page-heading.html  # Page title component
   thesis-topic.html, defended-thesis.html, research-papers.html
-_layouts/            # Page layout templates
-  index.html         # Landing page
-  discover.html      # Discover section (about, team, media)
-  research.html      # Research section
-  teaching.html      # Teaching section
-  lab.html           # Lab facilities
-  blogpost.html      # Single blog post
-  blog.html          # Blog listing
-  research-area.html # Single research area
-  project.html       # Single project
+_layouts/            # Page layout templates (all derive from default → page)
+  default.html       # Base layout (header + footer only, used by index)
+  page.html          # Standard page (heading, optional subnav, content wrapper)
+  text.html          # Long-form content — extends page with 9/12 column width
+  blog.html          # Blog listing — extends text
+  blogpost.html      # Blog post — extends text, adds date/author
+  research-area.html # Research area — extends page, adds sidebar + slider
+  project.html       # Project — extends page, adds sidebar + slider
+  index.html         # Landing page (hero slider, partners)
 _posts/              # Blog posts (YYYY-MM-DD-title.md)
 _projects/           # Project pages (snake_case.md, layout: project)
 _research-areas/     # Research area pages (snake_case.md, layout: research-area)
@@ -124,10 +123,9 @@ Store in the appropriate subdirectory under `images/`:
 
 - **Data-driven rendering**: Templates iterate over `site.data.*` YAML files using Liquid `{% for %}` loops
 - **Active menu highlighting**: Navigation uses `prefix` field matched against current URL
-- **Component reuse**: Includes like `course.html`, `thesis-topic.html` render individual items from data loops
 - **Client-side filtering**: `site.js` uses `data-filter-group` / `data-filter-value` attributes on `.menu-tags` containers to filter `.filter-item` elements
-- **Voog-matched layout pattern**: All sub-page layouts follow the same wrapper structure — green nav bar, page heading, navbar-styling subnav, then `<main role="main">` content area
-- **Body classes per section**: Each layout sets a body class (`front-page`, `discover-page`, `blog-page`, `post-page`, `common-page`) for section-specific CSS
+- **Layout hierarchy**: `default` → `page` → `text`. All section pages use `layout: page` with `subtitle` (heading) and `subnav` (navigation group) front matter. Use `layout: text` for long-form/markdown pages (9/12 column). Blog and blogpost extend `text`; research-area and project extend `page`
+- **Content wrapper**: `.content-wrapper` class (max-width 1180px, 85% width, centered) used consistently across all layouts
 - **No CI/CD workflows**: GitHub Pages builds natively from the repo — no `.github/workflows/` needed
 
 ## Common Tasks

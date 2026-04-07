@@ -1,5 +1,6 @@
 ---
 layout: blogpost
+subtitle: Blog
 title: Rally Estonia Challenge 2023 Results
 date: 2023-08-21
 image: /images/blog/rally_estonia_2023_results.jpg

@@ -1,5 +1,6 @@
 ﻿---
 layout: blogpost
+subtitle: Blog
 title: ADL represented at ESSCaSS 2022
 date: 2022-08-17
 image: /images/blog/esscass2022.jpg

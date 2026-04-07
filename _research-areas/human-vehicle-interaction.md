@@ -1,5 +1,7 @@
 ---
 layout: research-area
+subtitle: Research
+subnav: research
 title: Human-vehicle interaction
 icon: /images/icons/human_vehicle_interaction.png
 research_lead: Karl Kruusamäe

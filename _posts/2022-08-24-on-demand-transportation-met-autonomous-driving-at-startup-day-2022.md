@@ -1,5 +1,6 @@
 ﻿---
 layout: blogpost
+subtitle: Blog
 title: On-demand transportation met autonomous driving at sTARTUp Day 2022
 date: 2022-08-24
 image: /images/blog/startupday2022.jpg

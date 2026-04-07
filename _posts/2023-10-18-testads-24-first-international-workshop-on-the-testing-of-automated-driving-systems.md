@@ -1,5 +1,6 @@
 ---
 layout: blogpost
+subtitle: Blog
 title: "TestADS'24: First International Workshop on the Testing of Automated Driving Systems"
 date: 2023-10-18
 image: /images/blog/testads24.jpeg

@@ -1,5 +1,6 @@
 ---
 layout: blogpost
+subtitle: Blog
 title: The Robotaxi Experience
 date: 2024-01-31
 image: /images/blog/the_moving_office.jpg

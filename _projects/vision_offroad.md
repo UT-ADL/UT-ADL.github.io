@@ -1,5 +1,7 @@
 ---
 layout: project
+subtitle: Research
+subnav: research
 title: Vision-based off-road navigation with geographical hints
 category: Project
 start_date: 2023-04-01

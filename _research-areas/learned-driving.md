@@ -1,5 +1,7 @@
 ---
 layout: research-area
+subtitle: Research
+subnav: research
 title: Learned driving
 icon: /images/icons/learned_driving.png
 research_lead: Tambet Matiisen

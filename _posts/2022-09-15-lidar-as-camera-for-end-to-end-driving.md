@@ -1,5 +1,6 @@
 ﻿---
 layout: blogpost
+subtitle: Blog
 title: LiDAR-as-Camera for End-to-End Driving
 date: 2022-09-15
 #image: https://img.youtube.com/vi/jpdRXS1U5Dg/maxres3.jpg

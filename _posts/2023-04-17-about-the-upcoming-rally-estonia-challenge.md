@@ -1,5 +1,6 @@
 ---
 layout: blogpost
+subtitle: Blog
 title: About the upcoming Rally Estonia Challenge
 date: 2023-04-17
 image: /images/blog/rally_estonia_challenge.jpg

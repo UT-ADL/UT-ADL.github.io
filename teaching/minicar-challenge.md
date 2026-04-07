@@ -1,8 +1,9 @@
 ---
-layout: teaching
+layout: text
 title: Minicar Challenge
 permalink: /teaching/minicar-challenge
 subtitle: Teaching
+subnav: teaching
 meta: ADL Minicar Challenge, is a yearly software competition held by the Autonomous Driving Lab (ADL) and the Institute of Computer Science. The task in this competition series is to create a software solution that can autonomously drive a toy car based on visual inputs.
 ---
 

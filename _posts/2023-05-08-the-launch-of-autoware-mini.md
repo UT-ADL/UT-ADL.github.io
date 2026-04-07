@@ -1,5 +1,6 @@
 ---
 layout: blogpost
+subtitle: Blog
 title: The launch of Autoware Mini
 date: 2023-05-08
 image: /images/blog/autoware_mini.jpeg

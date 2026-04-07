@@ -1,5 +1,7 @@
 ---
 layout: research-area
+subtitle: Research
+subnav: research
 title: Perception
 icon: /images/icons/perception_uncertainty.png
 research_lead: Amnir Hadachi

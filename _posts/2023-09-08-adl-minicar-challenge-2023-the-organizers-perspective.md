@@ -1,5 +1,6 @@
 ---
 layout: blogpost
+subtitle: Blog
 title: "ADL Minicar Challenge 2023: the organizer's perspective"
 date: 2023-09-08
 image: /images/blog/minicar_challenge_2023.png
