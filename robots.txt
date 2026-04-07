@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: http://adl.cs.ut.ee/sitemap.xml
+Sitemap: https://adl.cs.ut.ee/sitemap.xml
