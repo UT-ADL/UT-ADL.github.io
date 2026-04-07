@@ -38,7 +38,7 @@ _includes/           # Reusable HTML template fragments
   footer.html        # Site footer
   foot.html          # End-of-body scripts (currently empty)
   page-heading.html  # Page title component
-  course.html, thesis-topic.html, defended-thesis.html, research-papers.html
+  thesis-topic.html, defended-thesis.html, research-papers.html
 _layouts/            # Page layout templates
   index.html         # Landing page
   discover.html      # Discover section (about, team, media)
@@ -52,7 +52,7 @@ _layouts/            # Page layout templates
 _posts/              # Blog posts (YYYY-MM-DD-title.md)
 _projects/           # Project pages (snake_case.md, layout: project)
 _research-areas/     # Research area pages (snake_case.md, layout: research-area)
-css/                 # Stylesheets (compiled Tailwind v2.1.4 + custom styles in main.css)
+css/                 # Stylesheets (tailwind.css = compiled Tailwind v2.1.4, site.css = custom styles)
 js/                  # JavaScript (site.js — filters, slider, modals, nav)
 fonts/               # Custom Triakis font (OTF, WOFF, WOFF2)
 assets/              # SVG icons, logos, separators (from Voog theme)
@@ -64,7 +64,7 @@ blog/ research/ teaching/ discover/ lab/  # Section index pages
 ## Tech Stack
 
 - **Static site generator**: Jekyll 4.2.1
-- **CSS framework**: Tailwind CSS v2.1.4 (compiled, not CDN) + LightSlider v1.1.3 CSS
+- **CSS framework**: Tailwind CSS v2.1.4 (compiled in `css/tailwind.css`) + custom styles in `css/site.css`
 - **JS**: Custom `site.js` (vanilla JS — client-side filtering, slider, video modals, hotspots, mobile nav)
 - **Template language**: Liquid
 - **Markdown flavor**: kramdown (inline HTML allowed)
@@ -144,7 +144,7 @@ Store in the appropriate subdirectory under `images/`:
 | Add a research area | Create `_research-areas/name.md` with proper front matter |
 | Add a project | Create `_projects/name.md` with proper front matter |
 | Modify page layout | Edit the relevant file in `_layouts/` |
-| Change styles | Edit `css/main.css` |
+| Change styles | Edit `css/site.css` (custom styles) or `css/tailwind.css` (framework utilities) |
 
 ## Content Conventions
 
