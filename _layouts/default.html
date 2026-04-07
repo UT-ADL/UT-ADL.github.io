@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% if page.nav_style == "transparent" %}
+    <header class="site-header site-header-transparent menu-expande">
+        {% include main-navigation-bar.html applyMobileBackground=true %}
+    </header>
+    {% else %}
+    <header class="site-header">
+        {% include main-navigation-bar.html %}
+    </header>
+    {% endif %}
+    {{ content }}
+    {% include footer.html %}
+</body>
+
+</html>

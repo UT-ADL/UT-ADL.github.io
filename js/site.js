@@ -165,7 +165,7 @@
     document.querySelectorAll('.js-menu-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
         // Toggle the mobile menu-wrapper visibility
-        var header = this.closest('.header') || this.closest('header');
+        var header = this.closest('header');
         if (header) {
           var menuWrapper = header.querySelector('.menu-wrapper');
           if (menuWrapper) {

@@ -1,26 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	{% include head.html %}
-</head>
-
-<body class="blog-page">
-    <div class="bg-green border-b white-55 h-logoMobile md:h-logoTablet xl:h-logo flex items-center">
-        {% include main-navigation-bar.html %}
-    </div>
-    {% include page-heading.html title="Blog" %}
-    <div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
-        <main role="main">
-            <div class="grid grid-cols-1 tablet:grid-cols-12 gap-4">
-                <div class="tablet:col-span-9">
-                    {{content}}
-                </div>
+---
+layout: default
+---
+{% include page-heading.html title="Blog" %}
+<div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
+    <main>
+        <div class="grid grid-cols-1 tablet:grid-cols-12 gap-4">
+            <div class="tablet:col-span-9">
+                {{ content }}
             </div>
-        </main>
-    </div>
-    {% include footer.html %}
-    {% include foot.html %}
-</body>
-
-</html>
+        </div>
+    </main>
+</div>

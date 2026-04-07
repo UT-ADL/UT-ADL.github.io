@@ -5,17 +5,14 @@
         {% for navigation-bar-element in navigation-bar.subfolderitems %}
         {% assign active-url = navigation-bar-element.url | append: ".html" %}
         {% assign active-url-permalink = navigation-bar-element.url | append: "/" %}
+        {% assign is_active = false %}
         {% if page.url contains active-url-permalink or page.url == active-url or page.url == navigation-bar-element.url or page.url == active-url-permalink %}
-        <li class="menu-item dropdown-btn">
-            <a class="menu-link active text-primary hover:text-green mr-8 tablet:mr-12"
-                href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
-        </li>
-        {% else %}
-        <li class="menu-item dropdown-btn">
-            <a class="menu-link text-primary hover:text-green mr-8 tablet:mr-12"
-                href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
-        </li>
+        {% assign is_active = true %}
         {% endif %}
+        <li class="menu-item dropdown-btn">
+            <a class="menu-link{% if is_active %} active{% endif %} text-primary hover:text-green mr-8 tablet:mr-12"
+                href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+        </li>
         {% endfor %}
         {% endif %}
         {% endfor %}

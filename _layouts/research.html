@@ -1,27 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    {% include head.html %}
-</head>
-
-<body class="blog-page">
-    <div class="bg-green border-b white-55 h-logoMobile md:h-logoTablet xl:h-logo flex items-center">
-        {% include main-navigation-bar.html %}
+---
+layout: default
+---
+{% include page-heading.html title=page.subtitle %}
+<nav class="navbar-styling">
+    <div class="mx-auto max-w-7xl w-85">
+        {% include subnavigation-bar.html navigation-bar-title="research" %}
     </div>
-    {% include page-heading.html title=page.subtitle %}
-    <div class="navbar-styling">
-        <div class="mx-auto max-w-7xl w-85">
-            {% include subnavigation-bar.html navigation-bar-title="research" %}
-        </div>
-    </div>
-    <div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
-        <main role="main">
-            {{content}}
-        </main>
-    </div>
-    {% include footer.html %}
-    {% include foot.html %}
-</body>
-
-</html>
+</nav>
+<div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
+    <main>
+        {{ content }}
+    </main>
+</div>

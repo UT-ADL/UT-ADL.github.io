@@ -1,9 +1,21 @@
+{% capture nav_items %}
+{% for navigation-bar in site.data.navigation %}
+{% if navigation-bar.title == "main" %}
+{% for navigation-bar-element in navigation-bar.subfolderitems %}
+<li class="menu-item{% if page.url contains navigation-bar-element.prefix %} active{% endif %} block xl:inline-block py-4 xl:p-2 xl:mx-4">
+    <a class="menu-link font-normal text-base text-white hover:text-white focus:text-white"
+        href="{{ navigation-bar-element.url }}">{{ navigation-bar-element.page }}</a>
+</li>
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endcapture %}
+
 <div class="mx-auto max-w-7xl w-85">
-    <header class="header">
-        <div class="grid grid-flow-col auto-cols-auto grid-template-columns justify-between items-center">
+    <div class="grid grid-flow-col auto-cols-auto grid-template-columns justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center logo-picker-wrapper">
-                <a class="logo font-extralight text-xl leading-3 text-white hover:text-white" href="/" style="color:white;">
+                <a class="logo font-extralight text-xl leading-3 text-white hover:text-white" href="/">
                     Autonomous Driving Lab
                 </a>
             </div>
@@ -12,16 +24,7 @@
             <div class="relative hidden xl:block">
                 <nav class="menu-main js-menu-main js-popover js-prevent-sideclick z-50">
                     <ul class="menu text-left md:text-center w-full lg:inline-block">
-                        {% for navigation-bar in site.data.navigation %}
-                        {% if navigation-bar.title == "main" %}
-                        {% for navigation-bar-element in navigation-bar.subfolderitems %}
-                        <li class="menu-item{% if page.url contains navigation-bar-element.prefix %} active{% endif %} block xl:inline-block py-4 xl:p-2 xl:mx-4">
-                            <a class="menu-link font-normal text-base text-white hover:text-white focus:text-white"
-                                href="{{ navigation-bar-element.url }}" style="color:white;">{{ navigation-bar-element.page }}</a>
-                        </li>
-                        {% endfor %}
-                        {% endif %}
-                        {% endfor %}
+                        {{ nav_items }}
                     </ul>
                 </nav>
             </div>
@@ -30,16 +33,7 @@
             <div class="relative hidden menu-wrapper z-9999">
                 <nav class="menu-main js-menu-main js-popover js-prevent-sideclick z-50">
                     <ul class="menu text-left md:text-center w-full lg:inline-block">
-                        {% for navigation-bar in site.data.navigation %}
-                        {% if navigation-bar.title == "main" %}
-                        {% for navigation-bar-element in navigation-bar.subfolderitems %}
-                        <li class="menu-item{% if page.url contains navigation-bar-element.prefix %} active{% endif %} block xl:inline-block py-4 xl:p-2 xl:mx-4">
-                            <a class="menu-link font-normal text-base text-white hover:text-white focus:text-white"
-                                href="{{ navigation-bar-element.url }}" style="color:white;">{{ navigation-bar-element.page }}</a>
-                        </li>
-                        {% endfor %}
-                        {% endif %}
-                        {% endfor %}
+                        {{ nav_items }}
                     </ul>
                 </nav>
                 <div class="flex mt-auto justify-center md:hidden">
@@ -68,6 +62,5 @@
                     </span>
                 </div>
             </div>
-        </div>
-    </header>
+    </div>
 </div>
