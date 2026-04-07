@@ -15,6 +15,7 @@ We are investigating methods for behaviour modeling and motion prediction of roa
 
 We are also investigating many other aspects of autonomous driving including GNSS-free localization for true level-5 autonomy, and novel perception modalities in autonomous driving such as air flow etc.
 
-![Roundabout](/images/research/roundabout.png){:width="40%"}
-![Vehicles and bicycles](/images/research/vehicles_and_bicycles.png){:width="50%"}
+| | |
+|:---:|:---:|
+| ![Roundabout](/images/research/roundabout.png) | ![Vehicles and bicycles](/images/research/vehicles_and_bicycles.png) |
 

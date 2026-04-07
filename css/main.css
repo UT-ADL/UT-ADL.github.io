@@ -1684,18 +1684,24 @@ hr {
   font-family:Inter;
   font-style:normal;
   font-weight:500;
-  font-size:14px;
+  font-size:16px;
   border:none;
   background:#f39117;
   color:#fff;
   transition-duration:.4s;
   line-height:19px;
-  padding:11.5px 24px;
-  display:inline-block
+  padding:16px 48px;
+  display:block
 }
 .custom-btn:focus,.custom-btn:hover {
   background-color:#c87004;
   color:#fff
+}
+@media screen and (max-width:767px) {
+  .custom-btn {
+    font-size:14px;
+    padding:11.5px 24px
+  }
 }
 div:empty {
   margin-bottom:0
@@ -3661,7 +3667,7 @@ a[href=undefined] {
 .card-slider-wrapper {
     position: relative;
     overflow: hidden;
-    padding-bottom: 60px;
+    padding-bottom: 82px;
 }
 
 .card-slider {
@@ -3704,8 +3710,7 @@ a[href=undefined] {
 .card-slider-prev,
 .card-slider-next {
     position: absolute;
-    top: 50%;
-    transform: translateY(calc(-50% - 30px));
+    bottom: 21px;
     background: #fff;
     border: none;
     width: 40px;
@@ -3722,11 +3727,16 @@ a[href=undefined] {
 }
 
 .card-slider-prev {
-    left: 0;
+    right: 60px;
 }
 
 .card-slider-next {
-    right: 0;
+    right: 4px;
+}
+
+.card-slider-prev,
+.card-slider-next {
+    margin: 0;
 }
 
 .card-slider-prev:hover,
