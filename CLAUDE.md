@@ -43,7 +43,6 @@ _layouts/            # Page layout templates (all derive from default → page)
   default.html       # Base layout (header + footer only, used by index)
   page.html          # Standard page (heading, optional subnav, content wrapper)
   text.html          # Long-form content — extends page with 9/12 column width
-  blog.html          # Blog listing — extends text
   blogpost.html      # Blog post — extends text, adds date/author
   research-area.html # Research area — extends page, adds sidebar + slider
   project.html       # Project — extends page, adds sidebar + slider
