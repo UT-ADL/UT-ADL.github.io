@@ -18,7 +18,7 @@ meta:  Here you can see what we've been working on in cooperation with our partn
 <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
     {% assign sorted_projects = site.projects | sort: "start_date" | reverse %}
     {% for post in sorted_projects %}
-    <a href="{{post.url}}" class="md:col-span-6 tablet:col-span-4 border border-green py-4 px-6 text-primary block flex flex-col justify-start h-full hover:bg-bgGreen hover:bg-opacity-25 transition-colors duration-300 ease-in-out hover:border-0 hover:border-transparent green-shadow">
+    <a href="{{post.url}}" class="md:col-span-6 tablet:col-span-4 border border-green py-4 px-6 text-primary flex flex-col justify-start h-full hover:bg-bgGreen hover:bg-opacity-25 transition-colors duration-300 ease-in-out hover:border-transparent green-shadow">
         {% if post.category %}
         <h5>{{post.category}}</h5>
         {% endif %}

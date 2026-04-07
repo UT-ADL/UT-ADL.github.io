@@ -14,7 +14,7 @@ meta: Making cars drive by themselves is a big task. A huge task. To help you (a
 <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
     {% assign posts_sorted = site.research-areas | sort:"title" %}
     {% for post in posts_sorted %}
-    <a href="{{post.url}}" class="md:col-span-6 tablet:col-span-4 border border-green px-4 py-8 text-primary flex items-center hover:bg-bgGreen hover:bg-opacity-25 transition-colors duration-300 ease-in-out hover:border-0 hover:border-transparent green-shadow">
+    <a href="{{post.url}}" class="md:col-span-6 tablet:col-span-4 border border-green px-4 py-8 text-primary flex items-center hover:bg-bgGreen hover:bg-opacity-25 transition-colors duration-300 ease-in-out hover:border-transparent green-shadow">
         <img src="{{post.icon}}" class="mr-2 research-img"/>
         <p class="mb-0 font-semibold">{{post.title}}</p>
     </a>

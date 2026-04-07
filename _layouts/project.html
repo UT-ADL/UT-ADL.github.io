@@ -3,11 +3,11 @@ layout: default
 ---
 {% include page-heading.html title="Research" %}
 <nav class="navbar-styling">
-    <div class="mx-auto max-w-7xl w-85">
+    <div class="content-wrapper">
         {% include subnavigation-bar.html navigation-bar-title="research" %}
     </div>
 </nav>
-<div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
+<div class="content-wrapper mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
     <main>
         <div class="grid grid-cols-1 tablet:grid-cols-12 gap-4">
             <div class="tablet:col-span-9 content-formatted">
@@ -70,7 +70,7 @@ layout: default
                 {% for project in allProjects %}
                 {% if project.title != page.title %}
                 <li>
-                    <a href="{{ project.url }}" class="border border-green py-4 px-6 text-primary block flex flex-col justify-start h-full hover:bg-bgGreen hover:bg-opacity-25 transition-colors duration-300 ease-in-out hover:border-0 hover:border-transparent green-shadow">
+                    <a href="{{ project.url }}" class="border border-green py-4 px-6 text-primary flex flex-col justify-start h-full hover:bg-bgGreen hover:bg-opacity-25 transition-colors duration-300 ease-in-out hover:border-transparent green-shadow">
                         {% if project.category %}
                         <h5>{{ project.category }}</h5>
                         {% endif %}

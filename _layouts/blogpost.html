@@ -2,9 +2,9 @@
 layout: default
 ---
 {% include page-heading.html title="Blog" %}
-<div class="mx-auto max-w-7xl w-85 mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
+<div class="content-wrapper mt-12 md:mt-16 mb-12 md:mb-16 xl:mb-20">
     <main>
-        <span class="overlane-text">{{ page.date | date: "%m/%d/%Y" }}{% if page.author %} by {{ page.author }}{% endif %}</span>
+        <time class="overlane-text" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%m/%d/%Y" }}</time>{% if page.author %}<span class="overlane-text"> by {{ page.author }}</span>{% endif %}
         <h3 class="post-title">{{ page.title }}</h3>
         <div class="grid grid-cols-1 tablet:grid-cols-12 gap-4">
             <div class="tablet:col-span-9 content-formatted mt-3">
