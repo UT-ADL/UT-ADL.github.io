@@ -53,10 +53,10 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                         Velodyne VLP-32C lidar
                     </h3>
                     <p>
-                        The long-range lidar helps to detect far-away obstacles, e.g. cars and pedestrians.
-                        Velodyne VLP-32C lidar has 32 lidar beams and has detection range about 80 meters.
-                        Ground removal and clustering are applied to extract obstacles from the point cloud.
-                        Alternatively special neural network can be used to detect other vehicles and pedestrians.
+                        The long-range lidar helps to detect far-away obstacles, e.g., cars and pedestrians.
+                        The Velodyne VLP-32C has 32 lidar beams and has a detection range of about 80 meters.
+                        Ground removal and clustering is applied to extract obstacles from the point cloud.
+                        Alternatively, a special neural network can be used to detect other vehicles and pedestrians.
                     </p>
                 </div>
             </div>
@@ -71,10 +71,10 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                         Ouster OS1-128 lidar
                     </h3>
                     <p>
-                        The short-range lidar helps to detect close-by and small obstacles around the vehicle. 
-                        Ouster OS1-128 produces very dense point cloud with its 128 rotating laser beams and has detection range around 40 meters.
-                        The precision of lidar measurements is 2-3 cm.
-                        Ground removal and clustering are applied to extract obstacles from the point cloud.
+                        The short-range lidar helps to detect close-by and small obstacles around the vehicle.
+                        The Ouster OS1-128 produces a very dense point cloud with its 128 rotating laser beams and has detection range of around 40 meters.
+                        The precision of the lidar measurements is about 2–3 cm.
+                        Ground removal and clustering is applied to extract obstacles from the point cloud.
                     </p>
                 </div>
             </div>
@@ -90,10 +90,9 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                     </h3>
                     <p>
                         The two cameras keep an eye on traffic lights.
-                        The left camera is pointed forward to see the farther traffic lights.
-                        The right camera is pointed slightly to the right to see the closest traffic lights next to the stopline.
-                        Traffic light locations are known from the high-definition map and are projected to the camera image.
-                        Then a patch with the traffic light is extracted from the camera image and neural network is used to classify if the light is red, green or yellow.
+                        The left camera is pointed forward to see the farther traffic lights and the right one is pointed slightly to the right to see the closest traffic lights next to stop lines.
+                        The locations of the traffic lights are known from the high-definition map and are projected to the camera image.
+                        A patch with the traffic light is then extracted from the camera image and a neural network is used to classify whether the light is red, green or yellow.
                     </p>
                 </div>
             </div>
@@ -108,10 +107,10 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                         Aptiv ESR 2.5 radar
                     </h3>
                     <p>
-                        The radar uses reflections of radio waves to estimate the distance to the other vehicles ahead.
-                        In addition it also produces instant speed measurements of those vehicles using Doppler effect.
-                        Radar is very good in detecting big metallic objects, like cars, but struggles with humans and smaller objects.
-                        Additionally its distance measurements are very accurate in longitudinal direction, but lack precision in lateral direction.
+                        The radar uses reflections of radio waves to estimate the distance to the vehicles ahead.
+                        It also produces instant speed measurements of those vehicles by utilizing the Doppler effect.
+                        The radar is very good at detecting large metallic objects, such as cars but struggles with pedestrians and smaller objects.
+                        Additionally, its distance measurements are very accurate in the longitudinal direction but lack precision in the lateral direction.
                     </p>
                 </div>
             </div>
@@ -127,8 +126,8 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                     </h3>
                     <p>
                         The GNSS device determines the location of the car using satellite positioning and corrections from nearby base stations.
-                        The system makes use of Real-Time Kinematic (RTK) system with ESTPOS base station network to consistently achieve 5-10 cm positioning accuracy.
-                        The car needs to know its precise position on the high-definition map to follow the virtual rails drawn on the map.
+                        The system makes use of a Real-Time Kinematic (RTK) system with the ESTPOS base station network to consistently achieve a positioning accuracy of 5–10 cm.
+                        The car needs to know its precise position on the high-definition map to follow the virtual "rails" featured on the map.
                     </p>
                 </div>
             </div>
@@ -143,10 +142,8 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                         AStuff Spectra computer
                     </h3>
                     <p>
-                        The computer runs the Autoware.AI software that makes all the driving decisions. 
-                        Autoware.AI is open-source autonomous driving software stack that is built on top of Robot Operating System (ROS).
-                        Other than that the computer is just a normal PC running Ubuntu operating system.
-                        Over time we have made many tunings, bug fixes and adaptations to the Autoware.AI software.
+                        The computer runs our in-house software that makes all the driving decisions.
+                        Other than that, the computer is just a normal PC running an Ubuntu operating system.
                     </p>
                 </div>
             </div>
@@ -156,7 +153,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
     <!-- Specifications header -->
     <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mt-12 md:mt-16">
         <div class="md:col-span-9">
-            <h3>For some of the more tech-savvy people amongst you, here is a list of all the major pieces of hardware
+            <h3>For some of the more tech-savvy amongst you, here is a list of all the major pieces of hardware
                 and sensors that we use:</h3>
         </div>
     </div>
@@ -198,7 +195,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="md:col-span-2 col-span-12">
-                <a href="https://ouster.com/products/scanning-lidar/os1-sensor/" rel="nofollow" target="_blank">Manufacturer's
+                <a href="https://ouster.com/products/hardware/os1-lidar-sensor" rel="nofollow" target="_blank">Manufacturer's
                     specs</a>
             </div>
         </div>
@@ -243,7 +240,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="md:col-span-2 col-span-12">
-                <a href="https://velodynelidar.com/products/ultra-puck/" rel="nofollow" target="_blank">Manufacturer's specs</a>
+                <a href="https://ouster.com/products/hardware/vlp-16" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
@@ -303,7 +300,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="md:col-span-2 col-span-12">
-                <a href="https://novatel.com/products/gnss-inertial-navigation-systems/combined-systems/pwrpak7d-e2"
+                <a href="https://autonomoustuff.com/products/novatel-positioning-kits"
 				   rel="nofollow" target="_blank">Manufacturer's
                     specs</a>
             </div>
@@ -394,7 +391,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
             <div class="md:col-span-6 col-span-12">
                 <ul class="list-none">
                     <li class="list-item">
-                        Software control of steering, throttle and brake
+                        Software control of steering, the throttle and the brake
                     </li>
                     <li class="list-item">
                         Controllable over CAN bus
@@ -405,7 +402,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="md:col-span-2 col-span-12">
-                <a href="https://autonomoustuff.com/products/pacmod" rel="nofollow"  target="_blank">Manufacturer's specs</a>
+                <a href="http://wiki.ros.org/pacmod3" rel="nofollow"  target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
@@ -475,7 +472,7 @@ meta: Overview of the Lexus RX450h that is equipped with all the sensors for bas
                 </ul>
             </div>
             <div class="md:col-span-2 col-span-12">
-                <a href="https://developer.nvidia.com/drive/drive-agx" rel="nofollow" target="_blank">Manufacturer's specs</a>
+                <a href="https://developer.nvidia.com/drive/agx" rel="nofollow" target="_blank">Manufacturer's specs</a>
             </div>
         </div>
     </div>
