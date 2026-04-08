@@ -113,7 +113,7 @@ For everything to run smoothly, there were many judges and assistants:
 
 ![Minicar 2023 infraction table](/images/blog/minicar-2023-infraction-table.png)
 
-![Minicar 2023 counting points](/images/blog/minicar-2023-counting-points.png) ![Minicar 2023 adjusting obstacles](/images/blog/minicar-2023-adjusting-obstacles.png)
+[![Minicar 2023 counting points](/images/blog/minicar-2023-counting-points.png)](/images/blog/minicar-2023-counting-points.png) [![Minicar 2023 adjusting obstacles](/images/blog/minicar-2023-adjusting-obstacles.png)](/images/blog/minicar-2023-adjusting-obstacles.png)
 
 The order of teams was randomly drawn and the competition consisting of 8 scenarios, designed beforehand by Ardi and Kertu, proceeded in order Scenario1-Team1, Scenario1-Team2, Scenario1-Team3, (reconfigure track), Scenario2-Team1,...
 

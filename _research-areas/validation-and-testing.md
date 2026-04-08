@@ -18,6 +18,6 @@ The next step is validation. Validation is the process of testing the system in 
 
 The most critical property to testing is safety. Safety testing is the process of ensuring that the system is safe for use at least at the same level as human-driven vehicles are safe. To achieve a human-like level of safety, we explore ways to combine simulation-based testing with on-road testing.
 
-![Validation 1](/images/research/validation1.jpg) ![Validation 2](/images/research/validation2.jpg)
+[![Validation 1](/images/research/validation1.jpg)](/images/research/validation1.jpg) [![Validation 2](/images/research/validation2.jpg)](/images/research/validation2.jpg)
 
 {% include youtube.html id="A_dHfvMgd-w" wmode="transparent" %}

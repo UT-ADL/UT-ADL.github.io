@@ -55,7 +55,7 @@ Being able to generalize to new light and weather conditions is the expected ben
 * In winter the failures were mainly in open field sections (see Figure 3).
 
 
-![Interventions during night](/images/blog/night_interventions.png) ![Interventions during winter](/images/blog/winter_interventions.png)
+[![Interventions during night](/images/blog/night_interventions.png)](/images/blog/night_interventions.png) [![Interventions during winter](/images/blog/winter_interventions.png)](/images/blog/winter_interventions.png)
 
 **Figure 3.** Interventions during night (left) and winter (right) driving with the LiDAR model. The map also depicts land usage: dark green denotes forest while light green denotes agricultural land. Grey areas are of an unspecified usage, mostly residential use with private houses, partially fenced gardens. On the winter trajectory, there is only one intervention in the forest, while more open areas prove challenging for the summer-trained LiDAR model in the winter.
 
