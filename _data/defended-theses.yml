@@ -426,6 +426,14 @@
   year: 2021
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72213&year=2021
 
+- title: "Autonomous driving: Learning from Interventions"
+  supervisor: Ardi Tampuu, Tambet Matiisen, Umut Güçlü
+  research_area: Learned driving
+  author: Thomas Churchman
+  field: MSc
+  year: 2021
+  link: https://www.etis.ee/Portal/Mentorships/Display/bcc3792c-4695-4d7d-a355-5b9f1b4080c8?lang=ENG
+
 # 2020
 
 - title: "Detection of Changes in Maps Using LiDAR Point Clouds"
@@ -467,3 +475,45 @@
   field: MSc
   year: 2020
   link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=70098&year=2020
+
+- title: "Sim-to-Real Generalization of Computer Vision with Domain Adaptation, Style Randomization, and Multi-Task Learning"
+  supervisor: Tambet Matiisen
+  research_area: Perception
+  author: Hannes Liik
+  field: MSc
+  year: 2020
+  link: https://hdl.handle.net/10062/94055
+
+- title: "Real-time 3D Object Detection on Point Clouds"
+  supervisor: Tambet Matiisen
+  research_area: Perception
+  author: Enes Özipek
+  field: MSc
+  year: 2020
+  link: https://hdl.handle.net/10062/94000
+
+- title: "Sample-efficient Online Learning in a Physical Environment"
+  supervisor: Rainer Paat, Tambet Matiisen
+  research_area: Learned driving
+  author: Martin Liivak
+  field: MSc
+  year: 2020
+  link: https://hdl.handle.net/10062/94111
+
+# 2019
+
+- title: "Object Detection Using LiDAR and Camera Fusion in Off-road Conditions"
+  supervisor: Tambet Matiisen
+  research_area: Perception
+  author: Mahir Gulzar
+  field: MSc
+  year: 2019
+  link: https://hdl.handle.net/10062/66423
+
+- title: "Automatic Labelling of Point Clouds Using Image Semantic Segmentation"
+  supervisor: Tambet Matiisen
+  research_area: Perception
+  author: Markus Loide
+  field: MSc
+  year: 2019
+  link: https://hdl.handle.net/10062/66431
