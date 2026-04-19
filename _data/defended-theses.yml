@@ -82,7 +82,7 @@
   author: Nataliia Pabat
   field: MSc
   year: 2024
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79453
+  link: https://thesis.cs.ut.ee/4e287eda-6666-4f96-aafb-64cdfe177c2a
 
 - title: "Creation of Digital Twin for Tartu"
   supervisor: Tambet Matiisen
@@ -90,7 +90,7 @@
   author: Allan Mitt
   field: MSc
   year: 2024
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79023
+  link: https://thesis.cs.ut.ee/f154ebb7-bca6-4fc1-b996-d5c432eceef1
 
 - title: "Physical A*: Graph-Based Search Algorithm for Robot Navigation On-the-Go"
   supervisor: Tambet Matiisen
@@ -114,7 +114,7 @@
   author: Karl-Johan Pilve
   field: MSc
   year: 2024
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79361
+  link: https://thesis.cs.ut.ee/3c0e2295-36ee-4c53-8158-7285a788f409
 
 - title: "Creation of Materials to Teach Data Science via Self-Driving"
   supervisor: Ardi Tampuu
@@ -122,7 +122,7 @@
   author: Artur Kreegipuu
   field: BSc
   year: 2024
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79253
+  link: https://thesis.cs.ut.ee/c9e0ad72-9be2-4e89-9462-b9c1689fc9b0
 
 - title: "Designing and Implementing a Bird's-eye View Interface for a Self-driving Vehicle's Teleoperation System"
   supervisor: Karl Kruusamäe
@@ -130,7 +130,7 @@
   author: Rauno Põlluäär
   field: MSc
   year: 2024
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79393
+  link: https://thesis.cs.ut.ee/90ddacb8-ec9a-4f91-8272-04f185d432c6
 
 - title: "Automating Classification of Disengagements using FoxGlove"
   supervisor: Dietmar Pfahl
@@ -138,7 +138,7 @@
   author: Pirjo Jõelo
   field: BSc
   year: 2024
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79505
+  link: https://thesis.cs.ut.ee/494db6fd-10d3-42ab-bd07-cee467d98893
 
 - title: "Simulation-based Safety Testing of an Automated Driving System (ADS)"
   supervisor: Dietmar Pfahl
@@ -146,7 +146,7 @@
   author: Laima Anna Dalbina
   field: MSc
   year: 2024
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=79321
+  link: https://thesis.cs.ut.ee/9a21a1cc-12aa-4eea-9ca3-b267aa7b70a1
 
 # 2023
 
@@ -188,7 +188,7 @@
   author: Timo Tiirats
   field: MSc
   year: 2023
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=77233
+  link: https://thesis.cs.ut.ee/d427cff1-2c86-4bb4-85fa-3f430134fb2b
 
 - title: "Semi-automatic generation of Lanelet2 maps for autonomous driving"
   supervisor: Edgar Sepp, Tambet Matiisen
@@ -196,7 +196,7 @@
   author: Valentina Sagris
   field: MSc
   year: 2023
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=76559
+  link: https://thesis.cs.ut.ee/bd1f3813-a319-42f3-9f6c-711bd81d4948
 
 - title: "Georeferenced Visual SLAM"
   supervisor: Tambet Matiisen, Edgar Sepp
@@ -204,7 +204,7 @@
   author: Erik Mägi
   field: MSc
   year: 2023
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=77221
+  link: https://thesis.cs.ut.ee/9ccf839b-3016-4d42-b5dc-8695632767ea
 
 # 2022
 
@@ -214,7 +214,7 @@
   author: Anna Ulst
   field: BSc
   year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75182&language=en
+  link: https://thesis.cs.ut.ee/961db606-7b69-4030-b5f7-bd471be1735e?language=en
 
 - title: "A continuous teleoperating system based on shared control concept"
   supervisor: Karl Kruusamäe, Arun Kumar Singh
@@ -230,7 +230,7 @@
   author: Mykyta Baliesnyi
   field: MSc
   year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75382&year=2022
+  link: https://thesis.cs.ut.ee/23a5f8d3-059e-44a5-b8e9-d0190d2263c0
 
 - title: "Comparing Output Modalities in End-to-End Driving"
   supervisor: Tambet Matiisen, Ardi Tampuu
@@ -238,7 +238,7 @@
   author: Romet Aidla
   field: MSc
   year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75346&year=2022
+  link: https://thesis.cs.ut.ee/81d4bccb-295e-4b04-a3ca-7119002145d5
 
 - title: "In Search of the Best Activation Function"
   supervisor: Tambet Matiisen
@@ -254,7 +254,7 @@
   author: Kristjan Roosild
   field: MSc
   year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75358&year=2022
+  link: https://thesis.cs.ut.ee/45ea6ffb-66e0-45b6-b204-f124a048b4c2
 
 - title: "Leading Vehicle Length Estimation Using Pressure Data for Use in Autonomous Driving"
   supervisor: Naveed Muhammad
@@ -262,7 +262,7 @@
   author: Matis Ottan
   field: BSc
   year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74510&year=2022
+  link: https://thesis.cs.ut.ee/8b9de3ce-fdc2-4335-9601-6a7ab841dc64
 
 - title: "Effect of Delays/Lag and Fighting it in Self-driving Neural Networks"
   supervisor: Ardi Tampuu
@@ -270,7 +270,7 @@
   author: Ilmar Uduste
   field: MSc
   year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74970&year=2022
+  link: https://thesis.cs.ut.ee/acddba1f-a17a-4d59-a3ff-51a81eb96ef8
 
 - title: "Teleoperation of Remote Controlled Toy Cars in VR"
   supervisor: Ulrich Norbisrath
@@ -278,7 +278,7 @@
   author: Amirabbas Sherafatian
   field: MSc
   year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74821&year=2022
+  link: https://thesis.cs.ut.ee/c4666c4f-6ef0-4594-83c9-8cb63e462767
 
 - title: "Forecasting Human Trajectories with Uncertainty Estimation"
   supervisor: Meelis Kull, Novin Shahroudi
@@ -286,7 +286,7 @@
   author: Karl Riis
   field: MSc
   year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=75142&year=2022
+  link: https://thesis.cs.ut.ee/1a7845ce-621e-4f95-bc47-caf1bd34a2f4
 
 - title: "State of the art VR Driving Simulation for Physical Test Car Using LiDAR for Mapping the Surrounding Environment"
   supervisor: Ulrich Norbisrath
@@ -294,7 +294,7 @@
   author: Raigo Kõvask
   field: MSc
   year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74845&year=2022
+  link: https://thesis.cs.ut.ee/6b0b8277-5eab-4443-b360-bc9380db22d7
 
 - title: "Agent Behavior Modeling in Roundabout Traffic"
   supervisor: Naveed Muhammad, Yar Muhammad
@@ -302,7 +302,7 @@
   author: Heidi Korp
   field: MSc
   year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74817&year=2022
+  link: https://thesis.cs.ut.ee/a8bf37eb-0340-4b57-8816-35e3c781a36e
 
 - title: "Using Adversarial Defense Methods to Improve the Performance of Deep-Neural-Network-Controlled Automatic Driving Systems"
   supervisor: Dietmar Pfahl
@@ -310,7 +310,7 @@
   author: Mike Gomes Camara
   field: MSc
   year: 2022
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=74730&year=2022
+  link: https://thesis.cs.ut.ee/dcc309d6-d863-4dcb-89f9-dff16f251343
 
 # 2021
 
@@ -328,7 +328,7 @@
   author: Allan Mitt
   field: BSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72125&year=2021
+  link: https://thesis.cs.ut.ee/91f8b35b-3e69-4e74-b2c8-4bb94b1907d6
 
 - title: "Air-flow sensing for applications in autonomous driving"
   supervisor: Naveed Muhammad, Yar Muhammad
@@ -336,7 +336,7 @@
   author: Roman Matvejev
   field: BSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71873&year=2021
+  link: https://thesis.cs.ut.ee/9c4bb193-8514-4456-9985-7d7d4fcfcc09
 
 - title: "Multihead Attention Enhanced Memory Augmented Neural Network for Multimodal Trajectory Prediction"
   supervisor: Naveed Muhammad, Yar Muhammad
@@ -344,7 +344,7 @@
   author: Farhan Syakir
   field: MSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=73708&year=2021
+  link: https://thesis.cs.ut.ee/0938b9be-7927-4eab-8f34-412a02b80759
 
 - title: "Modelling Interactions Between Traffic and Crosswalk Agents at Unsignalized Crossings"
   supervisor: Naveed Muhammad, Yar Muhammad
@@ -352,7 +352,7 @@
   author: Laura Liis Metsvaht
   field: MSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72407&year=2021
+  link: https://thesis.cs.ut.ee/f2e67f62-094a-4816-8f1c-0bb83f88ea2f
 
 - title: "Navigation Application Input Rendering for a Self-driving Car's Neural Network"
   supervisor: Tambet Matiisen
@@ -360,7 +360,7 @@
   author: Erik Marcus Maks
   field: BSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72141&year=2021
+  link: https://thesis.cs.ut.ee/f5d73c80-ebf8-4cd6-ad42-ddb92a407029
 
 - title: "Human-like Speed in Curves"
   supervisor: Tambet Matiisen
@@ -368,7 +368,7 @@
   author: Eduard Rudi
   field: BSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71953&year=2021
+  link: https://thesis.cs.ut.ee/0907068a-9bdb-4cd0-8dec-4ce578364d3f
 
 - title: "Generating Vector Map Data for Autonomous Driving"
   supervisor: Tambet Matiisen, Edgar Sepp
@@ -376,7 +376,7 @@
   author: Krister Looga
   field: BSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72097&year=2021
+  link: https://thesis.cs.ut.ee/7cff662c-7cca-4b5c-9c86-7a6b5a01c95f
 
 - title: "Tool for Creating High Definition Maps in Lanelet2 format"
   supervisor: Tambet Matiisen, Edgar Sepp
@@ -384,7 +384,7 @@
   author: Karl-Johan Pilve
   field: BSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71905&year=2021
+  link: https://thesis.cs.ut.ee/f0b785b5-4b3d-474e-87cc-d922851e2bb4
 
 - title: "Securing Passenger's Data in Autonomous Vehicles"
   supervisor: Raimundas Matulevičius, Mari Seeba
@@ -392,7 +392,7 @@
   author: Mariia Bakhtina
   field: MSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72371&year=2021
+  link: https://thesis.cs.ut.ee/276b8197-ab01-42f3-9a13-98b08ab0631a
 
 - title: "External human-vehicle interaction - a study in the context of an autonomous ride-hailing service"
   supervisor: Karl Kruusamäe, Alexander Udo Nolte, Andres Kuusik
@@ -408,7 +408,7 @@
   author: Jan Aare van Gent
   field: MSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72431&year=2021
+  link: https://thesis.cs.ut.ee/2670dfe0-6685-4946-be97-debdb7913822
 
 - title: "Traffic Light Detection by Fusing Object Detection and Map Info"
   supervisor: Tambet Matiisen, Meelis Kull
@@ -416,7 +416,7 @@
   author: Tetiana Shtym
   field: MSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72435&year=2021
+  link: https://thesis.cs.ut.ee/78f65754-0f02-4958-bb05-6570f67ad223
 
 - title: "Automatic Road Boundaries Extraction for High Definition maps"
   supervisor: Naveed Muhammad, Dmytro Fishman
@@ -424,7 +424,7 @@
   author: Dmytro Zabolotnii
   field: MSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72241&year=2021
+  link: https://thesis.cs.ut.ee/6a00608b-dfa7-426b-a8f4-bf4b5c7f990a
 
 - title: "Creating High-Definition Vector Maps for Autonomous Driving"
   supervisor: Tambet Matiisen
@@ -432,7 +432,7 @@
   author: Edgar Sepp
   field: MSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=71505&year=2021
+  link: https://thesis.cs.ut.ee/a423783a-dce4-4d68-90d0-b36f1ac4db87
 
 - title: "Change Detection in HD-Maps Using Camera Images for Autonomous Driving"
   supervisor: Dmytro Fishman, Naveed Muhammad
@@ -440,7 +440,7 @@
   author: Navid Bamdad Roshan
   field: MSc
   year: 2021
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=72213&year=2021
+  link: https://thesis.cs.ut.ee/acac9b28-d956-4d89-a121-2c8b9fb1351f
 
 - title: "Autonomous driving: Learning from Interventions"
   supervisor: Ardi Tampuu, Tambet Matiisen, Umut Güçlü
@@ -458,7 +458,7 @@
   author: Vladyslav Fediukov
   field: MSc
   year: 2020
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=69463&year=2020
+  link: https://thesis.cs.ut.ee/b13aeb89-b40d-4c42-bfba-7e7c406e41f0
 
 - title: "Estimating the distribution of risks of a self-driving car's object detection model with a Poisson process"
   supervisor: Meelis Kull
@@ -482,7 +482,7 @@
   author: Timo Soiunen
   field: MSc
   year: 2020
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=70046&year=2020
+  link: https://thesis.cs.ut.ee/f698d48c-0dd6-4076-9e00-682d90df3cce
 
 - title: "Security Risk Management in Autonomous Driving Vehicles: Architecture Perspective"
   supervisor: Raimundas Matulevičius, Abasi-Amefon O. Affia
@@ -490,7 +490,7 @@
   author: Rando Tõnisson
   field: MSc
   year: 2020
-  link: https://comserv.cs.ut.ee/ati_thesis/datasheet.php?id=70098&year=2020
+  link: https://thesis.cs.ut.ee/b7592e24-91b0-482b-b391-74218003e0e6
 
 - title: "Sim-to-Real Generalization of Computer Vision with Domain Adaptation, Style Randomization, and Multi-Task Learning"
   supervisor: Tambet Matiisen
