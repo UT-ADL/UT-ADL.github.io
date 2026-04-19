@@ -14,7 +14,7 @@
   author: Jerin George
   field: MSc
   year: 2026
-  link: https://www.etis.ee/Portal/Mentorships/Display/2750fdb9-cc64-4ab3-88b5-16c7a6c9b009?lang=ENG
+  link: https://thesis.cs.ut.ee/0c4e47f3-6d85-434a-9db6-fd201ce32062
 
 # 2025
 
@@ -24,7 +24,7 @@
   author: Maksim Ploter
   field: MSc
   year: 2025
-  link: https://hdl.handle.net/10062/117032
+  link: https://thesis.cs.ut.ee/897dac7f-d8ca-43db-84b0-3b40421998b8
 
 - title: "Absolute Positioning of a Drone Using Aerial Images"
   supervisor: Tambet Matiisen
@@ -32,7 +32,7 @@
   author: Gregor Nepste
   field: MSc
   year: 2025
-  link: https://hdl.handle.net/10062/117042
+  link: https://thesis.cs.ut.ee/8387ee1b-3e8d-4d68-8041-4a88205728c3
 
 - title: "Automating the Classification of Disengagements Using Convolutional Neural Networks"
   supervisor: Dietmar Pfahl
@@ -246,7 +246,7 @@
   author: Marti Ingmar Liibert
   field: MSc
   year: 2022
-  link: https://hdl.handle.net/10062/91736
+  link: https://thesis.cs.ut.ee/eeb04863-7020-47bc-ae9a-e74fc67295d7
 
 - title: "Driving Speed as a Hidden Factor Behind Distribution Shift"
   supervisor: Ardi Tampuu
