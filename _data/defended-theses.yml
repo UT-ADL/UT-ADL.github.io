@@ -1,4 +1,30 @@
+# 2026
+
+- title: "Requirements for Integrating Robotaxis to Ride-Hailing User Interfaces"
+  supervisor: Tambet Matiisen, Antti Juhana Ainamo
+  research_area: Human-vehicle interaction
+  author: Jerin George
+  field: MSc
+  year: 2026
+  link: https://www.etis.ee/Portal/Mentorships/Display/2750fdb9-cc64-4ab3-88b5-16c7a6c9b009?lang=ENG
+
 # 2025
+
+- title: "Eyes Wide Shut: Analyzing Object Detection Performance Under Degraded Sensor Input Scenarios"
+  supervisor: Tambet Matiisen
+  research_area: Perception
+  author: Maksim Ploter
+  field: MSc
+  year: 2025
+  link: https://hdl.handle.net/10062/117032
+
+- title: "Absolute Positioning of a Drone Using Aerial Images"
+  supervisor: Tambet Matiisen
+  research_area: Autonomy software
+  author: Gregor Nepste
+  field: MSc
+  year: 2025
+  link: https://hdl.handle.net/10062/117042
 
 - title: "Automating the Classification of Disengagements Using Convolutional Neural Networks"
   supervisor: Dietmar Pfahl
