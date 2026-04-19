@@ -498,7 +498,7 @@
   author: Hannes Liik
   field: MSc
   year: 2020
-  link: https://hdl.handle.net/10062/94055
+  link: https://thesis.cs.ut.ee/ff6de039-5011-43a2-8923-e83c1aede32d
 
 - title: "Real-time 3D Object Detection on Point Clouds"
   supervisor: Tambet Matiisen
@@ -506,7 +506,7 @@
   author: Enes Özipek
   field: MSc
   year: 2020
-  link: https://hdl.handle.net/10062/94000
+  link: https://thesis.cs.ut.ee/db42e4eb-127d-42f8-871b-d7b2770ce149
 
 - title: "Sample-efficient Online Learning in a Physical Environment"
   supervisor: Rainer Paat, Tambet Matiisen
@@ -514,7 +514,7 @@
   author: Martin Liivak
   field: MSc
   year: 2020
-  link: https://hdl.handle.net/10062/94111
+  link: https://thesis.cs.ut.ee/61e635aa-2b43-4f70-b238-6d342fa418a8
 
 # 2019
 
@@ -524,7 +524,7 @@
   author: Mahir Gulzar
   field: MSc
   year: 2019
-  link: https://hdl.handle.net/10062/66423
+  link: https://thesis.cs.ut.ee/59a194b9-a37e-4b74-9a2f-50f7713278da
 
 - title: "Automatic Labelling of Point Clouds Using Image Semantic Segmentation"
   supervisor: Tambet Matiisen
@@ -532,4 +532,4 @@
   author: Markus Loide
   field: MSc
   year: 2019
-  link: https://hdl.handle.net/10062/66431
+  link: https://thesis.cs.ut.ee/b8fd7782-accc-405e-8230-8eb5ff08e371
