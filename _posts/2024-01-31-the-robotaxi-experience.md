@@ -40,7 +40,7 @@ The groups started by narrowing down the problem and doing market research. Base
 
 The solutions proposed by the students were very imaginative and thoughtful. The following is a short summary of the final presentations together with some additional comments.
 
-## Business travelers {#business_travelers}
+### Business travelers {#business_travelers}
 
 The key concept proposed by the team was "The Moving Office". The idea is that during a business trip the robotaxi could be your cozy home office, where you can do both work and relax in-between the meetings. As you do not have to drive, your hands are free to answer emails or finish your presentation. Robotaxi provides you privacy - you do not have to worry about your phone calls being overheard by the taxi driver. Also you do not have to worry about the parking place, the robotaxi will pick you up again after the meeting.
 
@@ -62,7 +62,7 @@ The final report of the team can be found here:
 The Figma prototype of the app can be found here:
 [https://www.figma.com/proto/aRKFK8YUqHEgLUrHIf4XgI/Tourist_Wireframes?type=design&node-id=695-2853&t=CzGIhNfuo36PkjQa-0&scaling=scale-down&page-id=563%3A58&starting-point-node-id=695%3A2853](https://www.figma.com/proto/aRKFK8YUqHEgLUrHIf4XgI/Tourist_Wireframes?type=design&node-id=695-2853&t=CzGIhNfuo36PkjQa-0&scaling=scale-down&page-id=563%3A58&starting-point-node-id=695%3A2853){:target="_blank"}
 
-## Families and kids {#families_and_kids}
+### Families and kids {#families_and_kids}
 
 While ordering a taxi for underage kids is not supported by [the official Bolt policy](https://bolt.eu/en/support/articles/360020582220/){:target="_blank"}, from user interviews the group learned that it is a very common usage pattern. Parents often use Bolt taxis to take their children back from school or to after school activities. To better support this use-case the team designed the robotaxi experience especially for families with kids.
 
@@ -83,7 +83,7 @@ The parent view Figma prototype can be found here:
 The child view Figma prototype can be found here:
 [https://www.figma.com/proto/zplc7Gz9fN34GaNJQ2do4J/Robotaxi-for-kids?type=design&node-id=372-959&t=14W6qkO0DlPllPbw-1&scaling=scale-down&page-id=315%3A515&starting-point-node-id=372%3A959](https://www.figma.com/proto/zplc7Gz9fN34GaNJQ2do4J/Robotaxi-for-kids?type=design&node-id=372-959&t=14W6qkO0DlPllPbw-1&scaling=scale-down&page-id=315%3A515&starting-point-node-id=372%3A959){:target="_blank"}
 
-## Elderly people {#elderly_people}
+### Elderly people {#elderly_people}
 
 From the user interviews it became quickly clear that any new technology induces anxiety in elderly people. Therefore making sure they feel safe and in control at all times seemed especially crucial. Also elderly people might need physical assistance in getting into the car or fastening the seat belt. In practice a family member is usually giving a ride to their elders, so convincing them to switch to robotaxi is probably going to be challenging. Nevertheless the team did their best to deliver the least intimidating experience for them.
 
@@ -114,7 +114,7 @@ The phone app Figma prototype can be found here:
 The in-car interface Figma prototype can be found here:
 [https://www.figma.com/proto/lXzMwtYR36Qo4jIYChl21A/Bolt-Auto?type=design&node-id=356-2874&t=xIwU7KtXiQfr9pRO-1&scaling=min-zoom&page-id=102%3A754&starting-point-node-id=356%3A2874&show-proto-sidebar=1&mode=design](https://www.figma.com/proto/lXzMwtYR36Qo4jIYChl21A/Bolt-Auto?type=design&node-id=356-2874&t=xIwU7KtXiQfr9pRO-1&scaling=min-zoom&page-id=102%3A754&starting-point-node-id=356%3A2874&show-proto-sidebar=1&mode=design){:target="_blank"}
 
-## Tourists with a lot of luggage {#tourists_luggage}
+### Tourists with a lot of luggage {#tourists_luggage}
 
 Tourists are an important group of taxi users, that's why we had two student teams focusing on them. The first team decided to focus on the luggage aspect, because the lack of a human driver makes it challenging with robotaxis, from just opening the trunk to lifting heavier items.
 
@@ -132,7 +132,7 @@ The final report of the team can be found here:
 The Figma prototype of the app can be found here:
 [https://www.figma.com/proto/NOMNCS7ayy3PbNiklEasQs/ADL-Taxi-App-Prototype?type=design&node-id=625-3631&t=seJC7nTbg0Vm7Xpw-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=0%3A2&mode=design](https://www.figma.com/proto/NOMNCS7ayy3PbNiklEasQs/ADL-Taxi-App-Prototype?type=design&node-id=625-3631&t=seJC7nTbg0Vm7Xpw-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=0%3A2&mode=design){:target="_blank"}
 
-## Tourists interested in sightseeing {#tourists_sightseeing}
+### Tourists interested in sightseeing {#tourists_sightseeing}
 
 Another tourist team focused more on the regular tourist experience, which is sightseeing. Navigating around in foreign city can be a stressful experience, both with public transportation and a rental car. Robotaxi provides a private experience that does not waste your time in getting lost or looking for a parking place.
 
@@ -150,7 +150,7 @@ The final report of the team can be found here:
 The Figma prototype of the app can be found here:
 [https://www.figma.com/proto/wgn1n3WJ2y6ZrKjjeADRf5/UI?node-id=13-924&starting-point-node-id=13%3A924&t=opMNZ0dsbKynhR8g-1&mode=design](https://www.figma.com/proto/wgn1n3WJ2y6ZrKjjeADRf5/UI?node-id=13-924&starting-point-node-id=13%3A924&t=opMNZ0dsbKynhR8g-1&mode=design){:target="_blank"}
 
-## Conclusion
+### Conclusion
 
 Many other insightful proposals were made, not necessarily related to any particular use-case:
 

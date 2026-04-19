@@ -19,7 +19,7 @@ ADL Minicar challenge is a **self-driving software competition**. This means tha
 
 If you want to see the final results of the 2023 challenge, achieved by the participants, you must scroll all the way to the bottom of the page. The tasks and challenges the organizers and participants had to face when organizing the event are reported in chronological order, to the best recollection of the author.
 
-## Designing the task and rules for 2023
+### Designing the task and rules for 2023
 
 First of all, it is important to note that the competition is not a one-day event, but preparations for it last for an entire semester.
 
@@ -57,7 +57,7 @@ A large town would allow many different trajectories and require more generaliza
 
 From START, the vehicle must either go right or left at the T-junction according to the traffic sign. It must then complete a lap safely, without collisions, by following rules on the road crossing and the other T-junction where there might be another vehicle. When a stop sign is placed on the road the vehicle must stop.
 
-## Rules development
+### Rules development
 
 In the 2021 competition ([rules link](https://docs.google.com/document/d/1_mS5uRi5K15uiw3KINDdXN-p5nRudMs9ecAYqj-Mq3g/edit?usp=drive_link){:target="_blank"}) we judged solutions by driving clean + faster speed, and in 2022 by driving without collisions in increasingly complicated situations (speed didn't matter). Here, we could have also just counted infractions, but running over a pedestrian on a road crossing feels like a more severe violation than touching the wall with a wheel. We wanted a scoring scheme that would suit the use case of urban driving.
 
@@ -83,7 +83,7 @@ The students were advised to (but were free to solve it otherwise):
 
 No particular instructions were given on how to deal with the direction of the driving sign. It affects steering, not throttle, so it could be part of the steering (obstacle avoidance) model, or steering outputs could be overwritten or modified by some other module.
 
-## Student progress during the semester
+### Student progress during the semester
 
 Students seemed to progress well during the semester, as evidenced by videos produced by the students for their course project presentations.
 
@@ -91,7 +91,7 @@ For example:
 
 {% include youtube.html id="Mi6GuAZu9v8" wmode="transparent" %}
 
-## The final event 25th of January 2023
+### The final event 25th of January 2023
 
 In the wake of the final competition day, out of eight teams five dropped out and decided not to participate:
 - A very strong team, as per the videos shown to the organizers, had been down with Corona for a month and didn't have enough time to prepare.
@@ -137,7 +137,7 @@ The winners scored more consistently, their best run is given below.
 
 {% include youtube.html id="Ax3Mry5DyWI" wmode="transparent" %}
 
-## Results of the 2023 competition
+### Results of the 2023 competition
 
 **1st place (1000 euros prize):** Yevhen Pankevych and Volodymyr Savchuk, score 0.068, [GitHub](https://github.com/yewhenp/autonomous_vehicles_project){:target="_blank"}
 
@@ -145,7 +145,7 @@ The winners scored more consistently, their best run is given below.
 
 **3rd place (250 euros prize):** Pavlo Pyvovar, score 0.020, [GitHub](https://github.com/Pavel-Pyvovar/ADL-Minicar-Challenge-2023){:target="_blank"}
 
-## Closing remarks
+### Closing remarks
 
 The competition proved useful in teaching students that deployment is the longest and most complicated phase of any data science solution. They got first-hand experience in curating a dataset to improve results at deployment time, deploying and improving iteratively. These are a few of the lessons students mentioned in their interviews, which can be watched here: ([folder](https://drive.google.com/drive/folders/1kX3DTxDn2BVX0FgOCbDjPr5_mhCbnNXT?usp=drive_link){:target="_blank"}).
 

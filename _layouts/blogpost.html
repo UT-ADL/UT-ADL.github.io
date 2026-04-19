@@ -2,5 +2,5 @@
 layout: text
 ---
 <time class="overlane-text" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%m/%d/%Y" }}</time>{% if page.author %}<span class="overlane-text"> by {{ page.author }}</span>{% endif %}
-<h3 class="post-title">{{ page.title }}</h3>
+<h2 class="post-title">{{ page.title }}</h2>
 {{ content }}

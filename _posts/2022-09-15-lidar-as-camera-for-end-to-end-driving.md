@@ -21,7 +21,7 @@ Ouster LiDARs can output surround-view images with intensity, depth, and ambient
 
 In [the paper](https://arxiv.org/abs/2206.15170) presented at [ICRA Fresh Perspectives on the Future of Autonomous Driving workshop](https://www.icra2022av.org/), we investigated whether these LiDAR images are sufficient for an end-to-end driving model to learn the road-following task with a real car. Driving based on only depth sensing has been attempted before, but Ouster LiDAR’s output images add two new channels of information: intensity and ambient radiation. They look like grayscale images of the scene and might compensate for the lack of visible light information. Importantly, LiDAR-as-camera feature allows using very well-studied convolutional networks on LiDAR data and performing apples-to-apples comparison with the camera-based models.
 
-## The Task
+### The Task
 
 Our goal is to test whether LiDAR-as-camera images are a promising input type for end-to-end driving models. These models consist of just one neural network that transforms inputs from a sensor to steering commands the car should perform. Most commonly, such networks are created by optimizing them to imitate human commands, based on recordings of human driving in a process called behavioral cloning. To this end, we have recorded camera images, LiDAR images and steering values during 500km of human driving on [WRC Rally Estonia 2022](https://www.rallyestonia.ee/) tracks. These are mainly narrow winding gravel roads in rural areas.
 
@@ -33,7 +33,7 @@ After conditioning the models to imitate human behavior on the collected dataset
 
 **Figure 2.** Examples of summer, autumn and winter for the two input modalities. RGB colors on LiDAR images correspond to intensity, range and ambient radiation channels. Red box denotes the cropped region of interest that was the input to the network.
 
-## Driving Performance
+### Driving Performance
 
 In total, LiDAR-based models resulted in 2 times less situations where the safety driver had to take over control, but the tests were run on different days and we can not claim LiDAR-image models are superior. Nevertheless, this clearly demonstrates that LiDAR-image based driving is feasible and competitive with RGB camera based road-following models, even in good light conditions which favor cameras.
   
@@ -47,7 +47,7 @@ Being able to generalize to new light and weather conditions is the expected ben
 
 ![On-policy results](/images/blog/on_policy.png){:width="90%"}
 
-### Main observations
+#### Main observations
 
 * In favorable conditions for both model types, LiDAR-image based models show same-or-better performance in the road-following task as RGB camera-based models.
 * Light conditions influence camera images, while intensity and range LiDAR channels are not affected. This is due to the active nature of the LiDAR sensor that produces by itself the signal it measures.
@@ -63,7 +63,7 @@ Below is the video of autonomous driving at night. RGB camera image is shown for
 
 {% include youtube.html id="jpdRXS1U5Dg" %}
 
-### Stability as a Predictor of Quality
+#### Stability as a Predictor of Quality
 
 While deploying models on the road, we noticed that most interventions were preceded by unstable driving with shaking steering wheel. The model controlling the car was returning inconsistent values in consecutive time points as if it did not know with certainty how to respond to the situation. This gave us the idea to use the temporal similarity of generated commands as a proxy that estimates the model’s certainty about its actions in the given situation. Of course, a very bad model can be very certain about its bad decisions, but among good models, maybe temporal stability over small periods of time can separate the very good models from the rest?
 
@@ -79,7 +79,7 @@ Determining the best models before deploying them in the real world is crucial a
 
 Temporal stability and prediction accuracy are inherently different measures. When needing to pick one model to go out and deploy, we suggest one should pay attention to both the quality and stability. Temporal stability cannot be used alone, because model outputting constant steering would have the best temporal stability, but would be useless in practice.
 
-## Conclusions
+### Conclusions
 
 The work done so far revealed a few interesting facts. First, the information contained in LiDAR-as-camera input feed is sufficient for the simplest task of autonomous driving - road following. While it looks noisy for the human eye, for at least this task and the used conditions, this input might be even more informative than RGB-camera images, as evidenced by somewhat lower intervention rate.
 
