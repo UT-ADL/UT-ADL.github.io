@@ -2,7 +2,7 @@
 layout: blogpost
 subtitle: Blog
 title: We can now drive anywhere in Tartu — come book a ride
-date: 2026-04-20
+date: 2026-04-20 00:00:00 +0300
 image: /images/lab/tartu_bus_lines_map.jpg
 alt: ADL self-driving operation area in Tartu
 permalink: /blog/:title/
