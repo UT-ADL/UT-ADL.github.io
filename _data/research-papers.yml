@@ -1,3 +1,19 @@
+# 2026
+
+- title: "ITS4SDC: Intelligent test road selector for self-driving cars"
+  conference: Science of Computer Programming
+  research_area: Validation & testing
+  authors: Ali Ihsan Güllü, Faiz Ali Shah, Dietmar Pfahl
+  year: 2026
+  link: https://www.sciencedirect.com/science/article/pii/S0167642326000523
+
+- title: "Analyzing the Sensitivity of a Scenario Selection Process for Simulation-Based Safety Testing"
+  conference: "Journal of Software: Evolution and Process"
+  research_area: Validation & testing
+  authors: Fauzia Khan, Hina Anwar, Dietmar Pfahl
+  year: 2026
+  link: https://onlinelibrary.wiley.com/doi/full/10.1002/smr.70112
+
 # 2025
 
 - title: "MonoMPC: Monocular Vision Based Navigation with Learned Collision Model and Risk-Aware Model Predictive Control"
