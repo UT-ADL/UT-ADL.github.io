@@ -91,18 +91,21 @@
   research_area: Motion planning
   authors: Pranjal Paul, Anant Garg, Tushar Choudhary, Arun Kumar Singh, K. Madhava Krishna
   year: 2024
+  link: https://ieeexplore.ieee.org/document/10801870
 
 - title: "Talk2BEV: Language-enhanced Bird's-eye View Maps for Autonomous Driving"
   conference: ICRA 2024
   research_area: Motion planning
   authors: T. Choudhary, V. Dewangan, S. Chandhok, S. Priyadarshan, A. Jain, A. K. Singh, S. Srivastava, K. M. Jatavallabhula, K. M. Krishna
   year: 2024
+  link: https://ieeexplore.ieee.org/document/10611485
 
 - title: "Learning Sampling Distribution and Safety Filter for Autonomous Driving with VQ-VAE and Differentiable Optimization"
   conference: IROS
   research_area: Motion planning
   authors: Simon Idoko, Basant Sharma, Arun Kumar Singh
   year: 2024
+  link: https://ieeexplore.ieee.org/document/10801610
 
 - title: "Comparing Approaches for Prioritizing and Selecting Scenarios in Simulation-based Safety Testing of Automated Driving Systems"
   conference: WiPiEC Journal
@@ -116,12 +119,14 @@
   research_area: Behavior prediction
   authors: Timothé Verstraete, Naveed Muhammad
   year: 2024
+  link: https://www.mdpi.com/2073-431X/13/3/78
 
 - title: "The Effects of Speed and Delays on Test-Time Performance of End-to-End Self-Driving"
   conference: MDPI Sensors
   research_area: Educational technology
   authors: Ardi Tampuu, Kristjan Roosild, Ilmar Uduste
   year: 2024
+  link: https://www.mdpi.com/1424-8220/24/6/1963
 
 - title: "Navigating roundabouts and unprotected turns in autonomous driving"
   conference: IEEE Transactions on Field Robotics
@@ -137,12 +142,14 @@
   research_area: Motion planning
   authors: Basant Sharma, Aditya Sharma, K. Madhava Krishna, Arun Kumar Singh
   year: 2023
+  link: https://arxiv.org/abs/2310.08270
 
 - title: "End-to-End Learning of Behavioural Inputs for Autonomous Driving in Dense Traffic"
   conference: IROS 2023
   research_area: Motion planning
   authors: Jatan Shrestha, Simon Idoko, Basant Sharma, Arun Kumar Singh
   year: 2023
+  link: https://ieeexplore.ieee.org/document/10341439
 
 - title: "Emotions, Readiness for Act, and Safe/Unsafe Acts in Safety Critical Systems: A Position Paper"
   conference: IEEE
@@ -177,12 +184,14 @@
   research_area: Behavior prediction
   authors: Debasis Kumar, Naveed Muhammad
   year: 2023
+  link: https://ieeexplore.ieee.org/document/10287946
 
 - title: "Object Detection in Adverse Weather for Autonomous Driving through Data Merging and YOLOv8"
   conference: MDPI Sensors
   research_area: Behavior prediction
   authors: Debasis Kumar, Naveed Muhammad
   year: 2023
+  link: https://www.mdpi.com/1424-8220/23/20/8471
 
 - title: "How Can Simulation-based Safety Testing Help Understand the Real-World Safety of Autonomous Driving Systems?"
   conference: WiPiEC Journal
@@ -196,18 +205,21 @@
   research_area: Motion planning
   authors: Vikrant Dewangan, Basant Sharma, Tushar Choudhary, Sarthak Sharma, Aakash Aanegola, Arun K. Singh, K. Madhava Krishna
   year: 2023
+  link: https://ieeexplore.ieee.org/document/10260358
 
 - title: "Bi-Level Optimization Augmented with Conditional Variational Autoencoder for Autonomous Driving in Dense Traffic"
   conference: IEEE CASE
   research_area: Motion planning
   authors: Arun Kumar Singh, Jatan Shrestha, Nicola Albarella
   year: 2023
+  link: https://ieeexplore.ieee.org/document/10260485
 
 - title: "LiDAR-as-Camera for End-to-End Driving"
   conference: MDPI Sensors
   research_area: Learned driving
   authors: Ardi Tampuu, Romet Aidla, Jan Are van Gent, Tambet Matiisen
   year: 2023
+  link: https://www.mdpi.com/1424-8220/23/5/2845
   github: https://github.com/UT-ADL/e2e-rally-estonia
   video: https://youtu.be/qzo61V7G1EM?t=5761
 
@@ -225,6 +237,7 @@
   research_area: Motion planning
   authors: Mohd Omama, Sundar Sripada Venugopalaswamy Sriraman, Sandeep Chinchali, Arun Kumar Singh, K. Madhava Krishna
   year: 2022
+  link: https://ieeexplore.ieee.org/document/9981330
 
 - title: "Controlling Steering with Energy-Based Models"
   conference: NeurIPS ML4AD workshop
