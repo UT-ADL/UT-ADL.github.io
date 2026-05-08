@@ -38,6 +38,7 @@
   research_area: Motion planning
   authors: Basant Sharma, Arun Kumar Singh
   year: 2025
+  link: https://arxiv.org/abs/2501.19045
   github: https://github.com/Basant1861/MPC-MMD
 
 - title: "Automated Classification of ADS Disengagements Using Convolutional Neural Networks"
@@ -108,6 +109,7 @@
   research_area: Validation & testing
   authors: Fauzia Khan, Hina Anwar, Dietmar Pfahl
   year: 2024
+  link: https://wipiec.digitalheritage.me/index.php/wipiecjournal/article/view/66
 
 - title: "Pedestrian Collision Avoidance in Autonomous Vehicles: A Review"
   conference: MDPI Computers
@@ -161,12 +163,14 @@
   research_area: Validation & testing
   authors: Fauzia Khan, Hina Anwar, Dietmar Pfahl
   year: 2023
+  link: https://link.springer.com/chapter/10.1007/978-3-031-49266-2_6
 
 - title: "Safety Testing of Automated Driving Systems: A Literature Review"
   conference: IEEE Access
   research_area: Validation & testing
   authors: Fauzia Khan, Mariana Falco, Hina Anwar, Dietmar Pfahl
   year: 2023
+  link: https://ieeexplore.ieee.org/document/10296892
 
 - title: "A Survey on Localization for Autonomous Vehicles"
   conference: IEEE Access
@@ -185,6 +189,7 @@
   research_area: Validation & testing
   authors: Fauzia Khan, Laima Dalbina, Hina Anwar, Dietmar Pfahl
   year: 2023
+  link: https://wipiec.digitalheritage.me/index.php/wipiecjournal/article/view/41
 
 - title: "UAP-BEV: Uncertainty Aware Planning Using Bird's Eye View Generated from Surround Monocular Images"
   conference: IEEE CASE 2023
