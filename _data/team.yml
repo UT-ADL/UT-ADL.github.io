@@ -22,11 +22,11 @@
   email: karl.kruusamae@ut.ee
   image: /images/team/karl.jpg
 
-- name: Meelis Kull
-  position: Associate Professor in Machine Learning
+- name: Dietmar Pfahl
+  position: Professor of Software Engineering, Validation & Testing Team Lead
   group: team lead
-  email: meelis.kull@ut.ee
-  image: /images/team/meelis.jpg
+  email: dietmar.pfahl@ut.ee
+  image: /images/team/dietmar.jpg
 
 - name: Raimundas Matulevičius
   position: Professor of Information Security, Security Team Lead
@@ -34,11 +34,11 @@
   email: raimundas.matulevicius@ut.ee
   image: /images/team/raimundas.jpg
 
-- name: Dietmar Pfahl
-  position: Professor of Software Engineering, Validation & Testing Team Lead
+- name: Meelis Kull
+  position: Associate Professor in Machine Learning
   group: team lead
-  email: dietmar.pfahl@ut.ee
-  image: /images/team/dietmar.jpg
+  email: meelis.kull@ut.ee
+  image: /images/team/meelis.jpg
 
 - name: Kuldar Taveter
   position: Professor in Information Systems, Requirements Engineering Team Lead
