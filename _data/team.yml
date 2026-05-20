@@ -54,7 +54,7 @@
 
 - name: Amnir Hadachi
   position: Associate Professor of Smart City Technologies, Perception Team Lead
-  group: team lead
+  group: lead
   email: amnir.hadachi@ut.ee
   image: /images/team/amnir.jpg
 
@@ -81,12 +81,6 @@
   group: engineer
   email: anish.shrestha@ut.ee
   image: /images/team/anish.jpg
-
-- name: Rasmus Soome
-  position: Lab Technician
-  group: engineer
-  email: rasmus.soome@ut.ee
-#  image: /images/team/rasmus.jpg
 
 - name: Dmytro Zabolotnii
   position: PhD Student in Behavior Prediction
