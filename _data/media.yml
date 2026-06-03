@@ -172,3 +172,17 @@
   language: en
   date: 2022-04-06
   title: "Self-driving public transport vehicle available in Tartu in April"
+
+- type: article
+  url: "https://epl.delfi.ee/artikkel/120190934/tambet-matiisen-maal-ja-vana-voi-laps-teie-elu-teeb-peagi-holpsamaks-isejuhtiv-auto"
+  image: ""
+  language: ee
+  date: 2023-05-21
+  title: "Tambet Matiisen: maal ja vana või laps, teie elu teeb peagi hõlpsamaks isejuhtiv auto"
+
+- type: article
+  url: "https://tartu.postimees.ee/8239661/tartlaste-isejuhtiv-auto-saab-linnas-uha-paremini-hakkama"
+  image: ""
+  language: ee
+  date: 2025-04-30
+  title: "Tartlaste isejuhtiv auto saab linnas üha paremini hakkama"
