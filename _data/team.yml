@@ -22,11 +22,11 @@
   email: karl.kruusamae@ut.ee
   image: /images/team/karl.jpg
 
-- name: Meelis Kull
-  position: Associate Professor in Machine Learning
+- name: Dietmar Pfahl
+  position: Professor of Software Engineering, Validation & Testing Team Lead
   group: team lead
-  email: meelis.kull@ut.ee
-  image: /images/team/meelis.jpg
+  email: dietmar.pfahl@ut.ee
+  image: /images/team/dietmar.jpg
 
 - name: Raimundas Matulevičius
   position: Professor of Information Security, Security Team Lead
@@ -34,11 +34,11 @@
   email: raimundas.matulevicius@ut.ee
   image: /images/team/raimundas.jpg
 
-- name: Dietmar Pfahl
-  position: Professor of Software Engineering, Validation & Testing Team Lead
+- name: Meelis Kull
+  position: Associate Professor in Machine Learning
   group: team lead
-  email: dietmar.pfahl@ut.ee
-  image: /images/team/dietmar.jpg
+  email: meelis.kull@ut.ee
+  image: /images/team/meelis.jpg
 
 - name: Kuldar Taveter
   position: Professor in Information Systems, Requirements Engineering Team Lead
@@ -54,7 +54,7 @@
 
 - name: Amnir Hadachi
   position: Associate Professor of Smart City Technologies, Perception Team Lead
-  group: team lead
+  group: lead
   email: amnir.hadachi@ut.ee
   image: /images/team/amnir.jpg
 
@@ -81,18 +81,6 @@
   group: engineer
   email: anish.shrestha@ut.ee
   image: /images/team/anish.jpg
-
-- name: Rasmus Soome
-  position: Lab Technician
-  group: engineer
-  email: rasmus.soome@ut.ee
-#  image: /images/team/rasmus.jpg
-
-- name: Mahir Gulzar
-  position: PhD Student in Behavior Prediction
-  group: student
-  email: mahir.gulzar@ut.ee
-  image: /images/team/mahir.jpg
 
 - name: Dmytro Zabolotnii
   position: PhD Student in Behavior Prediction
@@ -141,3 +129,9 @@
   group: student
   email: tahira.iqbal@ut.ee
 #  image: /images/team/tahira.jpg
+
+- name: Ali Ihsan Güllü
+  position: PhD Student in Validation & Testing
+  group: student
+  email: ali.ihsan.gullu@ut.ee
+#  image: /images/team/ali.jpg
