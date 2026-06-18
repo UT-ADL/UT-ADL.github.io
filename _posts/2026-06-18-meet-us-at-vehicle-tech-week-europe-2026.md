@@ -26,7 +26,8 @@ author: Autonomous Driving Lab
   .vtw table { border-collapse: collapse; width: 100%; margin: 1.4em 0; font-size: .96rem; }
   .vtw th, .vtw td { border: 1px solid #e4e8ee; padding: 9px 12px; text-align: center; }
   .vtw th:first-child, .vtw td:first-child { text-align: left; }
-  .vtw thead th { background: #f5f7fa; font-weight: 600; }
+  .vtw thead th { background: #f5f7fa; color: #1f2a3a; font-weight: 600; }
+  .vtw tbody td { color: #1f2a3a; }
   .vtw tr.vil td { background: #cfe84a; font-weight: 600; }
   .vtw-where { border-left: 3px solid #cfe84a; padding: 4px 0 4px 16px; margin: 1.2em 0; }
   .vtw-where div { margin: .15em 0; }
