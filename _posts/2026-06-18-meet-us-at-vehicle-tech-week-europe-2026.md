@@ -62,7 +62,7 @@ author: Autonomous Driving Lab
     </tbody>
   </table>
 
-  <p>Pure simulation can build any scenario but can't reproduce real braking distances, accelerations, and tyre&ndash;road interaction. A proving ground gives you the real dynamics, but staging varied scenarios there is slow and costly. Vehicle-in-the-loop keeps the real dynamics of the car while placing it in any simulated traffic and conditions, which we build with our Visual Scenario Editor for CARLA.</p>
+  <p>Pure simulation can build any scenario but can't reproduce real braking distances, accelerations, and tire&ndash;road interaction. A proving ground gives you the real dynamics, but staging varied scenarios there is slow and costly. Vehicle-in-the-loop keeps the real dynamics of the car while placing it in any simulated traffic and conditions, which we build with our Visual Scenario Editor for CARLA.</p>
 
   <h2>The Tartu living lab</h2>
 
