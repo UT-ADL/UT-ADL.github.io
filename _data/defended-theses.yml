@@ -16,6 +16,78 @@
   year: 2026
   link: https://thesis.cs.ut.ee/0c4e47f3-6d85-434a-9db6-fd201ce32062
 
+- title: "Evaluating Visual-Language Models for Turn Signal Labeling in Autonomous Driving"
+  supervisor: Amnir Hadachi, Tambet Matiisen, Helena Sokk
+  research_area: Perception
+  author: Elizabeth Ann Dwenger
+  field: MSc
+  year: 2026
+  link: https://thesis.cs.ut.ee/b8bc6d59-8323-416f-a8fd-95dedeb8a041
+
+- title: "Cyberattack Simulation and Detection in CARLA-Based Digital Twin of Tartu City"
+  supervisor: Naveed Muhammad, Mubashar Iqbal
+  research_area: Security
+  author: Ahmed Ruhul Quddos Joyon
+  field: MSc
+  year: 2026
+  link: https://thesis.cs.ut.ee/04d1c05c-234c-4db1-9361-0a36a16dc30d
+
+- title: "Multi-Dataset 3D Object Detection with LiDAR"
+  supervisor: Tambet Matiisen
+  research_area: Perception
+  author: Buraq Khan
+  field: MSc
+  year: 2026
+  link: https://thesis.cs.ut.ee/5d6d7b73-87e0-419b-a1d2-102489867618
+
+- title: "Absolute Positioning of Drones Based on Visual Matching"
+  supervisor: Tambet Matiisen
+  research_area: Perception
+  author: Raido Rehepapp
+  field: MSc
+  year: 2026
+  link: https://thesis.cs.ut.ee/07f4a2c7-5f1b-4cec-b51d-5b172d74d46d
+
+- title: "Data-Driven Identification of ODD-Compatible Corridors for Shared Autonomous Shuttle Deployment: A Case Study of Gotland, Sweden"
+  supervisor: Amnir Hadachi
+  research_area: Autonomy software
+  author: Yifei Song
+  field: MSc
+  year: 2026
+  link: https://thesis.cs.ut.ee/19557907-bf21-4e7f-88d3-34a233032149
+
+- title: "A Scenario-Based Safety Evaluation Framework for Autonomous Driving at Urban Intersections"
+  supervisor: Tambet Matiisen, Edgar Sepp
+  research_area: Validation & testing
+  author: Lu Zhang
+  field: MSc
+  year: 2026
+  link: https://thesis.cs.ut.ee/ed693c64-bb52-4606-8047-bb5e6e9fce62
+
+- title: "A Comparative Study of FFT, DWT, and EMD for Robust Airflow-Based Vehicle Length Estimation"
+  supervisor: Naveed Muhammad
+  research_area: Behavior prediction
+  author: Md Murad Alahi Misu
+  field: MSc
+  year: 2026
+  link: https://thesis.cs.ut.ee/75c234c5-24f2-41a7-ba6d-95a0083a3098
+
+- title: "Localization of an Autonomous Vehicle Using City Distances Read from Roadside Signs"
+  supervisor: Naveed Muhammad, Syeda Zillay Nain Zukhraf
+  research_area: Perception
+  author: Samuel Kolsar
+  field: BSc
+  year: 2026
+  link: https://thesis.cs.ut.ee/1eb54d53-3bdb-4604-89c5-a7c1e46a70b0
+
+- title: "A Mobile App for GNSS-free Autonomous Vehicle Localization"
+  supervisor: Naveed Muhammad, Faiz Ali Shah
+  research_area: Perception
+  author: Ander Saarniit
+  field: BSc
+  year: 2026
+  link: https://thesis.cs.ut.ee/6a26326d-2ba7-498b-9e39-91fdc6a200e6
+
 # 2025
 
 - title: "Eyes Wide Shut: Analyzing Object Detection Performance Under Degraded Sensor Input Scenarios"
@@ -41,6 +113,86 @@
   field: BSc
   year: 2025
   link: https://thesis.cs.ut.ee/6f4f09c6-0ad3-420f-816a-423dd6f8b026
+
+- title: "Digital Twin-Based Deception Solution for Autonomous Vehicles Security"
+  supervisor: Naveed Muhammad, Mubashar Iqbal
+  research_area: Security
+  author: Md Al Amin Khan
+  field: MSc
+  year: 2025
+  link: https://thesis.cs.ut.ee/9055f483-011e-4bcb-a4c8-2a51b7168a11
+
+- title: "Secure Data Sharing in the Internet of Vehicles Using Blockchain-based Federated Learning"
+  supervisor: Raimundas Matulevičius, Mubashar Iqbal
+  research_area: Security
+  author: Mykyta Luzan
+  field: MSc
+  year: 2025
+  link: https://thesis.cs.ut.ee/ed21d512-9750-4463-aaa0-87018b4fd0e3
+
+- title: "Vision-based Localization on City Scale Using Open Street Map"
+  supervisor: Naveed Muhammad, Dmytro Zabolotnii
+  research_area: Perception
+  author: Helena Sokk
+  field: MSc
+  year: 2025
+  link: https://thesis.cs.ut.ee/f378f005-e35a-4050-b308-ff0ce3e0a8f5
+
+- title: "Edge-Case Handling via Message-Based V2X for Enhanced Vehicle Autonomy"
+  supervisor: Naveed Muhammad
+  research_area: Autonomy software
+  author: Lisanne Siniväli
+  field: MSc
+  year: 2025
+  link: https://thesis.cs.ut.ee/c9c19d79-c795-4f5a-9ff7-564cd745090f
+
+- title: "On the Road to Security Risk Management in Vehicle Teleoperation Scenarios"
+  supervisor: Raimundas Matulevičius
+  research_area: Security
+  author: Aqel Rizza Ndifuna
+  field: MSc
+  year: 2025
+  link: https://thesis.cs.ut.ee/081e7dce-53e6-45af-9484-82f858a3c2ee
+
+- title: "Outdoor Navigation with a Model Car"
+  supervisor: Tambet Matiisen
+  research_area: Autonomy software
+  author: Kennar Kahju
+  field: BSc
+  year: 2025
+  link: https://thesis.cs.ut.ee/8a6f218f-a082-4a91-86d2-a5abde25f135
+
+- title: "Development of a Remote Control System for a Small-Scale Car in the University of Tartu Autonomous Driving Lab"
+  supervisor: Ardi Tampuu
+  research_area: Educational technology
+  author: Markkus Koddala
+  field: BSc
+  year: 2025
+  link: https://thesis.cs.ut.ee/7113040e-6a6a-46e2-8678-927328b888ae
+
+- title: "Setting up a Real-time Kinematic Base Station and Accuracy Assessment"
+  supervisor: Tambet Matiisen, Edgar Sepp
+  research_area: High-definition maps
+  author: Jaagup Kopli
+  field: BSc
+  year: 2025
+  link: https://thesis.cs.ut.ee/4a29b82a-1127-49d7-b5ad-2db4f88f25e9
+
+- title: "GNSS-free Localization Using Milestone-board Information"
+  supervisor: Naveed Muhammad
+  research_area: Perception
+  author: Henri Poolakese
+  field: BSc
+  year: 2025
+  link: https://thesis.cs.ut.ee/0edfc40d-4700-4697-ad2f-ae978a850a36
+
+- title: "Development and Application of a Program for Traversing Drivable Lanes"
+  supervisor: Tambet Matiisen, Edgar Sepp, Karl-Johan Pilve
+  research_area: High-definition maps
+  author: Rauno Raa
+  field: BSc
+  year: 2025
+  link: https://thesis.cs.ut.ee/17de0df8-1b33-4832-b42f-9399bc507a1f
 
 # 2024
 
@@ -147,6 +299,14 @@
   field: MSc
   year: 2024
   link: https://thesis.cs.ut.ee/9a21a1cc-12aa-4eea-9ca3-b267aa7b70a1
+
+- title: "The Analysis of the Effectiveness of Fiery Semantic Segmentation Model"
+  supervisor: Markus Kängsepp
+  research_area: Perception
+  author: Ilmar Möls
+  field: BSc
+  year: 2024
+  link: https://thesis.cs.ut.ee/3232cc61-da93-40cd-bd02-6abe3df715e7
 
 # 2023
 
