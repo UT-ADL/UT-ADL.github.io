@@ -96,6 +96,38 @@
   year: 2026
   link: https://hdl.handle.net/10062/123252
 
+- title: "Vision-based Localisation on City Scale Using OpenStreetMap"
+  supervisor: Naveed Muhammad, Dmytro Zabolotnii
+  research_area: Perception
+  author: Karmen Laud
+  field: BSc
+  year: 2026
+  link: https://ims.ut.ee/www-public2/at/2026/bsc/atprog-bakalaureuset55-loti.05.029-karmen-laud-text-20260527.pdf
+
+- title: "Snowplow Drivers Assistance System"
+  supervisor: Tambet Matiisen, Edgar Sepp
+  research_area: Autonomy software
+  author: Matis Vahter
+  field: BSc
+  year: 2026
+  link: https://ims.ut.ee/www-public2/at/2026/bsc/atprog-bakalaureuset55-loti.05.029-matis-vahter-text-20260520.pdf
+
+- title: "Test Platform for Self-driving Vehicles with a LiDAR-based Navigation System"
+  supervisor: Tambet Matiisen, Karl Kruusamäe
+  research_area: Autonomy software
+  author: Kaisa Talts
+  field: BSc
+  year: 2026
+  link: https://ims.ut.ee/www-public2/at/2026/bsc/atprog-bakalaureuset55-loti.05.029-kaisa-talts-text-20260520.pdf
+
+- title: "Learned Control Barrier Function for Reactive Navigation in Unknown Environments"
+  supervisor: Arun Kumar Singh, Priit Kull
+  research_area: Motion planning
+  author: Duc-Man Vo
+  field: MSc
+  year: 2026
+  link: https://ims.ut.ee/www-public2/at/2026/msc/june/atprog-magistrit55-loti-05.036-duc-man-vo-text-20260519.pdf
+
 # 2025
 
 - title: "Eyes Wide Shut: Analyzing Object Detection Performance Under Degraded Sensor Input Scenarios"
