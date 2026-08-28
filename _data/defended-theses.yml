@@ -88,6 +88,14 @@
   year: 2026
   link: https://thesis.cs.ut.ee/6a26326d-2ba7-498b-9e39-91fdc6a200e6
 
+- title: "Sample-efficient risk-aware trajectory optimization leveraging maximum mean discrepancy"
+  supervisor: Arun Kumar Singh
+  research_area: Motion planning
+  author: Basant Sharma
+  field: PhD
+  year: 2026
+  link: https://hdl.handle.net/10062/123252
+
 # 2025
 
 - title: "Eyes Wide Shut: Analyzing Object Detection Performance Under Degraded Sensor Input Scenarios"
@@ -193,6 +201,46 @@
   field: BSc
   year: 2025
   link: https://thesis.cs.ut.ee/17de0df8-1b33-4832-b42f-9399bc507a1f
+
+- title: "A multimodal approach for refining mapping and localization by integrating generative AI and pedestrian-centric data"
+  supervisor: Amnir Hadachi
+  research_area: High-definition maps
+  author: Alireza Akhavi Zadegan
+  field: PhD
+  year: 2025
+  link: https://hdl.handle.net/10062/109102
+
+- title: "Risk-Aware Planning on Point Clouds"
+  supervisor: Arun Kumar Singh, Basant Sharma
+  research_area: Motion planning
+  author: Kwasi Akuamoah Boateng
+  field: MSc
+  year: 2025
+  link: https://hdl.handle.net/10062/120642
+
+- title: "Model-based Planning Using GPU-accelerated Simulator as a World Model"
+  supervisor: Arun Kumar Singh, Karl Kruusamäe
+  research_area: Motion planning
+  author: Iryna Hurova
+  field: MSc
+  year: 2025
+  link: https://hdl.handle.net/10062/120647
+
+- title: "Socially Aware Planning for Indoor Navigation"
+  supervisor: Karl Kruusamäe, Bin Zhang
+  research_area: Motion planning
+  author: Paola Avalos Conchas
+  field: MSc
+  year: 2025
+  link: https://hdl.handle.net/10062/120643
+
+- title: "Measuring Vehicle Teleoperation Latency"
+  supervisor: Tambet Matiisen, Karl Kruusamäe
+  research_area: Teleoperation
+  author: Mattias Mäe
+  field: BSc
+  year: 2025
+  link: https://hdl.handle.net/10062/120628
 
 # 2024
 
@@ -307,6 +355,22 @@
   field: BSc
   year: 2024
   link: https://thesis.cs.ut.ee/3232cc61-da93-40cd-bd02-6abe3df715e7
+
+- title: "Towards Reliable Real-time Trajectory Optimization"
+  supervisor: Arun Kumar Singh, Alvo Aabloo
+  research_area: Motion planning
+  author: Fatemeh Rastgar
+  field: PhD
+  year: 2024
+  link: https://hdl.handle.net/10062/99023
+
+- title: "Validation of NoMaD as a Global Planner for Mobile Robots"
+  supervisor: Arun Kumar Singh, Karl Kruusamäe
+  research_area: Motion planning
+  author: Robert Allik
+  field: MSc
+  year: 2024
+  link: https://hdl.handle.net/10062/107715
 
 # 2023
 
