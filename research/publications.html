@@ -17,9 +17,10 @@ meta: Here you can see all our publications, no matter which research area they 
     {% assign years = papers | map: 'year' | uniq %}
 
     <div class="flex media-items menu-tags mt-12 md:mt-16 mb-2 x-scroll" data-filter-group="year" data-filter-target="#publication-list">
-        <a class="menu-link no-close active" data-filter-value="all" href="#">All publications</a>
+        <a class="menu-link no-close active" data-filter-value="all" href="#">All publications ({{ papers | size }})</a>
         {% for year in years %}
-        <a class="menu-link no-close" data-filter-value="{{ year }}" href="#">{{ year }}</a>
+        {% assign year_papers = papers | where: 'year', year %}
+        <a class="menu-link no-close" data-filter-value="{{ year }}" href="#">{{ year }} ({{ year_papers | size }})</a>
         {% endfor %}
     </div>
 
