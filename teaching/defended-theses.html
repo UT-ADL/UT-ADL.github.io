@@ -20,12 +20,14 @@ meta: Take a look at all the magnificent theses that our students have written a
     {% assign years = theses | map: 'year' | uniq | sort | reverse %}
 
     <div class="flex media-items menu-tags mt-12 md:mt-16 mb-2 x-scroll" data-filter-group="degree" data-filter-target="#theses-list">
-        <a class="menu-link no-close active" data-filter-value="all" href="#">All</a>
+        <a class="menu-link no-close active" data-filter-value="all" href="#">All ({{ theses | size }})</a>
         {% for degree in degrees %}
-        <a class="menu-link no-close" data-filter-value="{{ degree }}" href="#">{{ degree }}</a>
+        {% assign degree_theses = theses | where: 'field', degree %}
+        <a class="menu-link no-close" data-filter-value="{{ degree }}" href="#">{{ degree }} ({{ degree_theses | size }})</a>
         {% endfor %}
         {% for year in years %}
-        <a class="menu-link no-close" data-filter-value="{{ year }}" href="#">{{ year }}</a>
+        {% assign year_theses = theses | where: 'year', year %}
+        <a class="menu-link no-close" data-filter-value="{{ year }}" href="#">{{ year }} ({{ year_theses | size }})</a>
         {% endfor %}
     </div>
 
