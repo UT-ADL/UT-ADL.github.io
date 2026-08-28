@@ -1,5 +1,47 @@
 # 2026
 
+- title: "In the Driver's Seat: A Multi-Company Study on the Reality of Autonomous Driving System Testing"
+  conference: arXiv
+  research_area: Validation & testing
+  authors: Qunying Song, Yuan Gao, Johannes Betz, Dietmar Pfahl, Mohammad Reza Mousavi, Federica Sarro
+  year: 2026
+  link: https://arxiv.org/abs/2607.15820
+
+- title: "SafeBound: A Modular Toolchain for End-to-End Safety Evaluation of ADS"
+  conference: ICSTW
+  research_area: Validation & testing
+  authors: Fauzia Khan, Ali Ihsan Güllü, Hina Anwar, Dietmar Pfahl
+  year: 2026
+  link: https://ieeexplore.ieee.org/document/11600434
+
+- title: "ITEP4SDC at the SBFT 2026 Tool Competition: Self-Driving Car Testing Track"
+  conference: SBFT
+  research_area: Validation & testing
+  authors: Ali Ihsan Güllü, Faiz Ali Shah, Dietmar Pfahl
+  year: 2026
+  link: https://doi.org/10.1145/3786155.3795698
+
+- title: "Phase-Based Safety Analysis of Automated Driving System Using Simulations"
+  conference: Baltic DB&IS
+  research_area: Validation & testing
+  authors: Fauzia Khan, Ali Ihsan Güllü, Hina Anwar, Dietmar Pfahl
+  year: 2026
+  link: https://doi.org/10.1007/978-3-032-30863-4_5
+
+- title: "Calibrating Perception Uncertainty for Autonomous Driving"
+  conference: International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems
+  research_area: Perception
+  authors: Markus Kängsepp, Meelis Kull
+  year: 2026
+  link: https://doi.org/10.1142/S0218488526500212
+
+- title: "External Human-Vehicle Interaction: A User Study in the Context of a Driverless Ride-Hailing Service"
+  conference: "Transportation Research Record: Journal of the Transportation Research Board"
+  research_area: Human-vehicle interaction
+  authors: Kristina Meister, Andres Kuusik, Alexander Nolte, Karl Kruusamäe
+  year: 2026
+  link: https://doi.org/10.1177/03611981251391717
+
 - title: "ITS4SDC: Intelligent test road selector for self-driving cars"
   conference: Science of Computer Programming
   research_area: Validation & testing
@@ -15,6 +57,70 @@
   link: https://onlinelibrary.wiley.com/doi/full/10.1002/smr.70112
 
 # 2025
+
+- title: "GC-GAT: Multimodal Vehicular Trajectory Prediction Using Graph Goal Conditioning and Cross-Context Attention"
+  conference: IEEE Robotics and Automation Letters
+  research_area: Behavior prediction
+  authors: Mahir Gulzar, Yar Muhammad, Naveed Muhammad
+  year: 2025
+  link: https://ieeexplore.ieee.org/document/11066233
+
+- title: "Diffusion-FS: Multimodal Free-Space Prediction via Diffusion for Autonomous Driving"
+  conference: IROS 2025
+  research_area: Motion planning
+  authors: Keshav Gupta, Tejas S. Stanley, Pranjal Paul, Arun Kumar Singh, K. Madhava Krishna
+  year: 2025
+  link: https://ieeexplore.ieee.org/document/11246466
+
+- title: "Pedestrian Motion Prediction Evaluation for Urban Autonomous Driving"
+  conference: ROBIO 2025
+  research_area: Behavior prediction
+  authors: Dmytro Zabolotnii, Yar Muhammad, Naveed Muhammad
+  year: 2025
+  link: https://ieeexplore.ieee.org/document/11376114
+  github: https://github.com/dmytrozabolotnii/autoware_mini
+
+- title: "FOV-RVO: Velocity Obstacle-Based Pedestrian Motion Predictor"
+  conference: ROBIO 2025
+  research_area: Behavior prediction
+  authors: Dmytro Zabolotnii, Yar Muhammad, Naveed Muhammad
+  year: 2025
+  link: https://ieeexplore.ieee.org/document/11377134
+
+- title: "MAPFL: GNSS-Free Map-Based Particle Filter Localization for Autonomous Vehicles"
+  conference: ICAT 2025
+  research_area: Behavior prediction
+  authors: Syeda Zillay Nain Zukhraf, Naveed Muhammad
+  year: 2025
+  link: https://ieeexplore.ieee.org/document/11189291
+
+- title: "On Security Risk Management for Teleoperated Driving Systems"
+  conference: IEEE Access
+  research_area: Security
+  authors: Abasi-Amefon O. Affia-Jomants, Raimundas Matulevičius, Nataliia Pabat, Lukas Malina
+  year: 2025
+  link: https://ieeexplore.ieee.org/document/11136163
+
+- title: "Automatic Road Boundaries Extraction for High Definition Maps"
+  conference: AI2E 2025
+  research_area: High-definition maps
+  authors: Dmytro Zabolotnii, Dmytro Fishman, Naveed Muhammad
+  year: 2025
+  link: https://ieeexplore.ieee.org/document/10982974
+
+- title: "On the Suitability of Small-Sized Vehicles for Autonomous-Driving Research"
+  conference: AI2E 2025
+  research_area: Educational technology
+  authors: Uroš Petrović, Naveed Muhammad
+  year: 2025
+  link: https://ieeexplore.ieee.org/document/10982988
+
+- title: "Implementing Reinforcement Learning on a Smartphone: A Study with OpenBot"
+  conference: AI2E 2025
+  research_area: Educational technology
+  authors: Lilou Gras, Naveed Muhammad
+  year: 2025
+  link: https://ieeexplore.ieee.org/document/10983347
 
 - title: "MonoMPC: Monocular Vision Based Navigation with Learned Collision Model and Risk-Aware Model Predictive Control"
   conference: IEEE Robotics and Automation Letters
@@ -78,6 +184,13 @@
   link: https://arxiv.org/abs/2501.03881
 
 # 2024
+
+- title: "Knowledge Distillation Neural Network for Predicting Car-Following Behaviour of Human-Driven and Autonomous Vehicles"
+  conference: ITSC 2024
+  research_area: Behavior prediction
+  authors: Ayobami Adewale, Chris Lee, Amnir Hadachi, Nicolly Lima da Silva
+  year: 2024
+  link: https://ieeexplore.ieee.org/document/10919748
 
 - title: "Scenario Driven Development for Open Source Autonomous Driving Stack"
   conference: ETFA 2024
