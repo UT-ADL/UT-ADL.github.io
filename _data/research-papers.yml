@@ -1,5 +1,12 @@
 # 2026
 
+- title: "Beyond Dark Knowledge: Mixup-Based Distillation for Reliable Predictions"
+  conference: arXiv
+  research_area: Perception
+  authors: José Medina, Paul Honeine, Abdelaziz Bensrhair, Amnir Hadachi
+  year: 2026
+  link: https://arxiv.org/abs/2606.12171
+
 - title: "In the Driver's Seat: A Multi-Company Study on the Reality of Autonomous Driving System Testing"
   conference: arXiv
   research_area: Validation & testing
@@ -57,6 +64,27 @@
   link: https://onlinelibrary.wiley.com/doi/full/10.1002/smr.70112
 
 # 2025
+
+- title: "Semi-Dense Feature Matching via Mamba-Based Knowledge Distillation"
+  conference: ICMLA 2025
+  research_area: Perception
+  authors: José Medina, Helena Sokk, Amnir Hadachi
+  year: 2025
+  link: https://ieeexplore.ieee.org/document/11471462
+
+- title: "Street2GIS: Multimodal Generative Framework for Pedestrian Infrastructure Mapping"
+  conference: JURSE 2025
+  research_area: Perception
+  authors: Alireza Akhavi Zadegan, José Medina, Amnir Hadachi
+  year: 2025
+  link: https://ieeexplore.ieee.org/document/11076041
+
+- title: "Mamba-PKD: A Framework for Efficient and Scalable Model Compression in Image Classification"
+  conference: ACM/SIGAPP SAC 2025
+  research_area: Perception
+  authors: José Medina, Amnir Hadachi, Paul Honeine, Abdelaziz Bensrhair
+  year: 2025
+  link: https://doi.org/10.1145/3672608.3707887
 
 - title: "GC-GAT: Multimodal Vehicular Trajectory Prediction Using Graph Goal Conditioning and Cross-Context Attention"
   conference: IEEE Robotics and Automation Letters
