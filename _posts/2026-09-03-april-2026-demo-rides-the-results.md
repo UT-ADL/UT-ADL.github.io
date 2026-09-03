@@ -3,15 +3,15 @@ layout: blogpost
 subtitle: Blog
 title: April 2026 demo rides — the results
 date: 2026-09-03
-image: /images/lab/tartu_bus_lines_map.jpg
-alt: ADL self-driving operation area in Tartu
+image: /images/blog/demo-rides-2026-summary.png
+alt: April 2026 demo rides in Tartu at a glance
 permalink: /blog/:title/
 meta: Results of the April 2026 demo ride campaign — 323 km across Tartu, 151 disengagements, 2.14 km per intervention
 language: en
 author: Tambet Matiisen
 ---
 
-![ADL self-driving operation area in Tartu](/images/lab/tartu_bus_lines_map.jpg)
+![April 2026 demo rides in Tartu at a glance: 19 rides, 323 km driven, 13 h 57 min behind the wheel, 151 safety driver interventions, 2.14 km per intervention, 97.8% autonomous by distance](/images/blog/demo-rides-2026-summary.svg)
 
 In April we [opened demo rides to the public](/blog/we-can-now-drive-anywhere-in-tartu-come-book-a-ride/) across the whole of Tartu. Between 14 April and 28 May 2026 we drove 19 of them with passengers in the back seat. Passengers chose their own pickup and dropoff bus stops, so the routes were not ours to pick.
 
@@ -45,9 +45,9 @@ Twenty-one of the 88 legs, 65 km in total, were driven without a single interven
 | Autonomy by distance | 93.2% | 91.7% | 96.8% | **97.8%** |
 | Autonomy by time | 85.9% | 90.6% | 94.1% | **95.1%** |
 
-![Kilometres between safety driver interventions across four campaigns: Tiksoja 2022 1.26 km, Tiksoja 2023 1.62 km, Tartu 2025 1.44 km, Tartu 2026 2.14 km](/images/blog/demo-rides-2026-km-per-intervention.svg)
+Each campaign covers roughly 320 km, but they are not otherwise like-for-like, and the differences all run the same way. 2022 ran on Autoware.ai; every campaign since has run on Autoware Mini. The first two were on the Tiksoja on-demand route, mostly rural roads with light traffic. 2025 covered Riia street and the city centre. 2026 covers the whole of Tartu, so the last column is both the newest software and the hardest driving of the four.
 
-Each campaign covers roughly 320 km, so the columns are comparable. The first two ran on the Tiksoja on-demand route, mostly rural roads with light traffic. The last two were in Tartu, with traffic lights, crosswalks, roundabouts and pedestrians. The improvement from 1.26 to 2.14 km per intervention came while the roads were getting harder.
+One caveat on the first two columns. In 2022 the safety driver stopped the car manually at 55 bus stops as a matter of policy rather than because anything failed, and both years include manually driven turnbacks. Corrected for those, 2022 and 2023 land almost on top of each other at about 1.75 km per disengagement, so the apparent jump between them is mostly a change in what got counted.
 
 ### What we count as a problem
 
@@ -66,7 +66,9 @@ Each event is traced to the module and the specific node in [Autoware Mini](/lab
 
 ### Which part of the stack is at fault
 
-| Module | All 662 events | 151 disengagements |
+Every one of the 662 events is attributed to a module. The right-hand column narrows the same data down to the 151 that ended with the safety driver taking over, so the two columns sum to 662 and 151 respectively.
+
+| Module | Share of all 662 events | Share of the 151 disengagements |
 |---|---:|---:|
 | Local planner | 282 (42.6%) | 55 (36.4%) |
 | Perception | 249 (37.6%) | 42 (27.8%) |
@@ -81,7 +83,7 @@ Planning and perception account for four out of five events. Map problems come t
 
 ### The individual problems that cost us autonomy
 
-Ranked by how many times the safety driver had to take over:
+These are the eight most common causes, and they account for 56 of the 151 disengagements between them. The rest is a long tail of categories with four or fewer each.
 
 | Problem | Disengagements |
 |---|---:|
@@ -100,9 +102,9 @@ Ranked by how many times the safety driver had to take over:
 
 **Pedestrians at crosswalks** failed in both directions. Six times the car detected a person crossing too late, and five times a person standing at the curb, clearly intending to cross, was not treated as a reason to stop. In the other direction the car was too timid: 12 times a pedestrian merely walking up to a crosswalk made it brake, sometimes to a standstill, while we had the green light and they had a red one. Another 29 times a roadside object that was standing still was perceived as drifting slightly, had its predicted path extended across a crosswalk, and slowed us down for nobody.
 
-### Phantom braking, the problem that never becomes an intervention
+### Phantom braking
 
-The safety driver does not take over for any of these, so they never appear in a disengagement rate. But you feel every one of them from the back seat:
+Most events never become an intervention, so they never show up in a disengagement rate at all. You still feel every one of them from the back seat. These are the eight most common problem categories across all 662 events, together accounting for 246 of them:
 
 | Problem | Events |
 |---|---:|
@@ -123,9 +125,9 @@ The swerve planner is the busiest node in the whole log at 120 events. Its most 
 
 Thirteen riders filled in a questionnaire after their ride, eleven in Estonian and two in English, rating five aspects of the experience from 1 to 5.
 
-![Distribution of 13 passenger ratings across five dimensions: felt safe 4.3, met expectations 3.9, ride was comfortable 3.5, car seemed capable 3.5, compared to a human driver 2.1](/images/blog/demo-rides-2026-passenger-ratings.svg)
+![Passenger ratings on five questions, 13 responses each, on a 1 to 5 scale: felt safe 4.3, met expectations 3.9, ride was comfortable 3.5, car seemed capable 3.5, compared to a human driver 2.1](/images/blog/demo-rides-2026-passenger-ratings.svg)
 
-Thirteen self-selected responses is a signal rather than a survey, but the pattern is clear. People felt safe and still rated the car well below a human driver. Eleven of the thirteen chose 4 or 5 on safety and every respondent said the ride met or exceeded their expectations, yet ten judged the car worse than a competent human on the same route and only two judged it better.
+Thirteen self-selected responses is a signal rather than a survey, but the pattern is clear. People felt safe and still rated the car well below a human driver. Eleven of the thirteen chose 4 or 5 on safety and every respondent said the ride met or exceeded their expectations. On the last question, where 3 means comparable to a competent human on the same route, ten put the car below that and only two above it.
 
 What separates the two is smoothness. The riders who named a specific rough moment named the same causes our log ranks at the top:
 
