@@ -3,15 +3,15 @@ layout: blogpost
 subtitle: Blog
 title: April 2026 demo rides — the results
 date: 2026-09-03
-image: /images/blog/demo-rides-2026-summary.png
-alt: April 2026 demo rides in Tartu at a glance
+image: /images/blog/demo-rides-2026-car-at-delta.jpg
+alt: The ADL self-driving car outside the Delta building in Tartu
 permalink: /blog/:title/
 meta: Results of the April 2026 demo ride campaign — 323 km across Tartu, 151 disengagements, 2.14 km per intervention
 language: en
 author: Tambet Matiisen
 ---
 
-![April 2026 demo rides in Tartu at a glance: 19 rides, 323 km driven, 13 h 57 min behind the wheel, 151 safety driver interventions, 2.14 km per intervention, 97.8% autonomous by distance](/images/blog/demo-rides-2026-summary.svg)
+![The ADL self-driving car, sensor rack on the roof, parked outside the Delta building in Tartu](/images/blog/demo-rides-2026-car-at-delta.jpg)
 
 In April we [opened demo rides to the public](/blog/we-can-now-drive-anywhere-in-tartu-come-book-a-ride/) across the whole of Tartu. Between 14 April and 28 May 2026 we drove 19 of them with passengers in the back seat. Passengers chose their own pickup and dropoff bus stops, so the routes were not ours to pick.
 
