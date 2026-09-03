@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 396" width="100%" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-label="Distribution of passenger ratings across five dimensions, 13 responses">
+<text x="0" y="20" font-size="15" font-weight="600" fill="#0b0b0b">How the ride felt from the back seat</text>
+<text x="0" y="40" font-size="12.5" fill="#52514e">13 passenger responses, rated 1&#8211;5. Bars are centred on the neutral answer.</text>
+<line x1="172.0" y1="66" x2="172.0" y2="296" stroke="#e1e0d9" stroke-width="1"/>
+<text x="172.0" y="58" font-size="10.5" fill="#898781" text-anchor="middle">12</text>
+<line x1="250.3" y1="66" x2="250.3" y2="296" stroke="#e1e0d9" stroke-width="1"/>
+<text x="250.3" y="58" font-size="10.5" fill="#898781" text-anchor="middle">8</text>
+<line x1="328.7" y1="66" x2="328.7" y2="296" stroke="#e1e0d9" stroke-width="1"/>
+<text x="328.7" y="58" font-size="10.5" fill="#898781" text-anchor="middle">4</text>
+<line x1="407.0" y1="66" x2="407.0" y2="296" stroke="#c3c2b7" stroke-width="1"/>
+<text x="407.0" y="58" font-size="10.5" fill="#898781" text-anchor="middle">0</text>
+<line x1="485.3" y1="66" x2="485.3" y2="296" stroke="#e1e0d9" stroke-width="1"/>
+<text x="485.3" y="58" font-size="10.5" fill="#898781" text-anchor="middle">4</text>
+<line x1="563.7" y1="66" x2="563.7" y2="296" stroke="#e1e0d9" stroke-width="1"/>
+<text x="563.7" y="58" font-size="10.5" fill="#898781" text-anchor="middle">8</text>
+<line x1="642.0" y1="66" x2="642.0" y2="296" stroke="#e1e0d9" stroke-width="1"/>
+<text x="642.0" y="58" font-size="10.5" fill="#898781" text-anchor="middle">12</text>
+<text x="407.0" y="312" font-size="10.5" fill="#898781" text-anchor="middle">responses</text>
+<text x="156" y="93.0" font-size="12.5" fill="#0b0b0b" text-anchor="end">Felt safe</text>
+<path d="M391.42,76.00 H406.00 V102.00 H391.42 A4.00,4.00 0 0 1 387.42,98.00 V80.00 A4.00,4.00 0 0 1 391.42,76.00 Z" fill="#c3c2b7"/>
+<path d="M407.00,76.00 H425.58 V102.00 H407.00 Z" fill="#c3c2b7"/>
+<path d="M427.58,76.00 H523.50 V102.00 H427.58 Z" fill="#86b6ef"/>
+<path d="M525.50,76.00 H637.00 A4.00,4.00 0 0 1 641.00,80.00 V98.00 A4.00,4.00 0 0 1 637.00,102.00 H525.50 Z" fill="#1c5cab"/>
+<text x="656" y="93.0" font-size="12.5" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">4.3</text>
+<text x="156" y="139.0" font-size="12.5" fill="#0b0b0b" text-anchor="end">Met expectations</text>
+<path d="M362.04,122.00 H406.00 V148.00 H362.04 A4.00,4.00 0 0 1 358.04,144.00 V126.00 A4.00,4.00 0 0 1 362.04,122.00 Z" fill="#c3c2b7"/>
+<path d="M407.00,122.00 H454.96 V148.00 H407.00 Z" fill="#c3c2b7"/>
+<path d="M456.96,122.00 H552.88 V148.00 H456.96 Z" fill="#86b6ef"/>
+<path d="M554.88,122.00 H607.62 A4.00,4.00 0 0 1 611.62,126.00 V144.00 A4.00,4.00 0 0 1 607.62,148.00 H554.88 Z" fill="#1c5cab"/>
+<text x="656" y="139.0" font-size="12.5" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">3.9</text>
+<text x="156" y="185.0" font-size="12.5" fill="#0b0b0b" text-anchor="end">Ride was comfortable</text>
+<path d="M352.25,168.00 H366.83 V194.00 H352.25 A4.00,4.00 0 0 1 348.25,190.00 V172.00 A4.00,4.00 0 0 1 352.25,168.00 Z" fill="#ea9a93"/>
+<path d="M367.83,168.00 H406.00 V194.00 H367.83 Z" fill="#c3c2b7"/>
+<path d="M407.00,168.00 H445.17 V194.00 H407.00 Z" fill="#c3c2b7"/>
+<path d="M447.17,168.00 H597.83 A4.00,4.00 0 0 1 601.83,172.00 V190.00 A4.00,4.00 0 0 1 597.83,194.00 H447.17 Z" fill="#86b6ef"/>
+<text x="656" y="185.0" font-size="12.5" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">3.5</text>
+<text x="156" y="231.0" font-size="12.5" fill="#0b0b0b" text-anchor="end">Car seemed capable</text>
+<path d="M342.46,214.00 H406.00 V240.00 H342.46 A4.00,4.00 0 0 1 338.46,236.00 V218.00 A4.00,4.00 0 0 1 342.46,214.00 Z" fill="#c3c2b7"/>
+<path d="M407.00,214.00 H474.54 V240.00 H407.00 Z" fill="#c3c2b7"/>
+<path d="M476.54,214.00 H572.46 V240.00 H476.54 Z" fill="#86b6ef"/>
+<path d="M574.46,214.00 H588.04 A4.00,4.00 0 0 1 592.04,218.00 V236.00 A4.00,4.00 0 0 1 588.04,240.00 H574.46 Z" fill="#1c5cab"/>
+<text x="656" y="231.0" font-size="12.5" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">3.5</text>
+<text x="156" y="277.0" font-size="12.5" fill="#0b0b0b" text-anchor="end">Compared to a human</text>
+<path d="M205.38,260.00 H259.12 V286.00 H205.38 A4.00,4.00 0 0 1 201.38,282.00 V264.00 A4.00,4.00 0 0 1 205.38,260.00 Z" fill="#9e3432"/>
+<path d="M261.12,260.00 H396.21 V286.00 H261.12 Z" fill="#ea9a93"/>
+<path d="M397.21,260.00 H406.00 V286.00 H397.21 Z" fill="#c3c2b7"/>
+<path d="M407.00,260.00 H415.79 V286.00 H407.00 Z" fill="#c3c2b7"/>
+<path d="M417.79,260.00 H450.96 A4.00,4.00 0 0 1 454.96,264.00 V282.00 A4.00,4.00 0 0 1 450.96,286.00 H417.79 Z" fill="#86b6ef"/>
+<text x="656" y="277.0" font-size="12.5" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">2.1</text>
+<text x="656" y="58" font-size="10.5" fill="#898781">mean</text>
+<text x="0" y="338" font-size="11" fill="#52514e">Rating</text>
+<rect x="52" y="329" width="11" height="11" rx="2.5" fill="#9e3432"/>
+<text x="68" y="338" font-size="11" fill="#52514e">1 worst</text>
+<rect x="118.80000000000001" y="329" width="11" height="11" rx="2.5" fill="#ea9a93"/>
+<text x="134.8" y="338" font-size="11" fill="#52514e">2</text>
+<rect x="147.20000000000002" y="329" width="11" height="11" rx="2.5" fill="#c3c2b7"/>
+<text x="163.20000000000002" y="338" font-size="11" fill="#52514e">3 neutral</text>
+<rect x="226.8" y="329" width="11" height="11" rx="2.5" fill="#86b6ef"/>
+<text x="242.8" y="338" font-size="11" fill="#52514e">4</text>
+<rect x="255.20000000000002" y="329" width="11" height="11" rx="2.5" fill="#1c5cab"/>
+<text x="271.20000000000005" y="338" font-size="11" fill="#52514e">5 best</text>
+</svg>

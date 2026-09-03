@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" width="100%" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-label="Kilometres per safety driver intervention across four campaigns">
+<text x="0" y="20" font-size="15" font-weight="600" fill="#0b0b0b">Kilometres between safety driver interventions</text>
+<text x="0" y="40" font-size="12.5" fill="#52514e">Each campaign covers about 320 km of driving. Higher is better.</text>
+<line x1="48" y1="256.0" x2="704" y2="256.0" stroke="#c3c2b7" stroke-width="1"/>
+<text x="38" y="260.0" font-size="10.5" fill="#898781" text-anchor="end" style="font-variant-numeric:tabular-nums">0.0</text>
+<line x1="48" y1="217.2" x2="704" y2="217.2" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="221.2" font-size="10.5" fill="#898781" text-anchor="end" style="font-variant-numeric:tabular-nums">0.5</text>
+<line x1="48" y1="178.4" x2="704" y2="178.4" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="182.4" font-size="10.5" fill="#898781" text-anchor="end" style="font-variant-numeric:tabular-nums">1.0</text>
+<line x1="48" y1="139.6" x2="704" y2="139.6" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="143.6" font-size="10.5" fill="#898781" text-anchor="end" style="font-variant-numeric:tabular-nums">1.5</text>
+<line x1="48" y1="100.8" x2="704" y2="100.8" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="104.8" font-size="10.5" fill="#898781" text-anchor="end" style="font-variant-numeric:tabular-nums">2.0</text>
+<line x1="48" y1="62.0" x2="704" y2="62.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="66.0" font-size="10.5" fill="#898781" text-anchor="end" style="font-variant-numeric:tabular-nums">2.5</text>
+<path d="M99.0,162.224 A4,4 0 0 1 103.0,158.224 H157.0 A4,4 0 0 1 161.0,162.224 V256.0 H99.0 Z" fill="#1c5cab"/>
+<text x="130.0" y="149.2" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle" style="font-variant-numeric:tabular-nums">1.26</text>
+<text x="130.0" y="275.0" font-size="12.5" fill="#0b0b0b" text-anchor="middle">2022</text>
+<path d="M263.0,134.288 A4,4 0 0 1 267.0,130.288 H321.0 A4,4 0 0 1 325.0,134.288 V256.0 H263.0 Z" fill="#1c5cab"/>
+<text x="294.0" y="121.3" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle" style="font-variant-numeric:tabular-nums">1.62</text>
+<text x="294.0" y="275.0" font-size="12.5" fill="#0b0b0b" text-anchor="middle">2023</text>
+<path d="M427.0,148.25600000000003 A4,4 0 0 1 431.0,144.25600000000003 H485.0 A4,4 0 0 1 489.0,148.25600000000003 V256.0 H427.0 Z" fill="#1c5cab"/>
+<text x="458.0" y="135.3" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle" style="font-variant-numeric:tabular-nums">1.44</text>
+<text x="458.0" y="275.0" font-size="12.5" fill="#0b0b0b" text-anchor="middle">2025</text>
+<path d="M591.0,93.93599999999998 A4,4 0 0 1 595.0,89.93599999999998 H649.0 A4,4 0 0 1 653.0,93.93599999999998 V256.0 H591.0 Z" fill="#1c5cab"/>
+<text x="622.0" y="80.9" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle" style="font-variant-numeric:tabular-nums">2.14</text>
+<text x="622.0" y="275.0" font-size="12.5" fill="#0b0b0b" text-anchor="middle">2026</text>
+<path d="M99.0,294.0 V288.0 H325.0 V294.0" fill="none" stroke="#c3c2b7" stroke-width="1"/>
+<text x="212.0" y="310.0" font-size="11.5" fill="#52514e" text-anchor="middle">Tiksoja — rural on-demand route</text>
+<path d="M427.0,294.0 V288.0 H653.0 V294.0" fill="none" stroke="#c3c2b7" stroke-width="1"/>
+<text x="540.0" y="310.0" font-size="11.5" fill="#52514e" text-anchor="middle">Tartu — city streets</text>
+</svg>
