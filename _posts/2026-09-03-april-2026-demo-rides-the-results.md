@@ -159,7 +159,7 @@ Four more came from passengers changing their minds mid-ride, including two elde
 
 Remote assistance was in use for almost the whole campaign: an operator connected over the network who can confirm the car may enter an intersection, or draw a path around an obstruction. Eight interventions are charged to it, from a drawn path with too sharp a turn (4), starting into an intersection despite oncoming traffic (3), and not checking for an overtaking vehicle (1).
 
-Those are the visible costs. The situations where the car would otherwise have sat still until the safety driver took over do not appear anywhere in the table, because those interventions never happened. Measuring that properly is still on our list.
+Those are the visible costs. The situations where the car would otherwise have sat still until the safety driver took over do not appear anywhere in the table, because those interventions never happened.
 
 ### What we are fixing next
 
@@ -172,4 +172,4 @@ Those are the visible costs. The situations where the car would otherwise have s
 
 ### Come ride with us
 
-Demo rides are still open, and we annotate every one of them the same way, so the next campaign will tell us whether the fixes above worked. If you would like to contribute a route we have not driven yet, preferably a hard one, you can [book a demo ride](/lab/demo-ride).
+Demo rides are still open. If you would like to contribute a route we have not driven yet, preferably a hard one, you can [book a demo ride](/lab/demo-ride).
