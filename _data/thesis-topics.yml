@@ -1,71 +1,13 @@
-- title: Prototyping vision-based localization using milestone-board information
-  description: "Creating a scenario with highways and virtual milestone boards, then implementing a particle filter for map-based localization within the created environment."
-  type: Perception
-  availability:
-    BSc: yes
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Naveed Muhammad
-      email: naveed.muhammad@ut.ee
-  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=80868"
-
-- title: Vehicle localization in OpenStreetMap using distances to cities as the measurements
-  description: "Implementing map-based-localization in Open Street Map for Estonia using distances to cities as measurements via particle filtering."
-  type: Perception
-  availability:
-    BSc: yes
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Naveed Muhammad
-      email: naveed.muhammad@ut.ee
-  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=81104"
-
-- title: Air-flow sensing for perception in autonomous driving
-  description: "Exploring wind flow sensing applications in autonomous driving through simulation, feature extraction methods, or physical validation."
-  type: Perception
-  availability:
-    BSc: yes
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Naveed Muhammad
-      email: naveed.muhammad@ut.ee
-  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=80137"
-
-- title: Vision-based localization on city scale using Open Street Map
-  description: "Developing street name recognition, matching perceived information with map data, implementing particle filters, and integrating into Autoware Mini software stack."
-  type: Perception
-  availability:
-    BSc: yes
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Naveed Muhammad
-      email: naveed.muhammad@ut.ee
-  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=80142"
-
-- title: Map-based localization for autonomous vehicles using lidar
-  description: "Investigating lidar sensors for map-based localization through particle filtering or deep learning, exploring sensor requirements and real-time implementation."
-  type: Perception
-  availability:
-    BSc: yes
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Naveed Muhammad
-      email: naveed.muhammad@ut.ee
-  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=80990"
-
-- title: Implementation of test scenarios for ADS in the Carla simulator
-  description: "Testing Automated Driving Systems in simulators with focus on transferring results from simulated to real-world systems."
-  type: Validation & testing
-  availability:
-    BSc: yes
-    MSc: yes
-    PhD: no
-  leads:
-    - name: Dietmar Pfahl
-      email: dietmar.pfahl@ut.ee
-  file: "https://comserv.cs.ut.ee/ati_thesis_offers/datasheet.php?id=80824"
+# Currently no thesis topics are offered.
+# To list new topics, add entries here — see README.md ("Thesis topics") for the format:
+# - title: ...
+#   description: "..."
+#   type: ...
+#   availability:
+#     BSc: yes
+#     MSc: yes
+#     PhD: no
+#   leads:
+#     - name: ...
+#       email: ...
+#   file: "https://..."
