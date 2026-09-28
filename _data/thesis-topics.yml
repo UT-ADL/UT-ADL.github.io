@@ -25,3 +25,109 @@
     - name: Naveed Muhammad
       email: naveed.muhammad@ut.ee
   file: "https://topics.cs.ut.ee/447ab17f-433f-4059-85d0-570388aeabb1"
+
+- title: Creating city-scale Gaussian splatting worlds
+  description: "Building a pipeline for reconstructing and rendering a photorealistic Gaussian splatting world of Tartu that scales to the whole city — a BSc thesis can demonstrate the pipeline on a selected district, while an MSc thesis should aim for full city coverage."
+  type: Validation & testing
+  availability:
+    BSc: yes
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Allan Mitt
+      email: allan.mitt@ut.ee
+  file: "https://topics.cs.ut.ee/1e10409a-fdb0-4eca-902d-6b9255928d0c"
+
+- title: Collision detection in Gaussian splatting worlds
+  description: "Investigating automatic ways to create colliders for Gaussian splats — distinguishing real obstacles from drive-through splats like tree branches and noise — and applying them to a Gaussian splatting world of Tartu for testing autonomous vehicles."
+  type: Validation & testing
+  availability:
+    BSc: yes
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Allan Mitt
+      email: allan.mitt@ut.ee
+  file: "https://topics.cs.ut.ee/cc55d878-934d-4888-ba3e-3c346e4de53d"
+
+- title: Creating a lane graph from decimeter-level GNSS trajectory recordings
+  description: "Creating a lane-level navigation graph automatically from recorded decimeter-level (RTK-GNSS) vehicle trajectories, so autonomous vehicles stay in the correct lane and minimize lane changes, and evaluating its quality with established lane-topology metrics."
+  type: High-definition maps
+  availability:
+    BSc: yes
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+    - name: Karl-Johan Pilve
+      email: karl-johan.pilve@ut.ee
+  file: "https://topics.cs.ut.ee/7bbe9dea-2f0e-42fe-a0e7-093e7b02e684"
+
+- title: Scenarios for certifying autonomous vehicles
+  description: "Creating a taxonomy of scenarios a self-driving vehicle would need to pass to be certified for public streets under EU regulation — especially relevant for end-to-end machine learning stacks — and implementing a subset of these scenarios in simulation (e.g. CARLA ScenarioRunner)."
+  type: Validation & testing
+  availability:
+    BSc: yes
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+    - name: Dietmar Pfahl
+      email: dietmar.pfahl@ut.ee
+  file: "https://topics.cs.ut.ee/7a6645a0-f159-41b5-ba75-cdd0c2b18295"
+
+- title: World models for testing end-to-end driving models
+  description: "Evaluating existing pre-trained world models and video generation networks for closed-loop testing of end-to-end driving networks, with special attention to rendering different sensors from custom locations and assessing what is feasible beyond cameras, e.g. for lidar."
+  type: Validation & testing
+  availability:
+    BSc: yes
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Ardi Tampuu
+      email: ardi.tampuu@ut.ee
+    - name: Faiz Ali Shah
+      email: faiz.ali.shah@ut.ee
+  file: "https://topics.cs.ut.ee/cff9d269-cd19-43f2-87e5-e3fa7b1672bf"
+
+- title: Integrating Autoware Mini with the electric toy car platform
+  description: "Adapting Autoware Mini, the lab's autonomous driving software stack, to run on the lab's small-scale test platform based on an electric children's car — finding or writing sensor drivers (lidar, GNSS, camera), connecting them to Autoware Mini and updating the control module, so the vehicle can navigate a small toy city in the Delta courtyard."
+  type: Autonomy software
+  availability:
+    BSc: yes
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Karl Kruusamäe
+      email: karl.kruusamae@ut.ee
+  file: "https://topics.cs.ut.ee/3e3edd8e-404c-4c4c-9136-b5475192ca20"
+
+- title: Controlling a real car with general-purpose AI
+  description: "Replicating the DrivingBench experiment on the lab's Lexus: setting up a cone course and testing which current frontier vision-language models can drive through it, with repeated independent trials per model and a safety protocol covering safety-driver procedures and model refusals."
+  type: Learned driving
+  availability:
+    BSc: yes
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Tambet Matiisen
+      email: tambet.matiisen@ut.ee
+    - name: Edgar Sepp
+      email: edgar.sepp@ut.ee
+    - name: Karl-Johan Pilve
+      email: karl-johan.pilve@ut.ee
+  file: "https://topics.cs.ut.ee/33058f94-e2e0-434a-8115-f0e399d057f6"
