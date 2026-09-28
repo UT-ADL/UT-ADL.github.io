@@ -1,13 +1,27 @@
-# Currently no thesis topics are offered.
-# To list new topics, add entries here — see README.md ("Thesis topics") for the format:
-# - title: ...
-#   description: "..."
-#   type: ...
-#   availability:
-#     BSc: yes
-#     MSc: yes
-#     PhD: no
-#   leads:
-#     - name: ...
-#       email: ...
-#   file: "https://..."
+- title: Localization of autonomous vehicle using triangulation based on city distances
+  description: "GNSS-free localization of an autonomous vehicle by triangulating distances to nearby cities from roadside milestone boards, combining multilateration with vehicle odometry and evaluating on data from the lab's Lexus platform."
+  type: Perception
+  availability:
+    BSc: yes
+    MSc: no
+    PhD: no
+  leads:
+    - name: Syeda Zillay Nain Zukhraf
+      email: syeda.zillay.nain.zukhraf@ut.ee
+    - name: Naveed Muhammad
+      email: naveed.muhammad@ut.ee
+  file: "https://topics.cs.ut.ee/982a4d66-99eb-44dd-b6b7-57f3675c400a"
+
+- title: Real-time GNSS-free map-based localisation on board an autonomous vehicle
+  description: "Making the lab's offline map-based particle filter localisation pipelines (milestone boards on the highway scale, street-name signs on the city scale) run in real time on board the lab's Lexus RX450h, with on-road evaluation in shadow mode."
+  type: Perception
+  availability:
+    BSc: yes
+    MSc: yes
+    PhD: no
+  leads:
+    - name: Syeda Zillay Nain Zukhraf
+      email: syeda.zillay.nain.zukhraf@ut.ee
+    - name: Naveed Muhammad
+      email: naveed.muhammad@ut.ee
+  file: "https://topics.cs.ut.ee/447ab17f-433f-4059-85d0-570388aeabb1"
