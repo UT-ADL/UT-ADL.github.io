@@ -26,6 +26,20 @@
       email: naveed.muhammad@ut.ee
   file: "https://topics.cs.ut.ee/447ab17f-433f-4059-85d0-570388aeabb1"
 
+- title: Data-driven odometry error prediction and energy-efficient model selection for autonomous vehicles
+  description: "Investigating whether odometry error of an autonomous vehicle can be predicted from real-world driving data using machine learning, comparing models on prediction accuracy, computational cost and energy consumption — including routes and driving conditions not seen during training — with a view to real-time use."
+  type: Perception
+  availability:
+    BSc: yes
+    MSc: no
+    PhD: no
+  leads:
+    - name: Hina Anwar
+      email: hina.anwar@ut.ee
+    - name: Syeda Zillay Nain Zukhraf
+      email: syeda.zillay.nain.zukhraf@ut.ee
+  file: "https://topics.cs.ut.ee/e97b4471-19e6-4d9c-b682-69cd03659359"
+
 - title: Creating city-scale Gaussian splatting worlds
   description: "Building a pipeline for reconstructing and rendering a photorealistic Gaussian splatting world of Tartu that scales to the whole city — a BSc thesis can demonstrate the pipeline on a selected district, while an MSc thesis should aim for full city coverage."
   type: Validation & testing
