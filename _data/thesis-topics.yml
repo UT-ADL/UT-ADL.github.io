@@ -28,7 +28,7 @@
 
 - title: Data-driven odometry error prediction and energy-efficient model selection for autonomous vehicles
   description: "Investigating whether odometry error of an autonomous vehicle can be predicted from real-world driving data using machine learning, comparing models on prediction accuracy, computational cost and energy consumption — including routes and driving conditions not seen during training — with a view to real-time use."
-  type: Perception
+  type: Behavior prediction
   availability:
     BSc: yes
     MSc: no
